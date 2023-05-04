@@ -17,7 +17,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/demo-properties" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="5" />
@@ -108,7 +108,7 @@
       <updated>1682669231965</updated>
       <workItem from="1682669233044" duration="1624000" />
       <workItem from="1682672995004" duration="684000" />
-      <workItem from="1683162367405" duration="4319000" />
+      <workItem from="1683162367405" duration="4637000" />
     </task>
     <task id="LOCAL-00001" summary="feat: &#10;&#10;初始化依赖">
       <created>1682669417869</created>
@@ -131,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683166355185</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="feat: &#10;读取配置文件的五种方法">
+      <created>1683166749952</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1683166749952</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
