@@ -13,6 +13,8 @@
         <module>demo-logback</module>
         <module>demo-log-aop</module>
         <module>demo-exception-handler</module>
+        <module>demo-swagger</module>
+        <module>demo-knife4j</module>
     </modules>
 
     <packaging>pom</packaging>

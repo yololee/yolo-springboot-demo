@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: &#10;整合aop记录日志">
+    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: &#10;全局异常处理">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-logback/src/main/java/com/yolo/logback/DemoLogbackApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-logback/src/main/java/com/yolo/logback/DemoLogbackApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-logback/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-logback/src/main/resources/logback-spring.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -72,7 +70,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-logback",
+    "last_opened_file_path": "/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-exception-handler",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -88,6 +86,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/demo-exception-handler" />
       <recent name="$PROJECT_DIR$/demo-logback" />
       <recent name="$PROJECT_DIR$/demo-log-aop" />
       <recent name="$PROJECT_DIR$/demo-logback/src/main/resources" />
@@ -164,7 +163,7 @@
       <workItem from="1682672995004" duration="684000" />
       <workItem from="1683162367405" duration="4637000" />
       <workItem from="1683167110973" duration="7041000" />
-      <workItem from="1683181292637" duration="5293000" />
+      <workItem from="1683181292637" duration="8613000" />
     </task>
     <task id="LOCAL-00001" summary="feat: &#10;&#10;初始化依赖">
       <created>1682669417869</created>
@@ -222,7 +221,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683183328088</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="feat: &#10;全局异常处理">
+      <created>1683186687048</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1683186687048</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -250,6 +256,7 @@
     <MESSAGE value="feat: &#10;logback的使用" />
     <MESSAGE value="feat: &#10;修改gitignore文件" />
     <MESSAGE value="feat: &#10;整合aop记录日志" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: &#10;整合aop记录日志" />
+    <MESSAGE value="feat: &#10;全局异常处理" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: &#10;全局异常处理" />
   </component>
 </project>
