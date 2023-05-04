@@ -11,6 +11,7 @@
     <modules>
         <module>demo-properties</module>
         <module>demo-logback</module>
+        <module>demo-log-aop</module>
     </modules>
 
     <packaging>pom</packaging>
@@ -23,6 +24,7 @@
         <spring-boot.version>2.3.12.RELEASE</spring-boot.version>
         <hutool.version>5.4.5</hutool.version>
         <guava.version>29.0-jre</guava.version>
+        <user.agent.version>1.20</user.agent.version>
     </properties>
 
 
@@ -63,6 +65,13 @@
                 <artifactId>guava</artifactId>
                 <version>${guava.version}</version>
             </dependency>
+            <!-- 解析 UserAgent 信息 -->
+            <dependency>
+                <groupId>eu.bitwalker</groupId>
+                <artifactId>UserAgentUtils</artifactId>
+                <version>${user.agent.version}</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 
