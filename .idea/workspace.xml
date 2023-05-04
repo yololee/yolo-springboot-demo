@@ -4,18 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: &#10;修改gitignore文件">
+    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: &#10;整合aop记录日志">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-properties/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-properties/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-properties/target/classes/META-INF/spring-configuration-metadata.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-properties/target/classes/application-dev.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-properties/target/classes/application-prod.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-properties/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-properties/target/classes/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-properties/target/classes/com/yolo/properties/DemoPropertiesApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-properties/target/classes/com/yolo/properties/config/ApplicationProperty.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-properties/target/classes/com/yolo/properties/config/DeveloperProperty.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-properties/target/classes/com/yolo/properties/controller/PropertyController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-logback/src/main/java/com/yolo/logback/DemoLogbackApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-logback/src/main/java/com/yolo/logback/DemoLogbackApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-logback/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-logback/src/main/resources/logback-spring.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +72,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-logback/src/main/resources",
+    "last_opened_file_path": "/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-logback",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -95,11 +88,26 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/demo-logback" />
+      <recent name="$PROJECT_DIR$/demo-log-aop" />
       <recent name="$PROJECT_DIR$/demo-logback/src/main/resources" />
       <recent name="$PROJECT_DIR$/demo-properties" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.DemoLogAopApplication">
+  <component name="RunManager" selected="Spring Boot.DemoExceptionHandlerApplication">
+    <configuration name="DemoExceptionHandlerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="demo-exception-handler" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.exception.handler.DemoExceptionHandlerApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yolo.exception.handler.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DemoLogAopApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="demo-log-aop" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.logaop.DemoLogAopApplication" />
@@ -135,6 +143,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.DemoExceptionHandlerApplication" />
         <item itemvalue="Spring Boot.DemoLogbackApplication" />
         <item itemvalue="Spring Boot.DemoPropertiesApplication" />
       </list>
@@ -155,7 +164,7 @@
       <workItem from="1682672995004" duration="684000" />
       <workItem from="1683162367405" duration="4637000" />
       <workItem from="1683167110973" duration="7041000" />
-      <workItem from="1683181292637" duration="1812000" />
+      <workItem from="1683181292637" duration="5293000" />
     </task>
     <task id="LOCAL-00001" summary="feat: &#10;&#10;初始化依赖">
       <created>1682669417869</created>
@@ -206,7 +215,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683179841764</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="feat: &#10;整合aop记录日志">
+      <created>1683183328088</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1683183328088</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,6 +249,7 @@
     <MESSAGE value="feat: &#10;提交gitignore文件" />
     <MESSAGE value="feat: &#10;logback的使用" />
     <MESSAGE value="feat: &#10;修改gitignore文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: &#10;修改gitignore文件" />
+    <MESSAGE value="feat: &#10;整合aop记录日志" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: &#10;整合aop记录日志" />
   </component>
 </project>

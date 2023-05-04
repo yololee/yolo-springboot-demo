@@ -12,6 +12,7 @@
         <module>demo-properties</module>
         <module>demo-logback</module>
         <module>demo-log-aop</module>
+        <module>demo-exception-handler</module>
     </modules>
 
     <packaging>pom</packaging>
