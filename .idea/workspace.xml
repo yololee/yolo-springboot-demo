@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: &#10;读取配置文件的五种方法" />
+    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: &#10;提交gitignore文件">
+      <change afterPath="$PROJECT_DIR$/demo-logback/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-logback/src/main/java/com/yolo/logback/DemoLogbackApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-logback/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-logback/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-logback/src/test/java/com/yolo/logback/DemoLogbackApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/demo-logback/error.created_on_2023-05-04.part_0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,13 +41,9 @@
       <MavenGeneralSettings>
         <option name="localRepository" value="$PROJECT_DIR$/../../maven/repository" />
         <option name="mavenHome" value="$PROJECT_DIR$/../../maven/apache-maven-3.8.7" />
+        <option name="useMavenConfig" value="true" />
         <option name="userSettingsFile" value="$PROJECT_DIR$/../../maven/apache-maven-3.8.7/conf/settings.xml" />
       </MavenGeneralSettings>
-    </option>
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="workspaceImportEnabled" value="true" />
-      </MavenImportingSettings>
     </option>
   </component>
   <component name="ProjectId" id="2P2xyUwvwD703sCDzwichirygy8" />
@@ -49,6 +56,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -57,13 +65,13 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-properties",
+    "last_opened_file_path": "/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-logback/src/main/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "settings.editor.selected.configurable": "vcs.Git",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -72,10 +80,24 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/demo-logback/src/main/resources" />
       <recent name="$PROJECT_DIR$/demo-properties" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.DemoLogbackApplication">
+    <configuration name="DemoLogbackApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="demo-logback" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.logback.DemoLogbackApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yolo.logback.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DemoPropertiesApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="demo-properties" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.properties.DemoPropertiesApplication" />
@@ -91,6 +113,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.DemoLogbackApplication" />
         <item itemvalue="Spring Boot.DemoPropertiesApplication" />
       </list>
     </recent_temporary>
@@ -109,6 +132,7 @@
       <workItem from="1682669233044" duration="1624000" />
       <workItem from="1682672995004" duration="684000" />
       <workItem from="1683162367405" duration="4637000" />
+      <workItem from="1683167110973" duration="5392000" />
     </task>
     <task id="LOCAL-00001" summary="feat: &#10;&#10;初始化依赖">
       <created>1682669417869</created>
@@ -138,7 +162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683166749952</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="feat: &#10;提交gitignore文件">
+      <created>1683167162436</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1683167162436</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -158,9 +189,11 @@
   <component name="VcsManagerConfiguration">
     <ignored-roots>
       <path value="$PROJECT_DIR$/demo-properties" />
+      <path value="$PROJECT_DIR$/demo-logback" />
     </ignored-roots>
     <MESSAGE value="feat: &#10;&#10;初始化依赖" />
     <MESSAGE value="feat: &#10;读取配置文件的五种方法" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: &#10;读取配置文件的五种方法" />
+    <MESSAGE value="feat: &#10;提交gitignore文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: &#10;提交gitignore文件" />
   </component>
 </project>
