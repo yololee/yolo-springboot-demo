@@ -1,0 +1,8 @@
+application:
+  name: prod环境 @artifactId@
+  version: prod环境 @version@
+developer:
+  name: dev环境 yolo
+  website: dev环境 https://gitee.com/huanglei1111
+  qq: dev环境 123123
+  phone-number: dev环境 123123
