@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: &#10;对swagger和knife4j的使用">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: &#10;自定义注解使用aop的方式对操作日志进行异步保存">
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-exception-handler/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-log-aop/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +69,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-login-operation-log/src/main/resources/mapper",
+    "last_opened_file_path": "/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-login-operation-log",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -89,11 +85,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/demo-login-operation-log" />
       <recent name="$PROJECT_DIR$/demo-login-operation-log/src/main/resources/mapper" />
       <recent name="$PROJECT_DIR$/demo-login-operation-log/src/main/resources" />
       <recent name="$PROJECT_DIR$/demo-login-operation-log/src/main/java/com/yolo/log" />
       <recent name="$PROJECT_DIR$/demo-login-operation-log/src/main/java/com/yolo/log/common" />
-      <recent name="$PROJECT_DIR$/demo-exception-handler" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/demo-login-operation-log/src/main/resources/mybatis" />
@@ -208,7 +204,7 @@
       <workItem from="1683162367405" duration="4637000" />
       <workItem from="1683167110973" duration="7041000" />
       <workItem from="1683181292637" duration="9611000" />
-      <workItem from="1683248236607" duration="15133000" />
+      <workItem from="1683248236607" duration="15448000" />
     </task>
     <task id="LOCAL-00001" summary="feat: &#10;&#10;初始化依赖">
       <created>1682669417869</created>
@@ -280,7 +276,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683192897909</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="feat: &#10;自定义注解使用aop的方式对操作日志进行异步保存">
+      <created>1683273690879</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1683273690879</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -310,6 +313,8 @@
     <MESSAGE value="feat: &#10;整合aop记录日志" />
     <MESSAGE value="feat: &#10;全局异常处理" />
     <MESSAGE value="feat: &#10;对swagger和knife4j的使用" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: &#10;对swagger和knife4j的使用" />
+    <MESSAGE value="feat: &#10;自定义注解使用aop对操作日志进行记录" />
+    <MESSAGE value="feat: &#10;自定义注解使用aop的方式对操作日志进行异步保存" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: &#10;自定义注解使用aop的方式对操作日志进行异步保存" />
   </component>
 </project>
