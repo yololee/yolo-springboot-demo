@@ -1,0 +1,19 @@
+spring:
+    #DataSource数据源
+    datasource:
+        url: jdbc:mysql://localhost:3306/test?useSSL=false&amp
+        username: root
+        password: root
+        driver-class-name: com.mysql.jdbc.Driver
+#MyBatis配置
+mybatis:
+    type-aliases-package: com.yolo.log.pojo #别名定义
+    configuration:
+        log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #指定 MyBatis 所用日志的具体实现，未指定时将自动查找
+        map-underscore-to-camel-case: true #开启自动驼峰命名规则（camel case）映射
+        lazy-loading-enabled: true #开启延时加载开关
+        aggressive-lazy-loading: false #将积极加载改为消极加载（即按需加载）,默认值就是false
+        lazy-load-trigger-methods: "" #阻挡不相干的操作触发，实现懒加载
+        cache-enabled: true #打开全局缓存开关（二级环境），默认值就是true
+    mapper-locations: classpath:mybatis/mapper/*.xml  # 加载映射配置文件
+#    config-location: classpath:mybatis/mybatis-config.xml   # 加载核心配置文件
