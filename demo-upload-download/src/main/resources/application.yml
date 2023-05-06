@@ -1,7 +1,7 @@
 # 项目相关配置
 yolo:
   # 文件路径 示例（ Windows配置D:/ruoyi/uploadPath，Linux配置 /home/ruoyi/uploadPath）
-  profile: demo-login-operation-log/uploadPath
+  profile: demo-upload-download/uploadPath
   # 获取ip地址开关
   addressEnabled: false
 
@@ -33,8 +33,6 @@ spring:
   jackson:
     time-zone: GMT+8
     date-format: yyyy-MM-dd HH:mm:ss
-  profiles:
-    active: dev
   # 文件上传
   servlet:
     multipart:
@@ -42,4 +40,3 @@ spring:
       max-file-size:  10MB
       # 设置总上传的文件大小
       max-request-size:  20MB
-

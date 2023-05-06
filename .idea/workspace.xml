@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: &#10;自定义注解使用aop的方式对操作日志进行异步保存">
+    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: &#10;springboot-日志管理(登录日志，操作日志)">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-login-operation-log/src/main/java/com/yolo/log/config/YoloConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-login-operation-log/src/main/java/com/yolo/log/config/YoloConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-login-operation-log/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-login-operation-log/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-login-operation-log/src/test/java/com/yolo/log/DemoLoginOperationLogApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-login-operation-log/src/test/java/com/yolo/log/DemoLoginOperationLogApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,14 +74,14 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-login-operation-log",
+    "last_opened_file_path": "/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-upload-download/src/main/java/com/yolo/file/util",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "vcs.Git",
-    "spring.configuration.checksum": "266b42eaef3e28253fdcdef1be0a399f",
+    "spring.configuration.checksum": "e5d840aa5866803598ad8ff519f4dc95",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -85,24 +90,24 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/demo-upload-download/src/main/java/com/yolo/file/util" />
       <recent name="$PROJECT_DIR$/demo-login-operation-log" />
       <recent name="$PROJECT_DIR$/demo-login-operation-log/src/main/resources/mapper" />
       <recent name="$PROJECT_DIR$/demo-login-operation-log/src/main/resources" />
       <recent name="$PROJECT_DIR$/demo-login-operation-log/src/main/java/com/yolo/log" />
-      <recent name="$PROJECT_DIR$/demo-login-operation-log/src/main/java/com/yolo/log/common" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/demo-login-operation-log/src/main/resources/mybatis" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.yolo.file.util" />
+      <recent name="com.yolo.file.common" />
+      <recent name="com.yolo.file.config" />
+      <recent name="com.yolo.file.controller" />
       <recent name="com.yolo.log.manager" />
-      <recent name="com.yolo.log.util" />
-      <recent name="com.yolo.log.config" />
-      <recent name="com.yolo.log.common" />
-      <recent name="com.yolo.log.aspect" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.DemoLoginOperationLogApplication">
+  <component name="RunManager" selected="Spring Boot.DemoUploadDownloadApplication">
     <configuration name="DemoLoginOperationLogApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo-login-operation-log" />
       <extension name="coverage">
@@ -165,12 +170,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DemoPropertiesApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="demo-properties" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.properties.DemoPropertiesApplication" />
+    <configuration name="DemoUploadDownloadApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="demo-upload-download" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.file.DemoUploadDownloadApplication" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.yolo.properties.*" />
+          <option name="PATTERN" value="com.yolo.file.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -180,11 +185,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.DemoLoginOperationLogApplication" />
+        <item itemvalue="Spring Boot.DemoUploadDownloadApplication" />
         <item itemvalue="JUnit.DemoLoginOperationLogApplicationTests.contextLoads" />
+        <item itemvalue="Spring Boot.DemoLoginOperationLogApplication" />
         <item itemvalue="Spring Boot.DemoExceptionHandlerApplication" />
         <item itemvalue="Spring Boot.DemoLogbackApplication" />
-        <item itemvalue="Spring Boot.DemoPropertiesApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -204,7 +209,8 @@
       <workItem from="1683162367405" duration="4637000" />
       <workItem from="1683167110973" duration="7041000" />
       <workItem from="1683181292637" duration="9611000" />
-      <workItem from="1683248236607" duration="15448000" />
+      <workItem from="1683248236607" duration="16092000" />
+      <workItem from="1683274504421" duration="10257000" />
     </task>
     <task id="LOCAL-00001" summary="feat: &#10;&#10;初始化依赖">
       <created>1682669417869</created>
@@ -283,7 +289,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683273690879</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="feat: &#10;springboot-日志管理(登录日志，操作日志)">
+      <created>1683273862922</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1683273862922</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -315,6 +328,28 @@
     <MESSAGE value="feat: &#10;对swagger和knife4j的使用" />
     <MESSAGE value="feat: &#10;自定义注解使用aop对操作日志进行记录" />
     <MESSAGE value="feat: &#10;自定义注解使用aop的方式对操作日志进行异步保存" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: &#10;自定义注解使用aop的方式对操作日志进行异步保存" />
+    <MESSAGE value="feat: &#10;springboot-日志管理(登录日志，操作日志)" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: &#10;springboot-日志管理(登录日志，操作日志)" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/demo-upload-download/src/main/java/com/yolo/file/util/FileUploadUtils.java</url>
+          <line>89</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/demo-upload-download/src/main/java/com/yolo/file/util/FileUploadUtils.java</url>
+          <line>112</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/demo-upload-download/src/main/java/com/yolo/file/util/FileUploadUtils.java</url>
+          <line>123</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

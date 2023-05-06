@@ -16,6 +16,7 @@
         <module>demo-swagger</module>
         <module>demo-knife4j</module>
         <module>demo-login-operation-log</module>
+        <module>demo-upload-download</module>
     </modules>
 
     <packaging>pom</packaging>
