@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: &#10;springboot-日志管理(登录日志，操作日志)">
+    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: &#10;整合mybatis使用xml、注解">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-login-operation-log/src/main/java/com/yolo/log/config/YoloConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-login-operation-log/src/main/java/com/yolo/log/config/YoloConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-login-operation-log/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-login-operation-log/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-login-operation-log/src/test/java/com/yolo/log/DemoLoginOperationLogApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-login-operation-log/src/test/java/com/yolo/log/DemoLoginOperationLogApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,14 +71,14 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-upload-download/src/main/java/com/yolo/file/util",
+    "last_opened_file_path": "/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-orm-mybatis",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "vcs.Git",
-    "spring.configuration.checksum": "e5d840aa5866803598ad8ff519f4dc95",
+    "spring.configuration.checksum": "30a8ee32c9bba075cc782d99f7f1ab41",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -90,49 +87,84 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/demo-orm-mybatis" />
+      <recent name="$PROJECT_DIR$/demo-orm-mybatis-page/src/main/java/com/yolo/mybatis/page" />
+      <recent name="$PROJECT_DIR$/demo-orm-mybatis-page/src/main/resources" />
       <recent name="$PROJECT_DIR$/demo-upload-download/src/main/java/com/yolo/file/util" />
       <recent name="$PROJECT_DIR$/demo-login-operation-log" />
-      <recent name="$PROJECT_DIR$/demo-login-operation-log/src/main/resources/mapper" />
-      <recent name="$PROJECT_DIR$/demo-login-operation-log/src/main/resources" />
-      <recent name="$PROJECT_DIR$/demo-login-operation-log/src/main/java/com/yolo/log" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/demo-login-operation-log/src/main/resources/mybatis" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.yolo.mybatis.page.dto" />
+      <recent name="com.yolo.mybatis.page.util" />
       <recent name="com.yolo.file.util" />
       <recent name="com.yolo.file.common" />
       <recent name="com.yolo.file.config" />
-      <recent name="com.yolo.file.controller" />
-      <recent name="com.yolo.log.manager" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.DemoUploadDownloadApplication">
-    <configuration name="DemoLoginOperationLogApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo-login-operation-log" />
+  <component name="RunManager" selected="Spring Boot.DemoOrmMybatisPageApplication">
+    <configuration name="RoleMapperXmlTest.deleteById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo-orm-mybatis" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.yolo.log.*" />
+          <option name="PATTERN" value="com.yolo.mybatis.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.yolo.log" />
-      <option name="MAIN_CLASS_NAME" value="com.yolo.log.DemoLoginOperationLogApplicationTests" />
-      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="PACKAGE_NAME" value="com.yolo.mybatis" />
+      <option name="MAIN_CLASS_NAME" value="com.yolo.mybatis.RoleMapperXmlTest" />
+      <option name="METHOD_NAME" value="deleteById" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DemoExceptionHandlerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="demo-exception-handler" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.exception.handler.DemoExceptionHandlerApplication" />
+    <configuration name="RoleMapperXmlTest.selectById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo-orm-mybatis" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.yolo.exception.handler.*" />
+          <option name="PATTERN" value="com.yolo.mybatis.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.yolo.mybatis" />
+      <option name="MAIN_CLASS_NAME" value="com.yolo.mybatis.RoleMapperXmlTest" />
+      <option name="METHOD_NAME" value="selectById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RoleMapperXmlTest.selectByIds" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo-orm-mybatis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yolo.mybatis.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.yolo.mybatis" />
+      <option name="MAIN_CLASS_NAME" value="com.yolo.mybatis.RoleMapperXmlTest" />
+      <option name="METHOD_NAME" value="selectByIds" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RoleMapperXmlTest.selectPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo-orm-mybatis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yolo.mybatis.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.yolo.mybatis" />
+      <option name="MAIN_CLASS_NAME" value="com.yolo.mybatis.RoleMapperXmlTest" />
+      <option name="METHOD_NAME" value="selectPage" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -144,38 +176,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DemoLogbackApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="demo-logback" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.logback.DemoLogbackApplication" />
+    <configuration name="DemoOrmMybatisPageApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="demo-orm-mybatis-page" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.mybatis.page.DemoOrmMybatisPageApplication" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.yolo.logback.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DemoLoginOperationLogApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="demo-login-operation-log" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.log.DemoLoginOperationLogApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.yolo.log.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DemoUploadDownloadApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="demo-upload-download" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.file.DemoUploadDownloadApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.yolo.file.*" />
+          <option name="PATTERN" value="com.yolo.mybatis.page.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -185,11 +191,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.DemoUploadDownloadApplication" />
-        <item itemvalue="JUnit.DemoLoginOperationLogApplicationTests.contextLoads" />
-        <item itemvalue="Spring Boot.DemoLoginOperationLogApplication" />
-        <item itemvalue="Spring Boot.DemoExceptionHandlerApplication" />
-        <item itemvalue="Spring Boot.DemoLogbackApplication" />
+        <item itemvalue="Spring Boot.DemoOrmMybatisPageApplication" />
+        <item itemvalue="JUnit.RoleMapperXmlTest.deleteById" />
+        <item itemvalue="JUnit.RoleMapperXmlTest.selectPage" />
+        <item itemvalue="JUnit.RoleMapperXmlTest.selectByIds" />
+        <item itemvalue="JUnit.RoleMapperXmlTest.selectById" />
       </list>
     </recent_temporary>
   </component>
@@ -210,7 +216,8 @@
       <workItem from="1683167110973" duration="7041000" />
       <workItem from="1683181292637" duration="9611000" />
       <workItem from="1683248236607" duration="16092000" />
-      <workItem from="1683274504421" duration="10257000" />
+      <workItem from="1683274504421" duration="11229000" />
+      <workItem from="1683340703552" duration="23526000" />
     </task>
     <task id="LOCAL-00001" summary="feat: &#10;&#10;初始化依赖">
       <created>1682669417869</created>
@@ -296,7 +303,21 @@
       <option name="project" value="LOCAL" />
       <updated>1683273862922</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="feat: &#10;本地文件上传下载">
+      <created>1683340042171</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1683340042171</updated>
+    </task>
+    <task id="LOCAL-00014" summary="feat: &#10;整合mybatis使用xml、注解">
+      <created>1683508587744</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1683508587744</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -329,7 +350,9 @@
     <MESSAGE value="feat: &#10;自定义注解使用aop对操作日志进行记录" />
     <MESSAGE value="feat: &#10;自定义注解使用aop的方式对操作日志进行异步保存" />
     <MESSAGE value="feat: &#10;springboot-日志管理(登录日志，操作日志)" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: &#10;springboot-日志管理(登录日志，操作日志)" />
+    <MESSAGE value="feat: &#10;本地文件上传下载" />
+    <MESSAGE value="feat: &#10;整合mybatis使用xml、注解" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: &#10;整合mybatis使用xml、注解" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

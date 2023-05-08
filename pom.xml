@@ -18,6 +18,7 @@
         <module>demo-login-operation-log</module>
         <module>demo-upload-download</module>
         <module>demo-orm-mybatis</module>
+        <module>demo-orm-mybatis-page</module>
     </modules>
 
     <packaging>pom</packaging>
