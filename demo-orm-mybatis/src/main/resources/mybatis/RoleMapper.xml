@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yolo.mybatis.mapper.RoleMapper">
+
+
+    <resultMap type="Role" id="roleResult">
+        <id     property="id"      column="role_id"      />
+        <result property="roleName"    column="role_name"    />
+        <result property="roleSort"     column="role_sort"     />
+        <result property="status"   column="status"   />
+        <result property="remark"    column="remark"    />
+    </resultMap>
+
+    <sql id="roleVO">
+        select role_id, role_name, role_sort, status, remark from orm_role
+    </sql>
+
+    <select id="selectAll" resultMap="roleResult">
+        <include refid="roleVO"/>
+    </select>
+
+    <select id="selectById" resultMap="roleResult">
+        delete orm_role
+        <where>
+            role_id =#{id}
+        </where>
+    </select>
+
+
+    <select id="selectByIds" resultMap="roleResult">
+        delete orm_role
+        <where>
+            role_id in
+            <foreach collection="ids" item="id" index="index" open="(" close=")" separator=",">
+                <if test="id != null">#{id}</if>
+            </foreach>
+        </where>
+    </select>
+
+    <select id="selectPage" resultMap="roleResult">
+        <include refid="roleVO"/>
+        <where>
+            <if test="roleName != null and roleName != '' ">
+                and role_name like concat('%',#{roleName},'%')
+            </if>
+            <if test="status != null and status != '' ">
+                and status =#{item.roleName}
+            </if>
+        </where>
+    </select>
+
+    <delete id="deleteById" parameterType="long">
+        delete orm_role where role_id=#{id}
+    </delete>
+
+    <delete id="batchDelete">
+        delete orm_role
+        <where>
+            role_id in
+            <foreach collection="ids" item="id" index="index" open="(" close=")" separator=",">
+                #{id}
+            </foreach>
+        </where>
+    </delete>
+
+
+    <!--
+     * useGeneratedKeys属性表示使用自增主键
+     * keyProperty属性是Java包装类对象的属性名
+     * keyColumn属性是mysql表中的字段名
+    -->
+    <insert id="save" parameterType="com.yolo.mybatis.pojo.Role" useGeneratedKeys="true" keyProperty="id" keyColumn="role_id">
+        insert into orm_role (
+        <if test="roleName != null and roleName != '' ">role_name,</if>
+        <if test="status != null and status != '' ">status,</if>
+        <if test="remark != null and remark != '' ">remark,</if>
+        role_sort
+        )values(
+        <if test="roleName != null and roleName != ''">#{roleName},</if>
+        <if test="status != null and status != ''">#{status},</if>
+        <if test="remark != null and remark != ''">#{remark},</if>
+        #{roleSort}
+        )
+    </insert>
+
+    <insert id="insertList" useGeneratedKeys="true" keyProperty="id" keyColumn="role_id" parameterType="List">
+        insert into orm_role (role_name,status ,remark,role_sort) values
+        <foreach collection="roleList" item="role" separator="," index="index">
+            (<if test="role.roleName != null and role.roleName != '' ">#{role.roleName},</if>
+            <if test="role.status != null and role.status != '' "> #{role.status}, </if>
+            <if test="role.remark != null and role.remark != '' "> #{role.remark}, </if>
+            #{role.roleSort})
+        </foreach>
+    </insert>
+
+
+    <update id="updateBatchStateById">
+        update orm_role 
+        <set>
+            <if test="status != null and status != '' "> status = #{status}</if>
+        </set>
+        <where>
+            role_id in
+            <foreach collection="ids" item="id" index="index" open="(" separator="," close=")">
+                #{id}
+            </foreach>
+        </where>
+    </update>
+
+    <update id="updateBatch" parameterType="List">
+        <foreach collection="roleList" item="role" separator=";">
+            update orm_role
+            <set>
+                <if test="role.status != null and role.status != '' "> status = #{role.status},</if>
+                <if test="role.remark != null and role.remark != '' "> remark = #{role.remark},</if>
+            </set>
+            <where>
+                role_id = #{role.id}
+            </where>
+        </foreach>
+    </update>
+
+
+
+
+</mapper>
+

@@ -17,6 +17,7 @@
         <module>demo-knife4j</module>
         <module>demo-login-operation-log</module>
         <module>demo-upload-download</module>
+        <module>demo-orm-mybatis</module>
     </modules>
 
     <packaging>pom</packaging>
