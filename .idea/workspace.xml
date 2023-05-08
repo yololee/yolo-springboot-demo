@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: &#10;整合mybatis使用xml、注解">
+    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: &#10;添加资源映射配置完成本地文件下载">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
@@ -20,6 +20,9 @@
       <option value="module" />
     </option>
   </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -33,6 +36,9 @@
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="5" />
+  </component>
+  <component name="JRebelWorkspace">
+    <option name="jrebelEnabledAutocompile" value="true" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -71,7 +77,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-orm-mybatis",
+    "last_opened_file_path": "/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-tree/src/main/resources/mybatis",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -87,83 +93,67 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/demo-tree/src/main/resources/mybatis" />
+      <recent name="$PROJECT_DIR$/demo-tree/src/main/resources" />
+      <recent name="$PROJECT_DIR$/demo-upload-download" />
+      <recent name="$PROJECT_DIR$/demo-orm-mybatis-page" />
       <recent name="$PROJECT_DIR$/demo-orm-mybatis" />
-      <recent name="$PROJECT_DIR$/demo-orm-mybatis-page/src/main/java/com/yolo/mybatis/page" />
-      <recent name="$PROJECT_DIR$/demo-orm-mybatis-page/src/main/resources" />
-      <recent name="$PROJECT_DIR$/demo-upload-download/src/main/java/com/yolo/file/util" />
-      <recent name="$PROJECT_DIR$/demo-login-operation-log" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/demo-login-operation-log/src/main/resources/mybatis" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.yolo.mybatis.page.dto" />
-      <recent name="com.yolo.mybatis.page.util" />
+      <recent name="com.yolo.tree.mapper" />
+      <recent name="com.yolo.tree.pojo" />
       <recent name="com.yolo.file.util" />
-      <recent name="com.yolo.file.common" />
       <recent name="com.yolo.file.config" />
+      <recent name="com.yolo.mybatis.page.dto" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.DemoOrmMybatisPageApplication">
-    <configuration name="RoleMapperXmlTest.deleteById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo-orm-mybatis" />
+  <component name="RunManager" selected="JUnit.DemoTreeApplicationTests.testTree2">
+    <configuration name="DemoTreeApplicationTests.testTree" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo-tree" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.yolo.mybatis.*" />
+          <option name="PATTERN" value="com.yolo.tree.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.yolo.mybatis" />
-      <option name="MAIN_CLASS_NAME" value="com.yolo.mybatis.RoleMapperXmlTest" />
-      <option name="METHOD_NAME" value="deleteById" />
+      <option name="PACKAGE_NAME" value="com.yolo.tree" />
+      <option name="MAIN_CLASS_NAME" value="com.yolo.tree.DemoTreeApplicationTests" />
+      <option name="METHOD_NAME" value="testTree" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RoleMapperXmlTest.selectById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo-orm-mybatis" />
+    <configuration name="DemoTreeApplicationTests.testTree1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo-tree" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.yolo.mybatis.*" />
+          <option name="PATTERN" value="com.yolo.tree.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.yolo.mybatis" />
-      <option name="MAIN_CLASS_NAME" value="com.yolo.mybatis.RoleMapperXmlTest" />
-      <option name="METHOD_NAME" value="selectById" />
+      <option name="PACKAGE_NAME" value="com.yolo.tree" />
+      <option name="MAIN_CLASS_NAME" value="com.yolo.tree.DemoTreeApplicationTests" />
+      <option name="METHOD_NAME" value="testTree1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RoleMapperXmlTest.selectByIds" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo-orm-mybatis" />
+    <configuration name="DemoTreeApplicationTests.testTree2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo-tree" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.yolo.mybatis.*" />
+          <option name="PATTERN" value="com.yolo.tree.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.yolo.mybatis" />
-      <option name="MAIN_CLASS_NAME" value="com.yolo.mybatis.RoleMapperXmlTest" />
-      <option name="METHOD_NAME" value="selectByIds" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RoleMapperXmlTest.selectPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo-orm-mybatis" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.yolo.mybatis.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.yolo.mybatis" />
-      <option name="MAIN_CLASS_NAME" value="com.yolo.mybatis.RoleMapperXmlTest" />
-      <option name="METHOD_NAME" value="selectPage" />
+      <option name="PACKAGE_NAME" value="com.yolo.tree" />
+      <option name="MAIN_CLASS_NAME" value="com.yolo.tree.DemoTreeApplicationTests" />
+      <option name="METHOD_NAME" value="testTree2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -189,13 +179,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DemoUploadDownloadApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="demo-upload-download" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.file.DemoUploadDownloadApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yolo.file.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DemoTreeApplicationTests.testTree2" />
+        <item itemvalue="JUnit.DemoTreeApplicationTests.testTree1" />
+        <item itemvalue="JUnit.DemoTreeApplicationTests.testTree" />
+        <item itemvalue="Spring Boot.DemoUploadDownloadApplication" />
         <item itemvalue="Spring Boot.DemoOrmMybatisPageApplication" />
-        <item itemvalue="JUnit.RoleMapperXmlTest.deleteById" />
-        <item itemvalue="JUnit.RoleMapperXmlTest.selectPage" />
-        <item itemvalue="JUnit.RoleMapperXmlTest.selectByIds" />
-        <item itemvalue="JUnit.RoleMapperXmlTest.selectById" />
       </list>
     </recent_temporary>
   </component>
@@ -217,7 +220,7 @@
       <workItem from="1683181292637" duration="9611000" />
       <workItem from="1683248236607" duration="16092000" />
       <workItem from="1683274504421" duration="11229000" />
-      <workItem from="1683340703552" duration="23526000" />
+      <workItem from="1683340703552" duration="40688000" />
     </task>
     <task id="LOCAL-00001" summary="feat: &#10;&#10;初始化依赖">
       <created>1682669417869</created>
@@ -317,7 +320,21 @@
       <option name="project" value="LOCAL" />
       <updated>1683508587744</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="feat: &#10;整合mybatis分页插件pagehelper">
+      <created>1683514302721</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1683514302721</updated>
+    </task>
+    <task id="LOCAL-00016" summary="feat: &#10;添加资源映射配置完成本地文件下载">
+      <created>1683528656073</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1683528656073</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -352,25 +369,17 @@
     <MESSAGE value="feat: &#10;springboot-日志管理(登录日志，操作日志)" />
     <MESSAGE value="feat: &#10;本地文件上传下载" />
     <MESSAGE value="feat: &#10;整合mybatis使用xml、注解" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: &#10;整合mybatis使用xml、注解" />
+    <MESSAGE value="feat: &#10;整合mybatis分页插件pagehelper" />
+    <MESSAGE value="feat: &#10;添加资源映射配置完成本地文件下载" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: &#10;添加资源映射配置完成本地文件下载" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/demo-upload-download/src/main/java/com/yolo/file/util/FileUploadUtils.java</url>
-          <line>89</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/demo-upload-download/src/main/java/com/yolo/file/util/FileUploadUtils.java</url>
-          <line>112</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/demo-upload-download/src/main/java/com/yolo/file/util/FileUploadUtils.java</url>
-          <line>123</line>
-          <option name="timeStamp" value="4" />
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/demo-tree/src/test/java/com/yolo/tree/DemoTreeApplicationTests.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="22" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

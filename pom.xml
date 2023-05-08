@@ -19,6 +19,7 @@
         <module>demo-upload-download</module>
         <module>demo-orm-mybatis</module>
         <module>demo-orm-mybatis-page</module>
+        <module>demo-tree</module>
     </modules>
 
     <packaging>pom</packaging>
