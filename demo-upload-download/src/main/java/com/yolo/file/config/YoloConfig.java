@@ -12,19 +12,19 @@ public class YoloConfig {
     /**
      * 上传路径
      */
-    private static String profile;
+    private static String fileUploadPath;
 
     /**
      * 获取地址开关
      */
     private static boolean addressEnabled;
 
-    public static String getProfile() {
-        return profile;
+    public static String getFileUploadPath() {
+        return fileUploadPath;
     }
 
-    public void setProfile(String profile) {
-        YoloConfig.profile = profile;
+    public void setFileUploadPath(String fileUploadPath) {
+        YoloConfig.fileUploadPath = fileUploadPath;
     }
 
     public static boolean isAddressEnabled() {
@@ -39,7 +39,7 @@ public class YoloConfig {
      * 获取导入上传路径
      */
     public static String getImportPath() {
-        return getProfile() + "/import";
+        return getFileUploadPath() + "/import";
     }
 
 
@@ -47,6 +47,6 @@ public class YoloConfig {
      * 获取上传路径
      */
     public static String getUploadPath() {
-        return getProfile() + "/upload";
+        return getFileUploadPath() + "/upload";
     }
 }

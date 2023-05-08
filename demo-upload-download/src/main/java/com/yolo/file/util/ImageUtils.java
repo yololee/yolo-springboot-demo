@@ -64,7 +64,7 @@ public class ImageUtils {
                 in = urlConnection.getInputStream();
             } else {
                 // 本机地址
-                String localPath = YoloConfig.getProfile();
+                String localPath = YoloConfig.getFileUploadPath();
                 String downloadPath = localPath + StringUtils.substringAfter(url, Constants.RESOURCE_PREFIX);
                 in = Files.newInputStream(Paths.get(downloadPath));
             }

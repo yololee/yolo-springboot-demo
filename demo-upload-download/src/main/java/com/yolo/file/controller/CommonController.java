@@ -2,11 +2,13 @@ package com.yolo.file.controller;
 
 import com.yolo.file.common.AjaxResult;
 import com.yolo.file.common.Constants;
+import com.yolo.file.config.ServerConfig;
 import com.yolo.file.config.YoloConfig;
 import com.yolo.file.util.FileUploadUtils;
 import com.yolo.file.util.FileUtils;
 import com.yolo.file.util.StringUtils;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -27,6 +29,9 @@ import java.util.List;
 @Slf4j
 public class CommonController {
 
+    @Autowired
+    private ServerConfig serverConfig;
+
     /**
      * 通用上传请求（单个）
      */
@@ -38,7 +43,9 @@ public class CommonController {
             String filePath = YoloConfig.getUploadPath();
             // 上传并返回新文件名称
             String fileName = FileUploadUtils.upload(filePath, file);
+            String url = serverConfig.getUrl() + fileName;
             AjaxResult ajax = AjaxResult.success();
+            ajax.put("url", url);
             ajax.put("fileName", fileName);
             ajax.put("newFileName", FileUtils.getName(fileName));
             return ajax;
@@ -56,15 +63,19 @@ public class CommonController {
         try {
             // 上传文件路径
             String filePath = YoloConfig.getUploadPath();
+            List<String> urls = new ArrayList<>();
             List<String> fileNames = new ArrayList<>();
             List<String> newFileNames = new ArrayList<>();
             for (MultipartFile file : files) {
                 // 上传并返回新文件名称
                 String fileName = FileUploadUtils.upload(filePath, file);
+                String url = serverConfig.getUrl() + fileName;
+                urls.add(url);
                 fileNames.add(fileName);
                 newFileNames.add(FileUtils.getName(fileName));
             }
             AjaxResult ajax = AjaxResult.success();
+            ajax.put("urls", StringUtils.join(urls, ","));
             ajax.put("fileNames", StringUtils.join(fileNames, ","));
             ajax.put("newFileNames", StringUtils.join(newFileNames, ","));
             return ajax;
@@ -84,7 +95,7 @@ public class CommonController {
                 throw new Exception(StringUtils.format("资源文件({})非法，不允许下载。 ", resource));
             }
             // 本地资源路径
-            String localPath = YoloConfig.getProfile();
+            String localPath = YoloConfig.getFileUploadPath();
             // 数据库资源地址
             String downloadPath = localPath + StringUtils.substringAfter(resource, Constants.RESOURCE_PREFIX);
             // 下载名称

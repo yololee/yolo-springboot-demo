@@ -31,7 +31,7 @@ public class FileUploadUtils {
     /**
      * 默认上传的地址
      */
-    private static String defaultBaseDir = YoloConfig.getProfile();
+    private static String defaultBaseDir = YoloConfig.getFileUploadPath();
 
     public static void setDefaultBaseDir(String defaultBaseDir) {
         FileUploadUtils.defaultBaseDir = defaultBaseDir;
@@ -121,7 +121,7 @@ public class FileUploadUtils {
     }
 
     public static final String getPathFileName(String uploadDir, String fileName) throws IOException {
-        int dirLastIndex = YoloConfig.getProfile().length() + 1;
+        int dirLastIndex = YoloConfig.getFileUploadPath().length() + 1;
         String currentDir = StringUtils.substring(uploadDir, dirLastIndex);
         return Constants.RESOURCE_PREFIX + "/" + currentDir + "/" + fileName;
     }
