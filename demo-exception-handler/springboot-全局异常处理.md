@@ -48,7 +48,7 @@ public class MyExceptionHandler {
 ### 自定义状态码
 
 ```java
-package com.yolo.exception.handler.constant;
+package com.yolo.exception.handler.common;
 
 import lombok.Getter;
 
@@ -85,7 +85,7 @@ public enum Status {
 ### 自定义异常类
 
 ```java
-import com.yolo.exception.handler.constant.Status;
+import com.yolo.exception.handler.common.Status;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
@@ -113,7 +113,7 @@ public class BaseException extends RuntimeException {
 ```
 
 ```java
-import com.yolo.exception.handler.constant.Status;
+import com.yolo.exception.handler.common.Status;
 import lombok.Getter;
 
 /**
@@ -133,12 +133,12 @@ public class JsonException extends BaseException {
 ```
 
 ```java
-import com.yolo.exception.handler.constant.Status;
+import com.yolo.exception.handler.common.Status;
 
 /**
  * 空指针异常
  */
-public class NullPointerException extends BaseException{
+public class NullPointerException extends BaseException {
 
     public NullPointerException(Status status) {
         super(status);
@@ -156,7 +156,7 @@ public class NullPointerException extends BaseException{
 package com.yolo.exception.handler.model;
 
 
-import com.yolo.exception.handler.constant.Status;
+import com.yolo.exception.handler.common.Status;
 import com.yolo.exception.handler.exception.BaseException;
 import lombok.Data;
 
@@ -285,13 +285,11 @@ package com.yolo.exception.handler.handler;
 
 import com.yolo.exception.handler.exception.JsonException;
 import com.yolo.exception.handler.exception.NullPointerException;
-import com.yolo.exception.handler.model.ApiResponse;
+import com.yolo.exception.handler.common.ApiResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
-
-import javax.servlet.http.HttpServletRequest;
 
 /**
  * 统一异常处理
@@ -321,8 +319,8 @@ public class GlobalExceptionHandler {
      */
     @ExceptionHandler(value = NullPointerException.class)
     @ResponseBody
-    public ApiResponse exceptionHandler(NullPointerException e){
-        log.error("发生空指针异常！原因是:",e);
+    public ApiResponse exceptionHandler(NullPointerException e) {
+        log.error("发生空指针异常！原因是:", e);
         return ApiResponse.ofException(e);
     }
 
@@ -333,9 +331,10 @@ public class GlobalExceptionHandler {
 
 ```java
 package com.yolo.exception.handler.controller;
-import com.yolo.exception.handler.constant.Status;
+
+import com.yolo.exception.handler.common.ApiResponse;
+import com.yolo.exception.handler.common.Status;
 import com.yolo.exception.handler.exception.JsonException;
-import com.yolo.exception.handler.model.ApiResponse;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;

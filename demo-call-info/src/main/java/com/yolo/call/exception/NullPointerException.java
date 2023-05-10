@@ -1,6 +1,7 @@
-package com.yolo.exception.handler.exception;
+package com.yolo.call.exception;
 
-import com.yolo.exception.handler.common.Status;
+
+import com.yolo.call.common.Status;
 
 /**
  * 空指针异常

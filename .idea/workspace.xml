@@ -4,9 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: &#10;添加资源映射配置完成本地文件下载">
+    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: 自定义注解实现通用树结构的使用文档">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-call-info/src/main/java/com/yolo/call/common/ApiResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-call-info/src/main/java/com/yolo/call/common/ApiResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-call-info/src/main/java/com/yolo/call/common/Status.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-call-info/src/main/java/com/yolo/call/common/Status.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-call-info/src/main/java/com/yolo/call/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-call-info/src/main/java/com/yolo/call/controller/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-call-info/src/main/java/com/yolo/call/exception/BaseException.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-call-info/src/main/java/com/yolo/call/exception/BaseException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-call-info/src/main/java/com/yolo/call/exception/JsonException.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-call-info/src/main/java/com/yolo/call/exception/JsonException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-call-info/src/main/java/com/yolo/call/exception/NullPointerException.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-call-info/src/main/java/com/yolo/call/exception/NullPointerException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-exception-handler/springboot-全局异常处理.md" beforeDir="false" afterPath="$PROJECT_DIR$/demo-exception-handler/springboot-全局异常处理.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-exception-handler/src/main/java/com/yolo/exception/handler/constant/Status.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-exception-handler/src/main/java/com/yolo/exception/handler/common/Status.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-exception-handler/src/main/java/com/yolo/exception/handler/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-exception-handler/src/main/java/com/yolo/exception/handler/controller/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-exception-handler/src/main/java/com/yolo/exception/handler/exception/BaseException.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-exception-handler/src/main/java/com/yolo/exception/handler/exception/BaseException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-exception-handler/src/main/java/com/yolo/exception/handler/exception/JsonException.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-exception-handler/src/main/java/com/yolo/exception/handler/exception/JsonException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-exception-handler/src/main/java/com/yolo/exception/handler/exception/NullPointerException.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-exception-handler/src/main/java/com/yolo/exception/handler/exception/NullPointerException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-exception-handler/src/main/java/com/yolo/exception/handler/handler/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-exception-handler/src/main/java/com/yolo/exception/handler/handler/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-exception-handler/src/main/java/com/yolo/exception/handler/model/ApiResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-exception-handler/src/main/java/com/yolo/exception/handler/common/ApiResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,6 +36,27 @@
   </component>
   <component name="CompilerWorkspaceConfiguration">
     <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/demo-call-info">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$/demo-call-info">
+          <activation />
+        </task>
+        <projects_view>
+          <option name="showIgnored" value="false" />
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -75,16 +110,17 @@
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "ToolWindowGradle.ShowToolbar": "false",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-tree/src/main/resources/mybatis",
+    "last_opened_file_path": "/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-call-info/src/main/java/com/yolo/call",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "vcs.Git",
-    "spring.configuration.checksum": "30a8ee32c9bba075cc782d99f7f1ab41",
+    "spring.configuration.checksum": "8bc2f412963eeb77dbc9cb485dc08992",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -93,24 +129,24 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/demo-call-info/src/main/java/com/yolo/call" />
+      <recent name="$PROJECT_DIR$/demo-tree" />
       <recent name="$PROJECT_DIR$/demo-tree/src/main/resources/mybatis" />
       <recent name="$PROJECT_DIR$/demo-tree/src/main/resources" />
       <recent name="$PROJECT_DIR$/demo-upload-download" />
-      <recent name="$PROJECT_DIR$/demo-orm-mybatis-page" />
-      <recent name="$PROJECT_DIR$/demo-orm-mybatis" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/demo-login-operation-log/src/main/resources/mybatis" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.yolo.call.aspect" />
       <recent name="com.yolo.tree.mapper" />
       <recent name="com.yolo.tree.pojo" />
       <recent name="com.yolo.file.util" />
       <recent name="com.yolo.file.config" />
-      <recent name="com.yolo.mybatis.page.dto" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DemoTreeApplicationTests.testTree2">
+  <component name="RunManager" selected="Spring Boot.DemoCallInfoApplication">
     <configuration name="DemoTreeApplicationTests.testTree" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo-tree" />
       <extension name="coverage">
@@ -159,22 +195,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DemoLogAopApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="demo-log-aop" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.logaop.DemoLogAopApplication" />
+    <configuration name="DemoCallInfoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="demo-call-info" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.call.DemoCallInfoApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yolo.call.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DemoOrmMybatisPageApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="demo-orm-mybatis-page" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.mybatis.page.DemoOrmMybatisPageApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.yolo.mybatis.page.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+    <configuration name="DemoLogAopApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="demo-log-aop" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.logaop.DemoLogAopApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -194,11 +230,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.DemoCallInfoApplication" />
         <item itemvalue="JUnit.DemoTreeApplicationTests.testTree2" />
         <item itemvalue="JUnit.DemoTreeApplicationTests.testTree1" />
         <item itemvalue="JUnit.DemoTreeApplicationTests.testTree" />
         <item itemvalue="Spring Boot.DemoUploadDownloadApplication" />
-        <item itemvalue="Spring Boot.DemoOrmMybatisPageApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -220,7 +256,8 @@
       <workItem from="1683181292637" duration="9611000" />
       <workItem from="1683248236607" duration="16092000" />
       <workItem from="1683274504421" duration="11229000" />
-      <workItem from="1683340703552" duration="40688000" />
+      <workItem from="1683340703552" duration="49214000" />
+      <workItem from="1683683019701" duration="4785000" />
     </task>
     <task id="LOCAL-00001" summary="feat: &#10;&#10;初始化依赖">
       <created>1682669417869</created>
@@ -334,7 +371,35 @@
       <option name="project" value="LOCAL" />
       <updated>1683528656073</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="feat: 自定义注解实现通用树结构工具类">
+      <created>1683538270397</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1683538270397</updated>
+    </task>
+    <task id="LOCAL-00018" summary="feat: 分页插件pagehelper的使用文档">
+      <created>1683538441821</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1683538441821</updated>
+    </task>
+    <task id="LOCAL-00019" summary="feat: 本地文件上传下载的使用文档">
+      <created>1683538473764</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1683538473764</updated>
+    </task>
+    <task id="LOCAL-00020" summary="feat: 自定义注解实现通用树结构的使用文档">
+      <created>1683538496768</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1683538496768</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -371,17 +436,10 @@
     <MESSAGE value="feat: &#10;整合mybatis使用xml、注解" />
     <MESSAGE value="feat: &#10;整合mybatis分页插件pagehelper" />
     <MESSAGE value="feat: &#10;添加资源映射配置完成本地文件下载" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: &#10;添加资源映射配置完成本地文件下载" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/demo-tree/src/test/java/com/yolo/tree/DemoTreeApplicationTests.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="feat: 自定义注解实现通用树结构工具类" />
+    <MESSAGE value="feat: 分页插件pagehelper的使用文档" />
+    <MESSAGE value="feat: 本地文件上传下载的使用文档" />
+    <MESSAGE value="feat: 自定义注解实现通用树结构的使用文档" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 自定义注解实现通用树结构的使用文档" />
   </component>
 </project>

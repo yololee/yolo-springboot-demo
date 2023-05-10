@@ -1,7 +1,7 @@
 package com.yolo.exception.handler.controller;
-import com.yolo.exception.handler.constant.Status;
+import com.yolo.exception.handler.common.Status;
 import com.yolo.exception.handler.exception.JsonException;
-import com.yolo.exception.handler.model.ApiResponse;
+import com.yolo.exception.handler.common.ApiResponse;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;

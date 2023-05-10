@@ -2,13 +2,11 @@ package com.yolo.exception.handler.handler;
 
 import com.yolo.exception.handler.exception.JsonException;
 import com.yolo.exception.handler.exception.NullPointerException;
-import com.yolo.exception.handler.model.ApiResponse;
+import com.yolo.exception.handler.common.ApiResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
-
-import javax.servlet.http.HttpServletRequest;
 
 /**
  * 统一异常处理

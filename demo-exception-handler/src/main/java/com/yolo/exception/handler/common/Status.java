@@ -1,4 +1,4 @@
-package com.yolo.exception.handler.constant;
+package com.yolo.exception.handler.common;
 
 import lombok.Getter;
 

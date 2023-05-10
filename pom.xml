@@ -20,6 +20,7 @@
         <module>demo-orm-mybatis</module>
         <module>demo-orm-mybatis-page</module>
         <module>demo-tree</module>
+        <module>demo-call-info</module>
     </modules>
 
     <packaging>pom</packaging>

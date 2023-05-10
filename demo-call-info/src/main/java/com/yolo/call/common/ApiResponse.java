@@ -1,8 +1,8 @@
-package com.yolo.exception.handler.model;
+package com.yolo.call.common;
 
 
-import com.yolo.exception.handler.constant.Status;
-import com.yolo.exception.handler.exception.BaseException;
+
+import com.yolo.call.exception.BaseException;
 import lombok.Data;
 
 /**
