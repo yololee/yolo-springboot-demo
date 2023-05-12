@@ -23,6 +23,7 @@
         <module>demo-call-info</module>
         <module>demo-easy-code</module>
         <module>demo-orm-mybatis-plus</module>
+        <module>demo-redis-repeat-submit</module>
     </modules>
 
     <packaging>pom</packaging>
