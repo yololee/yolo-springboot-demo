@@ -22,6 +22,7 @@
         <module>demo-tree</module>
         <module>demo-call-info</module>
         <module>demo-easy-code</module>
+        <module>demo-orm-mybatis-plus</module>
     </modules>
 
     <packaging>pom</packaging>

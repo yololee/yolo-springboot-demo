@@ -5,16 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: 自定义注解实现参数和返回结果的打印">
-      <change afterPath="$PROJECT_DIR$/demo-call-info/springboot-自定义注解打印参数信息.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-easy-code/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-easy-code/src/main/java/com/yolo/easy/code/DemoEasyCodeApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-easy-code/src/main/java/com/yolo/easy/code/controller/SysUserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-easy-code/src/main/java/com/yolo/easy/code/dao/SysUserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-easy-code/src/main/java/com/yolo/easy/code/entity/SysUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-easy-code/src/main/java/com/yolo/easy/code/service/SysUserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-easy-code/src/main/java/com/yolo/easy/code/service/impl/SysUserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-easy-code/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-easy-code/src/test/java/com/yolo/easy/code/DemoEasyCodeApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-easy-code/springboot-使用插件生成实体类.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-orm-mybatis-plus/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-orm-mybatis-plus/springboot-mybatis-plus条件构造器的使用.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-orm-mybatis-plus/springboot-整合mybatis-plus.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-orm-mybatis-plus/sql/mybatisPlus.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-orm-mybatis-plus/src/main/java/com/yolo/mybatis/plus/DemoOrmMybatisPlusApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-orm-mybatis-plus/src/main/java/com/yolo/mybatis/plus/config/MybatisPlusConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-orm-mybatis-plus/src/main/java/com/yolo/mybatis/plus/domain/Company.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-orm-mybatis-plus/src/main/java/com/yolo/mybatis/plus/mapper/CompanyMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-orm-mybatis-plus/src/main/java/com/yolo/mybatis/plus/page/PageDomain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-orm-mybatis-plus/src/main/java/com/yolo/mybatis/plus/page/PageResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-orm-mybatis-plus/src/main/java/com/yolo/mybatis/plus/page/PageUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-orm-mybatis-plus/src/main/java/com/yolo/mybatis/plus/service/CompanyService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-orm-mybatis-plus/src/main/java/com/yolo/mybatis/plus/service/impl/CompanyServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-orm-mybatis-plus/src/main/java/com/yolo/mybatis/plus/util/ServletUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-orm-mybatis-plus/src/main/java/com/yolo/mybatis/plus/util/SqlUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-orm-mybatis-plus/src/main/java/com/yolo/mybatis/plus/util/StringUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-orm-mybatis-plus/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-orm-mybatis-plus/src/main/resources/mapper/CompanyMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-orm-mybatis-plus/src/test/java/com/yolo/mybatis/plus/DemoOrmMybatisPlusApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
@@ -109,7 +119,7 @@
     &quot;ToolWindowGradle.ShowToolbar&quot;: &quot;false&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-call-info&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-orm-mybatis-plus&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -130,13 +140,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/demo-orm-mybatis-plus" />
+      <recent name="$PROJECT_DIR$/demo-orm-mybatis-plus/src/main/java/com/yolo/mybatis/plus/util" />
+      <recent name="$PROJECT_DIR$/demo-orm-mybatis-plus/src/main/java/com/yolo/mybatis/plus" />
       <recent name="$PROJECT_DIR$/demo-call-info" />
       <recent name="$PROJECT_DIR$/demo-call-info/src/main/java/com/yolo/call" />
-      <recent name="$PROJECT_DIR$/demo-tree" />
-      <recent name="$PROJECT_DIR$/demo-tree/src/main/resources/mybatis" />
-      <recent name="$PROJECT_DIR$/demo-tree/src/main/resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/demo-orm-mybatis-plus/sql" />
       <recent name="$PROJECT_DIR$/demo-login-operation-log/src/main/resources/mybatis" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -147,64 +158,83 @@
       <recent name="com.yolo.file.config" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.DemoCallInfoApplication">
-    <configuration name="DemoTreeApplicationTests.testTree" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo-tree" />
+  <component name="RunManager" selected="JUnit.DemoOrmMybatisPlusApplicationTests.updateTest1">
+    <configuration name="DemoOrmMybatisPlusApplicationTests.deleteTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo-orm-mybatis-plus" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.yolo.tree.*" />
+          <option name="PATTERN" value="com.yolo.mybatis.plus.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.yolo.tree" />
-      <option name="MAIN_CLASS_NAME" value="com.yolo.tree.DemoTreeApplicationTests" />
-      <option name="METHOD_NAME" value="testTree" />
+      <option name="PACKAGE_NAME" value="com.yolo.mybatis.plus" />
+      <option name="MAIN_CLASS_NAME" value="com.yolo.mybatis.plus.DemoOrmMybatisPlusApplicationTests" />
+      <option name="METHOD_NAME" value="deleteTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DemoTreeApplicationTests.testTree1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo-tree" />
+    <configuration name="DemoOrmMybatisPlusApplicationTests.insertTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo-orm-mybatis-plus" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.yolo.tree.*" />
+          <option name="PATTERN" value="com.yolo.mybatis.plus.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.yolo.tree" />
-      <option name="MAIN_CLASS_NAME" value="com.yolo.tree.DemoTreeApplicationTests" />
-      <option name="METHOD_NAME" value="testTree1" />
+      <option name="PACKAGE_NAME" value="com.yolo.mybatis.plus" />
+      <option name="MAIN_CLASS_NAME" value="com.yolo.mybatis.plus.DemoOrmMybatisPlusApplicationTests" />
+      <option name="METHOD_NAME" value="insertTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DemoTreeApplicationTests.testTree2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo-tree" />
+    <configuration name="DemoOrmMybatisPlusApplicationTests.pageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo-orm-mybatis-plus" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.yolo.tree.*" />
+          <option name="PATTERN" value="com.yolo.mybatis.plus.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.yolo.tree" />
-      <option name="MAIN_CLASS_NAME" value="com.yolo.tree.DemoTreeApplicationTests" />
-      <option name="METHOD_NAME" value="testTree2" />
+      <option name="PACKAGE_NAME" value="com.yolo.mybatis.plus" />
+      <option name="MAIN_CLASS_NAME" value="com.yolo.mybatis.plus.DemoOrmMybatisPlusApplicationTests" />
+      <option name="METHOD_NAME" value="pageTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DemoCallInfoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="demo-call-info" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.call.DemoCallInfoApplication" />
+    <configuration name="DemoOrmMybatisPlusApplicationTests.updateTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo-orm-mybatis-plus" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.yolo.call.*" />
+          <option name="PATTERN" value="com.yolo.mybatis.plus.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.yolo.mybatis.plus" />
+      <option name="MAIN_CLASS_NAME" value="com.yolo.mybatis.plus.DemoOrmMybatisPlusApplicationTests" />
+      <option name="METHOD_NAME" value="updateTest1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemoOrmMybatisPlusApplicationTests.updateTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo-orm-mybatis-plus" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yolo.mybatis.plus.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.yolo.mybatis.plus" />
+      <option name="MAIN_CLASS_NAME" value="com.yolo.mybatis.plus.DemoOrmMybatisPlusApplicationTests" />
+      <option name="METHOD_NAME" value="updateTest2" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -216,26 +246,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DemoUploadDownloadApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="demo-upload-download" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.file.DemoUploadDownloadApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.yolo.file.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.DemoCallInfoApplication" />
-        <item itemvalue="JUnit.DemoTreeApplicationTests.testTree2" />
-        <item itemvalue="JUnit.DemoTreeApplicationTests.testTree1" />
-        <item itemvalue="JUnit.DemoTreeApplicationTests.testTree" />
-        <item itemvalue="Spring Boot.DemoUploadDownloadApplication" />
+        <item itemvalue="JUnit.DemoOrmMybatisPlusApplicationTests.updateTest1" />
+        <item itemvalue="JUnit.DemoOrmMybatisPlusApplicationTests.insertTest" />
+        <item itemvalue="JUnit.DemoOrmMybatisPlusApplicationTests.deleteTest" />
+        <item itemvalue="JUnit.DemoOrmMybatisPlusApplicationTests.pageTest" />
+        <item itemvalue="JUnit.DemoOrmMybatisPlusApplicationTests.updateTest2" />
       </list>
     </recent_temporary>
   </component>
@@ -264,6 +281,8 @@
       <workItem from="1683793223393" duration="726000" />
       <workItem from="1683794392815" duration="68000" />
       <workItem from="1683794502197" duration="567000" />
+      <workItem from="1683795300714" duration="11246000" />
+      <workItem from="1683872685322" duration="8000" />
     </task>
     <task id="LOCAL-00001" summary="feat: &#10;&#10;初始化依赖">
       <created>1682669417869</created>
