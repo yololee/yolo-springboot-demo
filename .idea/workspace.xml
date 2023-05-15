@@ -5,18 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: yolo-springboot-demo目录">
-      <change afterPath="$PROJECT_DIR$/demo-cache-redis/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-cache-redis/springboot-整合redis.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-cache-redis/src/main/java/com/yolo/cache/redis/DemoCacheRedisApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-cache-redis/src/main/java/com/yolo/cache/redis/config/RedisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-cache-redis/src/main/java/com/yolo/cache/redis/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-cache-redis/src/main/java/com/yolo/cache/redis/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-cache-redis/src/main/java/com/yolo/cache/redis/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-cache-redis/src/main/java/com/yolo/cache/redis/util/RedisUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-cache-redis/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-cache-redis/src/test/java/com/yolo/cache/redis/DemoCacheRedisApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-cache-redis/src/test/java/com/yolo/cache/redis/RedisTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-cache-redis/src/test/java/com/yolo/cache/redis/service/UserServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-email/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-email/springboot-发送邮件.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-email/src/main/java/com/yolo/email/DemoEmailApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-email/src/main/java/com/yolo/email/service/MailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-email/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-email/src/main/resources/email/test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-email/src/main/resources/static/yolo.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-email/src/main/resources/templates/welcome.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-email/src/test/java/com/yolo/email/DemoEmailApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-email/src/test/java/com/yolo/email/PasswordTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-email/src/test/java/com/yolo/email/service/MailServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
@@ -98,34 +97,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;ToolWindowGradle.ShowToolbar&quot;: &quot;false&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-redis-repeat-submit&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;fileTemplates&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;638867d526b563e0f0254898cd3f677c&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "ToolWindowGradle.ShowToolbar": "false",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "last_opened_file_path": "/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-email/src/main/resources/static",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "fileTemplates",
+    "spring.configuration.checksum": "cd36c2905f12f213abfb7971a5b3ddc9",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -134,84 +133,100 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/demo-email/src/main/resources/static" />
       <recent name="$PROJECT_DIR$/demo-redis-repeat-submit" />
       <recent name="$PROJECT_DIR$/demo-orm-mybatis-plus" />
       <recent name="$PROJECT_DIR$/demo-orm-mybatis-plus/src/main/java/com/yolo/mybatis/plus/util" />
       <recent name="$PROJECT_DIR$/demo-orm-mybatis-plus/src/main/java/com/yolo/mybatis/plus" />
-      <recent name="$PROJECT_DIR$/demo-call-info" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/demo-orm-mybatis-plus/sql" />
       <recent name="$PROJECT_DIR$/demo-login-operation-log/src/main/resources/mybatis" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.yolo.email.service" />
       <recent name="com.yolo.repeat.submit.config" />
       <recent name="com.yolo.repeat.submit.interceptor" />
       <recent name="com.yolo.repeat.submit.util" />
       <recent name="com.yolo.call.aspect" />
-      <recent name="com.yolo.tree.mapper" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserServiceTest.getTwice">
-    <configuration name="DemoOrmMybatisPlusApplicationTests.updateTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo-orm-mybatis-plus" />
+  <component name="RunManager" selected="JUnit.PasswordTest.testGeneratePassword">
+    <configuration name="MailServiceTest.sendAttachmentsMail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo-email" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.yolo.mybatis.plus.*" />
+          <option name="PATTERN" value="com.yolo.email.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.yolo.mybatis.plus" />
-      <option name="MAIN_CLASS_NAME" value="com.yolo.mybatis.plus.DemoOrmMybatisPlusApplicationTests" />
-      <option name="METHOD_NAME" value="updateTest2" />
+      <option name="PACKAGE_NAME" value="com.yolo.email.service" />
+      <option name="MAIN_CLASS_NAME" value="com.yolo.email.service.MailServiceTest" />
+      <option name="METHOD_NAME" value="sendAttachmentsMail" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RedisTest.setString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo-cache-redis" />
+    <configuration name="MailServiceTest.sendHtmlMail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo-email" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.yolo.cache.redis.*" />
+          <option name="PATTERN" value="com.yolo.email.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.yolo.cache.redis" />
-      <option name="MAIN_CLASS_NAME" value="com.yolo.cache.redis.RedisTest" />
-      <option name="METHOD_NAME" value="setString" />
+      <option name="PACKAGE_NAME" value="com.yolo.email.service" />
+      <option name="MAIN_CLASS_NAME" value="com.yolo.email.service.MailServiceTest" />
+      <option name="METHOD_NAME" value="sendHtmlMail" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RedisTest.testRedis" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo-cache-redis" />
+    <configuration name="MailServiceTest.sendResourceMail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo-email" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.yolo.cache.redis.*" />
+          <option name="PATTERN" value="com.yolo.email.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.yolo.cache.redis" />
-      <option name="MAIN_CLASS_NAME" value="com.yolo.cache.redis.RedisTest" />
-      <option name="METHOD_NAME" value="testRedis" />
+      <option name="PACKAGE_NAME" value="com.yolo.email.service" />
+      <option name="MAIN_CLASS_NAME" value="com.yolo.email.service.MailServiceTest" />
+      <option name="METHOD_NAME" value="sendResourceMail" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServiceTest.getTwice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo-cache-redis" />
+    <configuration name="MailServiceTest.sendSimpleMail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo-email" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.yolo.cache.redis.service.*" />
+          <option name="PATTERN" value="com.yolo.email.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.yolo.cache.redis.service" />
-      <option name="MAIN_CLASS_NAME" value="com.yolo.cache.redis.service.UserServiceTest" />
-      <option name="METHOD_NAME" value="getTwice" />
+      <option name="PACKAGE_NAME" value="com.yolo.email.service" />
+      <option name="MAIN_CLASS_NAME" value="com.yolo.email.service.MailServiceTest" />
+      <option name="METHOD_NAME" value="sendSimpleMail" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PasswordTest.testGeneratePassword" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo-email" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yolo.email.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.yolo.email" />
+      <option name="MAIN_CLASS_NAME" value="com.yolo.email.PasswordTest" />
+      <option name="METHOD_NAME" value="testGeneratePassword" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -224,26 +239,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DemoRedisRepeatSubmitApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="demo-redis-repeat-submit" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.repeat.submit.DemoRedisRepeatSubmitApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.yolo.repeat.submit.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserServiceTest.getTwice" />
-        <item itemvalue="JUnit.RedisTest.testRedis" />
-        <item itemvalue="JUnit.RedisTest.setString" />
-        <item itemvalue="Spring Boot.DemoRedisRepeatSubmitApplication" />
-        <item itemvalue="JUnit.DemoOrmMybatisPlusApplicationTests.updateTest2" />
+        <item itemvalue="JUnit.PasswordTest.testGeneratePassword" />
+        <item itemvalue="JUnit.MailServiceTest.sendResourceMail" />
+        <item itemvalue="JUnit.MailServiceTest.sendAttachmentsMail" />
+        <item itemvalue="JUnit.MailServiceTest.sendHtmlMail" />
+        <item itemvalue="JUnit.MailServiceTest.sendSimpleMail" />
       </list>
     </recent_temporary>
   </component>
@@ -278,7 +280,8 @@
       <workItem from="1683873161060" duration="6622000" />
       <workItem from="1683880205551" duration="21000" />
       <workItem from="1684112712567" duration="8514000" />
-      <workItem from="1684133220016" duration="10000" />
+      <workItem from="1684133220016" duration="4666000" />
+      <workItem from="1684138294947" duration="2815000" />
     </task>
     <task id="LOCAL-00001" summary="feat: &#10;&#10;初始化依赖">
       <created>1682669417869</created>
@@ -448,7 +451,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684113981572</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="feat: yolo-springboot-demo目录">
+      <created>1684133244035</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1684133244035</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

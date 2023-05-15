@@ -25,6 +25,7 @@
         <module>demo-orm-mybatis-plus</module>
         <module>demo-redis-repeat-submit</module>
         <module>demo-cache-redis</module>
+        <module>demo-email</module>
     </modules>
 
     <packaging>pom</packaging>
