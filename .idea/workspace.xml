@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: mybatis-plus的使用">
+    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: 自定义注解结合redis实现接口防止重复提交">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,14 +98,14 @@
     "ToolWindowGradle.ShowToolbar": "false",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-orm-mybatis-plus",
+    "last_opened_file_path": "/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-redis-repeat-submit",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "editing.templates",
-    "spring.configuration.checksum": "9023d5e250f0a6b951d49588a8d2b722",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "spring.configuration.checksum": "638867d526b563e0f0254898cd3f677c",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -120,11 +119,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/demo-redis-repeat-submit" />
       <recent name="$PROJECT_DIR$/demo-orm-mybatis-plus" />
       <recent name="$PROJECT_DIR$/demo-orm-mybatis-plus/src/main/java/com/yolo/mybatis/plus/util" />
       <recent name="$PROJECT_DIR$/demo-orm-mybatis-plus/src/main/java/com/yolo/mybatis/plus" />
       <recent name="$PROJECT_DIR$/demo-call-info" />
-      <recent name="$PROJECT_DIR$/demo-call-info/src/main/java/com/yolo/call" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/demo-orm-mybatis-plus/sql" />
@@ -261,7 +260,9 @@
       <workItem from="1683795300714" duration="11246000" />
       <workItem from="1683872685322" duration="407000" />
       <workItem from="1683873113532" duration="31000" />
-      <workItem from="1683873161060" duration="6288000" />
+      <workItem from="1683873161060" duration="6622000" />
+      <workItem from="1683880205551" duration="21000" />
+      <workItem from="1684112712567" duration="1078000" />
     </task>
     <task id="LOCAL-00001" summary="feat: &#10;&#10;初始化依赖">
       <created>1682669417869</created>
@@ -417,7 +418,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683872787183</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="feat: 自定义注解结合redis实现接口防止重复提交">
+      <created>1683879894227</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1683879894228</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -460,7 +468,8 @@
     <MESSAGE value="feat: 自定义注解实现通用树结构的使用文档" />
     <MESSAGE value="feat: 自定义注解实现参数和返回结果的打印" />
     <MESSAGE value="feat: mybatis-plus的使用" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: mybatis-plus的使用" />
+    <MESSAGE value="feat: 自定义注解结合redis实现接口防止重复提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 自定义注解结合redis实现接口防止重复提交" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
