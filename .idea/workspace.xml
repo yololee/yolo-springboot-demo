@@ -4,9 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: 自定义注解结合redis实现接口防止重复提交">
+    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: yolo-springboot-demo目录">
+      <change afterPath="$PROJECT_DIR$/demo-cache-redis/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-cache-redis/springboot-整合redis.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-cache-redis/src/main/java/com/yolo/cache/redis/DemoCacheRedisApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-cache-redis/src/main/java/com/yolo/cache/redis/config/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-cache-redis/src/main/java/com/yolo/cache/redis/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-cache-redis/src/main/java/com/yolo/cache/redis/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-cache-redis/src/main/java/com/yolo/cache/redis/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-cache-redis/src/main/java/com/yolo/cache/redis/util/RedisUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-cache-redis/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-cache-redis/src/test/java/com/yolo/cache/redis/DemoCacheRedisApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-cache-redis/src/test/java/com/yolo/cache/redis/RedisTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-cache-redis/src/test/java/com/yolo/cache/redis/service/UserServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,34 +98,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "ToolWindowGradle.ShowToolbar": "false",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-redis-repeat-submit",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "spring.configuration.checksum": "638867d526b563e0f0254898cd3f677c",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;ToolWindowGradle.ShowToolbar&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-redis-repeat-submit&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;fileTemplates&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;638867d526b563e0f0254898cd3f677c&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RebelAgentSelection">
     <selection>jr</selection>
   </component>
@@ -137,55 +152,7 @@
       <recent name="com.yolo.tree.mapper" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.DemoRedisRepeatSubmitApplication">
-    <configuration name="DemoOrmMybatisPlusApplicationTests.insertTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo-orm-mybatis-plus" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.yolo.mybatis.plus.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.yolo.mybatis.plus" />
-      <option name="MAIN_CLASS_NAME" value="com.yolo.mybatis.plus.DemoOrmMybatisPlusApplicationTests" />
-      <option name="METHOD_NAME" value="insertTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DemoOrmMybatisPlusApplicationTests.pageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo-orm-mybatis-plus" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.yolo.mybatis.plus.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.yolo.mybatis.plus" />
-      <option name="MAIN_CLASS_NAME" value="com.yolo.mybatis.plus.DemoOrmMybatisPlusApplicationTests" />
-      <option name="METHOD_NAME" value="pageTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DemoOrmMybatisPlusApplicationTests.updateTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo-orm-mybatis-plus" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.yolo.mybatis.plus.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.yolo.mybatis.plus" />
-      <option name="MAIN_CLASS_NAME" value="com.yolo.mybatis.plus.DemoOrmMybatisPlusApplicationTests" />
-      <option name="METHOD_NAME" value="updateTest1" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.UserServiceTest.getTwice">
     <configuration name="DemoOrmMybatisPlusApplicationTests.updateTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo-orm-mybatis-plus" />
       <extension name="coverage">
@@ -197,6 +164,54 @@
       <option name="PACKAGE_NAME" value="com.yolo.mybatis.plus" />
       <option name="MAIN_CLASS_NAME" value="com.yolo.mybatis.plus.DemoOrmMybatisPlusApplicationTests" />
       <option name="METHOD_NAME" value="updateTest2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RedisTest.setString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo-cache-redis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yolo.cache.redis.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.yolo.cache.redis" />
+      <option name="MAIN_CLASS_NAME" value="com.yolo.cache.redis.RedisTest" />
+      <option name="METHOD_NAME" value="setString" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RedisTest.testRedis" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo-cache-redis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yolo.cache.redis.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.yolo.cache.redis" />
+      <option name="MAIN_CLASS_NAME" value="com.yolo.cache.redis.RedisTest" />
+      <option name="METHOD_NAME" value="testRedis" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceTest.getTwice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo-cache-redis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yolo.cache.redis.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.yolo.cache.redis.service" />
+      <option name="MAIN_CLASS_NAME" value="com.yolo.cache.redis.service.UserServiceTest" />
+      <option name="METHOD_NAME" value="getTwice" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -224,11 +239,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserServiceTest.getTwice" />
+        <item itemvalue="JUnit.RedisTest.testRedis" />
+        <item itemvalue="JUnit.RedisTest.setString" />
         <item itemvalue="Spring Boot.DemoRedisRepeatSubmitApplication" />
         <item itemvalue="JUnit.DemoOrmMybatisPlusApplicationTests.updateTest2" />
-        <item itemvalue="JUnit.DemoOrmMybatisPlusApplicationTests.updateTest1" />
-        <item itemvalue="JUnit.DemoOrmMybatisPlusApplicationTests.pageTest" />
-        <item itemvalue="JUnit.DemoOrmMybatisPlusApplicationTests.insertTest" />
       </list>
     </recent_temporary>
   </component>
@@ -262,7 +277,8 @@
       <workItem from="1683873113532" duration="31000" />
       <workItem from="1683873161060" duration="6622000" />
       <workItem from="1683880205551" duration="21000" />
-      <workItem from="1684112712567" duration="1078000" />
+      <workItem from="1684112712567" duration="8514000" />
+      <workItem from="1684133220016" duration="10000" />
     </task>
     <task id="LOCAL-00001" summary="feat: &#10;&#10;初始化依赖">
       <created>1682669417869</created>
@@ -425,7 +441,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683879894228</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="feat: yolo-springboot-demo目录">
+      <created>1684113981572</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1684113981572</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -469,7 +492,8 @@
     <MESSAGE value="feat: 自定义注解实现参数和返回结果的打印" />
     <MESSAGE value="feat: mybatis-plus的使用" />
     <MESSAGE value="feat: 自定义注解结合redis实现接口防止重复提交" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 自定义注解结合redis实现接口防止重复提交" />
+    <MESSAGE value="feat: yolo-springboot-demo目录" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: yolo-springboot-demo目录" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
