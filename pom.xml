@@ -26,6 +26,7 @@
         <module>demo-redis-repeat-submit</module>
         <module>demo-cache-redis</module>
         <module>demo-email</module>
+        <module>demo-jasypt</module>
     </modules>
 
     <packaging>pom</packaging>

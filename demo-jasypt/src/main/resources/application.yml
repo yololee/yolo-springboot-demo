@@ -1,0 +1,9 @@
+yolo:
+#  datasource:
+#    password: ENC(KKBN62wAZiY45tV/daomfutc8MUr8/mSb3tBpRuba7kLjgwC7DgG9KNS2xuudp62)
+  redis:
+    password: ENC(/XpvhVrycl359rw2hatC4EY0ni7Hi2VsGjFl5eOiZJSZbbYZfw/gXRSvK6iWWn+R)
+# 为 jasypt 配置秘钥
+jasypt:
+  encryptor:
+    password: yolo
