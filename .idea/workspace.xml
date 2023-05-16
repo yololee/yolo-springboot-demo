@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: 发送邮件">
-      <change afterPath="$PROJECT_DIR$/demo-jasypt/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-jasypt/springboot-加密配置中的敏感信息.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-jasypt/src/main/java/com/yolo/jasypt/DemoJasyptApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-jasypt/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-jasypt/src/test/java/com/yolo/jasypt/DemoJasyptApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-jasypt/src/test/java/com/yolo/jasypt/PasswordTest.java" afterDir="false" />
+    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: 加密配置中的敏感信息">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
@@ -147,7 +141,7 @@
       <recent name="com.yolo.repeat.submit.util" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DemoJasyptApplicationTests.contextLoads">
+  <component name="RunManager" selected="Spring Boot.DemoLogAopApplication">
     <configuration name="DemoJasyptApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo-jasypt" />
       <extension name="coverage">
@@ -159,22 +153,6 @@
       <option name="PACKAGE_NAME" value="com.yolo.jasypt" />
       <option name="MAIN_CLASS_NAME" value="com.yolo.jasypt.DemoJasyptApplicationTests" />
       <option name="METHOD_NAME" value="contextLoads" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MailServiceTest.sendAttachmentsMail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo-email" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.yolo.email.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.yolo.email.service" />
-      <option name="MAIN_CLASS_NAME" value="com.yolo.email.service.MailServiceTest" />
-      <option name="METHOD_NAME" value="sendAttachmentsMail" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -235,13 +213,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DemoTaskApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="demo-task" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.task.DemoTaskApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yolo.task.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.DemoTaskApplication" />
         <item itemvalue="JUnit.DemoJasyptApplicationTests.contextLoads" />
         <item itemvalue="JUnit.PasswordTest.testGeneratePassword (1)" />
         <item itemvalue="JUnit.PasswordTest.testGeneratePassword" />
         <item itemvalue="JUnit.MailServiceTest.sendResourceMail" />
-        <item itemvalue="JUnit.MailServiceTest.sendAttachmentsMail" />
       </list>
     </recent_temporary>
   </component>
@@ -277,7 +268,7 @@
       <workItem from="1683880205551" duration="21000" />
       <workItem from="1684112712567" duration="8514000" />
       <workItem from="1684133220016" duration="4666000" />
-      <workItem from="1684138294947" duration="7797000" />
+      <workItem from="1684138294947" duration="9377000" />
     </task>
     <task id="LOCAL-00001" summary="feat: &#10;&#10;初始化依赖">
       <created>1682669417869</created>
@@ -461,7 +452,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684141351164</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="feat: 加密配置中的敏感信息">
+      <created>1684200705336</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1684200705336</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -507,7 +505,8 @@
     <MESSAGE value="feat: 自定义注解结合redis实现接口防止重复提交" />
     <MESSAGE value="feat: yolo-springboot-demo目录" />
     <MESSAGE value="feat: 发送邮件" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 发送邮件" />
+    <MESSAGE value="feat: 加密配置中的敏感信息" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 加密配置中的敏感信息" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
