@@ -28,6 +28,7 @@
         <module>demo-email</module>
         <module>demo-jasypt</module>
         <module>demo-task</module>
+        <module>demo-xxl-job</module>
     </modules>
 
     <packaging>pom</packaging>
