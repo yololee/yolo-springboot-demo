@@ -1,0 +1,10 @@
+xxl:
+  job:
+    login:
+      address: http://127.0.0.1:9003/xxl-job-admin
+      username: admin
+      password: 123456
+      # 执行器组id
+      jobGroupId: 2
+
+

@@ -29,6 +29,7 @@
         <module>demo-jasypt</module>
         <module>demo-task</module>
         <module>demo-xxl-job</module>
+        <module>demo-xxl-job-http</module>
     </modules>
 
     <packaging>pom</packaging>

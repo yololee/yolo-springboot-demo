@@ -5,14 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: springboot整合xxl-job">
-      <change afterPath="$PROJECT_DIR$/demo-xxl-job/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-xxl-job/springboot-实现定时任务(xxl-job).md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-xxl-job/src/main/java/com/yolo/xxl/job/DemoXxlJobApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-xxl-job/src/main/java/com/yolo/xxl/job/config/XxlJobConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-xxl-job/src/main/java/com/yolo/xxl/job/config/XxlJobProps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-xxl-job/src/main/java/com/yolo/xxl/job/task/DemoTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-xxl-job/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-xxl-job/src/test/java/com/yolo/xxl/job/DemoXxlJobApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
@@ -149,50 +141,82 @@
       <recent name="com.yolo.repeat.submit.util" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.DemoXxlJobApplication">
-    <configuration name="DemoJasyptApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo-jasypt" />
+  <component name="RunManager" selected="JUnit.XxlJobGroupTest.xxlJobRemove">
+    <configuration name="XxlJobGroupTest.xxlJobAdd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo-xxl-job-http" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.yolo.jasypt.*" />
+          <option name="PATTERN" value="com.yolo.xxl.job.http.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.yolo.jasypt" />
-      <option name="MAIN_CLASS_NAME" value="com.yolo.jasypt.DemoJasyptApplicationTests" />
-      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="PACKAGE_NAME" value="com.yolo.xxl.job.http" />
+      <option name="MAIN_CLASS_NAME" value="com.yolo.xxl.job.http.XxlJobGroupTest" />
+      <option name="METHOD_NAME" value="xxlJobAdd" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PasswordTest.testGeneratePassword (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo-jasypt" />
+    <configuration name="XxlJobGroupTest.xxlJobRemove" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo-xxl-job-http" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.yolo.jasypt.*" />
+          <option name="PATTERN" value="com.yolo.xxl.job.http.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.yolo.jasypt" />
-      <option name="MAIN_CLASS_NAME" value="com.yolo.jasypt.PasswordTest" />
-      <option name="METHOD_NAME" value="testGeneratePassword" />
+      <option name="PACKAGE_NAME" value="com.yolo.xxl.job.http" />
+      <option name="MAIN_CLASS_NAME" value="com.yolo.xxl.job.http.XxlJobGroupTest" />
+      <option name="METHOD_NAME" value="xxlJobRemove" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PasswordTest.testGeneratePassword" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo-email" />
+    <configuration name="XxlJobGroupTest.xxlJobStart" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo-xxl-job-http" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.yolo.email.*" />
+          <option name="PATTERN" value="com.yolo.xxl.job.http.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.yolo.email" />
-      <option name="MAIN_CLASS_NAME" value="com.yolo.email.PasswordTest" />
-      <option name="METHOD_NAME" value="testGeneratePassword" />
+      <option name="PACKAGE_NAME" value="com.yolo.xxl.job.http" />
+      <option name="MAIN_CLASS_NAME" value="com.yolo.xxl.job.http.XxlJobGroupTest" />
+      <option name="METHOD_NAME" value="xxlJobStart" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="XxlJobGroupTest.xxlJobStop" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo-xxl-job-http" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yolo.xxl.job.http.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.yolo.xxl.job.http" />
+      <option name="MAIN_CLASS_NAME" value="com.yolo.xxl.job.http.XxlJobGroupTest" />
+      <option name="METHOD_NAME" value="xxlJobStop" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="XxlJobGroupTest.xxlJobTrigger" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo-xxl-job-http" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yolo.xxl.job.http.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.yolo.xxl.job.http" />
+      <option name="MAIN_CLASS_NAME" value="com.yolo.xxl.job.http.XxlJobGroupTest" />
+      <option name="METHOD_NAME" value="xxlJobTrigger" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -205,39 +229,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DemoTaskApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="demo-task" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.task.DemoTaskApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.yolo.task.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DemoXxlJobApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="demo-xxl-job" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.xxl.job.DemoXxlJobApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.yolo.xxl.job.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.DemoXxlJobApplication" />
-        <item itemvalue="Spring Boot.DemoTaskApplication" />
-        <item itemvalue="JUnit.DemoJasyptApplicationTests.contextLoads" />
-        <item itemvalue="JUnit.PasswordTest.testGeneratePassword (1)" />
-        <item itemvalue="JUnit.PasswordTest.testGeneratePassword" />
+        <item itemvalue="JUnit.XxlJobGroupTest.xxlJobRemove" />
+        <item itemvalue="JUnit.XxlJobGroupTest.xxlJobStart" />
+        <item itemvalue="JUnit.XxlJobGroupTest.xxlJobStop" />
+        <item itemvalue="JUnit.XxlJobGroupTest.xxlJobTrigger" />
+        <item itemvalue="JUnit.XxlJobGroupTest.xxlJobAdd" />
       </list>
     </recent_temporary>
   </component>
@@ -273,7 +271,7 @@
       <workItem from="1683880205551" duration="21000" />
       <workItem from="1684112712567" duration="8514000" />
       <workItem from="1684133220016" duration="4666000" />
-      <workItem from="1684138294947" duration="17366000" />
+      <workItem from="1684138294947" duration="25390000" />
     </task>
     <task id="LOCAL-00001" summary="feat: &#10;&#10;初始化依赖">
       <created>1682669417869</created>
@@ -471,7 +469,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684202717569</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="feat: springboot整合xxl-job">
+      <created>1684220221606</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1684220221606</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
