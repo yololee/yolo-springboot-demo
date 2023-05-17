@@ -29,14 +29,14 @@ spring boot demo 是一个用来深度学习并实战 spring boot 的项目
 | [demo-easy-code](https://gitee.com/huanglei1111/yolo-springboot-demo/tree/master/demo-easy-code) | 使用插件`mybatisX`或者`easyCode`生成实体类和mapper           |
 | [demo-orm-mybatis-plus](https://gitee.com/huanglei1111/yolo-springboot-demo/tree/master/demo-orm-mybatis-plus) | spring-boot 集成 `mybatis-plus`的相关配置以及条件构造器的使用 |
 | [demo-redis-repeat-submit](https://gitee.com/huanglei1111/yolo-springboot-demo/tree/master/demo-redis-repeat-submit) | 自定义注解结合redis实现接口防止重复提交                      |
-|                                                              |                                                              |
-|                                                              |                                                              |
-|                                                              |                                                              |
-|                                                              |                                                              |
-|                                                              |                                                              |
-|                                                              |                                                              |
-|                                                              |                                                              |
-|                                                              |                                                              |
+| [demo-cache-redis](https://gitee.com/huanglei1111/yolo-springboot-demo/tree/master/demo-cache-redis) | spring-boot 整合 redis，操作redis中的数据，并使用redis缓存数据 |
+| [demo-email](https://gitee.com/huanglei1111/yolo-springboot-demo/tree/master/demo-email) | spring-boot 整合 email，包括发送简单文本邮件、HTML邮件（包括模板HTML邮件）、附件邮件、静态资源邮件 |
+| [demo-jasypt](https://gitee.com/huanglei1111/yolo-springboot-demo/tree/master/demo-jasypt) | 加密配置中的敏感信息                                         |
+| [demo-task](https://gitee.com/huanglei1111/yolo-springboot-demo/tree/master/demo-task) | spring-boot 快速实现定时任务                                 |
+| [demo-xxl-job](https://gitee.com/huanglei1111/yolo-springboot-demo/tree/master/demo-xxl-job) | springboot整合xxl-job                                        |
+| [demo-xxl-job-http](https://gitee.com/huanglei1111/yolo-springboot-demo/tree/master/demo-xxl-job-http) | 通过http请求手动操作xxl-job                                  |
+| [demo-xxl-job-auto-register](https://gitee.com/huanglei1111/yolo-springboot-demo/tree/master/demo-xxl-job-auto-register) | 手写starter完成xxl-job自动测试功能                           |
+| [demo-xxl-job-auto-regiter-test](https://gitee.com/huanglei1111/yolo-springboot-demo/tree/master/demo-xxl-job-auto-register-test) | 测试手写starter完成xxl-job自动测试功能                       |
 |                                                              |                                                              |
 |                                                              |                                                              |
 |                                                              |                                                              |
