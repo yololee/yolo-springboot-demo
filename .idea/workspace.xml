@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: 通过http请求手动操作xxl-job">
+    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: xxl-job目录">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -141,7 +140,23 @@
       <recent name="com.yolo.repeat.submit.util" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.DemoXxlJobAutoRegisterTestApplication">
+  <component name="RunManager" selected="JUnit.DemoAsyncApplicationTests.contextLoads">
+    <configuration name="DemoAsyncApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo-async" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yolo.async.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.yolo.async" />
+      <option name="MAIN_CLASS_NAME" value="com.yolo.async.DemoAsyncApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="XxlJobGroupTest.xxlJobRemove" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo-xxl-job-http" />
       <extension name="coverage">
@@ -169,22 +184,6 @@
       <option name="PACKAGE_NAME" value="com.yolo.xxl.job.http" />
       <option name="MAIN_CLASS_NAME" value="com.yolo.xxl.job.http.XxlJobGroupTest" />
       <option name="METHOD_NAME" value="xxlJobStart" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="XxlJobGroupTest.xxlJobStop" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo-xxl-job-http" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.yolo.xxl.job.http.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.yolo.xxl.job.http" />
-      <option name="MAIN_CLASS_NAME" value="com.yolo.xxl.job.http.XxlJobGroupTest" />
-      <option name="METHOD_NAME" value="xxlJobStop" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -225,11 +224,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DemoAsyncApplicationTests.contextLoads" />
         <item itemvalue="Spring Boot.DemoXxlJobAutoRegisterTestApplication" />
         <item itemvalue="Spring Boot.DemoXxlJobApplication" />
         <item itemvalue="JUnit.XxlJobGroupTest.xxlJobRemove" />
         <item itemvalue="JUnit.XxlJobGroupTest.xxlJobStart" />
-        <item itemvalue="JUnit.XxlJobGroupTest.xxlJobStop" />
       </list>
     </recent_temporary>
   </component>
@@ -265,7 +264,7 @@
       <workItem from="1683880205551" duration="21000" />
       <workItem from="1684112712567" duration="8514000" />
       <workItem from="1684133220016" duration="4666000" />
-      <workItem from="1684138294947" duration="43027000" />
+      <workItem from="1684138294947" duration="47051000" />
     </task>
     <task id="LOCAL-00001" summary="feat: &#10;&#10;初始化依赖">
       <created>1682669417869</created>
@@ -477,7 +476,28 @@
       <option name="project" value="LOCAL" />
       <updated>1684228564125</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="feat: 手写xxl-job的starter完成自动注册">
+      <created>1684307294697</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1684307294697</updated>
+    </task>
+    <task id="LOCAL-00032" summary="feat: 测试xxl-job手写的starter自动注册功能">
+      <created>1684307403429</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1684307403429</updated>
+    </task>
+    <task id="LOCAL-00033" summary="feat: xxl-job目录">
+      <created>1684307741499</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1684307741499</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -499,9 +519,6 @@
       <path value="$PROJECT_DIR$/demo-properties" />
       <path value="$PROJECT_DIR$/demo-logback" />
     </ignored-roots>
-    <MESSAGE value="feat: &#10;logback的使用" />
-    <MESSAGE value="feat: &#10;修改gitignore文件" />
-    <MESSAGE value="feat: &#10;整合aop记录日志" />
     <MESSAGE value="feat: &#10;全局异常处理" />
     <MESSAGE value="feat: &#10;对swagger和knife4j的使用" />
     <MESSAGE value="feat: &#10;自定义注解使用aop对操作日志进行记录" />
@@ -524,7 +541,10 @@
     <MESSAGE value="feat: 定时任务schedule" />
     <MESSAGE value="feat: springboot整合xxl-job" />
     <MESSAGE value="feat: 通过http请求手动操作xxl-job" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 通过http请求手动操作xxl-job" />
+    <MESSAGE value="feat: 手写xxl-job的starter完成自动注册" />
+    <MESSAGE value="feat: 测试xxl-job手写的starter自动注册功能" />
+    <MESSAGE value="feat: xxl-job目录" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: xxl-job目录" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

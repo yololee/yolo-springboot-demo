@@ -32,6 +32,7 @@
         <module>demo-xxl-job-http</module>
         <module>demo-xxl-job-auto-register</module>
         <module>demo-xxl-job-auto-register-test</module>
+        <module>demo-async</module>
     </modules>
 
     <packaging>pom</packaging>
