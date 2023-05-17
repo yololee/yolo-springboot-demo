@@ -30,6 +30,8 @@
         <module>demo-task</module>
         <module>demo-xxl-job</module>
         <module>demo-xxl-job-http</module>
+        <module>demo-xxl-job-auto-register</module>
+        <module>demo-xxl-job-auto-register-test</module>
     </modules>
 
     <packaging>pom</packaging>
