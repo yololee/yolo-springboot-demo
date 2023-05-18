@@ -4,8 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: xxl-job目录">
+    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: 异步方法实现">
+      <change afterPath="$PROJECT_DIR$/demo-flyway/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-flyway/springboot-整合flyway.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-flyway/src/main/java/com/yolo/flyway/DemoFlywayApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-flyway/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-flyway/src/main/resources/db/migration/R__add_unknown_user.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-flyway/src/main/resources/db/migration/V1__create_user.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-flyway/src/main/resources/db/migration/V2__add_user.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-flyway/src/main/resources/db/migration/V3__add_user.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-flyway/src/test/java/com/yolo/flyway/DemoFlywayApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,7 +46,17 @@
         <projects_view>
           <option name="showIgnored" value="false" />
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="demo-call-info" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="demo-call-info" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -95,7 +115,6 @@
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "ToolWindowGradle.ShowToolbar": "false",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
     "last_opened_file_path": "/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-xxl-job-auto-register-test/src/main/java/com/yolo/auto/register/test",
@@ -105,7 +124,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "fileTemplates",
-    "spring.configuration.checksum": "cd36c2905f12f213abfb7971a5b3ddc9",
+    "spring.configuration.checksum": "ea905f36bfefafda27d90f1ff080c4da",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -140,7 +159,7 @@
       <recent name="com.yolo.repeat.submit.util" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DemoAsyncApplicationTests.contextLoads">
+  <component name="RunManager" selected="Spring Boot.DemoFlywayApplication">
     <configuration name="DemoAsyncApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo-async" />
       <extension name="coverage">
@@ -173,18 +192,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="XxlJobGroupTest.xxlJobStart" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo-xxl-job-http" />
+    <configuration name="DemoFlywayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="demo-flyway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.flyway.DemoFlywayApplication" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.yolo.xxl.job.http.*" />
+          <option name="PATTERN" value="com.yolo.flyway.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.yolo.xxl.job.http" />
-      <option name="MAIN_CLASS_NAME" value="com.yolo.xxl.job.http.XxlJobGroupTest" />
-      <option name="METHOD_NAME" value="xxlJobStart" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -224,11 +240,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.DemoFlywayApplication" />
         <item itemvalue="JUnit.DemoAsyncApplicationTests.contextLoads" />
         <item itemvalue="Spring Boot.DemoXxlJobAutoRegisterTestApplication" />
         <item itemvalue="Spring Boot.DemoXxlJobApplication" />
         <item itemvalue="JUnit.XxlJobGroupTest.xxlJobRemove" />
-        <item itemvalue="JUnit.XxlJobGroupTest.xxlJobStart" />
       </list>
     </recent_temporary>
   </component>
@@ -264,7 +280,9 @@
       <workItem from="1683880205551" duration="21000" />
       <workItem from="1684112712567" duration="8514000" />
       <workItem from="1684133220016" duration="4666000" />
-      <workItem from="1684138294947" duration="47051000" />
+      <workItem from="1684138294947" duration="47465000" />
+      <workItem from="1684315572670" duration="886000" />
+      <workItem from="1684374311967" duration="2377000" />
     </task>
     <task id="LOCAL-00001" summary="feat: &#10;&#10;初始化依赖">
       <created>1682669417869</created>
@@ -497,7 +515,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684307741499</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="feat: 异步方法实现">
+      <created>1684313548288</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1684313548288</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -519,7 +544,6 @@
       <path value="$PROJECT_DIR$/demo-properties" />
       <path value="$PROJECT_DIR$/demo-logback" />
     </ignored-roots>
-    <MESSAGE value="feat: &#10;全局异常处理" />
     <MESSAGE value="feat: &#10;对swagger和knife4j的使用" />
     <MESSAGE value="feat: &#10;自定义注解使用aop对操作日志进行记录" />
     <MESSAGE value="feat: &#10;自定义注解使用aop的方式对操作日志进行异步保存" />
@@ -544,7 +568,8 @@
     <MESSAGE value="feat: 手写xxl-job的starter完成自动注册" />
     <MESSAGE value="feat: 测试xxl-job手写的starter自动注册功能" />
     <MESSAGE value="feat: xxl-job目录" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: xxl-job目录" />
+    <MESSAGE value="feat: 异步方法实现" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 异步方法实现" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

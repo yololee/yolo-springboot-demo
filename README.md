@@ -37,7 +37,7 @@ spring boot demo 是一个用来深度学习并实战 spring boot 的项目
 | [demo-xxl-job-http](https://gitee.com/huanglei1111/yolo-springboot-demo/tree/master/demo-xxl-job-http) | 通过http请求手动操作xxl-job                                  |
 | [demo-xxl-job-auto-register](https://gitee.com/huanglei1111/yolo-springboot-demo/tree/master/demo-xxl-job-auto-register) | 手写starter完成xxl-job自动测试功能                           |
 | [demo-xxl-job-auto-regiter-test](https://gitee.com/huanglei1111/yolo-springboot-demo/tree/master/demo-xxl-job-auto-register-test) | 测试手写starter完成xxl-job自动测试功能                       |
-|                                                              |                                                              |
+| [demo-async](https://gitee.com/huanglei1111/yolo-springboot-demo/tree/master/demo-async) | spring-boot 使用原生提供的异步任务支持，实现异步执行任务     |
 |                                                              |                                                              |
 |                                                              |                                                              |
 |                                                              |                                                              |
