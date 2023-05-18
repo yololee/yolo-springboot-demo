@@ -20,7 +20,6 @@
         <module>demo-orm-mybatis</module>
         <module>demo-orm-mybatis-page</module>
         <module>demo-tree</module>
-        <module>demo-call-info</module>
         <module>demo-easy-code</module>
         <module>demo-orm-mybatis-plus</module>
         <module>demo-redis-repeat-submit</module>
@@ -37,7 +36,10 @@
         <module>demo-redis-limit</module>
         <module>demo-jackson</module>
         <module>demo-multi-datasource-mybatis</module>
+        <module>demo-aop-call-info</module>
     </modules>
+
+
     <dependencies>
         <dependency>
             <groupId>org.projectlombok</groupId>

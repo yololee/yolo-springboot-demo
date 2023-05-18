@@ -2,10 +2,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
-    <artifactId>demo-call-info</artifactId>
+    <artifactId>demo-aop-call-info</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>demo-call-info</name>
+    <name>demo-aop-call-info</name>
+    <description>demo-aop-call-info</description>
 
     <parent>
         <groupId>com.yolo</groupId>
@@ -21,9 +21,8 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <spring-boot.version>2.3.12.RELEASE</spring-boot.version>
     </properties>
-
-
     <dependencies>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -39,6 +38,7 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-aop</artifactId>
         </dependency>
+
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -81,7 +81,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>${spring-boot.version}</version>
                 <configuration>
-                    <mainClass>com.yolo.call.DemoCallInfoApplication</mainClass>
+                    <mainClass>com.yolo.call.info.DemoAopCallInfoApplication</mainClass>
                     <skip>true</skip>
                 </configuration>
                 <executions>

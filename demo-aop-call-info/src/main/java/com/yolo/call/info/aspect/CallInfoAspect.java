@@ -1,12 +1,12 @@
-package com.yolo.call.aspect;
+package com.yolo.call.info.aspect;
 
-import com.yolo.call.annotation.CallInfo;
+
+import com.yolo.call.info.annotation.CallInfo;
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.*;
 import org.aspectj.lang.reflect.MethodSignature;
 import org.springframework.stereotype.Component;
-
 
 import java.lang.reflect.Method;
 
@@ -16,7 +16,7 @@ import java.lang.reflect.Method;
 @Component
 public class CallInfoAspect {
 
-    @Pointcut("@annotation(com.yolo.call.annotation.CallInfo)")
+    @Pointcut("@annotation(com.yolo.call.info.annotation.CallInfo)")
     public void callInfoCut() {
     }
 

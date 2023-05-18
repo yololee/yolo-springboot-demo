@@ -1,4 +1,4 @@
-package com.yolo.call.annotation;
+package com.yolo.call.info.annotation;
 
 import java.lang.annotation.*;
 

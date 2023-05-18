@@ -1,11 +1,11 @@
-package com.yolo.call.controller;
+package com.yolo.call.info.controller;
 
-import com.yolo.call.annotation.CallInfo;
-import com.yolo.call.common.ApiResponse;
+
+import com.yolo.call.info.annotation.CallInfo;
+import com.yolo.call.info.common.ApiResponse;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
 
 
 @RestController

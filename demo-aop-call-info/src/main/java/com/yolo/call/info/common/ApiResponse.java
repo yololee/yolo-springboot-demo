@@ -1,8 +1,6 @@
-package com.yolo.call.common;
+package com.yolo.call.info.common;
 
 
-
-import com.yolo.call.exception.BaseException;
 import lombok.Data;
 
 /**
@@ -45,6 +43,7 @@ public class ApiResponse {
         this.data = data;
     }
 
+
     /**
      * 构造一个自定义的API返回
      *
@@ -64,60 +63,30 @@ public class ApiResponse {
      * @return ApiResponse
      */
     public static ApiResponse ofSuccess(Object data) {
-        return ofStatus(Status.OK, data);
+        return of(ApiStatus.OK.getCode(), ApiStatus.OK.getMessage(), data);
     }
 
     /**
-     * 构造一个成功且自定义消息的API返回
-     *
-     * @param message 返回内容
+     * 构造一个成功且不带数据的API返回
      * @return ApiResponse
      */
-    public static ApiResponse ofMessage(String message) {
-        return of(Status.OK.getCode(), message, null);
-    }
-
-    /**
-     * 构造一个有状态的API返回
-     *
-     * @param status 状态 {@link Status}
-     * @return ApiResponse
-     */
-    public static ApiResponse ofStatus(Status status) {
-        return ofStatus(status, null);
-    }
-
-    /**
-     * 构造一个有状态且带数据的API返回
-     *
-     * @param status 状态 {@link Status}
-     * @param data   返回数据
-     * @return ApiResponse
-     */
-    public static ApiResponse ofStatus(Status status, Object data) {
-        return of(status.getCode(), status.getMessage(), data);
+    public static ApiResponse ofSuccess() {
+        return of(ApiStatus.OK.getCode(), ApiStatus.OK.getMessage(), null);
     }
 
     /**
      * 构造一个异常且带数据的API返回
-     *
-     * @param t    异常
-     * @param data 返回数据
-     * @param <T>  {@link BaseException} 的子类
      * @return ApiResponse
      */
-    public static <T extends BaseException> ApiResponse ofException(T t, Object data) {
-        return of(t.getCode(), t.getMessage(), data);
+    public static  ApiResponse ofException(ApiStatus apiStatus, Object data) {
+        return of(apiStatus.getCode(), apiStatus.getMessage(), data);
     }
 
     /**
-     * 构造一个异常且带数据的API返回
-     *
-     * @param t   异常
-     * @param <T> {@link BaseException} 的子类
+     * 构造一个异常且不带数据的API返回
      * @return ApiResponse
      */
-    public static <T extends BaseException> ApiResponse ofException(T t) {
-        return ofException(t, null);
+    public static  ApiResponse ofException(ApiStatus apiStatus) {
+        return ofException(apiStatus, null);
     }
 }

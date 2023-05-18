@@ -1,10 +1,10 @@
-package com.yolo.call;
+package com.yolo.call.info;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class DemoCallInfoApplicationTests {
+class DemoAopCallInfoApplicationTests {
 
     @Test
     void contextLoads() {

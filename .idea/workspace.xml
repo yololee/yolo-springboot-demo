@@ -4,8 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: 目录">
+    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: springboot使用mp集成多数据源">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-aop-call-info/src/main/java/com/yolo/call/info/annotation/CallInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-aop-call-info/src/main/java/com/yolo/call/info/annotation/CallInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-aop-call-info/src/main/java/com/yolo/call/info/aspect/CallInfoAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-aop-call-info/src/main/java/com/yolo/call/info/aspect/CallInfoAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-aop-call-info/src/main/java/com/yolo/call/info/common/ApiResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-aop-call-info/src/main/java/com/yolo/call/info/common/ApiResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-aop-call-info/src/main/java/com/yolo/call/info/common/ApiStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-aop-call-info/src/main/java/com/yolo/call/info/common/ApiStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-aop-call-info/src/main/java/com/yolo/call/info/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-aop-call-info/src/main/java/com/yolo/call/info/controller/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-multi-datasource-mybatis/springboot-使用mybatis-plus集成多数据源.md" beforeDir="false" afterPath="$PROJECT_DIR$/demo-multi-datasource-mybatis/springboot-使用mybatis-plus集成多数据源.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -107,14 +114,14 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-exception-handler/src/main/java/com/yolo/exception/handler/common",
+    "last_opened_file_path": "/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-aop-call-info/src/main/java/com/yolo/call/info",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "fileTemplates",
-    "spring.configuration.checksum": "072b3d238b13523b398516d97778bbec",
+    "spring.configuration.checksum": "08a9aa8297a7b98af67bec176b777e67",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -149,7 +156,7 @@
       <recent name="com.yolo.repeat.submit.interceptor" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserServiceImplTest.testListUser">
+  <component name="RunManager" selected="Spring Boot.DemoAopCallInfoApplication">
     <configuration name="UserServiceImplTest.addUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo-multi-datasource-mybatis" />
       <extension name="coverage">
@@ -182,12 +189,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DemoFlywayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="demo-flyway" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.flyway.DemoFlywayApplication" />
+    <configuration name="DemoAopCallInfoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="demo-aop-call-info" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.call.info.DemoAopCallInfoApplication" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.yolo.flyway.*" />
+          <option name="PATTERN" value="com.yolo.call.info.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -230,11 +237,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.DemoAopCallInfoApplication" />
         <item itemvalue="JUnit.UserServiceImplTest.testListUser" />
         <item itemvalue="JUnit.UserServiceImplTest.addUser" />
         <item itemvalue="Spring Boot.DemoJacksonApplication" />
         <item itemvalue="Spring Boot.DemoRedisLimitApplication" />
-        <item itemvalue="Spring Boot.DemoFlywayApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -273,7 +280,8 @@
       <workItem from="1684138294947" duration="47465000" />
       <workItem from="1684315572670" duration="886000" />
       <workItem from="1684374311967" duration="3019000" />
-      <workItem from="1684377852319" duration="14152000" />
+      <workItem from="1684377852319" duration="15460000" />
+      <workItem from="1684400337368" duration="308000" />
     </task>
     <task id="LOCAL-00001" summary="feat: &#10;&#10;初始化依赖">
       <created>1682669417869</created>
@@ -548,7 +556,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684395009661</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="feat: springboot使用mp集成多数据源">
+      <created>1684398936585</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1684398936585</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -570,7 +585,6 @@
       <path value="$PROJECT_DIR$/demo-properties" />
       <path value="$PROJECT_DIR$/demo-logback" />
     </ignored-roots>
-    <MESSAGE value="feat: &#10;整合mybatis使用xml、注解" />
     <MESSAGE value="feat: &#10;整合mybatis分页插件pagehelper" />
     <MESSAGE value="feat: &#10;添加资源映射配置完成本地文件下载" />
     <MESSAGE value="feat: 自定义注解实现通用树结构工具类" />
@@ -595,7 +609,8 @@
     <MESSAGE value="feat: 调整全局异常处理模块" />
     <MESSAGE value="feat: jackson注解的使用" />
     <MESSAGE value="feat: 目录" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 目录" />
+    <MESSAGE value="feat: springboot使用mp集成多数据源" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: springboot使用mp集成多数据源" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
