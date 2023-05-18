@@ -34,6 +34,7 @@
         <module>demo-xxl-job-auto-register-test</module>
         <module>demo-async</module>
         <module>demo-flyway</module>
+        <module>demo-redis-limit</module>
     </modules>
     <dependencies>
         <dependency>

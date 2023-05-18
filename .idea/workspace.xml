@@ -4,16 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: 异步方法实现">
-      <change afterPath="$PROJECT_DIR$/demo-flyway/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-flyway/springboot-整合flyway.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-flyway/src/main/java/com/yolo/flyway/DemoFlywayApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-flyway/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-flyway/src/main/resources/db/migration/R__add_unknown_user.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-flyway/src/main/resources/db/migration/V1__create_user.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-flyway/src/main/resources/db/migration/V2__add_user.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-flyway/src/main/resources/db/migration/V3__add_user.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-flyway/src/test/java/com/yolo/flyway/DemoFlywayApplicationTests.java" afterDir="false" />
+    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: springboot整合flyway">
+      <change afterPath="$PROJECT_DIR$/demo-redis-limit/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-redis-limit/springboot-自定义注解实现接口限流.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-redis-limit/src/main/java/com/yolo/redis/limit/DemoRedisLimitApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-redis-limit/src/main/java/com/yolo/redis/limit/annotiion/AccessLimit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-redis-limit/src/main/java/com/yolo/redis/limit/common/ApiResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-redis-limit/src/main/java/com/yolo/redis/limit/common/ApiStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-redis-limit/src/main/java/com/yolo/redis/limit/config/WebMvcConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-redis-limit/src/main/java/com/yolo/redis/limit/controller/TestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-redis-limit/src/main/java/com/yolo/redis/limit/exception/AccessLimitException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-redis-limit/src/main/java/com/yolo/redis/limit/exception/BaseException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-redis-limit/src/main/java/com/yolo/redis/limit/handle/handler/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-redis-limit/src/main/java/com/yolo/redis/limit/interceptor/AccessLimitInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-redis-limit/src/main/java/com/yolo/redis/limit/util/IpUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-redis-limit/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-redis-limit/src/test/java/com/yolo/redis/limit/DemoRedisLimitApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
@@ -117,14 +123,14 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-xxl-job-auto-register-test/src/main/java/com/yolo/auto/register/test",
+    "last_opened_file_path": "/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-redis-limit/src/main/java/com/yolo/redis/limit/handle",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "fileTemplates",
-    "spring.configuration.checksum": "ea905f36bfefafda27d90f1ff080c4da",
+    "spring.configuration.checksum": "072b3d238b13523b398516d97778bbec",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -141,25 +147,25 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/demo-redis-limit/src/main/java/com/yolo/redis/limit/handle" />
       <recent name="$PROJECT_DIR$/demo-xxl-job-auto-register-test/src/main/java/com/yolo/auto/register/test" />
       <recent name="$PROJECT_DIR$/demo-jasypt/src/main/resources" />
       <recent name="$PROJECT_DIR$/demo-email/src/main/resources/static" />
       <recent name="$PROJECT_DIR$/demo-redis-repeat-submit" />
-      <recent name="$PROJECT_DIR$/demo-orm-mybatis-plus" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/demo-orm-mybatis-plus/sql" />
       <recent name="$PROJECT_DIR$/demo-login-operation-log/src/main/resources/mybatis" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.yolo.redis.limit.exception" />
       <recent name="com.yolo.jasypt" />
       <recent name="com.yolo.email.service" />
       <recent name="com.yolo.repeat.submit.config" />
       <recent name="com.yolo.repeat.submit.interceptor" />
-      <recent name="com.yolo.repeat.submit.util" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.DemoFlywayApplication">
+  <component name="RunManager" selected="Spring Boot.DemoRedisLimitApplication">
     <configuration name="DemoAsyncApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo-async" />
       <extension name="coverage">
@@ -171,22 +177,6 @@
       <option name="PACKAGE_NAME" value="com.yolo.async" />
       <option name="MAIN_CLASS_NAME" value="com.yolo.async.DemoAsyncApplicationTests" />
       <option name="METHOD_NAME" value="contextLoads" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="XxlJobGroupTest.xxlJobRemove" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo-xxl-job-http" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.yolo.xxl.job.http.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.yolo.xxl.job.http" />
-      <option name="MAIN_CLASS_NAME" value="com.yolo.xxl.job.http.XxlJobGroupTest" />
-      <option name="METHOD_NAME" value="xxlJobRemove" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -208,6 +198,19 @@
     <configuration name="DemoLogAopApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="demo-log-aop" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.logaop.DemoLogAopApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemoRedisLimitApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="demo-redis-limit" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.redis.limit.DemoRedisLimitApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yolo.redis.limit.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -240,11 +243,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.DemoRedisLimitApplication" />
         <item itemvalue="Spring Boot.DemoFlywayApplication" />
         <item itemvalue="JUnit.DemoAsyncApplicationTests.contextLoads" />
         <item itemvalue="Spring Boot.DemoXxlJobAutoRegisterTestApplication" />
         <item itemvalue="Spring Boot.DemoXxlJobApplication" />
-        <item itemvalue="JUnit.XxlJobGroupTest.xxlJobRemove" />
       </list>
     </recent_temporary>
   </component>
@@ -282,7 +285,8 @@
       <workItem from="1684133220016" duration="4666000" />
       <workItem from="1684138294947" duration="47465000" />
       <workItem from="1684315572670" duration="886000" />
-      <workItem from="1684374311967" duration="2377000" />
+      <workItem from="1684374311967" duration="3019000" />
+      <workItem from="1684377852319" duration="7728000" />
     </task>
     <task id="LOCAL-00001" summary="feat: &#10;&#10;初始化依赖">
       <created>1682669417869</created>
@@ -522,7 +526,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684313548288</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="feat: springboot整合flyway">
+      <created>1684376723253</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1684376723253</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -544,7 +555,6 @@
       <path value="$PROJECT_DIR$/demo-properties" />
       <path value="$PROJECT_DIR$/demo-logback" />
     </ignored-roots>
-    <MESSAGE value="feat: &#10;对swagger和knife4j的使用" />
     <MESSAGE value="feat: &#10;自定义注解使用aop对操作日志进行记录" />
     <MESSAGE value="feat: &#10;自定义注解使用aop的方式对操作日志进行异步保存" />
     <MESSAGE value="feat: &#10;springboot-日志管理(登录日志，操作日志)" />
@@ -569,7 +579,8 @@
     <MESSAGE value="feat: 测试xxl-job手写的starter自动注册功能" />
     <MESSAGE value="feat: xxl-job目录" />
     <MESSAGE value="feat: 异步方法实现" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 异步方法实现" />
+    <MESSAGE value="feat: springboot整合flyway" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: springboot整合flyway" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
