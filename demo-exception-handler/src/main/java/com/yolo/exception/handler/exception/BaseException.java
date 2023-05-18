@@ -1,6 +1,6 @@
 package com.yolo.exception.handler.exception;
 
-import com.yolo.exception.handler.common.Status;
+import com.yolo.exception.handler.common.ApiStatus;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
@@ -13,7 +13,7 @@ public class BaseException extends RuntimeException {
     private Integer code;
     private String message;
 
-    public BaseException(Status status) {
+    public BaseException(ApiStatus status) {
         super(status.getMessage());
         this.code = status.getCode();
         this.message = status.getMessage();

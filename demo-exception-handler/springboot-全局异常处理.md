@@ -45,27 +45,44 @@ public class MyExceptionHandler {
 
 上述的示例中，我们对捕获的异常进行简单的二次处理，返回异常的信息，虽然这种能够让我们知道异常的原因，但是在很多的情况下来说，可能还是不够人性化，不符合我们的要求。那么我们这里可以通过自定义的异常类以及枚举类来实现我们想要的那种数据吧
 
+### pom.xml
+
+```xml
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-validation</artifactId>
+        </dependency>
+```
+
 ### 自定义状态码
 
 ```java
 package com.yolo.exception.handler.common;
 
-import lombok.Getter;
-
-/**
- * 状态码封装
- */
-@Getter
-public enum Status {
+public enum ApiStatus {
     /**
      * 操作成功
      */
     OK(200, "操作成功"),
 
+    PARAM_ERROR(400, "参数错误"),
+
     /**
      * 未知异常
      */
     UNKNOWN_ERROR(500, "服务器出错啦");
+
     /**
      * 状态码
      */
@@ -75,9 +92,17 @@ public enum Status {
      */
     private final String message;
 
-    Status(Integer code, String message) {
+    ApiStatus(Integer code, String message) {
         this.code = code;
         this.message = message;
+    }
+
+    public Integer getCode() {
+        return code;
+    }
+
+    public String getMessage() {
+        return message;
     }
 }
 ```
@@ -85,10 +110,6 @@ public enum Status {
 ### 自定义异常类
 
 ```java
-import com.yolo.exception.handler.common.Status;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-
 /**
  * 异常基类
  */
@@ -98,7 +119,7 @@ public class BaseException extends RuntimeException {
     private Integer code;
     private String message;
 
-    public BaseException(Status status) {
+    public BaseException(ApiStatus status) {
         super(status.getMessage());
         this.code = status.getCode();
         this.message = status.getMessage();
@@ -113,16 +134,13 @@ public class BaseException extends RuntimeException {
 ```
 
 ```java
-import com.yolo.exception.handler.common.Status;
-import lombok.Getter;
-
 /**
  * JSON异常
  */
 @Getter
 public class JsonException extends BaseException {
 
-    public JsonException(Status status) {
+    public JsonException(ApiStatus status) {
         super(status);
     }
 
@@ -133,14 +151,12 @@ public class JsonException extends BaseException {
 ```
 
 ```java
-import com.yolo.exception.handler.common.Status;
-
 /**
  * 空指针异常
  */
-public class NullPointerException extends BaseException {
+public class NullPointerException extends BaseException{
 
-    public NullPointerException(Status status) {
+    public NullPointerException(ApiStatus status) {
         super(status);
     }
 
@@ -153,11 +169,9 @@ public class NullPointerException extends BaseException {
 ### 自定义数据格式
 
 ```java
-package com.yolo.exception.handler.model;
+package com.yolo.exception.handler.common;
 
 
-import com.yolo.exception.handler.common.Status;
-import com.yolo.exception.handler.exception.BaseException;
 import lombok.Data;
 
 /**
@@ -200,6 +214,7 @@ public class ApiResponse {
         this.data = data;
     }
 
+
     /**
      * 构造一个自定义的API返回
      *
@@ -219,61 +234,31 @@ public class ApiResponse {
      * @return ApiResponse
      */
     public static ApiResponse ofSuccess(Object data) {
-        return ofStatus(Status.OK, data);
+        return of(ApiStatus.OK.getCode(), ApiStatus.OK.getMessage(), data);
     }
 
     /**
-     * 构造一个成功且自定义消息的API返回
-     *
-     * @param message 返回内容
+     * 构造一个成功且不带数据的API返回
      * @return ApiResponse
      */
-    public static ApiResponse ofMessage(String message) {
-        return of(Status.OK.getCode(), message, null);
-    }
-
-    /**
-     * 构造一个有状态的API返回
-     *
-     * @param status 状态 {@link Status}
-     * @return ApiResponse
-     */
-    public static ApiResponse ofStatus(Status status) {
-        return ofStatus(status, null);
-    }
-
-    /**
-     * 构造一个有状态且带数据的API返回
-     *
-     * @param status 状态 {@link Status}
-     * @param data   返回数据
-     * @return ApiResponse
-     */
-    public static ApiResponse ofStatus(Status status, Object data) {
-        return of(status.getCode(), status.getMessage(), data);
+    public static ApiResponse ofSuccess() {
+        return of(ApiStatus.OK.getCode(), ApiStatus.OK.getMessage(), null);
     }
 
     /**
      * 构造一个异常且带数据的API返回
-     *
-     * @param t    异常
-     * @param data 返回数据
-     * @param <T>  {@link BaseException} 的子类
      * @return ApiResponse
      */
-    public static <T extends BaseException> ApiResponse ofException(T t, Object data) {
-        return of(t.getCode(), t.getMessage(), data);
+    public static  ApiResponse ofException(ApiStatus apiStatus, Object data) {
+        return of(apiStatus.getCode(), apiStatus.getMessage(), data);
     }
 
     /**
-     * 构造一个异常且带数据的API返回
-     *
-     * @param t   异常
-     * @param <T> {@link BaseException} 的子类
+     * 构造一个异常且不带数据的API返回
      * @return ApiResponse
      */
-    public static <T extends BaseException> ApiResponse ofException(T t) {
-        return ofException(t, null);
+    public static  ApiResponse ofException(ApiStatus apiStatus) {
+        return ofException(apiStatus, null);
     }
 }
 ```
@@ -285,11 +270,13 @@ package com.yolo.exception.handler.handler;
 
 import com.yolo.exception.handler.exception.JsonException;
 import com.yolo.exception.handler.exception.NullPointerException;
-import com.yolo.exception.handler.common.ApiResponse;
+import com.yolo.exception.handler.model.ApiResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
+
+import javax.servlet.http.HttpServletRequest;
 
 /**
  * 统一异常处理
@@ -319,8 +306,8 @@ public class GlobalExceptionHandler {
      */
     @ExceptionHandler(value = NullPointerException.class)
     @ResponseBody
-    public ApiResponse exceptionHandler(NullPointerException e) {
-        log.error("发生空指针异常！原因是:", e);
+    public ApiResponse exceptionHandler(NullPointerException e){
+        log.error("发生空指针异常！原因是:",e);
         return ApiResponse.ofException(e);
     }
 
@@ -330,25 +317,149 @@ public class GlobalExceptionHandler {
 ### Controller 控制层
 
 ```java
-package com.yolo.exception.handler.controller;
+package com.yolo.exception.handler.handler;
 
 import com.yolo.exception.handler.common.ApiResponse;
-import com.yolo.exception.handler.common.Status;
+import com.yolo.exception.handler.common.ApiStatus;
 import com.yolo.exception.handler.exception.JsonException;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
+import com.yolo.exception.handler.exception.NullPointerException;
+import lombok.Data;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.http.HttpStatus;
+import org.springframework.validation.BindException;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.MethodArgumentNotValidException;
+import org.springframework.web.bind.MissingServletRequestParameterException;
+import org.springframework.web.bind.annotation.ControllerAdvice;
+import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.ResponseStatus;
+
+import javax.validation.UnexpectedTypeException;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
- * 测试Controller
+ * 统一异常处理
  */
-@Controller
-public class TestController {
+@ControllerAdvice
+@Slf4j
+public class GlobalExceptionHandler {
 
-    @GetMapping("/json")
+    /**
+     * 统一 json 异常处理
+     *
+     * @param exception JsonException
+     * @return 统一返回 json 格式
+     */
+    @ExceptionHandler(value = JsonException.class)
     @ResponseBody
-    public ApiResponse jsonException() {
-        throw new JsonException(Status.UNKNOWN_ERROR);
+    public ApiResponse jsonErrorHandler(JsonException exception) {
+        log.error("【JsonException】:{}", exception.getMessage());
+        return ApiResponse.ofException(ApiStatus.UNKNOWN_ERROR,exception.getLocalizedMessage());
+    }
+
+    /**
+     * 处理空指针的异常
+     * @param exception 空制造异常
+     * @return 统一返回 json 格式
+     */
+    @ExceptionHandler(value = NullPointerException.class)
+    @ResponseBody
+    public ApiResponse nullPointExceptionHandler(NullPointerException exception){
+        log.error("发生空指针异常！原因是:",exception);
+        return ApiResponse.ofException(ApiStatus.UNKNOWN_ERROR,exception.getLocalizedMessage());
+    }
+
+    /**
+     * 全局异常
+     */
+    @ExceptionHandler
+    @ResponseBody
+    @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
+    public ApiResponse exceptionHandler(Exception e) {
+        log.error("服务器出现未知错误", e);
+        return ApiResponse.ofException(ApiStatus.UNKNOWN_ERROR);
+    }
+
+
+    /**
+     * {@code @Valid}参数校验失败异常
+     */
+    @ExceptionHandler
+    @ResponseBody
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
+    public ApiResponse exceptionHandler(MethodArgumentNotValidException e) {
+        log.error("参数校验失败异常", e);
+        return ApiResponse.ofException(ApiStatus.PARAM_ERROR,extractError(e.getBindingResult()));
+    }
+
+    /**
+     * {@code @Valid}参数校验失败异常
+     */
+    @ExceptionHandler
+    @ResponseBody
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
+    public ApiResponse exceptionHandler(BindException e) {
+        log.error("参数校验失败异常", e);
+        return ApiResponse.ofException(ApiStatus.PARAM_ERROR,extractError(e.getBindingResult()));
+    }
+
+    /**
+     * 无效的参数异常
+     */
+    @ExceptionHandler
+    @ResponseBody
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
+    public ApiResponse exceptionHandler(IllegalArgumentException e) {
+        log.error("无效的参数异常", e);
+        return ApiResponse.ofException(ApiStatus.PARAM_ERROR,e.getLocalizedMessage());
+    }
+
+    /**
+     * {@code @Valid}参数校验失败异常
+     */
+    @ExceptionHandler
+    @ResponseBody
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
+    public ApiResponse exceptionHandler(MissingServletRequestParameterException e) {
+        log.error("参数校验失败异常", e);
+        return ApiResponse.ofException(ApiStatus.PARAM_ERROR,e.getLocalizedMessage());
+    }
+
+    /**
+     * 无效的参数异常
+     */
+    @ExceptionHandler
+    @ResponseBody
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
+    public ApiResponse exceptionHandler(UnexpectedTypeException e) {
+        log.error("参数校验失败异常", e);
+        return ApiResponse.ofException(ApiStatus.PARAM_ERROR,e.getLocalizedMessage());
+    }
+
+    /**
+     * 从绑定结果中提出错误字段
+     */
+    private List<FieldError> extractError(BindingResult bindingResult) {
+        List<FieldError> fieldErrors = new ArrayList<>();
+        bindingResult.getFieldErrors().forEach(fieldError -> {
+            FieldError error = new FieldError();
+            error.setField(fieldError.getField());
+            error.setRejectedValue(fieldError.getRejectedValue());
+            error.setDefaultMessage(fieldError.getDefaultMessage());
+            fieldErrors.add(error);
+        });
+        return fieldErrors;
+    }
+
+    @Data
+    private static class FieldError {
+
+        private String field;
+        private Object rejectedValue;
+        private String defaultMessage;
+
     }
 
 }
@@ -362,4 +473,6 @@ public class TestController {
 > 注意：
 >
 > 自义定全局异常处理除了可以处理上述的数据格式之外，也可以处理页面的跳转，只需在新增的异常方法的返回处理上填写该跳转的路径并不使用`ResponseBody` 注解即可。 细心的同学也许发现了在`GlobalExceptionHandler`类中使用的是`ControllerAdvice`注解，而非`RestControllerAdvice`注解，如果是用的`RestControllerAdvice`注解，它会将数据自动转换成JSON格式，这种于`Controller`和`RestController`类似，所以我们在使用全局异常处理的之后可以进行灵活的选择处理。
+
+
 
