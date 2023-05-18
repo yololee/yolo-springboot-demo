@@ -38,9 +38,9 @@ spring boot demo 是一个用来深度学习并实战 spring boot 的项目
 | [demo-xxl-job-auto-register](https://gitee.com/huanglei1111/yolo-springboot-demo/tree/master/demo-xxl-job-auto-register) | 手写starter完成xxl-job自动测试功能                           |
 | [demo-xxl-job-auto-regiter-test](https://gitee.com/huanglei1111/yolo-springboot-demo/tree/master/demo-xxl-job-auto-register-test) | 测试手写starter完成xxl-job自动测试功能                       |
 | [demo-async](https://gitee.com/huanglei1111/yolo-springboot-demo/tree/master/demo-async) | spring-boot 使用原生提供的异步任务支持，实现异步执行任务     |
-|                                                              |                                                              |
-|                                                              |                                                              |
-|                                                              |                                                              |
+| [demo-flyway](https://gitee.com/huanglei1111/yolo-springboot-demo/tree/master/demo-flyway) | spring boot 集成 Flyway，项目启动时初始化数据库表结构，同时支持数据库脚本版本控制 |
+| [demo-redis-limit](https://gitee.com/huanglei1111/yolo-springboot-demo/tree/master/demo-redis-limit) | spring-boot 使用 Redis 实现分布式限流，保护 API              |
+| [demo-jackson](https://gitee.com/huanglei1111/yolo-springboot-demo/tree/master/demo-jackson) | jackson在项目中各种注解的使用                                |
 |                                                              |                                                              |
 |                                                              |                                                              |
 |                                                              |                                                              |

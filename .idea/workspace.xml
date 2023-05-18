@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: 调整全局异常处理模块">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: jackson注解的使用">
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -271,7 +269,7 @@
       <workItem from="1684138294947" duration="47465000" />
       <workItem from="1684315572670" duration="886000" />
       <workItem from="1684374311967" duration="3019000" />
-      <workItem from="1684377852319" duration="10902000" />
+      <workItem from="1684377852319" duration="11222000" />
     </task>
     <task id="LOCAL-00001" summary="feat: &#10;&#10;初始化依赖">
       <created>1682669417869</created>
@@ -532,7 +530,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684392666063</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="feat: jackson注解的使用">
+      <created>1684394759868</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1684394759868</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -554,7 +559,6 @@
       <path value="$PROJECT_DIR$/demo-properties" />
       <path value="$PROJECT_DIR$/demo-logback" />
     </ignored-roots>
-    <MESSAGE value="feat: &#10;springboot-日志管理(登录日志，操作日志)" />
     <MESSAGE value="feat: &#10;本地文件上传下载" />
     <MESSAGE value="feat: &#10;整合mybatis使用xml、注解" />
     <MESSAGE value="feat: &#10;整合mybatis分页插件pagehelper" />
@@ -579,7 +583,8 @@
     <MESSAGE value="feat: springboot整合flyway" />
     <MESSAGE value="feat: springboot整合redis实现接口限流" />
     <MESSAGE value="feat: 调整全局异常处理模块" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 调整全局异常处理模块" />
+    <MESSAGE value="feat: jackson注解的使用" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: jackson注解的使用" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
