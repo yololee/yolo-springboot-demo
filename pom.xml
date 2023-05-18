@@ -36,6 +36,7 @@
         <module>demo-flyway</module>
         <module>demo-redis-limit</module>
         <module>demo-jackson</module>
+        <module>demo-multi-datasource-mybatis</module>
     </modules>
     <dependencies>
         <dependency>

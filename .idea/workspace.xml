@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: jackson注解的使用">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: 目录">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,18 +149,34 @@
       <recent name="com.yolo.repeat.submit.interceptor" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.DemoJacksonApplication">
-    <configuration name="DemoAsyncApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo-async" />
+  <component name="RunManager" selected="JUnit.UserServiceImplTest.testListUser">
+    <configuration name="UserServiceImplTest.addUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo-multi-datasource-mybatis" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.yolo.async.*" />
+          <option name="PATTERN" value="com.yolo.multi.datasource.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.yolo.async" />
-      <option name="MAIN_CLASS_NAME" value="com.yolo.async.DemoAsyncApplicationTests" />
-      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="PACKAGE_NAME" value="com.yolo.multi.datasource" />
+      <option name="MAIN_CLASS_NAME" value="com.yolo.multi.datasource.UserServiceImplTest" />
+      <option name="METHOD_NAME" value="addUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceImplTest.testListUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo-multi-datasource-mybatis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yolo.multi.datasource.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.yolo.multi.datasource" />
+      <option name="MAIN_CLASS_NAME" value="com.yolo.multi.datasource.UserServiceImplTest" />
+      <option name="METHOD_NAME" value="testListUser" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -211,26 +228,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DemoXxlJobAutoRegisterTestApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="demo-xxl-job-auto-register-test" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.auto.register.test.DemoXxlJobAutoRegisterTestApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.yolo.auto.register.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserServiceImplTest.testListUser" />
+        <item itemvalue="JUnit.UserServiceImplTest.addUser" />
         <item itemvalue="Spring Boot.DemoJacksonApplication" />
         <item itemvalue="Spring Boot.DemoRedisLimitApplication" />
         <item itemvalue="Spring Boot.DemoFlywayApplication" />
-        <item itemvalue="JUnit.DemoAsyncApplicationTests.contextLoads" />
-        <item itemvalue="Spring Boot.DemoXxlJobAutoRegisterTestApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -269,7 +273,7 @@
       <workItem from="1684138294947" duration="47465000" />
       <workItem from="1684315572670" duration="886000" />
       <workItem from="1684374311967" duration="3019000" />
-      <workItem from="1684377852319" duration="11222000" />
+      <workItem from="1684377852319" duration="14152000" />
     </task>
     <task id="LOCAL-00001" summary="feat: &#10;&#10;初始化依赖">
       <created>1682669417869</created>
@@ -537,7 +541,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684394759868</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="feat: 目录">
+      <created>1684395009661</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1684395009661</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -559,7 +570,6 @@
       <path value="$PROJECT_DIR$/demo-properties" />
       <path value="$PROJECT_DIR$/demo-logback" />
     </ignored-roots>
-    <MESSAGE value="feat: &#10;本地文件上传下载" />
     <MESSAGE value="feat: &#10;整合mybatis使用xml、注解" />
     <MESSAGE value="feat: &#10;整合mybatis分页插件pagehelper" />
     <MESSAGE value="feat: &#10;添加资源映射配置完成本地文件下载" />
@@ -584,7 +594,8 @@
     <MESSAGE value="feat: springboot整合redis实现接口限流" />
     <MESSAGE value="feat: 调整全局异常处理模块" />
     <MESSAGE value="feat: jackson注解的使用" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: jackson注解的使用" />
+    <MESSAGE value="feat: 目录" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 目录" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
