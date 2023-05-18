@@ -35,6 +35,7 @@
         <module>demo-async</module>
         <module>demo-flyway</module>
         <module>demo-redis-limit</module>
+        <module>demo-jackson</module>
     </modules>
     <dependencies>
         <dependency>
