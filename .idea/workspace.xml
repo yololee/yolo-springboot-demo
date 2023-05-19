@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: springboot使用mp集成多数据源">
-      <change afterPath="$PROJECT_DIR$/demo-orm-mybatis-plus/src/main/java/com/yolo/mybatis/plus/util/DateTimeUtils.java" afterDir="false" />
+    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: mp设置自动插入数据打印日志">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-orm-mybatis-plus/src/main/java/com/yolo/mybatis/plus/config/MybatisPlusConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-orm-mybatis-plus/src/main/java/com/yolo/mybatis/plus/config/MybatisPlusConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-orm-mybatis-plus/src/test/java/com/yolo/mybatis/plus/DemoOrmMybatisPlusApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-orm-mybatis-plus/src/test/java/com/yolo/mybatis/plus/DemoOrmMybatisPlusApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,33 +96,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-aop-call-info/src/main/java/com/yolo/call/info&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;fileTemplates&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;70d0719f6cad7e39789e0a8c740afc88&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "last_opened_file_path": "/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-cache-redis-multi-datasource/src/main/java/com/yolo/redis/multi/datasource/modules/common",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "fileTemplates",
+    "spring.configuration.checksum": "70d0719f6cad7e39789e0a8c740afc88",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -134,25 +131,25 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/demo-cache-redis-multi-datasource/src/main/java/com/yolo/redis/multi/datasource/modules/common" />
+      <recent name="$PROJECT_DIR$/demo-cache-redis-multi-datasource/src/main/java/com/yolo/redis/multi/datasource/modules/common/dto" />
       <recent name="$PROJECT_DIR$/demo-exception-handler/src/main/java/com/yolo/exception/handler/common" />
       <recent name="$PROJECT_DIR$/demo-redis-limit/src/main/java/com/yolo/redis/limit/handle" />
       <recent name="$PROJECT_DIR$/demo-xxl-job-auto-register-test/src/main/java/com/yolo/auto/register/test" />
-      <recent name="$PROJECT_DIR$/demo-jasypt/src/main/resources" />
-      <recent name="$PROJECT_DIR$/demo-email/src/main/resources/static" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/demo-orm-mybatis-plus/sql" />
       <recent name="$PROJECT_DIR$/demo-login-operation-log/src/main/resources/mybatis" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.yolo.redis.multi.datasource.config" />
+      <recent name="com.yolo.redis.multi.datasource.modules.common.handler" />
       <recent name="com.yolo.redis.limit.exception" />
       <recent name="com.yolo.jasypt" />
       <recent name="com.yolo.email.service" />
-      <recent name="com.yolo.repeat.submit.config" />
-      <recent name="com.yolo.repeat.submit.interceptor" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DemoOrmMybatisPlusApplicationTests.insertTest">
+  <component name="RunManager" selected="Spring Boot.DemoCacheRedisMultiDatasourceApplication">
     <configuration name="DemoOrmMybatisPlusApplicationTests.insertTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo-orm-mybatis-plus" />
       <extension name="coverage">
@@ -214,12 +211,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DemoJacksonApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="demo-jackson" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.jackson.DemoJacksonApplication" />
+    <configuration name="DemoCacheRedisMultiDatasourceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="demo-cache-redis-multi-datasource" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.redis.multi.datasource.DemoCacheRedisMultiDatasourceApplication" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.yolo.jackson.*" />
+          <option name="PATTERN" value="com.yolo.redis.multi.datasource.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -236,11 +233,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.DemoCacheRedisMultiDatasourceApplication" />
         <item itemvalue="JUnit.DemoOrmMybatisPlusApplicationTests.insertTest" />
         <item itemvalue="Spring Boot.DemoAopCallInfoApplication" />
         <item itemvalue="JUnit.UserServiceImplTest.testListUser" />
         <item itemvalue="JUnit.UserServiceImplTest.addUser" />
-        <item itemvalue="Spring Boot.DemoJacksonApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -282,7 +279,7 @@
       <workItem from="1684377852319" duration="15460000" />
       <workItem from="1684400337368" duration="308000" />
       <workItem from="1684400894974" duration="1345000" />
-      <workItem from="1684402858050" duration="1933000" />
+      <workItem from="1684402858050" duration="13748000" />
     </task>
     <task id="LOCAL-00001" summary="feat: &#10;&#10;初始化依赖">
       <created>1682669417869</created>
@@ -564,7 +561,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684398936585</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="feat: mp设置自动插入数据打印日志">
+      <created>1684460414713</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1684460414713</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -586,7 +590,6 @@
       <path value="$PROJECT_DIR$/demo-properties" />
       <path value="$PROJECT_DIR$/demo-logback" />
     </ignored-roots>
-    <MESSAGE value="feat: &#10;整合mybatis分页插件pagehelper" />
     <MESSAGE value="feat: &#10;添加资源映射配置完成本地文件下载" />
     <MESSAGE value="feat: 自定义注解实现通用树结构工具类" />
     <MESSAGE value="feat: 分页插件pagehelper的使用文档" />
@@ -611,7 +614,8 @@
     <MESSAGE value="feat: jackson注解的使用" />
     <MESSAGE value="feat: 目录" />
     <MESSAGE value="feat: springboot使用mp集成多数据源" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: springboot使用mp集成多数据源" />
+    <MESSAGE value="feat: mp设置自动插入数据打印日志" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: mp设置自动插入数据打印日志" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

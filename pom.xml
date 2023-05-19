@@ -37,6 +37,7 @@
         <module>demo-jackson</module>
         <module>demo-multi-datasource-mybatis</module>
         <module>demo-aop-call-info</module>
+        <module>demo-cache-redis-multi-datasource</module>
     </modules>
 
 
