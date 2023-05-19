@@ -25,7 +25,7 @@ spring boot demo 是一个用来深度学习并实战 spring boot 的项目
 | [demo-orm-mybatis](https://gitee.com/huanglei1111/yolo-springboot-demo/tree/master/demo-orm-mybatis) | spring-boot 集成原生mybatis，使用 mybatis-spring-boot-starter 集成，包括注解和xml俩种方式 |
 | [demo-orm-mybatis-page](https://gitee.com/huanglei1111/yolo-springboot-demo/tree/master/demo-orm-mybatis-page) | pring-boot 集成通用Mapper和PageHelper                        |
 | [demo-tree](https://gitee.com/huanglei1111/yolo-springboot-demo/tree/master/demo-tree) | 自定义注解实现树结构                                         |
-| [demo-call-info](https://gitee.com/huanglei1111/yolo-springboot-demo/tree/master/demo-call-info) | 自定义注解实现参数和返回结果打印                             |
+| [demo-aop-call-info](https://gitee.com/huanglei1111/yolo-springboot-demo/tree/master/demo-aop-call-info) | 自定义注解实现参数和返回结果打印                             |
 | [demo-easy-code](https://gitee.com/huanglei1111/yolo-springboot-demo/tree/master/demo-easy-code) | 使用插件`mybatisX`或者`easyCode`生成实体类和mapper           |
 | [demo-orm-mybatis-plus](https://gitee.com/huanglei1111/yolo-springboot-demo/tree/master/demo-orm-mybatis-plus) | spring-boot 集成 `mybatis-plus`的相关配置以及条件构造器的使用 |
 | [demo-redis-repeat-submit](https://gitee.com/huanglei1111/yolo-springboot-demo/tree/master/demo-redis-repeat-submit) | 自定义注解结合redis实现接口防止重复提交                      |

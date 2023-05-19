@@ -25,7 +25,7 @@ public class DemoOrmMybatisPlusApplicationTests {
     @Test
     public void insertTest(){
         Company company = new Company();
-        company.setName("腾讯");
+        company.setName("腾讯1111");
         company.setContact("李四");
         company.setContactType("17683720003");
         company.setRemoved(0);

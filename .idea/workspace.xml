@@ -5,15 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: springboot使用mp集成多数据源">
+      <change afterPath="$PROJECT_DIR$/demo-orm-mybatis-plus/src/main/java/com/yolo/mybatis/plus/util/DateTimeUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-aop-call-info/src/main/java/com/yolo/call/info/annotation/CallInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-aop-call-info/src/main/java/com/yolo/call/info/annotation/CallInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-aop-call-info/src/main/java/com/yolo/call/info/aspect/CallInfoAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-aop-call-info/src/main/java/com/yolo/call/info/aspect/CallInfoAspect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-aop-call-info/src/main/java/com/yolo/call/info/common/ApiResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-aop-call-info/src/main/java/com/yolo/call/info/common/ApiResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-aop-call-info/src/main/java/com/yolo/call/info/common/ApiStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-aop-call-info/src/main/java/com/yolo/call/info/common/ApiStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-aop-call-info/src/main/java/com/yolo/call/info/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-aop-call-info/src/main/java/com/yolo/call/info/controller/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-multi-datasource-mybatis/springboot-使用mybatis-plus集成多数据源.md" beforeDir="false" afterPath="$PROJECT_DIR$/demo-multi-datasource-mybatis/springboot-使用mybatis-plus集成多数据源.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-orm-mybatis-plus/src/main/java/com/yolo/mybatis/plus/config/MybatisPlusConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-orm-mybatis-plus/src/main/java/com/yolo/mybatis/plus/config/MybatisPlusConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-orm-mybatis-plus/src/test/java/com/yolo/mybatis/plus/DemoOrmMybatisPlusApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-orm-mybatis-plus/src/test/java/com/yolo/mybatis/plus/DemoOrmMybatisPlusApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,33 +99,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-aop-call-info/src/main/java/com/yolo/call/info",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "fileTemplates",
-    "spring.configuration.checksum": "08a9aa8297a7b98af67bec176b777e67",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-aop-call-info/src/main/java/com/yolo/call/info&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;fileTemplates&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;70d0719f6cad7e39789e0a8c740afc88&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -156,7 +152,23 @@
       <recent name="com.yolo.repeat.submit.interceptor" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.DemoAopCallInfoApplication">
+  <component name="RunManager" selected="JUnit.DemoOrmMybatisPlusApplicationTests.insertTest">
+    <configuration name="DemoOrmMybatisPlusApplicationTests.insertTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo-orm-mybatis-plus" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yolo.mybatis.plus.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.yolo.mybatis.plus" />
+      <option name="MAIN_CLASS_NAME" value="com.yolo.mybatis.plus.DemoOrmMybatisPlusApplicationTests" />
+      <option name="METHOD_NAME" value="insertTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserServiceImplTest.addUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo-multi-datasource-mybatis" />
       <extension name="coverage">
@@ -222,26 +234,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DemoRedisLimitApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="demo-redis-limit" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.redis.limit.DemoRedisLimitApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.yolo.redis.limit.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DemoOrmMybatisPlusApplicationTests.insertTest" />
         <item itemvalue="Spring Boot.DemoAopCallInfoApplication" />
         <item itemvalue="JUnit.UserServiceImplTest.testListUser" />
         <item itemvalue="JUnit.UserServiceImplTest.addUser" />
         <item itemvalue="Spring Boot.DemoJacksonApplication" />
-        <item itemvalue="Spring Boot.DemoRedisLimitApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -282,6 +281,8 @@
       <workItem from="1684374311967" duration="3019000" />
       <workItem from="1684377852319" duration="15460000" />
       <workItem from="1684400337368" duration="308000" />
+      <workItem from="1684400894974" duration="1345000" />
+      <workItem from="1684402858050" duration="1933000" />
     </task>
     <task id="LOCAL-00001" summary="feat: &#10;&#10;初始化依赖">
       <created>1682669417869</created>
@@ -629,11 +630,6 @@
           <url>file://$PROJECT_DIR$/demo-redis-repeat-submit/src/main/java/com/yolo/repeat/submit/interceptor/RepeatSubmitInterceptor.java</url>
           <line>47</line>
           <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/demo-xxl-job-auto-register/src/main/java/com/yolo/auto/register/core/XxlJobAutoRegister.java</url>
-          <line>133</line>
-          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.annotation.DbType;
 import com.baomidou.mybatisplus.core.handlers.MetaObjectHandler;
 import com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor;
 import com.baomidou.mybatisplus.extension.plugins.inner.PaginationInnerInterceptor;
+import com.yolo.mybatis.plus.util.DateTimeUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.ibatis.reflection.MetaObject;
 import org.mybatis.spring.annotation.MapperScan;
@@ -11,7 +12,10 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
 
+import java.text.ParseException;
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.Date;
 
 @Configuration   //组件，添加到容器
 @MapperScan("com.yolo.mybatis.plus.mapper")  //开启mapper接口扫描
@@ -35,11 +39,27 @@ public class MybatisPlusConfig {
         @Override
         public void insertFill(MetaObject metaObject) {
             this.strictInsertFill(metaObject, "createTime", LocalDateTime.class, LocalDateTime.now()); // 起始版本 3.3.0(推荐使用)
+
+            // 日志输出 ================================================================================================
+            LocalDateTime createTime = (LocalDateTime) this.getFieldValByName("createTime", metaObject);
+            log.info(String.valueOf(createTime));
+            if (createTime != null) {
+                // 格式化为yyyy-MM-dd HH:mm:ss
+                String format = createTime.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
+                log.info("MyBatisPlus自动填充处理 - createTime:{} ", format);
+            }
         }
 
         @Override
         public void updateFill(MetaObject metaObject) {
             this.strictUpdateFill(metaObject, "updateTime", LocalDateTime.class, LocalDateTime.now()); // 起始版本 3.3.0(推荐)
+            // 日志输出 ================================================================================================
+            LocalDateTime updateTime = (LocalDateTime) this.getFieldValByName("updateTime", metaObject);
+            if (updateTime != null) {
+                // 格式化为yyyy-MM-dd HH:mm:ss
+                String format = updateTime.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
+                log.info("MyBatisPlus自动填充处理 - createTime:{} ", format);
+            }
         }
     }
 
