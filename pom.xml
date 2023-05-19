@@ -38,6 +38,7 @@
         <module>demo-multi-datasource-mybatis</module>
         <module>demo-aop-call-info</module>
         <module>demo-cache-redis-multi-datasource</module>
+        <module>demo-druid</module>
     </modules>
 
 

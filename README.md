@@ -42,7 +42,7 @@ spring boot demo 是一个用来深度学习并实战 spring boot 的项目
 | [demo-redis-limit](https://gitee.com/huanglei1111/yolo-springboot-demo/tree/master/demo-redis-limit) | spring-boot 使用 Redis 实现分布式限流，保护 API              |
 | [demo-jackson](https://gitee.com/huanglei1111/yolo-springboot-demo/tree/master/demo-jackson) | jackson在项目中各种注解的使用                                |
 | [demo-multi-datasource-mybatis](https://gitee.com/huanglei1111/yolo-springboot-demo/tree/master/demo-multi-datasource-mybatis) | spring-boot 使用Mybatis集成多数据源，使用 Mybatis-Plus 提供的开源解决方案实现 |
-|                                                              |                                                              |
+| [demo-cache-redis-multi-datasource](https://gitee.com/huanglei1111/yolo-springboot-demo/tree/master/demo-cache-redis-multi-datasource) | redis多数据源配置，单节点，哨兵，集群配置                    |
 |                                                              |                                                              |
 |                                                              |                                                              |
 |                                                              |                                                              |
