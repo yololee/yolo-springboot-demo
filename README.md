@@ -44,7 +44,7 @@ spring boot demo 是一个用来深度学习并实战 spring boot 的项目
 | [demo-multi-datasource-mybatis](https://gitee.com/huanglei1111/yolo-springboot-demo/tree/master/demo-multi-datasource-mybatis) | spring-boot 使用Mybatis集成多数据源，使用 Mybatis-Plus 提供的开源解决方案实现 |
 | [demo-cache-redis-multi-datasource](https://gitee.com/huanglei1111/yolo-springboot-demo/tree/master/demo-cache-redis-multi-datasource) | redis多数据源配置，单节点，哨兵，集群配置                    |
 | [demo-druid](https://gitee.com/huanglei1111/yolo-springboot-demo/tree/master/demo-druid) | springboot整合Druid                                          |
-|                                                              |                                                              |
+| [demo-elasticsearch-rest-high-level-client](https://gitee.com/huanglei1111/yolo-springboot-demo/tree/master/demo-elasticsearch-rest-high-level-client) | spring boot 集成 ElasticSearch 7.x 版本，使用官方 Rest High Level Client 操作 ES 数据 |
 |                                                              |                                                              |
 |                                                              |                                                              |
 |                                                              |                                                              |

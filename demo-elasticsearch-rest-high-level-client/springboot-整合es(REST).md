@@ -1,4 +1,4 @@
-# springboot-整合es(RESTAPI)
+# springboot-整合es(REST)
 
 > 此 demo 主要演示了 Spring Boot 如何集成 `elasticsearch-rest-high-level-client` 完成对 `ElasticSearch 7.x` 版本的基本 CURD 操作
 
@@ -40,7 +40,7 @@ kabana：7.14.1
 ### 2、application.properties
 
 ```yml
-elasticsearch.host=192.168.10.125
+elasticsearch.host=127.0.0.1
 elasticsearch.port=9200
 elasticsearch.username=elastic
 elasticsearch.password=123456

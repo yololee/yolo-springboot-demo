@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: springboot整合druid">
+    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: springboot整合es (restapi)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-elasticsearch-rest-high-level-client/springboot-整合es(RESTAPI).md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -115,7 +116,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "fileTemplates",
-    "spring.configuration.checksum": "8858a09942cc14e27504178a1b7fcf2b",
+    "spring.configuration.checksum": "17a2eac2f501f92f65efb3cbb2676c1a",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -150,9 +151,9 @@
       <recent name="com.yolo.redis.limit.exception" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.IndexTest.existIndex">
-    <configuration name="IndexTest.addIndex" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo-elasticsearch-rest-high-level-client" />
+  <component name="RunManager" selected="JUnit.PersonRepositoryTest.save">
+    <configuration name="IndexTest.advanceAgg" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo-elasticsearch" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.yolo.elasticsearch.*" />
@@ -161,14 +162,14 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.yolo.elasticsearch" />
       <option name="MAIN_CLASS_NAME" value="com.yolo.elasticsearch.IndexTest" />
-      <option name="METHOD_NAME" value="addIndex" />
+      <option name="METHOD_NAME" value="advanceAgg" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IndexTest.addIndexAndMapping" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo-elasticsearch-rest-high-level-client" />
+    <configuration name="IndexTest.advanceSelect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo-elasticsearch" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.yolo.elasticsearch.*" />
@@ -177,14 +178,14 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.yolo.elasticsearch" />
       <option name="MAIN_CLASS_NAME" value="com.yolo.elasticsearch.IndexTest" />
-      <option name="METHOD_NAME" value="addIndexAndMapping" />
+      <option name="METHOD_NAME" value="advanceSelect" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IndexTest.deleteIndex" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo-elasticsearch-rest-high-level-client" />
+    <configuration name="IndexTest.customSelectRangeOfAge" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo-elasticsearch" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.yolo.elasticsearch.*" />
@@ -193,14 +194,14 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.yolo.elasticsearch" />
       <option name="MAIN_CLASS_NAME" value="com.yolo.elasticsearch.IndexTest" />
-      <option name="METHOD_NAME" value="deleteIndex" />
+      <option name="METHOD_NAME" value="customSelectRangeOfAge" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IndexTest.existIndex" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo-elasticsearch-rest-high-level-client" />
+    <configuration name="IndexTest.select" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo-elasticsearch" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.yolo.elasticsearch.*" />
@@ -209,14 +210,14 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.yolo.elasticsearch" />
       <option name="MAIN_CLASS_NAME" value="com.yolo.elasticsearch.IndexTest" />
-      <option name="METHOD_NAME" value="existIndex" />
+      <option name="METHOD_NAME" value="select" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IndexTest.queryIndex" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo-elasticsearch-rest-high-level-client" />
+    <configuration name="PersonRepositoryTest.save" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo-elasticsearch" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.yolo.elasticsearch.*" />
@@ -224,8 +225,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.yolo.elasticsearch" />
-      <option name="MAIN_CLASS_NAME" value="com.yolo.elasticsearch.IndexTest" />
-      <option name="METHOD_NAME" value="queryIndex" />
+      <option name="MAIN_CLASS_NAME" value="com.yolo.elasticsearch.PersonRepositoryTest" />
+      <option name="METHOD_NAME" value="save" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -240,11 +241,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.IndexTest.existIndex" />
-        <item itemvalue="JUnit.IndexTest.deleteIndex" />
-        <item itemvalue="JUnit.IndexTest.queryIndex" />
-        <item itemvalue="JUnit.IndexTest.addIndexAndMapping" />
-        <item itemvalue="JUnit.IndexTest.addIndex" />
+        <item itemvalue="JUnit.PersonRepositoryTest.save" />
+        <item itemvalue="JUnit.IndexTest.advanceAgg" />
+        <item itemvalue="JUnit.IndexTest.advanceSelect" />
+        <item itemvalue="JUnit.IndexTest.customSelectRangeOfAge" />
+        <item itemvalue="JUnit.IndexTest.select" />
       </list>
     </recent_temporary>
   </component>
@@ -287,7 +288,8 @@
       <workItem from="1684400337368" duration="308000" />
       <workItem from="1684400894974" duration="1345000" />
       <workItem from="1684402858050" duration="17965000" />
-      <workItem from="1684718004075" duration="4721000" />
+      <workItem from="1684718004075" duration="5600000" />
+      <workItem from="1684724615555" duration="5975000" />
     </task>
     <task id="LOCAL-00001" summary="feat: &#10;&#10;初始化依赖">
       <created>1682669417869</created>
@@ -590,7 +592,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684487863254</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="feat: springboot整合es (restapi)">
+      <created>1684723535878</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1684723535878</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -612,7 +621,6 @@
       <path value="$PROJECT_DIR$/demo-properties" />
       <path value="$PROJECT_DIR$/demo-logback" />
     </ignored-roots>
-    <MESSAGE value="feat: 分页插件pagehelper的使用文档" />
     <MESSAGE value="feat: 本地文件上传下载的使用文档" />
     <MESSAGE value="feat: 自定义注解实现通用树结构的使用文档" />
     <MESSAGE value="feat: 自定义注解实现参数和返回结果的打印" />
@@ -637,7 +645,8 @@
     <MESSAGE value="feat: mp设置自动插入数据打印日志" />
     <MESSAGE value="feat: redis多数据源配置，单节点，哨兵，集群配置" />
     <MESSAGE value="feat: springboot整合druid" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: springboot整合druid" />
+    <MESSAGE value="feat: springboot整合es (restapi)" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: springboot整合es (restapi)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
