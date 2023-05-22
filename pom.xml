@@ -41,6 +41,7 @@
         <module>demo-druid</module>
         <module>demo-elasticsearch-rest-high-level-client</module>
         <module>demo-elasticsearch</module>
+        <module>demo-elasticsearch-easy-es</module>
     </modules>
 
 
