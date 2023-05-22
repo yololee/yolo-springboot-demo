@@ -39,6 +39,7 @@
         <module>demo-aop-call-info</module>
         <module>demo-cache-redis-multi-datasource</module>
         <module>demo-druid</module>
+        <module>demo-elasticsearch-rest-high-level-client</module>
     </modules>
 
 
