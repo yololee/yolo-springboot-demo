@@ -4,7 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: springboot整合es">
+    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: springboot整合easy-es">
+      <change afterPath="$PROJECT_DIR$/demo-redis-limit-aop/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-redis-limit-aop/src/main/java/com/yolo/redis/limit/aop/DemoRedisLimitAopApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-redis-limit-aop/src/main/java/com/yolo/redis/limit/aop/anno/Limit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-redis-limit-aop/src/main/java/com/yolo/redis/limit/aop/aspect/LimitAop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-redis-limit-aop/src/main/java/com/yolo/redis/limit/aop/common/dto/ApiResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-redis-limit-aop/src/main/java/com/yolo/redis/limit/aop/common/dto/ApiStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-redis-limit-aop/src/main/java/com/yolo/redis/limit/aop/common/exception/AccessLimitException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-redis-limit-aop/src/main/java/com/yolo/redis/limit/aop/common/exception/BaseException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-redis-limit-aop/src/main/java/com/yolo/redis/limit/aop/common/handler/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-redis-limit-aop/src/main/java/com/yolo/redis/limit/aop/controller/LimitController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-redis-limit-aop/src/main/java/com/yolo/redis/limit/aop/util/IpUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-redis-limit-aop/src/main/java/com/yolo/redis/limit/aop/util/ServletUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-redis-limit-aop/src/main/java/com/yolo/redis/limit/aop/util/StringUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-redis-limit-aop/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-redis-limit-aop/src/test/java/com/yolo/redis/limit/aop/DemoRedisLimitAopApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
@@ -108,14 +123,14 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-druid/src/main/java/com/example/druid/modules/system",
+    "last_opened_file_path": "/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-redis-limit-aop/src/main/java/com/yolo/redis/limit/aop",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "fileTemplates",
-    "spring.configuration.checksum": "17a2eac2f501f92f65efb3cbb2676c1a",
+    "spring.configuration.checksum": "ddedd78e016ffa5f3d851b2c2bed1234",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -132,22 +147,22 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/demo-redis-limit-aop/src/main/java/com/yolo/redis/limit/aop" />
       <recent name="$PROJECT_DIR$/demo-druid/src/main/java/com/example/druid/modules/system" />
       <recent name="$PROJECT_DIR$/demo-druid/src/main/java/com/example/druid" />
       <recent name="$PROJECT_DIR$/demo-cache-redis-multi-datasource/src/main/java/com/yolo/redis/multi/datasource/modules/common" />
       <recent name="$PROJECT_DIR$/demo-cache-redis-multi-datasource/src/main/java/com/yolo/redis/multi/datasource/modules/common/dto" />
-      <recent name="$PROJECT_DIR$/demo-exception-handler/src/main/java/com/yolo/exception/handler/common" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/demo-orm-mybatis-plus/sql" />
       <recent name="$PROJECT_DIR$/demo-login-operation-log/src/main/resources/mybatis" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.yolo.redis.limit.aop.common.exception" />
+      <recent name="com.yolo.redis.limit.aop.util" />
       <recent name="com.example.easy.es.domain" />
       <recent name="com.example.druid.modules.system.mapper" />
       <recent name="com.example.druid.config" />
-      <recent name="com.yolo.redis.multi.datasource.config" />
-      <recent name="com.yolo.redis.multi.datasource.modules.common.handler" />
     </key>
   </component>
   <component name="RunManager" selected="JUnit.EasyEsTest.searchKeyword">
@@ -288,7 +303,8 @@
       <workItem from="1684400894974" duration="1345000" />
       <workItem from="1684402858050" duration="17965000" />
       <workItem from="1684718004075" duration="5600000" />
-      <workItem from="1684724615555" duration="8872000" />
+      <workItem from="1684724615555" duration="9539000" />
+      <workItem from="1684852905655" duration="1899000" />
     </task>
     <task id="LOCAL-00001" summary="feat: &#10;&#10;初始化依赖">
       <created>1682669417869</created>
@@ -605,7 +621,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684737233108</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="feat: springboot整合easy-es">
+      <created>1684739991789</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1684739991789</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -627,7 +650,6 @@
       <path value="$PROJECT_DIR$/demo-properties" />
       <path value="$PROJECT_DIR$/demo-logback" />
     </ignored-roots>
-    <MESSAGE value="feat: 自定义注解实现通用树结构的使用文档" />
     <MESSAGE value="feat: 自定义注解实现参数和返回结果的打印" />
     <MESSAGE value="feat: mybatis-plus的使用" />
     <MESSAGE value="feat: 自定义注解结合redis实现接口防止重复提交" />
@@ -652,7 +674,8 @@
     <MESSAGE value="feat: springboot整合druid" />
     <MESSAGE value="feat: springboot整合es (restapi)" />
     <MESSAGE value="feat: springboot整合es" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: springboot整合es" />
+    <MESSAGE value="feat: springboot整合easy-es" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: springboot整合easy-es" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
