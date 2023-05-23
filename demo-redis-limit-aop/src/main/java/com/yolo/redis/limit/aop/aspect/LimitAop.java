@@ -1,9 +1,8 @@
 package com.yolo.redis.limit.aop.aspect;
 
 import cn.hutool.core.convert.Convert;
-import com.google.common.collect.Maps;
-import com.google.common.util.concurrent.RateLimiter;
 import com.yolo.redis.limit.aop.anno.Limit;
+import com.yolo.redis.limit.aop.common.exception.AccessLimitException;
 import com.yolo.redis.limit.aop.util.IpUtil;
 import com.yolo.redis.limit.aop.util.ServletUtils;
 import lombok.extern.slf4j.Slf4j;
@@ -12,16 +11,11 @@ import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.reflect.MethodSignature;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Component;
-import org.springframework.web.context.request.RequestContextHolder;
-import org.springframework.web.context.request.ServletRequestAttributes;
 
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import java.lang.reflect.Method;
-import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 @Slf4j
