@@ -4,24 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: springboot整合easy-es">
-      <change afterPath="$PROJECT_DIR$/demo-redis-limit-aop/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-redis-limit-aop/src/main/java/com/yolo/redis/limit/aop/DemoRedisLimitAopApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-redis-limit-aop/src/main/java/com/yolo/redis/limit/aop/anno/Limit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-redis-limit-aop/src/main/java/com/yolo/redis/limit/aop/aspect/LimitAop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-redis-limit-aop/src/main/java/com/yolo/redis/limit/aop/common/dto/ApiResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-redis-limit-aop/src/main/java/com/yolo/redis/limit/aop/common/dto/ApiStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-redis-limit-aop/src/main/java/com/yolo/redis/limit/aop/common/exception/AccessLimitException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-redis-limit-aop/src/main/java/com/yolo/redis/limit/aop/common/exception/BaseException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-redis-limit-aop/src/main/java/com/yolo/redis/limit/aop/common/handler/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-redis-limit-aop/src/main/java/com/yolo/redis/limit/aop/controller/LimitController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-redis-limit-aop/src/main/java/com/yolo/redis/limit/aop/util/IpUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-redis-limit-aop/src/main/java/com/yolo/redis/limit/aop/util/ServletUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-redis-limit-aop/src/main/java/com/yolo/redis/limit/aop/util/StringUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-redis-limit-aop/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-redis-limit-aop/src/test/java/com/yolo/redis/limit/aop/DemoRedisLimitAopApplicationTests.java" afterDir="false" />
+    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: 整合redis使用aop进行接口限流">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-redis-limit-aop/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-redis-limit-aop/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,6 +59,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -123,7 +110,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-redis-limit-aop/src/main/java/com/yolo/redis/limit/aop",
+    "last_opened_file_path": "/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-aop-alarm/src/main/java/com/yolo/aop/alarm",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -147,11 +134,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/demo-aop-alarm/src/main/java/com/yolo/aop/alarm" />
       <recent name="$PROJECT_DIR$/demo-redis-limit-aop/src/main/java/com/yolo/redis/limit/aop" />
       <recent name="$PROJECT_DIR$/demo-druid/src/main/java/com/example/druid/modules/system" />
       <recent name="$PROJECT_DIR$/demo-druid/src/main/java/com/example/druid" />
       <recent name="$PROJECT_DIR$/demo-cache-redis-multi-datasource/src/main/java/com/yolo/redis/multi/datasource/modules/common" />
-      <recent name="$PROJECT_DIR$/demo-cache-redis-multi-datasource/src/main/java/com/yolo/redis/multi/datasource/modules/common/dto" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/demo-orm-mybatis-plus/sql" />
@@ -165,7 +152,39 @@
       <recent name="com.example.druid.config" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.EasyEsTest.searchKeyword">
+  <component name="RunManager" selected="JUnit.DemoShardingJdbcApplicationTests.testUpdate">
+    <configuration name="DemoShardingJdbcApplicationTests.testInsert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo-sharding-jdbc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yolo.shardingjdbc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.yolo.shardingjdbc" />
+      <option name="MAIN_CLASS_NAME" value="com.yolo.shardingjdbc.DemoShardingJdbcApplicationTests" />
+      <option name="METHOD_NAME" value="testInsert" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemoShardingJdbcApplicationTests.testUpdate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo-sharding-jdbc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yolo.shardingjdbc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.yolo.shardingjdbc" />
+      <option name="MAIN_CLASS_NAME" value="com.yolo.shardingjdbc.DemoShardingJdbcApplicationTests" />
+      <option name="METHOD_NAME" value="testUpdate" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EasyEsTest.insert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo-elasticsearch-easy-es" />
       <extension name="coverage">
@@ -214,38 +233,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IndexTest.advanceAgg" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo-elasticsearch" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.yolo.elasticsearch.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.yolo.elasticsearch" />
-      <option name="MAIN_CLASS_NAME" value="com.yolo.elasticsearch.IndexTest" />
-      <option name="METHOD_NAME" value="advanceAgg" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PersonRepositoryTest.save" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo-elasticsearch" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.yolo.elasticsearch.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.yolo.elasticsearch" />
-      <option name="MAIN_CLASS_NAME" value="com.yolo.elasticsearch.PersonRepositoryTest" />
-      <option name="METHOD_NAME" value="save" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="DemoLogAopApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="demo-log-aop" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.logaop.DemoLogAopApplication" />
@@ -255,11 +242,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DemoShardingJdbcApplicationTests.testUpdate" />
+        <item itemvalue="JUnit.DemoShardingJdbcApplicationTests.testInsert" />
         <item itemvalue="JUnit.EasyEsTest.searchKeyword" />
         <item itemvalue="JUnit.EasyEsTest.insertRandom" />
         <item itemvalue="JUnit.EasyEsTest.insert" />
-        <item itemvalue="JUnit.PersonRepositoryTest.save" />
-        <item itemvalue="JUnit.IndexTest.advanceAgg" />
       </list>
     </recent_temporary>
   </component>
@@ -304,7 +291,7 @@
       <workItem from="1684402858050" duration="17965000" />
       <workItem from="1684718004075" duration="5600000" />
       <workItem from="1684724615555" duration="9539000" />
-      <workItem from="1684852905655" duration="1899000" />
+      <workItem from="1684852905655" duration="10604000" />
     </task>
     <task id="LOCAL-00001" summary="feat: &#10;&#10;初始化依赖">
       <created>1682669417869</created>
@@ -628,7 +615,21 @@
       <option name="project" value="LOCAL" />
       <updated>1684739991789</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="feat: 整合redis使用aop进行接口限流">
+      <created>1684854842451</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1684854842451</updated>
+    </task>
+    <task id="LOCAL-00048" summary="feat: 整合redis使用aop进行接口限流">
+      <created>1684854936115</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1684854936115</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -650,7 +651,6 @@
       <path value="$PROJECT_DIR$/demo-properties" />
       <path value="$PROJECT_DIR$/demo-logback" />
     </ignored-roots>
-    <MESSAGE value="feat: 自定义注解实现参数和返回结果的打印" />
     <MESSAGE value="feat: mybatis-plus的使用" />
     <MESSAGE value="feat: 自定义注解结合redis实现接口防止重复提交" />
     <MESSAGE value="feat: yolo-springboot-demo目录" />
@@ -675,7 +675,8 @@
     <MESSAGE value="feat: springboot整合es (restapi)" />
     <MESSAGE value="feat: springboot整合es" />
     <MESSAGE value="feat: springboot整合easy-es" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: springboot整合easy-es" />
+    <MESSAGE value="feat: 整合redis使用aop进行接口限流" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 整合redis使用aop进行接口限流" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
