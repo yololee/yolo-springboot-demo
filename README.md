@@ -48,7 +48,7 @@ spring boot demo 是一个用来深度学习并实战 spring boot 的项目
 | [demo-elasticsearch)](https://gitee.com/huanglei1111/yolo-springboot-demo/tree/master/demo-elasticsearch) | spring-boot 集成 ElasticSearch，集成 `spring-boot-starter-data-elasticsearch` 完成对 ElasticSearch 的高级使用技巧，包括创建索引、配置映射、删除索引、增删改查基本操作、复杂查询、高级查询、聚合查询等 |
 | [demo-elasticsearch-easy-es](https://gitee.com/huanglei1111/yolo-springboot-demo/tree/master/demo-elasticsearch-easy-es) | springboot集成Easy-ES，简化`CRUD`及其它高阶操作,可以更好的帮助开发者减轻开发负担 |
 | [demo-redis-limit-aop](https://gitee.com/huanglei1111/yolo-springboot-demo/tree/master/demo-redis-limit-aop) | 整合redis使用aop实现接口限流                                 |
-|                                                              |                                                              |
+| [demo-sharding-jdbc](https://gitee.com/huanglei1111/yolo-springboot-demo/tree/master/demo-sharding-jdbc) | spring-boot 使用 `sharding-jdbc` 实现分库分表，同时ORM采用 Mybatis-Plus |
 |                                                              |                                                              |
 |                                                              |                                                              |
 |                                                              |                                                              |

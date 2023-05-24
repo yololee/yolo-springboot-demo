@@ -44,6 +44,7 @@
         <module>demo-elasticsearch-easy-es</module>
         <module>demo-redis-limit-aop</module>
         <module>demo-sharding-jdbc</module>
+        <module>demo-ureport2</module>
     </modules>
 
 
