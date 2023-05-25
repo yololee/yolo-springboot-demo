@@ -4,30 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: 整合ureport2">
-      <change afterPath="$PROJECT_DIR$/demo-validator/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-validator/src/main/java/com/yolo/validator/DemoValidatorApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-validator/src/main/java/com/yolo/validator/common/dto/ApiResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-validator/src/main/java/com/yolo/validator/common/dto/ApiStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-validator/src/main/java/com/yolo/validator/common/exception/AccessLimitException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-validator/src/main/java/com/yolo/validator/common/exception/ParamException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-validator/src/main/java/com/yolo/validator/common/exception/core/BaseException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-validator/src/main/java/com/yolo/validator/common/exception/core/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-validator/src/main/java/com/yolo/validator/common/validator/annotation/TextFormat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-validator/src/main/java/com/yolo/validator/common/validator/annotation/VerifyIntegerCollectionDataValid.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-validator/src/main/java/com/yolo/validator/common/validator/config/ValidatorConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-validator/src/main/java/com/yolo/validator/common/validator/group/Update.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-validator/src/main/java/com/yolo/validator/common/validator/handler/TextFormatHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-validator/src/main/java/com/yolo/validator/common/validator/handler/VerifyIntegerCollectionDataValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-validator/src/main/java/com/yolo/validator/controller/UserAutoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-validator/src/main/java/com/yolo/validator/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-validator/src/main/java/com/yolo/validator/domain/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-validator/src/main/java/com/yolo/validator/domain/Phone.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-validator/src/main/java/com/yolo/validator/domain/UserParam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-validator/src/main/java/com/yolo/validator/domain/UserVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-validator/src/main/java/com/yolo/validator/util/BeanValidatorUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-validator/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-validator/src/test/java/com/yolo/validator/DemoValidatorApplicationTests.java" afterDir="false" />
+    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: 整合validator">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
@@ -174,7 +151,7 @@
       <recent name="com.example.druid.config" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.DemoValidatorApplication">
+  <component name="RunManager" selected="Spring Boot.DemoMinIoApplication">
     <configuration name="DemoShardingJdbcApplicationTests.testInsert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo-sharding-jdbc" />
       <extension name="coverage">
@@ -207,25 +184,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EasyEsTest.searchKeyword" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo-elasticsearch-easy-es" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.easy.es.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.easy.es" />
-      <option name="MAIN_CLASS_NAME" value="com.example.easy.es.EasyEsTest" />
-      <option name="METHOD_NAME" value="searchKeyword" />
-      <option name="TEST_OBJECT" value="method" />
+    <configuration name="DemoLogAopApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="demo-log-aop" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.logaop.DemoLogAopApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DemoLogAopApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="demo-log-aop" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.logaop.DemoLogAopApplication" />
+    <configuration name="DemoMinIoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="demo-minIo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.minio.DemoMinIoApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yolo.minio.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -258,11 +232,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.DemoMinIoApplication" />
         <item itemvalue="Spring Boot.DemoValidatorApplication" />
         <item itemvalue="Spring Boot.DemoUreport2Application" />
         <item itemvalue="JUnit.DemoShardingJdbcApplicationTests.testUpdate" />
         <item itemvalue="JUnit.DemoShardingJdbcApplicationTests.testInsert" />
-        <item itemvalue="JUnit.EasyEsTest.searchKeyword" />
       </list>
     </recent_temporary>
   </component>
@@ -310,13 +284,7 @@
       <workItem from="1684852905655" duration="22295000" />
       <workItem from="1684914398639" duration="1531000" />
       <workItem from="1684915939516" duration="10690000" />
-    </task>
-    <task id="LOCAL-00002" summary="feat: &#10;读取配置文件的五种方法">
-      <created>1683166349528</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1683166349528</updated>
+      <workItem from="1684980395382" duration="4536000" />
     </task>
     <task id="LOCAL-00003" summary="feat: &#10;读取配置文件的五种方法">
       <created>1683166355185</created>
@@ -654,7 +622,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684900244362</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="feat: 整合validator">
+      <created>1684980537823</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1684980537823</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -676,7 +651,6 @@
       <path value="$PROJECT_DIR$/demo-properties" />
       <path value="$PROJECT_DIR$/demo-logback" />
     </ignored-roots>
-    <MESSAGE value="feat: yolo-springboot-demo目录" />
     <MESSAGE value="feat: 发送邮件" />
     <MESSAGE value="feat: 加密配置中的敏感信息" />
     <MESSAGE value="feat: 定时任务schedule" />
@@ -701,7 +675,8 @@
     <MESSAGE value="feat: 整合redis使用aop进行接口限流" />
     <MESSAGE value="feat: 整合sharding-jdbc进行分库分表" />
     <MESSAGE value="feat: 整合ureport2" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 整合ureport2" />
+    <MESSAGE value="feat: 整合validator" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 整合validator" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

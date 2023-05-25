@@ -46,6 +46,7 @@
         <module>demo-sharding-jdbc</module>
         <module>demo-ureport2</module>
         <module>demo-validator</module>
+        <module>demo-minIo</module>
     </modules>
 
 
