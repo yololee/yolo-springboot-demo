@@ -45,6 +45,7 @@
         <module>demo-redis-limit-aop</module>
         <module>demo-sharding-jdbc</module>
         <module>demo-ureport2</module>
+        <module>demo-validator</module>
     </modules>
 
 
