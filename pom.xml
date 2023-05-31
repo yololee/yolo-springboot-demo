@@ -47,6 +47,7 @@
         <module>demo-ureport2</module>
         <module>demo-validator</module>
         <module>demo-minIo</module>
+        <module>demo-cache-redis-sentinel</module>
     </modules>
 
 

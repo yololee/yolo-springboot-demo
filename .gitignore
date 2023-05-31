@@ -35,3 +35,16 @@ build/
 
 ### VS Code ###
 .vscode/
+
+
+node_modules
+.DS_Store
+
+
+.vscode/*
+!.vscode/extensions.json
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

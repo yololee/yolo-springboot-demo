@@ -4,9 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: 整合validator">
+    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: 整合redis sentinel">
+      <change afterPath="$PROJECT_DIR$/demo-cache-redis-sentinel/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-cache-redis-sentinel/springboot-整合redis-sentinel.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-cache-redis-sentinel/src/main/java/com/yolo/redis/sentinel/DemoCacheRedisSentinelApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-cache-redis-sentinel/src/main/java/com/yolo/redis/sentinel/config/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-cache-redis-sentinel/src/main/java/com/yolo/redis/sentinel/config/RedisSentinelConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-cache-redis-sentinel/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-cache-redis-sentinel/src/test/java/com/yolo/redis/sentinel/DemoCacheRedisSentinelApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-minIo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-minIo/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -98,33 +107,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-validator/src/main/java/com/yolo/validator&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;fileTemplates&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;f368a58e8caafbb0487310887bf984d4&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "last_opened_file_path": "/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-cache-redis-sentinel/src/main/java/com/yolo/redis/sentinel/config",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "fileTemplates",
+    "spring.configuration.checksum": "cdd92b4ed3eef46eb3598a1e3035f191",
+    "ts.external.directory.path": "/Applications/IntelliJ IDEA.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -133,36 +143,36 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/demo-cache-redis-sentinel/src/main/java/com/yolo/redis/sentinel/config" />
+      <recent name="$PROJECT_DIR$/demo-upload-fragment/src/main/java/com/yolo/upload/fragment/config" />
+      <recent name="$PROJECT_DIR$/demo-upload-fragment/src/main/java/com/yolo/upload/fragment" />
       <recent name="$PROJECT_DIR$/demo-validator/src/main/java/com/yolo/validator" />
       <recent name="$PROJECT_DIR$/demo-aop-alarm/src/main/java/com/yolo/aop/alarm" />
-      <recent name="$PROJECT_DIR$/demo-redis-limit-aop/src/main/java/com/yolo/redis/limit/aop" />
-      <recent name="$PROJECT_DIR$/demo-druid/src/main/java/com/example/druid/modules/system" />
-      <recent name="$PROJECT_DIR$/demo-druid/src/main/java/com/example/druid" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/demo-orm-mybatis-plus/sql" />
       <recent name="$PROJECT_DIR$/demo-login-operation-log/src/main/resources/mybatis" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.yolo.redis.limit.aop.common.exception" />
-      <recent name="com.yolo.redis.limit.aop.util" />
-      <recent name="com.example.easy.es.domain" />
-      <recent name="com.example.druid.modules.system.mapper" />
-      <recent name="com.example.druid.config" />
+      <recent name="com.yolo.upload.fragment.entity" />
+      <recent name="com.yolo.upload.fragment.mapper" />
+      <recent name="com.yolo.upload.fragment.service.impl" />
+      <recent name="com.yolo.upload.fragment.service" />
+      <recent name="com.yolo.upload.fragment.config" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.DemoMinIoApplication">
-    <configuration name="DemoShardingJdbcApplicationTests.testInsert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo-sharding-jdbc" />
+  <component name="RunManager" selected="JUnit.DemoCacheRedisSentinelApplicationTests.contextLoads">
+    <configuration name="DemoCacheRedisSentinelApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo-cache-redis-sentinel" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.yolo.shardingjdbc.*" />
+          <option name="PATTERN" value="com.yolo.redis.sentinel.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.yolo.shardingjdbc" />
-      <option name="MAIN_CLASS_NAME" value="com.yolo.shardingjdbc.DemoShardingJdbcApplicationTests" />
-      <option name="METHOD_NAME" value="testInsert" />
+      <option name="PACKAGE_NAME" value="com.yolo.redis.sentinel" />
+      <option name="MAIN_CLASS_NAME" value="com.yolo.redis.sentinel.DemoCacheRedisSentinelApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -230,13 +240,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="JUnit.DemoCacheRedisSentinelApplicationTests.contextLoads" />
+      <item itemvalue="JUnit.DemoShardingJdbcApplicationTests.testUpdate" />
+      <item itemvalue="Spring Boot.DemoLogAopApplication" />
+      <item itemvalue="Spring Boot.DemoMinIoApplication" />
+      <item itemvalue="Spring Boot.DemoUreport2Application" />
+      <item itemvalue="Spring Boot.DemoValidatorApplication" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DemoCacheRedisSentinelApplicationTests.contextLoads" />
         <item itemvalue="Spring Boot.DemoMinIoApplication" />
         <item itemvalue="Spring Boot.DemoValidatorApplication" />
         <item itemvalue="Spring Boot.DemoUreport2Application" />
         <item itemvalue="JUnit.DemoShardingJdbcApplicationTests.testUpdate" />
-        <item itemvalue="JUnit.DemoShardingJdbcApplicationTests.testInsert" />
       </list>
     </recent_temporary>
   </component>
@@ -284,14 +302,9 @@
       <workItem from="1684852905655" duration="22295000" />
       <workItem from="1684914398639" duration="1531000" />
       <workItem from="1684915939516" duration="10690000" />
-      <workItem from="1684980395382" duration="4536000" />
-    </task>
-    <task id="LOCAL-00003" summary="feat: &#10;读取配置文件的五种方法">
-      <created>1683166355185</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1683166355185</updated>
+      <workItem from="1684980395382" duration="9242000" />
+      <workItem from="1684996517151" duration="8990000" />
+      <workItem from="1685513108015" duration="2714000" />
     </task>
     <task id="LOCAL-00004" summary="feat: &#10;读取配置文件的五种方法">
       <created>1683166749952</created>
@@ -629,7 +642,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684980537823</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="feat: 整合minIo">
+      <created>1684985477200</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1684985477200</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -651,8 +671,6 @@
       <path value="$PROJECT_DIR$/demo-properties" />
       <path value="$PROJECT_DIR$/demo-logback" />
     </ignored-roots>
-    <MESSAGE value="feat: 发送邮件" />
-    <MESSAGE value="feat: 加密配置中的敏感信息" />
     <MESSAGE value="feat: 定时任务schedule" />
     <MESSAGE value="feat: springboot整合xxl-job" />
     <MESSAGE value="feat: 通过http请求手动操作xxl-job" />
@@ -676,7 +694,9 @@
     <MESSAGE value="feat: 整合sharding-jdbc进行分库分表" />
     <MESSAGE value="feat: 整合ureport2" />
     <MESSAGE value="feat: 整合validator" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 整合validator" />
+    <MESSAGE value="feat: 整合minIo" />
+    <MESSAGE value="feat: 整合redis sentinel" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 整合redis sentinel" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -695,6 +715,11 @@
           <url>file://$PROJECT_DIR$/demo-redis-repeat-submit/src/main/java/com/yolo/repeat/submit/interceptor/RepeatSubmitInterceptor.java</url>
           <line>47</line>
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/demo-upload-fragment/src/main/java/com/yolo/upload/fragment/service/impl/FileServiceImpl.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

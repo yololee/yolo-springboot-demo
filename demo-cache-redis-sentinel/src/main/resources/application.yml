@@ -1,0 +1,20 @@
+spring:
+  redis:
+    timeout: 6000
+    database: 0
+    host: 116.211.105.107 #主节点的master
+    password: 123456 #redis密码
+    port: 6379 #主节点的master端口
+    lettuce:
+      pool:
+        max-active: 1000 #连接池最大连接数（使用负值表示没有限制）
+        max-idle: 10 #连接池中的最大空闲连接
+        min-idle: 3 #连接池中的最小空闲连接
+        max-wait: -1 #连接池最大阻塞等待时间（使用负值表示没有限制）
+    sentinel:
+      master: mymaster
+      password: 123456
+      nodes:
+        - 116.211.105.107:26379
+        - 116.211.105.112:26380
+        - 116.211.105.117:26381

@@ -51,7 +51,7 @@ spring boot demo 是一个用来深度学习并实战 spring boot 的项目
 | [demo-sharding-jdbc](https://gitee.com/huanglei1111/yolo-springboot-demo/tree/master/demo-sharding-jdbc) | spring-boot 使用 `sharding-jdbc` 实现分库分表，同时ORM采用 Mybatis-Plus |
 | [demo-ureport2](https://gitee.com/huanglei1111/yolo-springboot-demo/tree/master/demo-ureport2) | spring boot 集成 Ureport2，实现中国式复杂报表设计            |
 | [demo-validator](https://gitee.com/huanglei1111/yolo-springboot-demo/tree/master/demo-validator) | springboot整合validator实现请求参数校验                      |
-|                                                              |                                                              |
+| [demo-minIo](https://gitee.com/huanglei1111/yolo-springboot-demo/tree/master/demo-minIo) | springboot整合minIo文件存储系统                              |
 |                                                              |                                                              |
 |                                                              |                                                              |
 |                                                              |                                                              |
