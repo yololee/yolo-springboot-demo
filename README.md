@@ -53,7 +53,7 @@ spring boot demo 是一个用来深度学习并实战 spring boot 的项目
 | [demo-validator](https://gitee.com/huanglei1111/yolo-springboot-demo/tree/master/demo-validator) | springboot整合validator实现请求参数校验                      |
 | [demo-minIo](https://gitee.com/huanglei1111/yolo-springboot-demo/tree/master/demo-minIo) | springboot整合minIo文件存储系统                              |
 | [demo-cache-redis-sentinel](https://gitee.com/huanglei1111/yolo-springboot-demo/tree/master/demo-cache-redis-sentinel) | springboot整合redis哨兵集群                                  |
-|                                                              |                                                              |
+| [demo-sa-token](https://gitee.com/huanglei1111/yolo-springboot-demo/tree/master/demo-sa-token) | springboot整合satoken权限框架                                |
 |                                                              |                                                              |
 |                                                              |                                                              |
 |                                                              |                                                              |

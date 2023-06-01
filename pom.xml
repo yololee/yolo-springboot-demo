@@ -49,6 +49,7 @@
         <module>demo-minIo</module>
         <module>demo-cache-redis-sentinel</module>
         <module>demo-sa-token</module>
+        <module>demo-docker</module>
     </modules>
 
 
