@@ -48,6 +48,7 @@
         <module>demo-validator</module>
         <module>demo-minIo</module>
         <module>demo-cache-redis-sentinel</module>
+        <module>demo-sa-token</module>
     </modules>
 
 

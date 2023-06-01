@@ -5,17 +5,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: 整合redis sentinel">
-      <change afterPath="$PROJECT_DIR$/demo-cache-redis-sentinel/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-cache-redis-sentinel/springboot-整合redis-sentinel.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-cache-redis-sentinel/src/main/java/com/yolo/redis/sentinel/DemoCacheRedisSentinelApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-cache-redis-sentinel/src/main/java/com/yolo/redis/sentinel/config/RedisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-cache-redis-sentinel/src/main/java/com/yolo/redis/sentinel/config/RedisSentinelConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-cache-redis-sentinel/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-cache-redis-sentinel/src/test/java/com/yolo/redis/sentinel/DemoCacheRedisSentinelApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-sa-token/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-sa-token/springboot-整合satoken.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-sa-token/sql/demo.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-sa-token/src/main/java/com/yolo/demosatoken/DemoSaTokenApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-sa-token/src/main/java/com/yolo/demosatoken/api/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-sa-token/src/main/java/com/yolo/demosatoken/api/dao/RoleDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-sa-token/src/main/java/com/yolo/demosatoken/api/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-sa-token/src/main/java/com/yolo/demosatoken/api/dao/UserRoleDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-sa-token/src/main/java/com/yolo/demosatoken/api/dto/AddUserDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-sa-token/src/main/java/com/yolo/demosatoken/api/dto/LoginDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-sa-token/src/main/java/com/yolo/demosatoken/api/entity/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-sa-token/src/main/java/com/yolo/demosatoken/api/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-sa-token/src/main/java/com/yolo/demosatoken/api/entity/UserRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-sa-token/src/main/java/com/yolo/demosatoken/api/mapper/RoleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-sa-token/src/main/java/com/yolo/demosatoken/api/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-sa-token/src/main/java/com/yolo/demosatoken/api/mapper/UserRoleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-sa-token/src/main/java/com/yolo/demosatoken/api/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-sa-token/src/main/java/com/yolo/demosatoken/api/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-sa-token/src/main/java/com/yolo/demosatoken/api/vo/LoginInfoVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-sa-token/src/main/java/com/yolo/demosatoken/common/dto/ApiResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-sa-token/src/main/java/com/yolo/demosatoken/common/dto/ApiStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-sa-token/src/main/java/com/yolo/demosatoken/common/exception/AccessLimitException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-sa-token/src/main/java/com/yolo/demosatoken/common/exception/ParamException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-sa-token/src/main/java/com/yolo/demosatoken/common/exception/core/BaseException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-sa-token/src/main/java/com/yolo/demosatoken/common/exception/core/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-sa-token/src/main/java/com/yolo/demosatoken/common/validator/annotation/TextFormat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-sa-token/src/main/java/com/yolo/demosatoken/common/validator/config/ValidatorConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-sa-token/src/main/java/com/yolo/demosatoken/common/validator/group/Update.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-sa-token/src/main/java/com/yolo/demosatoken/common/validator/handler/TextFormatHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-sa-token/src/main/java/com/yolo/demosatoken/config/MybatisPlusConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-sa-token/src/main/java/com/yolo/demosatoken/config/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-sa-token/src/main/java/com/yolo/demosatoken/config/RedisSentinelConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-sa-token/src/main/java/com/yolo/demosatoken/config/SaTokenConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-sa-token/src/main/java/com/yolo/demosatoken/config/StpInterfaceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-sa-token/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-sa-token/src/main/resources/mapper/UserRoleMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-sa-token/src/test/java/com/yolo/demosatoken/DemoSaTokenApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-minIo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-minIo/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -66,8 +94,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -118,14 +146,17 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-cache-redis-sentinel/src/main/java/com/yolo/redis/sentinel/config",
+    "last_opened_file_path": "/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-sa-token/src/main/java/com/yolo/demosatoken/config",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "fileTemplates",
-    "spring.configuration.checksum": "cdd92b4ed3eef46eb3598a1e3035f191",
+    "spring.configuration.checksum": "1cc46f57d8457f4a9a888bf18c58b380",
     "ts.external.directory.path": "/Applications/IntelliJ IDEA.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
     "vue.rearranger.settings.migration": "true"
   },
@@ -143,25 +174,25 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/demo-cache-redis-sentinel/src/main/java/com/yolo/redis/sentinel/config" />
-      <recent name="$PROJECT_DIR$/demo-upload-fragment/src/main/java/com/yolo/upload/fragment/config" />
-      <recent name="$PROJECT_DIR$/demo-upload-fragment/src/main/java/com/yolo/upload/fragment" />
-      <recent name="$PROJECT_DIR$/demo-validator/src/main/java/com/yolo/validator" />
-      <recent name="$PROJECT_DIR$/demo-aop-alarm/src/main/java/com/yolo/aop/alarm" />
+      <recent name="$PROJECT_DIR$/demo-sa-token/src/main/java/com/yolo/demosatoken/config" />
+      <recent name="$PROJECT_DIR$/demo-sa-token/src/main/resources" />
+      <recent name="$PROJECT_DIR$/demo-sa-token/src/main/java/com/yolo/demosatoken/api/mapper" />
+      <recent name="$PROJECT_DIR$/demo-sa-token/src/main/java/com/yolo/demosatoken/dao" />
+      <recent name="$PROJECT_DIR$/demo-sa-token/src/main/java/com/yolo/demosatoken" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/demo-orm-mybatis-plus/sql" />
       <recent name="$PROJECT_DIR$/demo-login-operation-log/src/main/resources/mybatis" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.yolo.demosatoken.config" />
       <recent name="com.yolo.upload.fragment.entity" />
       <recent name="com.yolo.upload.fragment.mapper" />
       <recent name="com.yolo.upload.fragment.service.impl" />
       <recent name="com.yolo.upload.fragment.service" />
-      <recent name="com.yolo.upload.fragment.config" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DemoCacheRedisSentinelApplicationTests.contextLoads">
+  <component name="RunManager" selected="Spring Boot.DemoSaTokenApplication">
     <configuration name="DemoCacheRedisSentinelApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo-cache-redis-sentinel" />
       <extension name="coverage">
@@ -173,22 +204,6 @@
       <option name="PACKAGE_NAME" value="com.yolo.redis.sentinel" />
       <option name="MAIN_CLASS_NAME" value="com.yolo.redis.sentinel.DemoCacheRedisSentinelApplicationTests" />
       <option name="METHOD_NAME" value="contextLoads" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DemoShardingJdbcApplicationTests.testUpdate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo-sharding-jdbc" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.yolo.shardingjdbc.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.yolo.shardingjdbc" />
-      <option name="MAIN_CLASS_NAME" value="com.yolo.shardingjdbc.DemoShardingJdbcApplicationTests" />
-      <option name="METHOD_NAME" value="testUpdate" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -207,6 +222,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.yolo.minio.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemoSaTokenApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="demo-sa-token" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.demosatoken.DemoSaTokenApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yolo.demosatoken.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -242,19 +270,19 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.DemoCacheRedisSentinelApplicationTests.contextLoads" />
-      <item itemvalue="JUnit.DemoShardingJdbcApplicationTests.testUpdate" />
       <item itemvalue="Spring Boot.DemoLogAopApplication" />
+      <item itemvalue="Spring Boot.DemoSaTokenApplication" />
       <item itemvalue="Spring Boot.DemoMinIoApplication" />
       <item itemvalue="Spring Boot.DemoUreport2Application" />
       <item itemvalue="Spring Boot.DemoValidatorApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.DemoSaTokenApplication" />
         <item itemvalue="JUnit.DemoCacheRedisSentinelApplicationTests.contextLoads" />
         <item itemvalue="Spring Boot.DemoMinIoApplication" />
         <item itemvalue="Spring Boot.DemoValidatorApplication" />
         <item itemvalue="Spring Boot.DemoUreport2Application" />
-        <item itemvalue="JUnit.DemoShardingJdbcApplicationTests.testUpdate" />
       </list>
     </recent_temporary>
   </component>
@@ -304,14 +332,11 @@
       <workItem from="1684915939516" duration="10690000" />
       <workItem from="1684980395382" duration="9242000" />
       <workItem from="1684996517151" duration="8990000" />
-      <workItem from="1685513108015" duration="2714000" />
-    </task>
-    <task id="LOCAL-00004" summary="feat: &#10;读取配置文件的五种方法">
-      <created>1683166749952</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1683166749952</updated>
+      <workItem from="1685513108015" duration="3044000" />
+      <workItem from="1685525448743" duration="432000" />
+      <workItem from="1685526202867" duration="78000" />
+      <workItem from="1685546766858" duration="3806000" />
+      <workItem from="1685581440695" duration="4620000" />
     </task>
     <task id="LOCAL-00005" summary="feat: &#10;提交gitignore文件">
       <created>1683167162436</created>
@@ -649,7 +674,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684985477200</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="feat: 整合redis sentinel">
+      <created>1685517325186</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1685517325187</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
