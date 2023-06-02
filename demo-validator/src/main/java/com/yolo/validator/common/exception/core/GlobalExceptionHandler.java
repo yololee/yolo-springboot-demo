@@ -89,13 +89,10 @@ public class GlobalExceptionHandler {
     @ResponseBody
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     public ApiResponse exceptionHandler(ConstraintViolationException e) {
-        String msg = e.getConstraintViolations()
-                .stream()
-                .map(ConstraintViolation::getMessage)
-                .collect(Collectors.joining("; "));
+        String message = e.getConstraintViolations().stream().map(ConstraintViolation::getMessage).collect(Collectors.joining());
 
-        log.error("ConstraintViolationException，参数校验异常：{}", msg);
-        return ApiResponse.ofException(ApiStatus.PARAM_ERROR,e.getLocalizedMessage());
+        log.error("ConstraintViolationException，参数校验异常：{}", message);
+        return ApiResponse.ofException(ApiStatus.PARAM_ERROR,message);
     }
 
     /**

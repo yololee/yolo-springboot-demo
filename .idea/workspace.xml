@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: 整合sa-tokon">
+    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: 整合docker">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-cache-redis-multi-datasource/springboot-redis多数据源配置.md" beforeDir="false" afterPath="$PROJECT_DIR$/demo-cache-redis-multi-datasource/springboot-redis多数据源配置.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-validator/src/main/java/com/yolo/validator/common/exception/core/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-validator/src/main/java/com/yolo/validator/common/exception/core/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-validator/src/main/java/com/yolo/validator/common/validator/handler/TextFormatHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-validator/src/main/java/com/yolo/validator/common/validator/handler/TextFormatHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-validator/src/main/java/com/yolo/validator/controller/UserAutoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-validator/src/main/java/com/yolo/validator/controller/UserAutoController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +122,7 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "Docker",
-    "spring.configuration.checksum": "1cc46f57d8457f4a9a888bf18c58b380",
+    "spring.configuration.checksum": "235f91fe79f8652703210741e2a6c4b0",
     "ts.external.directory.path": "/Applications/IntelliJ IDEA.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
     "vue.rearranger.settings.migration": "true"
   },
@@ -155,7 +158,7 @@
       <recent name="com.yolo.upload.fragment.service" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.DemoDockerApplication">
+  <component name="RunManager" selected="Spring Boot.DemoValidatorApplication">
     <configuration name="DemoCacheRedisSentinelApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo-cache-redis-sentinel" />
       <extension name="coverage">
@@ -192,12 +195,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DemoMinIoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="demo-minIo" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.minio.DemoMinIoApplication" />
+    <configuration name="DemoSaTokenApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="demo-sa-token" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.demosatoken.DemoSaTokenApplication" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.yolo.minio.*" />
+          <option name="PATTERN" value="com.yolo.demosatoken.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -205,12 +208,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DemoSaTokenApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="demo-sa-token" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.demosatoken.DemoSaTokenApplication" />
+    <configuration name="DemoValidatorApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="demo-validator" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.validator.DemoValidatorApplication" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.yolo.demosatoken.*" />
+          <option name="PATTERN" value="com.yolo.validator.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -230,17 +233,17 @@
       <item itemvalue="Docker.demo-docker/Dockerfile" />
       <item itemvalue="JUnit.DemoCacheRedisSentinelApplicationTests.contextLoads" />
       <item itemvalue="Spring Boot.DemoLogAopApplication" />
+      <item itemvalue="Spring Boot.DemoValidatorApplication" />
       <item itemvalue="Spring Boot.DemoDockerApplication" />
       <item itemvalue="Spring Boot.DemoSaTokenApplication" />
-      <item itemvalue="Spring Boot.DemoMinIoApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.DemoValidatorApplication" />
         <item itemvalue="Spring Boot.DemoDockerApplication" />
         <item itemvalue="Docker.demo-docker/Dockerfile" />
         <item itemvalue="Spring Boot.DemoSaTokenApplication" />
         <item itemvalue="JUnit.DemoCacheRedisSentinelApplicationTests.contextLoads" />
-        <item itemvalue="Spring Boot.DemoMinIoApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -295,14 +298,11 @@
       <workItem from="1685526202867" duration="78000" />
       <workItem from="1685546766858" duration="3806000" />
       <workItem from="1685581440695" duration="4824000" />
-      <workItem from="1685607654903" duration="4758000" />
-    </task>
-    <task id="LOCAL-00006" summary="feat: &#10;logback的使用">
-      <created>1683179651343</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1683179651343</updated>
+      <workItem from="1685607654903" duration="7175000" />
+      <workItem from="1685627805298" duration="440000" />
+      <workItem from="1685672425229" duration="787000" />
+      <workItem from="1685685092989" duration="2601000" />
+      <workItem from="1685690990505" duration="3463000" />
     </task>
     <task id="LOCAL-00007" summary="feat: &#10;修改gitignore文件">
       <created>1683179841764</created>
@@ -640,7 +640,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685586097909</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="feat: 整合docker">
+      <created>1685625209620</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1685625209620</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -662,7 +669,6 @@
       <path value="$PROJECT_DIR$/demo-properties" />
       <path value="$PROJECT_DIR$/demo-logback" />
     </ignored-roots>
-    <MESSAGE value="feat: springboot整合xxl-job" />
     <MESSAGE value="feat: 通过http请求手动操作xxl-job" />
     <MESSAGE value="feat: 手写xxl-job的starter完成自动注册" />
     <MESSAGE value="feat: 测试xxl-job手写的starter自动注册功能" />
@@ -687,7 +693,8 @@
     <MESSAGE value="feat: 整合minIo" />
     <MESSAGE value="feat: 整合redis sentinel" />
     <MESSAGE value="feat: 整合sa-tokon" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 整合sa-tokon" />
+    <MESSAGE value="feat: 整合docker" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 整合docker" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

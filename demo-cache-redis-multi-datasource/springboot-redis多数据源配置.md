@@ -67,6 +67,18 @@ spring:
         max-wait: -1 #连接池最大阻塞等待时间（使用负值表示没有限制）
 ```
 
+或者配置为下面的，可以省略下面三、四步骤
+
+```yaml
+spring:
+  redis:
+    database: 0
+    password: 123456 #redis密码
+    sentinel:
+      master: mymaster
+      nodes: 116.211.105.107:26379, 116.211.105.112:26380, 116.211.105.117:26381
+```
+
 ### 3、redis配置类
 
 ```java

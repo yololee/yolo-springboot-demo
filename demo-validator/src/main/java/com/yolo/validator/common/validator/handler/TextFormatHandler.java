@@ -71,8 +71,8 @@ public class TextFormatHandler implements ConstraintValidator<TextFormat, Object
     }
 
     private void checkContainIntList(List<Integer> target) {
-        if (CollUtil.isNotEmpty(Collections.singletonList(containsInt))){
-            List<Integer> list = Arrays.stream(containsInt).boxed().collect(Collectors.toList());
+        List<Integer> list = Arrays.stream(containsInt).boxed().collect(Collectors.toList());
+        if (CollUtil.isNotEmpty(list)){
             List<Integer> subtraction = target.stream().filter(v->!list.contains(v)).collect(Collectors.toList());
             if (CollUtil.isNotEmpty(subtraction)){
                 throw new ParamException(ApiStatus.PARAM_ERROR.getCode(), message);
@@ -81,8 +81,8 @@ public class TextFormatHandler implements ConstraintValidator<TextFormat, Object
     }
 
     private void checkContainStrList(List<String> target) {
-        if (CollUtil.isNotEmpty(Arrays.asList(notContains))){
-            List<String> list = Arrays.stream(notContains).collect(Collectors.toList());
+        List<String> list = Arrays.stream(notContains).collect(Collectors.toList());
+        if (CollUtil.isNotEmpty(list)){
             List<String> subtraction = target.stream().filter(v -> !list.contains(v)).collect(Collectors.toList());
             if (CollUtil.isNotEmpty(subtraction)){
                 throw new ParamException(ApiStatus.PARAM_ERROR.getCode(), message);
@@ -92,7 +92,7 @@ public class TextFormatHandler implements ConstraintValidator<TextFormat, Object
     }
 
     private void checkNotNeedFill(String target) {
-        if (!StringUtils.isEmpty(notNeedFill)) {
+        if (StrUtil.isNotBlank(notNeedFill)){
             switch (notNeedFill) {
                 case "description":
                     //检查描述长度
@@ -109,50 +109,42 @@ public class TextFormatHandler implements ConstraintValidator<TextFormat, Object
     }
 
     private void checkNotContainInt(int target) {
-        for (int notContainInt : notContainsInt) {
-            if (target == notContainInt) {
-                throw new ParamException(ApiStatus.PARAM_ERROR.getCode(), message);
-            }
+        List<Integer> list = Arrays.stream(notContainsInt).boxed().collect(Collectors.toList());
+        if (CollUtil.isNotEmpty(list) && list.contains(target)){
+            throw new ParamException(ApiStatus.PARAM_ERROR.getCode(), message);
         }
     }
 
     private void checkContainInt(int target) {
-        for (int containInt : containsInt) {
-            if (target != containInt) {
-                throw new ParamException(ApiStatus.PARAM_ERROR.getCode(), message);
-            }
+        List<Integer> list = Arrays.stream(containsInt).boxed().collect(Collectors.toList());
+        if (CollUtil.isNotEmpty(list) && !list.contains(target)) {
+            throw new ParamException(ApiStatus.PARAM_ERROR.getCode(), message);
         }
     }
 
     private void checkEndsWith(String target) {
-        if (!StringUtils.isEmpty(target)) {
-            if (!target.endsWith(endsWith)) {
-                throw new ParamException(ApiStatus.PARAM_ERROR.getCode(),message);
-            }
+        if (StrUtil.isNotBlank(endsWith) && !target.endsWith(startWith)) {
+            throw new ParamException(ApiStatus.PARAM_ERROR.getCode(), message);
         }
     }
 
     private void checkStartWith(String target) {
-        if (!StringUtils.isEmpty(startWith)) {
-            if (!target.startsWith(startWith)) {
-                throw new ParamException(ApiStatus.PARAM_ERROR.getCode(),message);
-            }
+        if (StrUtil.isNotBlank(startWith) && !target.startsWith(startWith)) {
+            throw new ParamException(ApiStatus.PARAM_ERROR.getCode(), message);
         }
     }
 
     private void checkNotContainStr(String target) {
-        for (String notContain : notContains) {
-            if (notContain.equals(target)) {
-                throw new ParamException(ApiStatus.PARAM_ERROR.getCode(), message);
-            }
+        List<String> list = Arrays.asList(notContains);
+        if (CollUtil.isNotEmpty(list) && list.contains(target)){
+            throw new ParamException(ApiStatus.PARAM_ERROR.getCode(), message);
         }
     }
 
     private void checkContainStr(String target) {
-        for (String contain : contains) {
-            if (!contain.equals(target)) {
-                throw new ParamException(ApiStatus.PARAM_ERROR.getCode(), message);
-            }
+        List<String> list = Arrays.asList(contains);
+        if (CollUtil.isNotEmpty(list) && !list.contains(target)){
+            throw new ParamException(ApiStatus.PARAM_ERROR.getCode(), message);
         }
     }
 

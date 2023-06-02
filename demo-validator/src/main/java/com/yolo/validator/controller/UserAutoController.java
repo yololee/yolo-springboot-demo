@@ -12,6 +12,9 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import javax.validation.constraints.Max;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
+import java.util.List;
 
 @RestController
 @RequestMapping("/user/auto")
@@ -20,6 +23,16 @@ public class UserAutoController {
     @GetMapping
     public ApiResponse testOne(@Max(value = 4,message = "最大值不能超过4") int id){
         return ApiResponse.ofSuccess(id);
+    }
+
+    @GetMapping("/test1")
+    public ApiResponse testOne2(@NotNull(message = "id不能为空") @Max(value = 4,message = "最大值不能超过4") Long id){
+        return ApiResponse.ofSuccess(id);
+    }
+
+    @PostMapping("/test3")
+    public ApiResponse testOne3(@NotEmpty(message = "id集合不能为空") @RequestBody List<String> ids){
+        return ApiResponse.ofSuccess(ids);
     }
 
     @GetMapping("/testData")
