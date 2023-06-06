@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: 整合docker">
+    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: 调整validator校验">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-cache-redis-multi-datasource/springboot-redis多数据源配置.md" beforeDir="false" afterPath="$PROJECT_DIR$/demo-cache-redis-multi-datasource/springboot-redis多数据源配置.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-validator/src/main/java/com/yolo/validator/common/exception/core/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-validator/src/main/java/com/yolo/validator/common/exception/core/GlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-validator/src/main/java/com/yolo/validator/common/validator/handler/TextFormatHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-validator/src/main/java/com/yolo/validator/common/validator/handler/TextFormatHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-validator/src/main/java/com/yolo/validator/controller/UserAutoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-validator/src/main/java/com/yolo/validator/controller/UserAutoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-docker/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-docker/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +118,7 @@
     "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "Docker",
+    "settings.editor.selected.configurable": "MavenSettings",
     "spring.configuration.checksum": "235f91fe79f8652703210741e2a6c4b0",
     "ts.external.directory.path": "/Applications/IntelliJ IDEA.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
     "vue.rearranger.settings.migration": "true"
@@ -158,32 +155,83 @@
       <recent name="com.yolo.upload.fragment.service" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.DemoValidatorApplication">
-    <configuration name="DemoCacheRedisSentinelApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo-cache-redis-sentinel" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.yolo.redis.sentinel.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.yolo.redis.sentinel" />
-      <option name="MAIN_CLASS_NAME" value="com.yolo.redis.sentinel.DemoCacheRedisSentinelApplicationTests" />
-      <option name="METHOD_NAME" value="contextLoads" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DemoDockerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="demo-docker" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.demo.DemoDockerApplication" />
+  <component name="RunManager" selected="JUnit.CustomTypeConvertTest.test4">
+    <configuration name="CustomTypeConvertTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo-mapstruct-plus" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.yolo.demo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.yolo.demo" />
+      <option name="MAIN_CLASS_NAME" value="com.yolo.demo.CustomTypeConvertTest" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomTypeConvertTest.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo-mapstruct-plus" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yolo.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.yolo.demo" />
+      <option name="MAIN_CLASS_NAME" value="com.yolo.demo.CustomTypeConvertTest" />
+      <option name="METHOD_NAME" value="test2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomTypeConvertTest.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo-mapstruct-plus" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yolo.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.yolo.demo" />
+      <option name="MAIN_CLASS_NAME" value="com.yolo.demo.CustomTypeConvertTest" />
+      <option name="METHOD_NAME" value="test3" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomTypeConvertTest.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo-mapstruct-plus" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yolo.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.yolo.demo" />
+      <option name="MAIN_CLASS_NAME" value="com.yolo.demo.CustomTypeConvertTest" />
+      <option name="METHOD_NAME" value="test4" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemoMapstructPlusApplicationTests.quickStart" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo-mapstruct-plus" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yolo.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.yolo.demo" />
+      <option name="MAIN_CLASS_NAME" value="com.yolo.demo.DemoMapstructPlusApplicationTests" />
+      <option name="METHOD_NAME" value="quickStart" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -195,55 +243,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DemoSaTokenApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="demo-sa-token" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.demosatoken.DemoSaTokenApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.yolo.demosatoken.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DemoValidatorApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="demo-validator" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.validator.DemoValidatorApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.yolo.validator.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="demo-docker/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
-      <deployment type="dockerfile">
-        <settings>
-          <option name="sourceFilePath" value="demo-docker/Dockerfile" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
     <list>
-      <item itemvalue="Docker.demo-docker/Dockerfile" />
-      <item itemvalue="JUnit.DemoCacheRedisSentinelApplicationTests.contextLoads" />
+      <item itemvalue="JUnit.CustomTypeConvertTest.test1" />
+      <item itemvalue="JUnit.CustomTypeConvertTest.test2" />
+      <item itemvalue="JUnit.CustomTypeConvertTest.test3" />
+      <item itemvalue="JUnit.CustomTypeConvertTest.test4" />
+      <item itemvalue="JUnit.DemoMapstructPlusApplicationTests.quickStart" />
       <item itemvalue="Spring Boot.DemoLogAopApplication" />
-      <item itemvalue="Spring Boot.DemoValidatorApplication" />
-      <item itemvalue="Spring Boot.DemoDockerApplication" />
-      <item itemvalue="Spring Boot.DemoSaTokenApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.DemoValidatorApplication" />
-        <item itemvalue="Spring Boot.DemoDockerApplication" />
-        <item itemvalue="Docker.demo-docker/Dockerfile" />
-        <item itemvalue="Spring Boot.DemoSaTokenApplication" />
-        <item itemvalue="JUnit.DemoCacheRedisSentinelApplicationTests.contextLoads" />
+        <item itemvalue="JUnit.CustomTypeConvertTest.test4" />
+        <item itemvalue="JUnit.CustomTypeConvertTest.test3" />
+        <item itemvalue="JUnit.CustomTypeConvertTest.test2" />
+        <item itemvalue="JUnit.CustomTypeConvertTest.test1" />
+        <item itemvalue="JUnit.DemoMapstructPlusApplicationTests.quickStart" />
       </list>
     </recent_temporary>
   </component>
@@ -302,14 +316,9 @@
       <workItem from="1685627805298" duration="440000" />
       <workItem from="1685672425229" duration="787000" />
       <workItem from="1685685092989" duration="2601000" />
-      <workItem from="1685690990505" duration="3463000" />
-    </task>
-    <task id="LOCAL-00007" summary="feat: &#10;修改gitignore文件">
-      <created>1683179841764</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1683179841764</updated>
+      <workItem from="1685690990505" duration="3526000" />
+      <workItem from="1685927484000" duration="1004000" />
+      <workItem from="1686023698445" duration="11862000" />
     </task>
     <task id="LOCAL-00008" summary="feat: &#10;整合aop记录日志">
       <created>1683183328088</created>
@@ -647,7 +656,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685625209620</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="feat: 调整validator校验">
+      <created>1685698326295</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1685698326295</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -669,7 +685,6 @@
       <path value="$PROJECT_DIR$/demo-properties" />
       <path value="$PROJECT_DIR$/demo-logback" />
     </ignored-roots>
-    <MESSAGE value="feat: 通过http请求手动操作xxl-job" />
     <MESSAGE value="feat: 手写xxl-job的starter完成自动注册" />
     <MESSAGE value="feat: 测试xxl-job手写的starter自动注册功能" />
     <MESSAGE value="feat: xxl-job目录" />
@@ -694,7 +709,8 @@
     <MESSAGE value="feat: 整合redis sentinel" />
     <MESSAGE value="feat: 整合sa-tokon" />
     <MESSAGE value="feat: 整合docker" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 整合docker" />
+    <MESSAGE value="feat: 调整validator校验" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 调整validator校验" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -721,5 +737,9 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
