@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: 调整validator校验">
+    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: 整合mapstruct-plus">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-docker/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-docker/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -109,7 +109,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-sa-token/src/main/java/com/yolo/demosatoken/config",
+    "last_opened_file_path": "/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-mapstruct-plus",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -118,7 +118,7 @@
     "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "MavenSettings",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "spring.configuration.checksum": "235f91fe79f8652703210741e2a6c4b0",
     "ts.external.directory.path": "/Applications/IntelliJ IDEA.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
     "vue.rearranger.settings.migration": "true"
@@ -137,11 +137,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/demo-mapstruct-plus" />
       <recent name="$PROJECT_DIR$/demo-sa-token/src/main/java/com/yolo/demosatoken/config" />
       <recent name="$PROJECT_DIR$/demo-sa-token/src/main/resources" />
       <recent name="$PROJECT_DIR$/demo-sa-token/src/main/java/com/yolo/demosatoken/api/mapper" />
       <recent name="$PROJECT_DIR$/demo-sa-token/src/main/java/com/yolo/demosatoken/dao" />
-      <recent name="$PROJECT_DIR$/demo-sa-token/src/main/java/com/yolo/demosatoken" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/demo-orm-mybatis-plus/sql" />
@@ -155,82 +155,82 @@
       <recent name="com.yolo.upload.fragment.service" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CustomTypeConvertTest.test4">
-    <configuration name="CustomTypeConvertTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo-mapstruct-plus" />
+  <component name="RunManager" selected="JUnit.MapTest.test1">
+    <configuration name="DemoMapstructApplicationTests.test13" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo-mapstruct" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.yolo.demo.*" />
+          <option name="PATTERN" value="com.example.demo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.yolo.demo" />
-      <option name="MAIN_CLASS_NAME" value="com.yolo.demo.CustomTypeConvertTest" />
+      <option name="PACKAGE_NAME" value="com.example.demo" />
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.DemoMapstructApplicationTests" />
+      <option name="METHOD_NAME" value="test13" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemoMapstructApplicationTests.test14" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo-mapstruct" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.demo" />
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.DemoMapstructApplicationTests" />
+      <option name="METHOD_NAME" value="test14" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MapTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo-mapstruct" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.demo" />
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.MapTest" />
       <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CustomTypeConvertTest.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo-mapstruct-plus" />
+    <configuration name="PersonTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo-mapstruct" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.yolo.demo.*" />
+          <option name="PATTERN" value="com.example.demo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.yolo.demo" />
-      <option name="MAIN_CLASS_NAME" value="com.yolo.demo.CustomTypeConvertTest" />
+      <option name="PACKAGE_NAME" value="com.example.demo" />
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.PersonTest" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PersonTest.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo-mapstruct" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.demo" />
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.PersonTest" />
       <option name="METHOD_NAME" value="test2" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CustomTypeConvertTest.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo-mapstruct-plus" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.yolo.demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.yolo.demo" />
-      <option name="MAIN_CLASS_NAME" value="com.yolo.demo.CustomTypeConvertTest" />
-      <option name="METHOD_NAME" value="test3" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CustomTypeConvertTest.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo-mapstruct-plus" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.yolo.demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.yolo.demo" />
-      <option name="MAIN_CLASS_NAME" value="com.yolo.demo.CustomTypeConvertTest" />
-      <option name="METHOD_NAME" value="test4" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DemoMapstructPlusApplicationTests.quickStart" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo-mapstruct-plus" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.yolo.demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.yolo.demo" />
-      <option name="MAIN_CLASS_NAME" value="com.yolo.demo.DemoMapstructPlusApplicationTests" />
-      <option name="METHOD_NAME" value="quickStart" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -244,20 +244,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.CustomTypeConvertTest.test1" />
-      <item itemvalue="JUnit.CustomTypeConvertTest.test2" />
-      <item itemvalue="JUnit.CustomTypeConvertTest.test3" />
-      <item itemvalue="JUnit.CustomTypeConvertTest.test4" />
-      <item itemvalue="JUnit.DemoMapstructPlusApplicationTests.quickStart" />
+      <item itemvalue="JUnit.DemoMapstructApplicationTests.test13" />
+      <item itemvalue="JUnit.DemoMapstructApplicationTests.test14" />
+      <item itemvalue="JUnit.MapTest.test1" />
+      <item itemvalue="JUnit.PersonTest.test1" />
+      <item itemvalue="JUnit.PersonTest.test2" />
       <item itemvalue="Spring Boot.DemoLogAopApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CustomTypeConvertTest.test4" />
-        <item itemvalue="JUnit.CustomTypeConvertTest.test3" />
-        <item itemvalue="JUnit.CustomTypeConvertTest.test2" />
-        <item itemvalue="JUnit.CustomTypeConvertTest.test1" />
-        <item itemvalue="JUnit.DemoMapstructPlusApplicationTests.quickStart" />
+        <item itemvalue="JUnit.MapTest.test1" />
+        <item itemvalue="JUnit.DemoMapstructApplicationTests.test14" />
+        <item itemvalue="JUnit.DemoMapstructApplicationTests.test13" />
+        <item itemvalue="JUnit.PersonTest.test1" />
+        <item itemvalue="JUnit.PersonTest.test2" />
       </list>
     </recent_temporary>
   </component>
@@ -318,14 +318,7 @@
       <workItem from="1685685092989" duration="2601000" />
       <workItem from="1685690990505" duration="3526000" />
       <workItem from="1685927484000" duration="1004000" />
-      <workItem from="1686023698445" duration="11862000" />
-    </task>
-    <task id="LOCAL-00008" summary="feat: &#10;整合aop记录日志">
-      <created>1683183328088</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1683183328088</updated>
+      <workItem from="1686023698445" duration="26799000" />
     </task>
     <task id="LOCAL-00009" summary="feat: &#10;全局异常处理">
       <created>1683186687048</created>
@@ -663,7 +656,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685698326295</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="feat: 整合mapstruct-plus">
+      <created>1686043811797</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1686043811797</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -685,7 +685,6 @@
       <path value="$PROJECT_DIR$/demo-properties" />
       <path value="$PROJECT_DIR$/demo-logback" />
     </ignored-roots>
-    <MESSAGE value="feat: 手写xxl-job的starter完成自动注册" />
     <MESSAGE value="feat: 测试xxl-job手写的starter自动注册功能" />
     <MESSAGE value="feat: xxl-job目录" />
     <MESSAGE value="feat: 异步方法实现" />
@@ -710,7 +709,8 @@
     <MESSAGE value="feat: 整合sa-tokon" />
     <MESSAGE value="feat: 整合docker" />
     <MESSAGE value="feat: 调整validator校验" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 调整validator校验" />
+    <MESSAGE value="feat: 整合mapstruct-plus" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 整合mapstruct-plus" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

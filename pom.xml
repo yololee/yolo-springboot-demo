@@ -51,6 +51,7 @@
         <module>demo-sa-token</module>
         <module>demo-docker</module>
         <module>demo-mapstruct-plus</module>
+        <module>demo-mapstruct</module>
     </modules>
 
 
