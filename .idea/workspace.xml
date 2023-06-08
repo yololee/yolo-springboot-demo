@@ -4,24 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: 整合mapstruct">
-      <change afterPath="$PROJECT_DIR$/demo-utils/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-utils/src/main/java/com/yolo/demo/DemoUtilsApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-utils/src/main/java/com/yolo/demo/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-utils/src/main/java/com/yolo/demo/util/BigDecimalUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-utils/src/main/java/com/yolo/demo/util/ConvertUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-utils/src/main/java/com/yolo/demo/util/ServletUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-utils/src/main/java/com/yolo/demo/util/StringUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-utils/src/main/java/com/yolo/demo/util/date/DateUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-utils/src/main/java/com/yolo/demo/util/date/DateValidatorUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-utils/src/main/java/com/yolo/demo/util/json/JsonUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-utils/src/main/java/com/yolo/demo/util/sql/CodingUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-utils/src/main/java/com/yolo/demo/util/sql/SqlUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-utils/src/test/java/com/yolo/demo/DemoUtilsApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-utils/src/test/java/com/yolo/demo/JsonUtilsTest.java" afterDir="false" />
+    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: 工具类">
+      <change afterPath="$PROJECT_DIR$/demo-cache-redis/src/main/java/com/yolo/cache/redis/util/RedisCommonUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-cache-redis/src/main/java/com/yolo/cache/redis/util/RedisHashUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-cache-redis/src/main/java/com/yolo/cache/redis/util/RedisListUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-cache-redis/src/main/java/com/yolo/cache/redis/util/RedisSetUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-cache-redis/src/main/java/com/yolo/cache/redis/util/RedisStringUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-cache-redis/src/main/java/com/yolo/cache/redis/util/RedisZSetUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -332,14 +323,7 @@
       <workItem from="1685685092989" duration="2601000" />
       <workItem from="1685690990505" duration="3526000" />
       <workItem from="1685927484000" duration="1004000" />
-      <workItem from="1686023698445" duration="37239000" />
-    </task>
-    <task id="LOCAL-00010" summary="feat: &#10;对swagger和knife4j的使用">
-      <created>1683192897909</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1683192897909</updated>
+      <workItem from="1686023698445" duration="38163000" />
     </task>
     <task id="LOCAL-00011" summary="feat: &#10;自定义注解使用aop的方式对操作日志进行异步保存">
       <created>1683273690879</created>
@@ -677,7 +661,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686119828696</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="feat: 工具类">
+      <created>1686202683590</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1686202683590</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -699,7 +690,6 @@
       <path value="$PROJECT_DIR$/demo-properties" />
       <path value="$PROJECT_DIR$/demo-logback" />
     </ignored-roots>
-    <MESSAGE value="feat: xxl-job目录" />
     <MESSAGE value="feat: 异步方法实现" />
     <MESSAGE value="feat: springboot整合flyway" />
     <MESSAGE value="feat: springboot整合redis实现接口限流" />
@@ -724,7 +714,8 @@
     <MESSAGE value="feat: 调整validator校验" />
     <MESSAGE value="feat: 整合mapstruct-plus" />
     <MESSAGE value="feat: 整合mapstruct" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 整合mapstruct" />
+    <MESSAGE value="feat: 工具类" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 工具类" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
