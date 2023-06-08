@@ -52,6 +52,7 @@
         <module>demo-docker</module>
         <module>demo-mapstruct-plus</module>
         <module>demo-mapstruct</module>
+        <module>demo-utils</module>
     </modules>
 
 

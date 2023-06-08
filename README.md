@@ -56,7 +56,7 @@ spring boot demo 是一个用来深度学习并实战 spring boot 的项目
 | [demo-sa-token](https://gitee.com/huanglei1111/yolo-springboot-demo/tree/master/demo-sa-token) | springboot整合satoken权限框架                                |
 | [demo-docker](https://gitee.com/huanglei1111/yolo-springboot-demo/tree/master/demo-docker) | springboot整合docker构建镜像                                 |
 | [demo-mapstruct-plus](https://gitee.com/huanglei1111/yolo-springboot-demo/tree/master/demo-mapstruct-plus) | springboot整合mapstruct-plus                                 |
-|                                                              |                                                              |
+| [demo-mapstruct](https://gitee.com/huanglei1111/yolo-springboot-demo/tree/master/demo-mapstruct) | springboot整合mapstruct                                      |
 |                                                              |                                                              |
 |                                                              |                                                              |
 |                                                              |                                                              |

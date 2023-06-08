@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: 整合mapstruct-plus">
+    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: 整合mapstruct">
+      <change afterPath="$PROJECT_DIR$/demo-utils/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-utils/src/main/java/com/yolo/demo/DemoUtilsApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-utils/src/main/java/com/yolo/demo/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-utils/src/main/java/com/yolo/demo/util/BigDecimalUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-utils/src/main/java/com/yolo/demo/util/ConvertUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-utils/src/main/java/com/yolo/demo/util/ServletUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-utils/src/main/java/com/yolo/demo/util/StringUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-utils/src/main/java/com/yolo/demo/util/date/DateUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-utils/src/main/java/com/yolo/demo/util/date/DateValidatorUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-utils/src/main/java/com/yolo/demo/util/json/JsonUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-utils/src/main/java/com/yolo/demo/util/sql/CodingUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-utils/src/main/java/com/yolo/demo/util/sql/SqlUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-utils/src/test/java/com/yolo/demo/DemoUtilsApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-utils/src/test/java/com/yolo/demo/JsonUtilsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
@@ -109,7 +123,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-mapstruct-plus",
+    "last_opened_file_path": "/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-mapstruct",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -137,25 +151,25 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/demo-mapstruct" />
       <recent name="$PROJECT_DIR$/demo-mapstruct-plus" />
       <recent name="$PROJECT_DIR$/demo-sa-token/src/main/java/com/yolo/demosatoken/config" />
       <recent name="$PROJECT_DIR$/demo-sa-token/src/main/resources" />
       <recent name="$PROJECT_DIR$/demo-sa-token/src/main/java/com/yolo/demosatoken/api/mapper" />
-      <recent name="$PROJECT_DIR$/demo-sa-token/src/main/java/com/yolo/demosatoken/dao" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/demo-orm-mybatis-plus/sql" />
       <recent name="$PROJECT_DIR$/demo-login-operation-log/src/main/resources/mybatis" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.yolo.demo.util.date" />
+      <recent name="com.yolo.demo.util.sql" />
+      <recent name="com.yolo.demo.util" />
       <recent name="com.yolo.demosatoken.config" />
       <recent name="com.yolo.upload.fragment.entity" />
-      <recent name="com.yolo.upload.fragment.mapper" />
-      <recent name="com.yolo.upload.fragment.service.impl" />
-      <recent name="com.yolo.upload.fragment.service" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MapTest.test1">
+  <component name="RunManager">
     <configuration name="DemoMapstructApplicationTests.test13" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo-mapstruct" />
       <extension name="coverage">
@@ -188,6 +202,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="JsonUtilsTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo-utils" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yolo.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.yolo.demo" />
+      <option name="MAIN_CLASS_NAME" value="com.yolo.demo.JsonUtilsTest" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JsonUtilsTest.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo-utils" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yolo.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.yolo.demo" />
+      <option name="MAIN_CLASS_NAME" value="com.yolo.demo.JsonUtilsTest" />
+      <option name="METHOD_NAME" value="test2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MapTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo-mapstruct" />
       <extension name="coverage">
@@ -204,38 +250,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PersonTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo-mapstruct" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.demo" />
-      <option name="MAIN_CLASS_NAME" value="com.example.demo.PersonTest" />
-      <option name="METHOD_NAME" value="test1" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PersonTest.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo-mapstruct" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.demo" />
-      <option name="MAIN_CLASS_NAME" value="com.example.demo.PersonTest" />
-      <option name="METHOD_NAME" value="test2" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="DemoLogAopApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="demo-log-aop" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.logaop.DemoLogAopApplication" />
@@ -246,18 +260,18 @@
     <list>
       <item itemvalue="JUnit.DemoMapstructApplicationTests.test13" />
       <item itemvalue="JUnit.DemoMapstructApplicationTests.test14" />
+      <item itemvalue="JUnit.JsonUtilsTest.test1" />
+      <item itemvalue="JUnit.JsonUtilsTest.test2" />
       <item itemvalue="JUnit.MapTest.test1" />
-      <item itemvalue="JUnit.PersonTest.test1" />
-      <item itemvalue="JUnit.PersonTest.test2" />
       <item itemvalue="Spring Boot.DemoLogAopApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.JsonUtilsTest.test2" />
+        <item itemvalue="JUnit.JsonUtilsTest.test1" />
         <item itemvalue="JUnit.MapTest.test1" />
         <item itemvalue="JUnit.DemoMapstructApplicationTests.test14" />
         <item itemvalue="JUnit.DemoMapstructApplicationTests.test13" />
-        <item itemvalue="JUnit.PersonTest.test1" />
-        <item itemvalue="JUnit.PersonTest.test2" />
       </list>
     </recent_temporary>
   </component>
@@ -318,14 +332,7 @@
       <workItem from="1685685092989" duration="2601000" />
       <workItem from="1685690990505" duration="3526000" />
       <workItem from="1685927484000" duration="1004000" />
-      <workItem from="1686023698445" duration="26799000" />
-    </task>
-    <task id="LOCAL-00009" summary="feat: &#10;全局异常处理">
-      <created>1683186687048</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1683186687048</updated>
+      <workItem from="1686023698445" duration="37239000" />
     </task>
     <task id="LOCAL-00010" summary="feat: &#10;对swagger和knife4j的使用">
       <created>1683192897909</created>
@@ -663,7 +670,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686043811797</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="feat: 整合mapstruct">
+      <created>1686119828696</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1686119828696</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -685,7 +699,6 @@
       <path value="$PROJECT_DIR$/demo-properties" />
       <path value="$PROJECT_DIR$/demo-logback" />
     </ignored-roots>
-    <MESSAGE value="feat: 测试xxl-job手写的starter自动注册功能" />
     <MESSAGE value="feat: xxl-job目录" />
     <MESSAGE value="feat: 异步方法实现" />
     <MESSAGE value="feat: springboot整合flyway" />
@@ -710,7 +723,8 @@
     <MESSAGE value="feat: 整合docker" />
     <MESSAGE value="feat: 调整validator校验" />
     <MESSAGE value="feat: 整合mapstruct-plus" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 整合mapstruct-plus" />
+    <MESSAGE value="feat: 整合mapstruct" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 整合mapstruct" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -741,5 +755,10 @@
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/yolo_springboot_demo$JsonUtilTest_test2.ic" NAME="JsonUtilTest.test2 Coverage Results" MODIFIED="1686191969803" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.yolo.demo.*</FILTER>
+    </SUITE>
   </component>
 </project>
