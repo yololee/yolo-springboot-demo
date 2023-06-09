@@ -53,6 +53,7 @@
         <module>demo-mapstruct-plus</module>
         <module>demo-mapstruct</module>
         <module>demo-utils</module>
+        <module>demo-cache-redis-redisson</module>
     </modules>
 
 

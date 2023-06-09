@@ -4,15 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: 工具类">
-      <change afterPath="$PROJECT_DIR$/demo-cache-redis/src/main/java/com/yolo/cache/redis/util/RedisCommonUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-cache-redis/src/main/java/com/yolo/cache/redis/util/RedisHashUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-cache-redis/src/main/java/com/yolo/cache/redis/util/RedisListUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-cache-redis/src/main/java/com/yolo/cache/redis/util/RedisSetUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-cache-redis/src/main/java/com/yolo/cache/redis/util/RedisStringUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-cache-redis/src/main/java/com/yolo/cache/redis/util/RedisZSetUtils.java" afterDir="false" />
+    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: 整合redis封装redis五种数据类型的工具类">
+      <change afterPath="$PROJECT_DIR$/demo-cache-redis-redisson/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-cache-redis-redisson/redis-分布式锁实现思路.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-cache-redis-redisson/springboot-整合Redisson实现分布式锁.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-cache-redis-redisson/src/main/java/com/yolo/demo/DemoCacheRedisRedissonApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-cache-redis-redisson/src/main/java/com/yolo/demo/config/RedissonConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-cache-redis-redisson/src/main/java/com/yolo/demo/util/RedissonUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-cache-redis-redisson/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-cache-redis-redisson/src/test/java/com/yolo/demo/DemoCacheRedisRedissonApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,41 +162,9 @@
       <recent name="com.yolo.upload.fragment.entity" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="DemoMapstructApplicationTests.test13" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo-mapstruct" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.demo" />
-      <option name="MAIN_CLASS_NAME" value="com.example.demo.DemoMapstructApplicationTests" />
-      <option name="METHOD_NAME" value="test13" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DemoMapstructApplicationTests.test14" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo-mapstruct" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.demo" />
-      <option name="MAIN_CLASS_NAME" value="com.example.demo.DemoMapstructApplicationTests" />
-      <option name="METHOD_NAME" value="test14" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="JsonUtilsTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo-utils" />
+  <component name="RunManager" selected="JUnit.DemoCacheRedisRedissonApplicationTests.testSemaphore">
+    <configuration name="DemoCacheRedisRedissonApplicationTests.testFairLock" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo-cache-redis-redisson" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.yolo.demo.*" />
@@ -202,15 +172,15 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.yolo.demo" />
-      <option name="MAIN_CLASS_NAME" value="com.yolo.demo.JsonUtilsTest" />
-      <option name="METHOD_NAME" value="test1" />
+      <option name="MAIN_CLASS_NAME" value="com.yolo.demo.DemoCacheRedisRedissonApplicationTests" />
+      <option name="METHOD_NAME" value="testFairLock" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JsonUtilsTest.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo-utils" />
+    <configuration name="DemoCacheRedisRedissonApplicationTests.testMultiLock" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo-cache-redis-redisson" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.yolo.demo.*" />
@@ -218,24 +188,56 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.yolo.demo" />
-      <option name="MAIN_CLASS_NAME" value="com.yolo.demo.JsonUtilsTest" />
-      <option name="METHOD_NAME" value="test2" />
+      <option name="MAIN_CLASS_NAME" value="com.yolo.demo.DemoCacheRedisRedissonApplicationTests" />
+      <option name="METHOD_NAME" value="testMultiLock" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MapTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo-mapstruct" />
+    <configuration name="DemoCacheRedisRedissonApplicationTests.testReadLock" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo-cache-redis-redisson" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.demo.*" />
+          <option name="PATTERN" value="com.yolo.demo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.example.demo" />
-      <option name="MAIN_CLASS_NAME" value="com.example.demo.MapTest" />
-      <option name="METHOD_NAME" value="test1" />
+      <option name="PACKAGE_NAME" value="com.yolo.demo" />
+      <option name="MAIN_CLASS_NAME" value="com.yolo.demo.DemoCacheRedisRedissonApplicationTests" />
+      <option name="METHOD_NAME" value="testReadLock" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemoCacheRedisRedissonApplicationTests.testSemaphore" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo-cache-redis-redisson" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yolo.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.yolo.demo" />
+      <option name="MAIN_CLASS_NAME" value="com.yolo.demo.DemoCacheRedisRedissonApplicationTests" />
+      <option name="METHOD_NAME" value="testSemaphore" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemoCacheRedisRedissonApplicationTests.testWriteLock" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo-cache-redis-redisson" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yolo.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.yolo.demo" />
+      <option name="MAIN_CLASS_NAME" value="com.yolo.demo.DemoCacheRedisRedissonApplicationTests" />
+      <option name="METHOD_NAME" value="testWriteLock" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -249,20 +251,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.DemoMapstructApplicationTests.test13" />
-      <item itemvalue="JUnit.DemoMapstructApplicationTests.test14" />
-      <item itemvalue="JUnit.JsonUtilsTest.test1" />
-      <item itemvalue="JUnit.JsonUtilsTest.test2" />
-      <item itemvalue="JUnit.MapTest.test1" />
+      <item itemvalue="JUnit.DemoCacheRedisRedissonApplicationTests.testFairLock" />
+      <item itemvalue="JUnit.DemoCacheRedisRedissonApplicationTests.testMultiLock" />
+      <item itemvalue="JUnit.DemoCacheRedisRedissonApplicationTests.testReadLock" />
+      <item itemvalue="JUnit.DemoCacheRedisRedissonApplicationTests.testSemaphore" />
+      <item itemvalue="JUnit.DemoCacheRedisRedissonApplicationTests.testWriteLock" />
       <item itemvalue="Spring Boot.DemoLogAopApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.JsonUtilsTest.test2" />
-        <item itemvalue="JUnit.JsonUtilsTest.test1" />
-        <item itemvalue="JUnit.MapTest.test1" />
-        <item itemvalue="JUnit.DemoMapstructApplicationTests.test14" />
-        <item itemvalue="JUnit.DemoMapstructApplicationTests.test13" />
+        <item itemvalue="JUnit.DemoCacheRedisRedissonApplicationTests.testSemaphore" />
+        <item itemvalue="JUnit.DemoCacheRedisRedissonApplicationTests.testReadLock" />
+        <item itemvalue="JUnit.DemoCacheRedisRedissonApplicationTests.testWriteLock" />
+        <item itemvalue="JUnit.DemoCacheRedisRedissonApplicationTests.testMultiLock" />
+        <item itemvalue="JUnit.DemoCacheRedisRedissonApplicationTests.testFairLock" />
       </list>
     </recent_temporary>
   </component>
@@ -323,14 +325,7 @@
       <workItem from="1685685092989" duration="2601000" />
       <workItem from="1685690990505" duration="3526000" />
       <workItem from="1685927484000" duration="1004000" />
-      <workItem from="1686023698445" duration="38163000" />
-    </task>
-    <task id="LOCAL-00011" summary="feat: &#10;自定义注解使用aop的方式对操作日志进行异步保存">
-      <created>1683273690879</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1683273690879</updated>
+      <workItem from="1686023698445" duration="52163000" />
     </task>
     <task id="LOCAL-00012" summary="feat: &#10;springboot-日志管理(登录日志，操作日志)">
       <created>1683273862922</created>
@@ -668,7 +663,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686202683590</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="feat: 整合redis封装redis五种数据类型的工具类">
+      <created>1686205104618</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1686205104618</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -690,7 +692,6 @@
       <path value="$PROJECT_DIR$/demo-properties" />
       <path value="$PROJECT_DIR$/demo-logback" />
     </ignored-roots>
-    <MESSAGE value="feat: 异步方法实现" />
     <MESSAGE value="feat: springboot整合flyway" />
     <MESSAGE value="feat: springboot整合redis实现接口限流" />
     <MESSAGE value="feat: 调整全局异常处理模块" />
@@ -715,7 +716,8 @@
     <MESSAGE value="feat: 整合mapstruct-plus" />
     <MESSAGE value="feat: 整合mapstruct" />
     <MESSAGE value="feat: 工具类" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 工具类" />
+    <MESSAGE value="feat: 整合redis封装redis五种数据类型的工具类" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 整合redis封装redis五种数据类型的工具类" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
