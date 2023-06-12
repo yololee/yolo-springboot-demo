@@ -4,16 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: redisson实现分布式锁">
+    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: validator自定义注解进行校验">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-validator/src/main/java/com/yolo/validator/common/validator/annotation/TextFormat.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-validator/src/main/java/com/yolo/validator/common/validator/annotation/TextFormat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-validator/src/main/java/com/yolo/validator/common/validator/annotation/VerifyIntegerCollectionDataValid.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-validator/src/main/java/com/yolo/validator/common/validator/handler/TextFormatHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-validator/src/main/java/com/yolo/validator/common/validator/handler/TextFormatHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-validator/src/main/java/com/yolo/validator/common/validator/handler/VerifyIntegerCollectionDataValidator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-validator/src/main/java/com/yolo/validator/controller/UserAutoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-validator/src/main/java/com/yolo/validator/controller/UserAutoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-validator/src/main/java/com/yolo/validator/domain/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-validator/src/main/java/com/yolo/validator/domain/Person.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo-validator/src/main/java/com/yolo/validator/domain/UserVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-validator/src/main/java/com/yolo/validator/domain/UserVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,19 +156,16 @@
       <recent name="com.yolo.upload.fragment.entity" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.DemoValidatorApplication">
-    <configuration name="DemoCacheRedisRedissonApplicationTests.testMultiLock" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo-cache-redis-redisson" />
+  <component name="RunManager" selected="Application.JsoupUtil">
+    <configuration name="JsoupUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.yolo.demo.util.JsoupUtil" />
+      <module name="demo-xss-jsoup" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.yolo.demo.*" />
+          <option name="PATTERN" value="com.yolo.demo.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.yolo.demo" />
-      <option name="MAIN_CLASS_NAME" value="com.yolo.demo.DemoCacheRedisRedissonApplicationTests" />
-      <option name="METHOD_NAME" value="testMultiLock" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -211,22 +202,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DemoCacheRedisRedissonApplicationTests.testWriteLock" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo-cache-redis-redisson" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.yolo.demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.yolo.demo" />
-      <option name="MAIN_CLASS_NAME" value="com.yolo.demo.DemoCacheRedisRedissonApplicationTests" />
-      <option name="METHOD_NAME" value="testWriteLock" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="DemoLogAopApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="demo-log-aop" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.logaop.DemoLogAopApplication" />
@@ -247,21 +222,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DemoXssJsoupApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="demo-xss-jsoup" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.demo.DemoXssJsoupApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yolo.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="JUnit.DemoCacheRedisRedissonApplicationTests.testMultiLock" />
+      <item itemvalue="Application.JsoupUtil" />
       <item itemvalue="JUnit.DemoCacheRedisRedissonApplicationTests.testReadLock" />
       <item itemvalue="JUnit.DemoCacheRedisRedissonApplicationTests.testSemaphore" />
-      <item itemvalue="JUnit.DemoCacheRedisRedissonApplicationTests.testWriteLock" />
       <item itemvalue="Spring Boot.DemoLogAopApplication" />
+      <item itemvalue="Spring Boot.DemoXssJsoupApplication" />
       <item itemvalue="Spring Boot.DemoValidatorApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.DemoXssJsoupApplication" />
+        <item itemvalue="Application.JsoupUtil" />
         <item itemvalue="Spring Boot.DemoValidatorApplication" />
         <item itemvalue="JUnit.DemoCacheRedisRedissonApplicationTests.testSemaphore" />
         <item itemvalue="JUnit.DemoCacheRedisRedissonApplicationTests.testReadLock" />
-        <item itemvalue="JUnit.DemoCacheRedisRedissonApplicationTests.testWriteLock" />
-        <item itemvalue="JUnit.DemoCacheRedisRedissonApplicationTests.testMultiLock" />
       </list>
     </recent_temporary>
   </component>
@@ -327,14 +315,9 @@
       <workItem from="1686531356757" duration="1280000" />
       <workItem from="1686532651000" duration="2959000" />
       <workItem from="1686535629895" duration="1313000" />
-      <workItem from="1686536954701" duration="3887000" />
-    </task>
-    <task id="LOCAL-00013" summary="feat: &#10;本地文件上传下载">
-      <created>1683340042171</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1683340042171</updated>
+      <workItem from="1686536954701" duration="4395000" />
+      <workItem from="1686541973131" duration="108000" />
+      <workItem from="1686542149556" duration="7423000" />
     </task>
     <task id="LOCAL-00014" summary="feat: &#10;整合mybatis使用xml、注解">
       <created>1683508587744</created>
@@ -672,7 +655,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686282325372</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="feat: validator自定义注解进行校验">
+      <created>1686541500178</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1686541500178</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -694,7 +684,6 @@
       <path value="$PROJECT_DIR$/demo-properties" />
       <path value="$PROJECT_DIR$/demo-logback" />
     </ignored-roots>
-    <MESSAGE value="feat: springboot整合redis实现接口限流" />
     <MESSAGE value="feat: 调整全局异常处理模块" />
     <MESSAGE value="feat: jackson注解的使用" />
     <MESSAGE value="feat: 目录" />
@@ -719,7 +708,8 @@
     <MESSAGE value="feat: 工具类" />
     <MESSAGE value="feat: 整合redis封装redis五种数据类型的工具类" />
     <MESSAGE value="feat: redisson实现分布式锁" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: redisson实现分布式锁" />
+    <MESSAGE value="feat: validator自定义注解进行校验" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: validator自定义注解进行校验" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

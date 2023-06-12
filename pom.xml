@@ -54,6 +54,7 @@
         <module>demo-mapstruct</module>
         <module>demo-utils</module>
         <module>demo-cache-redis-redisson</module>
+        <module>demo-xss-jsoup</module>
     </modules>
 
 

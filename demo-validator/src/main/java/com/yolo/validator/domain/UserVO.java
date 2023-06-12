@@ -3,6 +3,7 @@ package com.yolo.validator.domain;
 import com.yolo.validator.common.validator.annotation.EnumCheck;
 import com.yolo.validator.common.validator.annotation.NumberCheck;
 import com.yolo.validator.common.validator.annotation.TextFormat;
+import com.yolo.validator.common.validator.annotation.Xss;
 import com.yolo.validator.common.validator.group.Update;
 import lombok.Data;
 
@@ -22,6 +23,7 @@ public class UserVO {
     private double roleId;
 //    @NotBlank(message = "name 不能为空",groups = Update.class)
     @TextFormat(endsWith = "213")
+    @Xss
     private String name;
 
     /**
