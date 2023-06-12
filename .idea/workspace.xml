@@ -4,17 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: 整合redis封装redis五种数据类型的工具类">
-      <change afterPath="$PROJECT_DIR$/demo-cache-redis-redisson/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-cache-redis-redisson/redis-分布式锁实现思路.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-cache-redis-redisson/springboot-整合Redisson实现分布式锁.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-cache-redis-redisson/src/main/java/com/yolo/demo/DemoCacheRedisRedissonApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-cache-redis-redisson/src/main/java/com/yolo/demo/config/RedissonConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-cache-redis-redisson/src/main/java/com/yolo/demo/util/RedissonUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-cache-redis-redisson/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-cache-redis-redisson/src/test/java/com/yolo/demo/DemoCacheRedisRedissonApplicationTests.java" afterDir="false" />
+    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: redisson实现分布式锁">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-validator/src/main/java/com/yolo/validator/common/validator/annotation/TextFormat.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-validator/src/main/java/com/yolo/validator/common/validator/annotation/TextFormat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-validator/src/main/java/com/yolo/validator/common/validator/annotation/VerifyIntegerCollectionDataValid.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-validator/src/main/java/com/yolo/validator/common/validator/handler/TextFormatHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-validator/src/main/java/com/yolo/validator/common/validator/handler/TextFormatHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-validator/src/main/java/com/yolo/validator/common/validator/handler/VerifyIntegerCollectionDataValidator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-validator/src/main/java/com/yolo/validator/controller/UserAutoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-validator/src/main/java/com/yolo/validator/controller/UserAutoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-validator/src/main/java/com/yolo/validator/domain/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-validator/src/main/java/com/yolo/validator/domain/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-validator/src/main/java/com/yolo/validator/domain/UserVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-validator/src/main/java/com/yolo/validator/domain/UserVO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +65,7 @@
       <list>
         <option value="Enum" />
         <option value="Interface" />
+        <option value="AnnotationType" />
         <option value="Class" />
       </list>
     </option>
@@ -105,37 +105,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-mapstruct",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Artifacts",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "spring.configuration.checksum": "235f91fe79f8652703210741e2a6c4b0",
-    "ts.external.directory.path": "/Applications/IntelliJ IDEA.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-mapstruct&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;b96ffe0344d058279b9c0c7a83eb493a&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Applications/IntelliJ IDEA.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -162,23 +162,7 @@
       <recent name="com.yolo.upload.fragment.entity" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DemoCacheRedisRedissonApplicationTests.testSemaphore">
-    <configuration name="DemoCacheRedisRedissonApplicationTests.testFairLock" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo-cache-redis-redisson" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.yolo.demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.yolo.demo" />
-      <option name="MAIN_CLASS_NAME" value="com.yolo.demo.DemoCacheRedisRedissonApplicationTests" />
-      <option name="METHOD_NAME" value="testFairLock" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Spring Boot.DemoValidatorApplication">
     <configuration name="DemoCacheRedisRedissonApplicationTests.testMultiLock" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo-cache-redis-redisson" />
       <extension name="coverage">
@@ -250,21 +234,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DemoValidatorApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="demo-validator" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.validator.DemoValidatorApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yolo.validator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="JUnit.DemoCacheRedisRedissonApplicationTests.testFairLock" />
       <item itemvalue="JUnit.DemoCacheRedisRedissonApplicationTests.testMultiLock" />
       <item itemvalue="JUnit.DemoCacheRedisRedissonApplicationTests.testReadLock" />
       <item itemvalue="JUnit.DemoCacheRedisRedissonApplicationTests.testSemaphore" />
       <item itemvalue="JUnit.DemoCacheRedisRedissonApplicationTests.testWriteLock" />
       <item itemvalue="Spring Boot.DemoLogAopApplication" />
+      <item itemvalue="Spring Boot.DemoValidatorApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.DemoValidatorApplication" />
         <item itemvalue="JUnit.DemoCacheRedisRedissonApplicationTests.testSemaphore" />
         <item itemvalue="JUnit.DemoCacheRedisRedissonApplicationTests.testReadLock" />
         <item itemvalue="JUnit.DemoCacheRedisRedissonApplicationTests.testWriteLock" />
         <item itemvalue="JUnit.DemoCacheRedisRedissonApplicationTests.testMultiLock" />
-        <item itemvalue="JUnit.DemoCacheRedisRedissonApplicationTests.testFairLock" />
       </list>
     </recent_temporary>
   </component>
@@ -325,14 +322,12 @@
       <workItem from="1685685092989" duration="2601000" />
       <workItem from="1685690990505" duration="3526000" />
       <workItem from="1685927484000" duration="1004000" />
-      <workItem from="1686023698445" duration="52163000" />
-    </task>
-    <task id="LOCAL-00012" summary="feat: &#10;springboot-日志管理(登录日志，操作日志)">
-      <created>1683273862922</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1683273862922</updated>
+      <workItem from="1686023698445" duration="53128000" />
+      <workItem from="1686289950357" duration="1960000" />
+      <workItem from="1686531356757" duration="1280000" />
+      <workItem from="1686532651000" duration="2959000" />
+      <workItem from="1686535629895" duration="1313000" />
+      <workItem from="1686536954701" duration="3887000" />
     </task>
     <task id="LOCAL-00013" summary="feat: &#10;本地文件上传下载">
       <created>1683340042171</created>
@@ -670,7 +665,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686205104618</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="feat: redisson实现分布式锁">
+      <created>1686282325372</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1686282325372</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -692,7 +694,6 @@
       <path value="$PROJECT_DIR$/demo-properties" />
       <path value="$PROJECT_DIR$/demo-logback" />
     </ignored-roots>
-    <MESSAGE value="feat: springboot整合flyway" />
     <MESSAGE value="feat: springboot整合redis实现接口限流" />
     <MESSAGE value="feat: 调整全局异常处理模块" />
     <MESSAGE value="feat: jackson注解的使用" />
@@ -717,7 +718,8 @@
     <MESSAGE value="feat: 整合mapstruct" />
     <MESSAGE value="feat: 工具类" />
     <MESSAGE value="feat: 整合redis封装redis五种数据类型的工具类" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 整合redis封装redis五种数据类型的工具类" />
+    <MESSAGE value="feat: redisson实现分布式锁" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: redisson实现分布式锁" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

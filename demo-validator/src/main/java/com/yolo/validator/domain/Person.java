@@ -1,10 +1,8 @@
 package com.yolo.validator.domain;
 
 import com.yolo.validator.common.validator.annotation.TextFormat;
-import com.yolo.validator.common.validator.annotation.VerifyIntegerCollectionDataValid;
 import lombok.Data;
 
-import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotEmpty;
 import java.util.List;
 
@@ -34,7 +32,6 @@ public class Person {
      */
     @NotEmpty(message = "告警级别集合不能为空")
 //    @VerifyIntegerCollectionDataValid(message = "告警级别不合法",values = {0,1,2,3})
-    @TextFormat(containsInt = {0,1,2},message = "告警级别不合法")
     private List<Integer> levelList;
 
 }

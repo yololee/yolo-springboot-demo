@@ -58,7 +58,7 @@ spring boot demo 是一个用来深度学习并实战 spring boot 的项目
 | [demo-mapstruct-plus](https://gitee.com/huanglei1111/yolo-springboot-demo/tree/master/demo-mapstruct-plus) | springboot整合mapstruct-plus                                 |
 | [demo-mapstruct](https://gitee.com/huanglei1111/yolo-springboot-demo/tree/master/demo-mapstruct) | springboot整合mapstruct                                      |
 | [demo-utils](https://gitee.com/huanglei1111/yolo-springboot-demo/tree/master/demo-utils) | springboot中一些常用的工具类                                 |
-|                                                              |                                                              |
+| [demo-cache-redis-redisson](https://gitee.com/huanglei1111/yolo-springboot-demo/tree/master/demo-cache-redis-redisson) | redisson分布式锁的应用(可重入锁、公平锁、联锁、红锁、读写锁、信号量、闭锁) |
 |                                                              |                                                              |
 |                                                              |                                                              |
 |                                                              |                                                              |

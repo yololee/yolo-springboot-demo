@@ -8,6 +8,7 @@ import java.lang.annotation.*;
 
 /**
  * 自定义参数校验注解： @TextFormat
+ * @author jujueaoye
  */
 @Documented
 @Retention(RetentionPolicy.RUNTIME)
@@ -16,24 +17,20 @@ import java.lang.annotation.*;
 public @interface TextFormat {
 
     /**
+     * 是否必填 默认是必填的
+     */
+    boolean required() default true;
+
+    /**
+     * 判断字符串长度
+     */
+    int maxLength() default -1;
+
+
+    /**
      * 判断字符串中是否包含中文 包含则抛出异常
      */
     boolean notChinese() default false;
-
-    /**
-     * 是否包含
-     */
-    int[] containsInt() default {};
-
-    /**
-     * 是否不包含
-     */
-    int[] notContainsInt() default {};
-
-    /**
-     * 非必填时候的校验
-     */
-    String notNeedFill() default "";
 
     /**
      * 是否包含,不包含抛出异常

@@ -14,6 +14,7 @@ import javax.validation.Valid;
 import javax.validation.constraints.Max;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
+import java.math.BigDecimal;
 import java.util.List;
 
 @RestController
@@ -59,6 +60,17 @@ public class UserAutoController {
     @PostMapping("/insert4")
     public ApiResponse insert4(@RequestBody @Valid Person person) {
         return ApiResponse.ofSuccess(person);
+    }
+
+    @PostMapping("/insert5")
+    public ApiResponse insert5(@RequestBody @Valid UserVO userVO) {
+        return ApiResponse.ofSuccess(userVO);
+    }
+
+
+    @PostMapping("/insert6")
+    public ApiResponse insert6(@RequestBody @Valid UserVO userVO) {
+        return ApiResponse.ofSuccess(userVO);
     }
 
 }
