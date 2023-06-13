@@ -60,7 +60,7 @@ spring boot demo 是一个用来深度学习并实战 spring boot 的项目
 | [demo-utils](https://gitee.com/huanglei1111/yolo-springboot-demo/tree/master/demo-utils) | springboot中一些常用的工具类                                 |
 | [demo-cache-redis-redisson](https://gitee.com/huanglei1111/yolo-springboot-demo/tree/master/demo-cache-redis-redisson) | redisson分布式锁的应用(可重入锁、公平锁、联锁、红锁、读写锁、信号量、闭锁) |
 | [demo-xss-jsoup](https://gitee.com/huanglei1111/yolo-springboot-demo/tree/master/demo-xss-jsoup) | springboot集成jsoup解决XSS安全问题                           |
-|                                                              |                                                              |
+| [demo-filter](https://gitee.com/huanglei1111/yolo-springboot-demo/tree/master/demo-filter) | springboot中自定义过滤器Filter使用详解                       |
 |                                                              |                                                              |
 |                                                              |                                                              |
 

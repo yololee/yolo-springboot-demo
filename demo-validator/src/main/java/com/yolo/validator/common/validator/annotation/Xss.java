@@ -18,7 +18,7 @@ import java.lang.annotation.Target;
 @Constraint(validatedBy = {XssValidator.class})
 public @interface Xss {
 
-    String message() default "不允许任何脚本运行";
+    String message() default "xss攻击检查：参数含有非法攻击字符，已禁止继续访问！！";
     Class<?>[] groups() default {};
 
     Class<? extends Payload>[] payload() default {};
