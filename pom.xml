@@ -57,6 +57,7 @@
         <module>demo-xss-jsoup</module>
         <module>demo-filter</module>
         <module>demo-forest</module>
+        <module>demo-rabbitmq</module>
     </modules>
 
 
