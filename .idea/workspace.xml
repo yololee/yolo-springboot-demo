@@ -4,16 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: 整合forest发送请求">
-      <change afterPath="$PROJECT_DIR$/demo-rabbitmq/demo-rabbitmq-quick-start/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-rabbitmq/demo-rabbitmq-quick-start/src/main/java/com/yolo/demo/DemoRabbitmqQuickStartApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-rabbitmq/demo-rabbitmq-quick-start/src/main/java/com/yolo/demo/controller/ProducerTestOneController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-rabbitmq/demo-rabbitmq-quick-start/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-rabbitmq/demo-rabbitmq-quick-start/src/test/java/com/yolo/demo/DemoRabbitmqQuickStartApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-rabbitmq/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: rabbitmq快速入门">
+      <change afterPath="$PROJECT_DIR$/demo-rabbitmq/demo-rabbitmq-quick-start/rabbitmq-入门.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-rabbitmq/demo-rabbitmq-quick-start/src/main/java/com/yolo/demo/config/RabbitMQConfiguration.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +109,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-forest",
+    "last_opened_file_path": "/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-rabbitmq/demo-rabbitmq-quick-start",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -328,14 +321,7 @@
       <workItem from="1686541973131" duration="108000" />
       <workItem from="1686542149556" duration="11421000" />
       <workItem from="1686561861838" duration="9455000" />
-      <workItem from="1686634779592" duration="6838000" />
-    </task>
-    <task id="LOCAL-00018" summary="feat: 分页插件pagehelper的使用文档">
-      <created>1683538441821</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1683538441821</updated>
+      <workItem from="1686634779592" duration="7151000" />
     </task>
     <task id="LOCAL-00019" summary="feat: 本地文件上传下载的使用文档">
       <created>1683538473764</created>
@@ -673,7 +659,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686626806733</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="feat: rabbitmq快速入门">
+      <created>1686646427900</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1686646427901</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -695,7 +688,6 @@
       <path value="$PROJECT_DIR$/demo-properties" />
       <path value="$PROJECT_DIR$/demo-logback" />
     </ignored-roots>
-    <MESSAGE value="feat: springboot使用mp集成多数据源" />
     <MESSAGE value="feat: mp设置自动插入数据打印日志" />
     <MESSAGE value="feat: redis多数据源配置，单节点，哨兵，集群配置" />
     <MESSAGE value="feat: springboot整合druid" />
@@ -720,7 +712,8 @@
     <MESSAGE value="feat: 集成jsoup解决xss安全问题" />
     <MESSAGE value="feat: filter详解" />
     <MESSAGE value="feat: 整合forest发送请求" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 整合forest发送请求" />
+    <MESSAGE value="feat: rabbitmq快速入门" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: rabbitmq快速入门" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
