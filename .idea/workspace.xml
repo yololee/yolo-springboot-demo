@@ -5,8 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: rabbitmq快速入门">
-      <change afterPath="$PROJECT_DIR$/demo-rabbitmq/demo-rabbitmq-quick-start/rabbitmq-入门.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-rabbitmq/demo-rabbitmq-quick-start/src/main/java/com/yolo/demo/config/RabbitMQConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-rabbitmq/demo-rabbitmq-work-model/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-rabbitmq/demo-rabbitmq-work-model/rabbitmq-七种工作模型.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-rabbitmq/demo-rabbitmq-work-model/src/main/java/com/yolo/demo/DemoRabbitmqWorkModelApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-rabbitmq/demo-rabbitmq-work-model/src/main/java/com/yolo/demo/common/MqConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-rabbitmq/demo-rabbitmq-work-model/src/main/java/com/yolo/demo/config/RpcRabbitMqConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-rabbitmq/demo-rabbitmq-work-model/src/main/java/com/yolo/demo/config/SimpleRabbitMqConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-rabbitmq/demo-rabbitmq-work-model/src/main/java/com/yolo/demo/config/WorkRabbitMqConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-rabbitmq/demo-rabbitmq-work-model/src/main/java/com/yolo/demo/controller/DirectMsgController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-rabbitmq/demo-rabbitmq-work-model/src/main/java/com/yolo/demo/controller/FanoutMsgController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-rabbitmq/demo-rabbitmq-work-model/src/main/java/com/yolo/demo/controller/RpcMsgController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-rabbitmq/demo-rabbitmq-work-model/src/main/java/com/yolo/demo/controller/SimpleMsgController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-rabbitmq/demo-rabbitmq-work-model/src/main/java/com/yolo/demo/controller/TopicMsgController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-rabbitmq/demo-rabbitmq-work-model/src/main/java/com/yolo/demo/controller/WorkMsgController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-rabbitmq/demo-rabbitmq-work-model/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-rabbitmq/demo-rabbitmq-work-model/src/test/java/com/yolo/demo/DemoRabbitmqWorkModelApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-rabbitmq/demo-rabbitmq-quick-start/src/main/java/com/yolo/demo/config/RabbitMQConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-rabbitmq/demo-rabbitmq-quick-start/src/main/java/com/yolo/demo/config/RabbitMQConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-rabbitmq/demo-rabbitmq-quick-start/src/main/java/com/yolo/demo/controller/ProducerTestOneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-rabbitmq/demo-rabbitmq-quick-start/src/main/java/com/yolo/demo/controller/ProducerTestOneController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-rabbitmq/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-rabbitmq/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +126,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-rabbitmq/demo-rabbitmq-quick-start",
+    "last_opened_file_path": "/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-rabbitmq/demo-rabbitmq-work-model",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -119,7 +136,7 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.pluginManager",
-    "spring.configuration.checksum": "c1780a0f966d3c521efb13d969f5e783",
+    "spring.configuration.checksum": "cb92f5464d5071b5853c6e38f9e794ac",
     "ts.external.directory.path": "/Applications/IntelliJ IDEA.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
     "vue.rearranger.settings.migration": "true"
   },
@@ -137,41 +154,25 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/demo-rabbitmq/demo-rabbitmq-work-model" />
       <recent name="$PROJECT_DIR$/demo-forest" />
       <recent name="$PROJECT_DIR$/demo-forest/src/main/java/com/yolo/demo/domain" />
       <recent name="$PROJECT_DIR$/demo-mapstruct" />
       <recent name="$PROJECT_DIR$/demo-mapstruct-plus" />
-      <recent name="$PROJECT_DIR$/demo-sa-token/src/main/java/com/yolo/demosatoken/config" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/demo-orm-mybatis-plus/sql" />
       <recent name="$PROJECT_DIR$/demo-login-operation-log/src/main/resources/mybatis" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.yolo.demo.controller" />
       <recent name="com.yolo.demo.domain" />
       <recent name="com.yolo.demo.filter" />
       <recent name="com.yolo.demo.util.date" />
       <recent name="com.yolo.demo.util.sql" />
-      <recent name="com.yolo.demo.util" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.DemoRabbitmqQuickStartApplication">
-    <configuration name="DemoForestApplicationTests.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo-forest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.yolo.demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.yolo.demo" />
-      <option name="MAIN_CLASS_NAME" value="com.yolo.demo.DemoForestApplicationTests" />
-      <option name="METHOD_NAME" value="test3" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Spring Boot.DemoRabbitmqWorkModelApplication">
     <configuration name="DemoForestApplicationTests.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo-forest" />
       <extension name="coverage">
@@ -224,6 +225,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DemoRabbitmqWorkModelApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="demo-rabbitmq-work-model" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.demo.DemoRabbitmqWorkModelApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yolo.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DemoValidatorApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="demo-validator" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.validator.DemoValidatorApplication" />
@@ -238,20 +252,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.DemoForestApplicationTests.test3" />
       <item itemvalue="JUnit.DemoForestApplicationTests.test4" />
       <item itemvalue="JUnit.DemoForestApplicationTests.test5" />
       <item itemvalue="Spring Boot.DemoLogAopApplication" />
+      <item itemvalue="Spring Boot.DemoRabbitmqWorkModelApplication" />
       <item itemvalue="Spring Boot.DemoRabbitmqQuickStartApplication" />
       <item itemvalue="Spring Boot.DemoValidatorApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.DemoRabbitmqWorkModelApplication" />
         <item itemvalue="Spring Boot.DemoRabbitmqQuickStartApplication" />
         <item itemvalue="JUnit.DemoForestApplicationTests.test5" />
         <item itemvalue="Spring Boot.DemoValidatorApplication" />
         <item itemvalue="JUnit.DemoForestApplicationTests.test4" />
-        <item itemvalue="JUnit.DemoForestApplicationTests.test3" />
       </list>
     </recent_temporary>
   </component>
@@ -322,6 +336,7 @@
       <workItem from="1686542149556" duration="11421000" />
       <workItem from="1686561861838" duration="9455000" />
       <workItem from="1686634779592" duration="7151000" />
+      <workItem from="1686647978265" duration="7060000" />
     </task>
     <task id="LOCAL-00019" summary="feat: 本地文件上传下载的使用文档">
       <created>1683538473764</created>

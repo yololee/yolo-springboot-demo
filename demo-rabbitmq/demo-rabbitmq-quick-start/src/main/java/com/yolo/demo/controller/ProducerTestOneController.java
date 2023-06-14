@@ -45,7 +45,7 @@ public class ProducerTestOneController {
      */
     @RabbitListener(bindings = {@QueueBinding(
             //指定一下队列名，默认持久队列，不指定则为临时队列
-            value = @Queue(value = "helloWorldQueue",declare = "true"),
+            value = @Queue(value = "helloWorldQueue",durable = "true"),
             exchange = @Exchange(value = "helloWorldExchange",type = ExchangeTypes.DIRECT,durable = "true"),
             key = "helloWorld"
     )
