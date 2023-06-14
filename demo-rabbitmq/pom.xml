@@ -23,6 +23,7 @@
         <module>demo-rabbitmq-dead-queue</module>
         <module>demo-rabbitmq-delay-queue</module>
         <module>demo-rabbitmq-message-callback</module>
+        <module>demo-message-consistency</module>
     </modules>
 
 

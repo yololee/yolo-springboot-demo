@@ -4,17 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: rabbitmq延迟队列">
-      <change afterPath="$PROJECT_DIR$/demo-rabbitmq/demo-rabbitmq-message-callback/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-rabbitmq/demo-rabbitmq-message-callback/rabbitmq-消息回调.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-rabbitmq/demo-rabbitmq-message-callback/src/main/java/com/yolo/demo/DemoRabbitmqMessageCallbackApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-rabbitmq/demo-rabbitmq-message-callback/src/main/java/com/yolo/demo/config/RabbitConfirmCallbackService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-rabbitmq/demo-rabbitmq-message-callback/src/main/java/com/yolo/demo/config/RabbitMQConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-rabbitmq/demo-rabbitmq-message-callback/src/main/java/com/yolo/demo/config/RabbitReturnCallbackService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-rabbitmq/demo-rabbitmq-message-callback/src/main/java/com/yolo/demo/controller/CallbackController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-rabbitmq/demo-rabbitmq-message-callback/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-rabbitmq/demo-rabbitmq-message-callback/src/test/java/com/yolo/demo/DemoRabbitmqMessageCallbackApplicationTests.java" afterDir="false" />
+    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: rabbitmq消息回调">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-rabbitmq/demo-rabbitmq-ack/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-rabbitmq/demo-rabbitmq-ack/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-rabbitmq/demo-rabbitmq-message-callback/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-rabbitmq/demo-rabbitmq-message-callback/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo-rabbitmq/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-rabbitmq/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -128,7 +121,7 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.pluginManager",
-    "spring.configuration.checksum": "cb92f5464d5071b5853c6e38f9e794ac",
+    "spring.configuration.checksum": "f80b75c005d43985ed52a771fb7a4b34",
     "ts.external.directory.path": "/Applications/IntelliJ IDEA.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
     "vue.rearranger.settings.migration": "true"
   },
@@ -322,14 +315,8 @@
       <workItem from="1686542149556" duration="11421000" />
       <workItem from="1686561861838" duration="9455000" />
       <workItem from="1686634779592" duration="7151000" />
-      <workItem from="1686647978265" duration="19984000" />
-    </task>
-    <task id="LOCAL-00025" summary="feat: yolo-springboot-demo目录">
-      <created>1684133244035</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1684133244035</updated>
+      <workItem from="1686647978265" duration="22508000" />
+      <workItem from="1686732153331" duration="206000" />
     </task>
     <task id="LOCAL-00026" summary="feat: 发送邮件">
       <created>1684141351164</created>
@@ -667,7 +654,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686728013329</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="feat: rabbitmq消息回调">
+      <created>1686729555798</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1686729555798</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -689,7 +683,6 @@
       <path value="$PROJECT_DIR$/demo-properties" />
       <path value="$PROJECT_DIR$/demo-logback" />
     </ignored-roots>
-    <MESSAGE value="feat: springboot整合easy-es" />
     <MESSAGE value="feat: 整合redis使用aop进行接口限流" />
     <MESSAGE value="feat: 整合sharding-jdbc进行分库分表" />
     <MESSAGE value="feat: 整合ureport2" />
@@ -714,7 +707,8 @@
     <MESSAGE value="feat: rabbitmq重试机制" />
     <MESSAGE value="feat: rabbitmq死信队列" />
     <MESSAGE value="feat: rabbitmq延迟队列" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: rabbitmq延迟队列" />
+    <MESSAGE value="feat: rabbitmq消息回调" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: rabbitmq消息回调" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
