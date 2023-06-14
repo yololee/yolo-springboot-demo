@@ -1,0 +1,16 @@
+spring:
+  # RabbitMQ配置
+  rabbitmq:
+    listener:
+      simple:
+        retry:
+          # 是否开启重试
+          enabled: true
+          # 最大重试次数
+          max-attempts: 5
+          # 重试最大间隔时间
+          max-interval: 10000
+          # 第一次和第二次尝试发布或传递消息之间的间隔（单位：毫秒）
+          initial-interval: 2000
+          # 间隔时间乘子，间隔时间*乘子=下一次的间隔时间，最大不能超过设置的最大间隔时间
+          multiplier: 2
