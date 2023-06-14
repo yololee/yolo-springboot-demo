@@ -4,10 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: rabbitmq死信队列">
+    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: rabbitmq延迟队列">
+      <change afterPath="$PROJECT_DIR$/demo-rabbitmq/demo-rabbitmq-message-callback/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-rabbitmq/demo-rabbitmq-message-callback/rabbitmq-消息回调.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-rabbitmq/demo-rabbitmq-message-callback/src/main/java/com/yolo/demo/DemoRabbitmqMessageCallbackApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-rabbitmq/demo-rabbitmq-message-callback/src/main/java/com/yolo/demo/config/RabbitConfirmCallbackService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-rabbitmq/demo-rabbitmq-message-callback/src/main/java/com/yolo/demo/config/RabbitMQConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-rabbitmq/demo-rabbitmq-message-callback/src/main/java/com/yolo/demo/config/RabbitReturnCallbackService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-rabbitmq/demo-rabbitmq-message-callback/src/main/java/com/yolo/demo/controller/CallbackController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-rabbitmq/demo-rabbitmq-message-callback/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-rabbitmq/demo-rabbitmq-message-callback/src/test/java/com/yolo/demo/DemoRabbitmqMessageCallbackApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-rabbitmq/demo-rabbitmq-dead-queue/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-rabbitmq/demo-rabbitmq-dead-queue/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-rabbitmq/demo-rabbitmq-delay-queue/src/main/java/com/yolo/demo/controller/DL3Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-rabbitmq/demo-rabbitmq-delay-queue/src/main/java/com/yolo/demo/controller/DL3Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo-rabbitmq/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-rabbitmq/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -111,7 +118,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-rabbitmq/demo-rabbitmq-dead-queue",
+    "last_opened_file_path": "/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-rabbitmq/demo-rabbitmq-message-callback",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -139,11 +146,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/demo-rabbitmq/demo-rabbitmq-message-callback" />
+      <recent name="$PROJECT_DIR$/demo-rabbitmq/demo-rabbitmq-delay-queue" />
       <recent name="$PROJECT_DIR$/demo-rabbitmq/demo-rabbitmq-dead-queue" />
       <recent name="$PROJECT_DIR$/demo-rabbitmq/demo-rabbitmq-retry" />
       <recent name="$PROJECT_DIR$/demo-rabbitmq/demo-rabbitmq-ack" />
-      <recent name="$PROJECT_DIR$/demo-rabbitmq/demo-rabbitmq-work-model" />
-      <recent name="$PROJECT_DIR$/demo-forest" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/demo-orm-mybatis-plus/sql" />
@@ -157,7 +164,7 @@
       <recent name="com.yolo.demo.util.sql" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.DemoRabbitmqDelayQueueApplication">
+  <component name="RunManager" selected="Spring Boot.DemoRabbitmqMessageCallbackApplication">
     <configuration name="DemoLogAopApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="demo-log-aop" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.logaop.DemoLogAopApplication" />
@@ -204,9 +211,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DemoRabbitmqRetryApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="demo-rabbitmq-retry" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.demo.DemoRabbitmqRetryApplication" />
+    <configuration name="DemoRabbitmqMessageCallbackApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="demo-rabbitmq-message-callback" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.demo.DemoRabbitmqMessageCallbackApplication" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.yolo.demo.*" />
@@ -217,9 +224,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DemoRabbitmqWorkModelApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="demo-rabbitmq-work-model" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.demo.DemoRabbitmqWorkModelApplication" />
+    <configuration name="DemoRabbitmqRetryApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="demo-rabbitmq-retry" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.demo.DemoRabbitmqRetryApplication" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.yolo.demo.*" />
@@ -235,16 +242,16 @@
       <item itemvalue="Spring Boot.DemoRabbitmqAckApplication" />
       <item itemvalue="Spring Boot.DemoRabbitmqDeadQueueApplication" />
       <item itemvalue="Spring Boot.DemoRabbitmqDelayQueueApplication" />
+      <item itemvalue="Spring Boot.DemoRabbitmqMessageCallbackApplication" />
       <item itemvalue="Spring Boot.DemoRabbitmqRetryApplication" />
-      <item itemvalue="Spring Boot.DemoRabbitmqWorkModelApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.DemoRabbitmqMessageCallbackApplication" />
         <item itemvalue="Spring Boot.DemoRabbitmqDelayQueueApplication" />
         <item itemvalue="Spring Boot.DemoRabbitmqDeadQueueApplication" />
         <item itemvalue="Spring Boot.DemoRabbitmqRetryApplication" />
         <item itemvalue="Spring Boot.DemoRabbitmqAckApplication" />
-        <item itemvalue="Spring Boot.DemoRabbitmqWorkModelApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -315,14 +322,7 @@
       <workItem from="1686542149556" duration="11421000" />
       <workItem from="1686561861838" duration="9455000" />
       <workItem from="1686634779592" duration="7151000" />
-      <workItem from="1686647978265" duration="18296000" />
-    </task>
-    <task id="LOCAL-00024" summary="feat: yolo-springboot-demo目录">
-      <created>1684113981572</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1684113981572</updated>
+      <workItem from="1686647978265" duration="19984000" />
     </task>
     <task id="LOCAL-00025" summary="feat: yolo-springboot-demo目录">
       <created>1684133244035</created>
@@ -660,7 +660,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686726494423</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="feat: rabbitmq延迟队列">
+      <created>1686728013329</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1686728013329</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -682,7 +689,6 @@
       <path value="$PROJECT_DIR$/demo-properties" />
       <path value="$PROJECT_DIR$/demo-logback" />
     </ignored-roots>
-    <MESSAGE value="feat: springboot整合es" />
     <MESSAGE value="feat: springboot整合easy-es" />
     <MESSAGE value="feat: 整合redis使用aop进行接口限流" />
     <MESSAGE value="feat: 整合sharding-jdbc进行分库分表" />
@@ -707,7 +713,8 @@
     <MESSAGE value="feat: rabbitmq消息确认机制" />
     <MESSAGE value="feat: rabbitmq重试机制" />
     <MESSAGE value="feat: rabbitmq死信队列" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: rabbitmq死信队列" />
+    <MESSAGE value="feat: rabbitmq延迟队列" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: rabbitmq延迟队列" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -2,28 +2,18 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>demo-rabbitmq</artifactId>
+    <artifactId>demo-rabbitmq-message-callback</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>demo-rabbitmq</name>
-    <description>demo-rabbitmq</description>
+    <name>demo-rabbitmq-message-callback</name>
+    <description>demo-rabbitmq-message-callback</description>
 
     <parent>
         <groupId>com.yolo</groupId>
-        <artifactId>yolo-springboot-demo</artifactId>
+        <artifactId>demo-rabbitmq</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <packaging>pom</packaging>
-
-    <modules>
-        <module>demo-rabbitmq-quick-start</module>
-        <module>demo-rabbitmq-work-model</module>
-        <module>demo-rabbitmq-ack</module>
-        <module>demo-rabbitmq-retry</module>
-        <module>demo-rabbitmq-dead-queue</module>
-        <module>demo-rabbitmq-delay-queue</module>
-        <module>demo-rabbitmq-message-callback</module>
-    </modules>
+    <packaging>jar</packaging>
 
 
     <properties>
@@ -32,10 +22,11 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <spring-boot.version>2.3.12.RELEASE</spring-boot.version>
     </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
         <dependency>
@@ -49,6 +40,12 @@
                 </exclusion>
             </exclusions>
         </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-amqp</artifactId>
+        </dependency>
+
     </dependencies>
 
 
@@ -81,7 +78,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>${spring-boot.version}</version>
                 <configuration>
-                    <mainClass>com.example.demo.DemoRabbitmqApplication</mainClass>
+                    <mainClass>com.yolo.demo.DemoRabbitmqMessageCallbackApplication</mainClass>
                     <skip>true</skip>
                 </configuration>
                 <executions>
