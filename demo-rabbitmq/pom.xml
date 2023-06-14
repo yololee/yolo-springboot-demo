@@ -21,6 +21,7 @@
         <module>demo-rabbitmq-ack</module>
         <module>demo-rabbitmq-retry</module>
         <module>demo-rabbitmq-dead-queue</module>
+        <module>demo-rabbitmq-delay-queue</module>
     </modules>
 
 

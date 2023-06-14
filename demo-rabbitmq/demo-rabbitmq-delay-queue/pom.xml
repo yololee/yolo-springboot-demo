@@ -2,10 +2,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>demo-rabbitmq-dead-queue</artifactId>
+    <artifactId>demo-rabbitmq-delay-queue</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>demo-rabbitmq-dead-queue</name>
-    <description>demo-rabbitmq-dead-queue</description>
+    <name>demo-rabbitmq-delay-queue</name>
+    <description>demo-rabbitmq-delay-queue</description>
 
     <parent>
         <groupId>com.yolo</groupId>
@@ -14,6 +14,7 @@
     </parent>
 
     <packaging>jar</packaging>
+
 
     <properties>
         <java.version>1.8</java.version>
@@ -44,7 +45,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-amqp</artifactId>
         </dependency>
-
     </dependencies>
 
     <dependencyManagement>
@@ -76,7 +76,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>${spring-boot.version}</version>
                 <configuration>
-                    <mainClass>com.yolo.demo.DemoRabbitmqDeadQueueApplication</mainClass>
+                    <mainClass>com.yolo.demo.DemoRabbitmqDelayQueueApplication</mainClass>
                     <skip>true</skip>
                 </configuration>
                 <executions>
