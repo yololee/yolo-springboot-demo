@@ -5,10 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: rabbitmq消息回调">
+      <change afterPath="$PROJECT_DIR$/demo-rabbitmq/demo-message-consistency/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-rabbitmq/demo-message-consistency/rabbitmq-保证消息100%投递成功并被消费.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-rabbitmq/demo-message-consistency/sql/demo.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-rabbitmq/demo-message-consistency/src/main/java/com/yolo/demo/DemoMessageConsistencyApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-rabbitmq/demo-message-consistency/src/main/java/com/yolo/demo/common/MsgLogStatusEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-rabbitmq/demo-message-consistency/src/main/java/com/yolo/demo/controller/MsgController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-rabbitmq/demo-message-consistency/src/main/java/com/yolo/demo/domain/MsgLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-rabbitmq/demo-message-consistency/src/main/java/com/yolo/demo/domain/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-rabbitmq/demo-message-consistency/src/main/java/com/yolo/demo/mapper/MsgLogMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-rabbitmq/demo-message-consistency/src/main/java/com/yolo/demo/service/MsgLogService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-rabbitmq/demo-message-consistency/src/main/java/com/yolo/demo/service/impl/MsgLogServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-rabbitmq/demo-message-consistency/src/main/java/com/yolo/demo/task/ClearMsgLogTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-rabbitmq/demo-message-consistency/src/main/java/com/yolo/demo/task/ResendMsg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-rabbitmq/demo-message-consistency/src/main/java/com/yolo/demo/util/MqUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-rabbitmq/demo-message-consistency/src/main/resources/application-mysql.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-rabbitmq/demo-message-consistency/src/main/resources/application-rabbitmq.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-rabbitmq/demo-message-consistency/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-rabbitmq/demo-message-consistency/src/main/resources/mapper/MsgLogMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-rabbitmq/demo-message-consistency/src/test/java/com/yolo/demo/DemoMessageConsistencyApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-rabbitmq/demo-rabbitmq-ack/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-rabbitmq/demo-rabbitmq-ack/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-rabbitmq/demo-rabbitmq-message-callback/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-rabbitmq/demo-rabbitmq-message-callback/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-rabbitmq/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-rabbitmq/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +127,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-rabbitmq/demo-rabbitmq-message-callback",
+    "last_opened_file_path": "/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-rabbitmq/demo-message-consistency",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -139,25 +155,25 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/demo-rabbitmq/demo-message-consistency" />
       <recent name="$PROJECT_DIR$/demo-rabbitmq/demo-rabbitmq-message-callback" />
       <recent name="$PROJECT_DIR$/demo-rabbitmq/demo-rabbitmq-delay-queue" />
       <recent name="$PROJECT_DIR$/demo-rabbitmq/demo-rabbitmq-dead-queue" />
       <recent name="$PROJECT_DIR$/demo-rabbitmq/demo-rabbitmq-retry" />
-      <recent name="$PROJECT_DIR$/demo-rabbitmq/demo-rabbitmq-ack" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/demo-orm-mybatis-plus/sql" />
       <recent name="$PROJECT_DIR$/demo-login-operation-log/src/main/resources/mybatis" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.yolo.demo.task" />
       <recent name="com.yolo.demo.controller" />
       <recent name="com.yolo.demo.domain" />
       <recent name="com.yolo.demo.filter" />
       <recent name="com.yolo.demo.util.date" />
-      <recent name="com.yolo.demo.util.sql" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.DemoRabbitmqMessageCallbackApplication">
+  <component name="RunManager" selected="Spring Boot.DemoMessageConsistencyApplication">
     <configuration name="DemoLogAopApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="demo-log-aop" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.logaop.DemoLogAopApplication" />
@@ -165,9 +181,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DemoRabbitmqAckApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="demo-rabbitmq-ack" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.demo.DemoRabbitmqAckApplication" />
+    <configuration name="DemoMessageConsistencyApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="demo-message-consistency" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.demo.DemoMessageConsistencyApplication" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.yolo.demo.*" />
@@ -232,7 +248,7 @@
     </configuration>
     <list>
       <item itemvalue="Spring Boot.DemoLogAopApplication" />
-      <item itemvalue="Spring Boot.DemoRabbitmqAckApplication" />
+      <item itemvalue="Spring Boot.DemoMessageConsistencyApplication" />
       <item itemvalue="Spring Boot.DemoRabbitmqDeadQueueApplication" />
       <item itemvalue="Spring Boot.DemoRabbitmqDelayQueueApplication" />
       <item itemvalue="Spring Boot.DemoRabbitmqMessageCallbackApplication" />
@@ -240,11 +256,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.DemoMessageConsistencyApplication" />
         <item itemvalue="Spring Boot.DemoRabbitmqMessageCallbackApplication" />
         <item itemvalue="Spring Boot.DemoRabbitmqDelayQueueApplication" />
         <item itemvalue="Spring Boot.DemoRabbitmqDeadQueueApplication" />
         <item itemvalue="Spring Boot.DemoRabbitmqRetryApplication" />
-        <item itemvalue="Spring Boot.DemoRabbitmqAckApplication" />
       </list>
     </recent_temporary>
   </component>
