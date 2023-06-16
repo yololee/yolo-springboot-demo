@@ -1,5 +1,6 @@
 package com.example.demo.mapstruct;
 
+import com.example.demo.anno.MappingIgnore;
 import com.example.demo.dto.UserDto;
 import com.example.demo.entity.BasicEntity;
 import com.example.demo.entity.User;
@@ -15,6 +16,7 @@ public interface UserConvertMapper {
 
     UserConvertMapper INSTANCE = Mappers.getMapper(UserConvertMapper.class);
 
+    @MappingIgnore
     @Mapping(target = "age", ignore = true) // 忽略id，不进行映射
 //    @Mapping(target = "address",source = "address",defaultValue = "武汉")
 //    @Mapping(target = "createTime",expression = "java(new java.util.Date())")

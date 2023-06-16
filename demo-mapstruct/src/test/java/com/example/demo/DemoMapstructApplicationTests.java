@@ -23,6 +23,7 @@ public class DemoMapstructApplicationTests {
         dto.setUsername("jack");
         dto.setAge(23);
         dto.setYoung(false);
+        dto.setId(1);
 
         User user = UserConvertMapper.INSTANCE.convert(dto);
         System.out.println(user);
