@@ -58,6 +58,7 @@
         <module>demo-filter</module>
         <module>demo-forest</module>
         <module>demo-rabbitmq</module>
+        <module>demo-lombok</module>
     </modules>
 
 

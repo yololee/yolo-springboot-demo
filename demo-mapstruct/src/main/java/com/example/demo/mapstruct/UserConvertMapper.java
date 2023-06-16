@@ -16,7 +16,7 @@ public interface UserConvertMapper {
 
     UserConvertMapper INSTANCE = Mappers.getMapper(UserConvertMapper.class);
 
-    @MappingIgnore
+//    @MappingIgnore
     @Mapping(target = "age", ignore = true) // 忽略id，不进行映射
 //    @Mapping(target = "address",source = "address",defaultValue = "武汉")
 //    @Mapping(target = "createTime",expression = "java(new java.util.Date())")
