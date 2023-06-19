@@ -59,6 +59,7 @@
         <module>demo-forest</module>
         <module>demo-rabbitmq</module>
         <module>demo-lombok</module>
+        <module>demo-redis-online-count</module>
     </modules>
 
 

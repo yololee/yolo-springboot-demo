@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: lombok介绍" />
+    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: rabbitmq目录">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,8 +57,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Interface" />
         <option value="AnnotationType" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -106,7 +109,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-lombok",
+    "last_opened_file_path": "/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-redis-online-count/src/main/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -116,7 +119,7 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.pluginManager",
-    "spring.configuration.checksum": "f80b75c005d43985ed52a771fb7a4b34",
+    "spring.configuration.checksum": "1f553871af72b0c4a680432a2425bfe3",
     "ts.external.directory.path": "/Applications/IntelliJ IDEA.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
     "vue.rearranger.settings.migration": "true"
   },
@@ -134,11 +137,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/demo-redis-online-count/src/main/resources" />
+      <recent name="$PROJECT_DIR$/demo-redis-online-count/src/main/java/com/yolo/demo" />
       <recent name="$PROJECT_DIR$/demo-lombok" />
       <recent name="$PROJECT_DIR$/demo-rabbitmq/demo-message-consistency" />
       <recent name="$PROJECT_DIR$/demo-rabbitmq/demo-rabbitmq-message-callback" />
-      <recent name="$PROJECT_DIR$/demo-rabbitmq/demo-rabbitmq-delay-queue" />
-      <recent name="$PROJECT_DIR$/demo-rabbitmq/demo-rabbitmq-dead-queue" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/demo-orm-mybatis-plus/sql" />
@@ -152,7 +155,7 @@
       <recent name="com.yolo.demo.filter" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Demo7">
+  <component name="RunManager" selected="Spring Boot.DemoRedisOnlineCountApplication">
     <configuration name="Demo7" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.yolo.demo.domain.Demo7" />
       <module name="demo-lombok" />
@@ -162,6 +165,13 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemoDockerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="demo-docker" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.demo.DemoDockerApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -176,19 +186,6 @@
     <configuration name="DemoMessageConsistencyApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="demo-message-consistency" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.demo.DemoMessageConsistencyApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.yolo.demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DemoRabbitmqDeadQueueApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="demo-rabbitmq-dead-queue" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.demo.DemoRabbitmqDeadQueueApplication" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.yolo.demo.*" />
@@ -225,21 +222,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DemoRedisOnlineCountApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="demo-redis-online-count" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.demo.DemoRedisOnlineCountApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yolo.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.Demo7" />
+      <item itemvalue="Spring Boot.DemoDockerApplication" />
       <item itemvalue="Spring Boot.DemoLogAopApplication" />
+      <item itemvalue="Spring Boot.DemoRedisOnlineCountApplication" />
       <item itemvalue="Spring Boot.DemoMessageConsistencyApplication" />
-      <item itemvalue="Spring Boot.DemoRabbitmqDeadQueueApplication" />
       <item itemvalue="Spring Boot.DemoRabbitmqDelayQueueApplication" />
       <item itemvalue="Spring Boot.DemoRabbitmqMessageCallbackApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.DemoRedisOnlineCountApplication" />
         <item itemvalue="Application.Demo7" />
         <item itemvalue="Spring Boot.DemoMessageConsistencyApplication" />
         <item itemvalue="Spring Boot.DemoRabbitmqMessageCallbackApplication" />
         <item itemvalue="Spring Boot.DemoRabbitmqDelayQueueApplication" />
-        <item itemvalue="Spring Boot.DemoRabbitmqDeadQueueApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -313,14 +324,9 @@
       <workItem from="1686647978265" duration="22508000" />
       <workItem from="1686732153331" duration="206000" />
       <workItem from="1686887067030" duration="1099000" />
-      <workItem from="1686898400593" duration="5857000" />
-    </task>
-    <task id="LOCAL-00029" summary="feat: springboot整合xxl-job">
-      <created>1684220221606</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1684220221606</updated>
+      <workItem from="1686898400593" duration="6936000" />
+      <workItem from="1687136609657" duration="8273000" />
+      <workItem from="1687179455732" duration="2710000" />
     </task>
     <task id="LOCAL-00030" summary="feat: 通过http请求手动操作xxl-job">
       <created>1684228564125</created>
@@ -658,7 +664,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686904059909</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="feat: rabbitmq目录">
+      <created>1686904463412</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1686904463412</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -680,7 +693,6 @@
       <path value="$PROJECT_DIR$/demo-properties" />
       <path value="$PROJECT_DIR$/demo-logback" />
     </ignored-roots>
-    <MESSAGE value="feat: 整合validator" />
     <MESSAGE value="feat: 整合minIo" />
     <MESSAGE value="feat: 整合redis sentinel" />
     <MESSAGE value="feat: 整合sa-tokon" />
@@ -705,7 +717,8 @@
     <MESSAGE value="feat: rabbitmq保证消息的一致性" />
     <MESSAGE value="feat: mapstruct自定义注解忽略字段" />
     <MESSAGE value="feat: lombok介绍" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: lombok介绍" />
+    <MESSAGE value="feat: rabbitmq目录" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: rabbitmq目录" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
