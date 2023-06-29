@@ -65,6 +65,7 @@ spring boot demo 是一个用来深度学习并实战 spring boot 的项目
 | [demo-rabbitmq](https://gitee.com/huanglei1111/yolo-springboot-demo/tree/master/demo-rabbitmq) | springboot整合rabbitmq，包含入门、七种工作模式、生产者确认模式、消费者确认模式、重试机制、死信队列、延迟队列、以及案例（保证消息一致性，确保消息百分百被消费） |
 | [demo-redis-online-count](https://gitee.com/huanglei1111/yolo-springboot-demo/tree/master/demo-redis-online-count) | springboot使用心跳机制+redis实现在线人数统计                 |
 | [demo-anno-encrypt-body](https://gitee.com/huanglei1111/yolo-springboot-demo/tree/master/demo-springboot-starter/demo-anno-encrypt-body) | 自定义注解实现请求参数和响应结果的加密和解密                 |
+| [demo-multi-thread](https://gitee.com/huanglei1111/yolo-springboot-demo/tree/master/demo-multi-thread) | Runnable和Callable的使用，CompletableFuture类的使用          |
 
 
 
