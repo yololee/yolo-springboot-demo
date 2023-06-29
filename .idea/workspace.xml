@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: 心跳机制+redis实现网站在线人数统计">
+    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: 自定义注解实现请求，响应参数的加密">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
@@ -110,7 +110,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-springboot-starter/demo-encrypt-body/src/main/java/com/yolo/demo/base",
+    "last_opened_file_path": "/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-multi-thread",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -138,47 +138,101 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/demo-multi-thread" />
+      <recent name="$PROJECT_DIR$/demo-multi-thread/src/main/java/com/yolo/demo" />
+      <recent name="$PROJECT_DIR$/demo-multi-thread/src/main/resources" />
       <recent name="$PROJECT_DIR$/demo-springboot-starter/demo-encrypt-body/src/main/java/com/yolo/demo/base" />
       <recent name="$PROJECT_DIR$/demo-redis-online-count" />
-      <recent name="$PROJECT_DIR$/demo-redis-online-count/src/main/resources" />
-      <recent name="$PROJECT_DIR$/demo-redis-online-count/src/main/java/com/yolo/demo" />
-      <recent name="$PROJECT_DIR$/demo-lombok" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/demo-orm-mybatis-plus/sql" />
       <recent name="$PROJECT_DIR$/demo-login-operation-log/src/main/resources/mybatis" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.yolo.demo.util" />
-      <recent name="com.example.demo.anno" />
       <recent name="com.yolo.demo.task" />
+      <recent name="com.yolo.demo.util" />
+      <recent name="com.yolo.demo.config" />
+      <recent name="com.example.demo.anno" />
       <recent name="com.yolo.demo.controller" />
-      <recent name="com.yolo.demo.domain" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.DemoAnnoEncryptBodyApplication">
-    <configuration name="RSAUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.yolo.demo.util.RSAUtils" />
-      <module name="demo-rsa-encrypt-body" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.yolo.demo.util.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DemoAnnoEncryptBodyApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="demo-anno-encrypt-body" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.demo.DemoAnnoEncryptBodyApplication" />
+  <component name="RunManager" selected="JUnit.QueryTest.query2">
+    <configuration name="CompletableFutureTest.handle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo-multi-thread" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.yolo.demo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.yolo.demo" />
+      <option name="MAIN_CLASS_NAME" value="com.yolo.demo.CompletableFutureTest" />
+      <option name="METHOD_NAME" value="handle" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CompletableFutureTest.thenApply" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo-multi-thread" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yolo.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.yolo.demo" />
+      <option name="MAIN_CLASS_NAME" value="com.yolo.demo.CompletableFutureTest" />
+      <option name="METHOD_NAME" value="thenApply" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QueryTest.asyncCallable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo-multi-thread" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yolo.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.yolo.demo" />
+      <option name="MAIN_CLASS_NAME" value="com.yolo.demo.QueryTest" />
+      <option name="METHOD_NAME" value="asyncCallable" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QueryTest.query2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo-multi-thread" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yolo.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.yolo.demo" />
+      <option name="MAIN_CLASS_NAME" value="com.yolo.demo.QueryTest" />
+      <option name="METHOD_NAME" value="query2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QueryTest.query3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo-multi-thread" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yolo.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.yolo.demo" />
+      <option name="MAIN_CLASS_NAME" value="com.yolo.demo.QueryTest" />
+      <option name="METHOD_NAME" value="query3" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -190,19 +244,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DemoEncryptBodyApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="demo-encrypt-body" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.demo.DemoEncryptBodyApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.yolo.demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="DemoLogAopApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="demo-log-aop" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.logaop.DemoLogAopApplication" />
@@ -210,48 +251,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DemoRedisOnlineCountApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="demo-redis-online-count" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.demo.DemoRedisOnlineCountApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.yolo.demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DemoRsaEncryptBodyApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="demo-rsa-encrypt-body" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.demo.DemoRsaEncryptBodyApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.yolo.demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="Application.RSAUtils" />
+      <item itemvalue="JUnit.CompletableFutureTest.handle" />
+      <item itemvalue="JUnit.CompletableFutureTest.thenApply" />
+      <item itemvalue="JUnit.QueryTest.asyncCallable" />
+      <item itemvalue="JUnit.QueryTest.query2" />
+      <item itemvalue="JUnit.QueryTest.query3" />
       <item itemvalue="Spring Boot.DemoDockerApplication" />
       <item itemvalue="Spring Boot.DemoLogAopApplication" />
-      <item itemvalue="Spring Boot.DemoAnnoEncryptBodyApplication" />
-      <item itemvalue="Spring Boot.DemoEncryptBodyApplication" />
-      <item itemvalue="Spring Boot.DemoRsaEncryptBodyApplication" />
-      <item itemvalue="Spring Boot.DemoRedisOnlineCountApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.DemoAnnoEncryptBodyApplication" />
-        <item itemvalue="Spring Boot.DemoRsaEncryptBodyApplication" />
-        <item itemvalue="Application.RSAUtils" />
-        <item itemvalue="Spring Boot.DemoEncryptBodyApplication" />
-        <item itemvalue="Spring Boot.DemoRedisOnlineCountApplication" />
+        <item itemvalue="JUnit.QueryTest.query2" />
+        <item itemvalue="JUnit.QueryTest.query3" />
+        <item itemvalue="JUnit.CompletableFutureTest.handle" />
+        <item itemvalue="JUnit.CompletableFutureTest.thenApply" />
+        <item itemvalue="JUnit.QueryTest.asyncCallable" />
       </list>
     </recent_temporary>
   </component>
@@ -332,14 +347,7 @@
       <workItem from="1687741287723" duration="622000" />
       <workItem from="1687750367124" duration="597000" />
       <workItem from="1687769133693" duration="6000" />
-      <workItem from="1687831957881" duration="12500000" />
-    </task>
-    <task id="LOCAL-00031" summary="feat: 手写xxl-job的starter完成自动注册">
-      <created>1684307294697</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1684307294697</updated>
+      <workItem from="1687831957881" duration="44749000" />
     </task>
     <task id="LOCAL-00032" summary="feat: 测试xxl-job手写的starter自动注册功能">
       <created>1684307403429</created>
@@ -677,7 +685,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687183394967</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="feat: 自定义注解实现请求，响应参数的加密">
+      <created>1687852564941</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1687852564941</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -699,7 +714,6 @@
       <path value="$PROJECT_DIR$/demo-properties" />
       <path value="$PROJECT_DIR$/demo-logback" />
     </ignored-roots>
-    <MESSAGE value="feat: 整合redis sentinel" />
     <MESSAGE value="feat: 整合sa-tokon" />
     <MESSAGE value="feat: 整合docker" />
     <MESSAGE value="feat: 调整validator校验" />
@@ -724,7 +738,8 @@
     <MESSAGE value="feat: lombok介绍" />
     <MESSAGE value="feat: rabbitmq目录" />
     <MESSAGE value="feat: 心跳机制+redis实现网站在线人数统计" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 心跳机制+redis实现网站在线人数统计" />
+    <MESSAGE value="feat: 自定义注解实现请求，响应参数的加密" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 自定义注解实现请求，响应参数的加密" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -61,6 +61,7 @@
         <module>demo-lombok</module>
         <module>demo-redis-online-count</module>
         <module>demo-springboot-starter</module>
+        <module>demo-multi-thread</module>
     </modules>
 
 
