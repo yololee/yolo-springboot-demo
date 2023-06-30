@@ -26,6 +26,9 @@ public class AsyncScheduledTaskConfig {
     @Bean("customAsyncThreadPool")
     public Executor customAsyncThreadPool() {
 
+        /**
+         *  获取当前机器的核数, 不一定准确 请根据实际场景 CPU密集 || IO 密集
+         */
         final int AVAILABLE_PROCESSORS = Runtime.getRuntime().availableProcessors();
         log.info("AVAILABLE_PROCESSORS:{}",AVAILABLE_PROCESSORS);
 
