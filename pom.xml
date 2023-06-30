@@ -62,7 +62,7 @@
         <module>demo-redis-online-count</module>
         <module>demo-springboot-starter</module>
         <module>demo-multi-thread</module>
-        <module>demo-spring-security</module>
+        <module>demo-springsecurity</module>
     </modules>
 
 
