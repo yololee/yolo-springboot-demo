@@ -97,7 +97,7 @@ package com.yolo.demo.config.security.filter;
 
 import com.yolo.demo.common.util.JsonUtils;
 import com.yolo.demo.common.util.httpservlet.MultiReadHttpServletRequest;
-import com.yolo.demo.config.security.CusAuthenticationManager;
+import com.yolo.demo.config.security.login.CusAuthenticationManager;
 import com.yolo.demo.config.security.login.AdminAuthenticationFailureHandler;
 import com.yolo.demo.config.security.login.AdminAuthenticationSuccessHandler;
 import com.yolo.demo.domain.TSysUser;
