@@ -1,26 +1,25 @@
-package com.yolo.mybatis.plus.config;
+package com.yolo.demo.config;
 
 import com.baomidou.mybatisplus.annotation.DbType;
 import com.baomidou.mybatisplus.core.handlers.MetaObjectHandler;
 import com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor;
 import com.baomidou.mybatisplus.extension.plugins.inner.PaginationInnerInterceptor;
-import com.yolo.mybatis.plus.util.DateTimeUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.ibatis.reflection.MetaObject;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 
-import java.text.ParseException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.Date;
 import java.util.Objects;
 import java.util.function.Supplier;
 
 @Configuration   //组件，添加到容器
-@MapperScan("com.yolo.mybatis.plus.mapper")  //开启mapper接口扫描
+@MapperScan("com.yolo.demo.mapper")  //开启mapper接口扫描
+@EnableTransactionManagement
 public class MybatisPlusConfig {
     /**
      * 3.4.0之后提供的拦截器的配置方式
