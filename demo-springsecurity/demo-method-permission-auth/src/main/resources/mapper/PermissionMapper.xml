@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yolo.demo.mapper.PermissionMapper">
+
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultType="Permission">
+    select *
+    from permission
+    where pid = #{pid}
+  </select>
+
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from permission
+    where pid = #{pid}
+  </delete>
+
+  <insert id="insert">
+    insert into permission (permission_name, str)
+    values (#{permissionName}, #{str})
+  </insert>
+
+  <select id="selectByRoleId" resultType="Permission">
+    select * from `permission` where pid in (select `pid` from `role_permission` where rid= #{rid})
+  </select>
+
+</mapper>

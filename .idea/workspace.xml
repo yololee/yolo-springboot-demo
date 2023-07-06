@@ -4,82 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: Spring Security-动态url权限控制">
-      <change afterPath="$PROJECT_DIR$/demo-springsecurity/demo-jwt/Spring Security-整合JWT.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-springsecurity/demo-jwt/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-springsecurity/demo-jwt/sql/demo.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-springsecurity/demo-jwt/src/main/java/com/yolo/demo/DemoJwtApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-springsecurity/demo-jwt/src/main/java/com/yolo/demo/common/dto/ApiResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-springsecurity/demo-jwt/src/main/java/com/yolo/demo/common/dto/ApiStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-springsecurity/demo-jwt/src/main/java/com/yolo/demo/common/exception/AccessLimitException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-springsecurity/demo-jwt/src/main/java/com/yolo/demo/common/exception/ParamException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-springsecurity/demo-jwt/src/main/java/com/yolo/demo/common/exception/core/BaseException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-springsecurity/demo-jwt/src/main/java/com/yolo/demo/common/exception/core/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-springsecurity/demo-jwt/src/main/java/com/yolo/demo/common/util/JsonUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-springsecurity/demo-jwt/src/main/java/com/yolo/demo/common/util/httpservlet/MultiReadHttpServletRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-springsecurity/demo-jwt/src/main/java/com/yolo/demo/common/util/httpservlet/MultiReadHttpServletResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-springsecurity/demo-jwt/src/main/java/com/yolo/demo/common/validator/annotation/EnumCheck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-springsecurity/demo-jwt/src/main/java/com/yolo/demo/common/validator/annotation/ListValue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-springsecurity/demo-jwt/src/main/java/com/yolo/demo/common/validator/annotation/NumberCheck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-springsecurity/demo-jwt/src/main/java/com/yolo/demo/common/validator/annotation/TextFormat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-springsecurity/demo-jwt/src/main/java/com/yolo/demo/common/validator/annotation/Xss.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-springsecurity/demo-jwt/src/main/java/com/yolo/demo/common/validator/config/ValidatorConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-springsecurity/demo-jwt/src/main/java/com/yolo/demo/common/validator/group/Update.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-springsecurity/demo-jwt/src/main/java/com/yolo/demo/common/validator/handler/EnumCheckValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-springsecurity/demo-jwt/src/main/java/com/yolo/demo/common/validator/handler/ListValueConstrainValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-springsecurity/demo-jwt/src/main/java/com/yolo/demo/common/validator/handler/NumberCheckValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-springsecurity/demo-jwt/src/main/java/com/yolo/demo/common/validator/handler/TextFormatHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-springsecurity/demo-jwt/src/main/java/com/yolo/demo/common/validator/handler/XssValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-springsecurity/demo-jwt/src/main/java/com/yolo/demo/config/Constants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-springsecurity/demo-jwt/src/main/java/com/yolo/demo/config/MybatisPlusConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-springsecurity/demo-jwt/src/main/java/com/yolo/demo/config/security/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-springsecurity/demo-jwt/src/main/java/com/yolo/demo/config/security/dto/SecurityUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-springsecurity/demo-jwt/src/main/java/com/yolo/demo/config/security/filter/AdminAuthenticationProcessingFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-springsecurity/demo-jwt/src/main/java/com/yolo/demo/config/security/filter/MyAuthenticationFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-springsecurity/demo-jwt/src/main/java/com/yolo/demo/config/security/login/AdminAuthenticationEntryPoint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-springsecurity/demo-jwt/src/main/java/com/yolo/demo/config/security/login/AdminAuthenticationFailureHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-springsecurity/demo-jwt/src/main/java/com/yolo/demo/config/security/login/AdminAuthenticationProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-springsecurity/demo-jwt/src/main/java/com/yolo/demo/config/security/login/AdminAuthenticationSuccessHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-springsecurity/demo-jwt/src/main/java/com/yolo/demo/config/security/login/CusAuthenticationManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-springsecurity/demo-jwt/src/main/java/com/yolo/demo/config/security/service/UserDetailsServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-springsecurity/demo-jwt/src/main/java/com/yolo/demo/config/security/url/UrlAccessDecisionManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-springsecurity/demo-jwt/src/main/java/com/yolo/demo/config/security/url/UrlAccessDeniedHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-springsecurity/demo-jwt/src/main/java/com/yolo/demo/config/security/url/UrlFilterInvocationSecurityMetadataSource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-springsecurity/demo-jwt/src/main/java/com/yolo/demo/controller/IndexController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-springsecurity/demo-jwt/src/main/java/com/yolo/demo/domain/TSysPermission.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-springsecurity/demo-jwt/src/main/java/com/yolo/demo/domain/TSysRole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-springsecurity/demo-jwt/src/main/java/com/yolo/demo/domain/TSysRolePermission.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-springsecurity/demo-jwt/src/main/java/com/yolo/demo/domain/TSysUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-springsecurity/demo-jwt/src/main/java/com/yolo/demo/domain/TSysUserRole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-springsecurity/demo-jwt/src/main/java/com/yolo/demo/mapper/TSysPermissionMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-springsecurity/demo-jwt/src/main/java/com/yolo/demo/mapper/TSysRoleMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-springsecurity/demo-jwt/src/main/java/com/yolo/demo/mapper/TSysRolePermissionMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-springsecurity/demo-jwt/src/main/java/com/yolo/demo/mapper/TSysUserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-springsecurity/demo-jwt/src/main/java/com/yolo/demo/mapper/TSysUserRoleMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-springsecurity/demo-jwt/src/main/java/com/yolo/demo/service/TSysPermissionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-springsecurity/demo-jwt/src/main/java/com/yolo/demo/service/TSysRolePermissionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-springsecurity/demo-jwt/src/main/java/com/yolo/demo/service/TSysRoleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-springsecurity/demo-jwt/src/main/java/com/yolo/demo/service/TSysUserRoleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-springsecurity/demo-jwt/src/main/java/com/yolo/demo/service/TSysUserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-springsecurity/demo-jwt/src/main/java/com/yolo/demo/service/impl/TSysPermissionServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-springsecurity/demo-jwt/src/main/java/com/yolo/demo/service/impl/TSysRolePermissionServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-springsecurity/demo-jwt/src/main/java/com/yolo/demo/service/impl/TSysRoleServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-springsecurity/demo-jwt/src/main/java/com/yolo/demo/service/impl/TSysUserRoleServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-springsecurity/demo-jwt/src/main/java/com/yolo/demo/service/impl/TSysUserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-springsecurity/demo-jwt/src/main/java/com/yolo/demo/util/PasswordUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-springsecurity/demo-jwt/src/main/java/com/yolo/demo/util/ResponseUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-springsecurity/demo-jwt/src/main/resources/application-mysql.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-springsecurity/demo-jwt/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-springsecurity/demo-jwt/src/main/resources/mapper/TSysPermissionMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-springsecurity/demo-jwt/src/main/resources/mapper/TSysRoleMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-springsecurity/demo-jwt/src/main/resources/mapper/TSysRolePermissionMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-springsecurity/demo-jwt/src/main/resources/mapper/TSysUserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-springsecurity/demo-jwt/src/main/resources/mapper/TSysUserRoleMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-springsecurity/demo-jwt/src/main/resources/static/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-springsecurity/demo-jwt/src/main/resources/static/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-springsecurity/demo-jwt/src/test/java/com/yolo/demo/DemoJwtApplicationTests.java" afterDir="false" />
+    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: Spring Security-整合jwt">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-springsecurity/demo-url-permission-auth/sql/demo.sql" beforeDir="false" afterPath="$PROJECT_DIR$/demo-springsecurity/demo-url-permission-auth/sql/demo.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-springsecurity/demo-login-auth/Spring Security-自定义登录认证.md" beforeDir="false" afterPath="$PROJECT_DIR$/demo-springsecurity/demo-login-auth/Spring Security-自定义登录认证.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-springsecurity/demo-url-permission-auth/Spring Security-动态url权限控制.md" beforeDir="false" afterPath="$PROJECT_DIR$/demo-springsecurity/demo-url-permission-auth/Spring Security-动态url权限控制.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo-springsecurity/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-springsecurity/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -183,7 +111,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-springsecurity/demo-jwt",
+    "last_opened_file_path": "/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-springsecurity/demo-method-permission-auth",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -194,7 +122,7 @@
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "vcs.Git",
     "settings.editor.splitter.proportion": "0.28004074",
-    "spring.configuration.checksum": "253a35b747cb1584b5bb80a6ec20affe",
+    "spring.configuration.checksum": "367f22088bace0da226e50dd7424ee95",
     "ts.external.directory.path": "/Applications/IntelliJ IDEA.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
     "vue.rearranger.settings.migration": "true",
     "zielu.gittoolbox.prj.config.selected.tab.id": "zielu.gittoolbox.config.prj.repositories"
@@ -213,31 +141,31 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/demo-springsecurity/demo-jwt" />
-      <recent name="$PROJECT_DIR$/demo-springsecurity/demo-jwt/src/main/resources" />
-      <recent name="$PROJECT_DIR$/demo-springsecurity/demo-jwt/src/main/java/com/yolo/demo" />
-      <recent name="$PROJECT_DIR$/demo-springsecurity/demo-url-permission-auth" />
-      <recent name="$PROJECT_DIR$/demo-springsecurity/demo-url-permission-auth/sql" />
+      <recent name="$PROJECT_DIR$/demo-springsecurity/demo-method-permission-auth" />
+      <recent name="$PROJECT_DIR$/demo-springsecurity/demo-method-permission-auth/src/main/java/com/yolo/demo/config/security/login" />
+      <recent name="$PROJECT_DIR$/demo-springsecurity/demo-method-permission-auth/src/main/java/com/yolo/demo/config/security/filter" />
+      <recent name="$PROJECT_DIR$/demo-springsecurity/demo-method-permission-auth/src/main/resources/mapper" />
+      <recent name="$PROJECT_DIR$/demo-springsecurity/demo-method-permission-auth/src/main/resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/demo-orm-mybatis-plus/sql" />
       <recent name="$PROJECT_DIR$/demo-login-operation-log/src/main/resources/mybatis" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.yolo.demo.config.security.filter" />
+      <recent name="com.yolo.demo.config.security.service" />
+      <recent name="com.yolo.demo.config.security.login" />
       <recent name="com.yolo.demo.common.util" />
       <recent name="com.yolo.demo.util" />
-      <recent name="com.yolo.demo.task" />
-      <recent name="com.yolo.demo.config" />
-      <recent name="com.example.demo.anno" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.DemoJwtApplication">
-    <configuration name="PasswordUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.yolo.demo.util.PasswordUtils" />
-      <module name="demo-login-auth" />
+  <component name="RunManager" selected="Spring Boot.DemoMethodPermissionAuthApplication">
+    <configuration name="DemoCaseApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="demo-case" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.demo.DemoCaseApplication" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.yolo.demo.util.*" />
+          <option name="PATTERN" value="com.yolo.demo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -285,9 +213,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DemoQuickStartApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="demo-quick-start" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.demo.DemoQuickStartApplication" />
+    <configuration name="DemoMethodPermissionAuthApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="demo-method-permission-auth" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.demo.DemoMethodPermissionAuthApplication" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.yolo.demo.*" />
@@ -312,21 +240,21 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.PasswordUtils" />
       <item itemvalue="Spring Boot.DemoDockerApplication" />
       <item itemvalue="Spring Boot.DemoLogAopApplication" />
+      <item itemvalue="Spring Boot.DemoMethodPermissionAuthApplication" />
+      <item itemvalue="Spring Boot.DemoCaseApplication" />
       <item itemvalue="Spring Boot.DemoJwtApplication" />
       <item itemvalue="Spring Boot.DemoLoginAuthApplication" />
       <item itemvalue="Spring Boot.DemoUrlPermissionAuthApplication" />
-      <item itemvalue="Spring Boot.DemoQuickStartApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.DemoMethodPermissionAuthApplication" />
         <item itemvalue="Spring Boot.DemoJwtApplication" />
         <item itemvalue="Spring Boot.DemoUrlPermissionAuthApplication" />
+        <item itemvalue="Spring Boot.DemoCaseApplication" />
         <item itemvalue="Spring Boot.DemoLoginAuthApplication" />
-        <item itemvalue="Application.PasswordUtils" />
-        <item itemvalue="Spring Boot.DemoQuickStartApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -414,14 +342,9 @@
       <workItem from="1688110236651" duration="329000" />
       <workItem from="1688110653833" duration="517000" />
       <workItem from="1688111180590" duration="648000" />
-      <workItem from="1688111869893" duration="34891000" />
-    </task>
-    <task id="LOCAL-00038" summary="feat: jackson注解的使用">
-      <created>1684394759868</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1684394759868</updated>
+      <workItem from="1688111869893" duration="41094000" />
+      <workItem from="1688449749496" duration="8089000" />
+      <workItem from="1688536606001" duration="25305000" />
     </task>
     <task id="LOCAL-00039" summary="feat: 目录">
       <created>1684395009661</created>
@@ -759,7 +682,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688369350492</updated>
     </task>
-    <option name="localTasksCounter" value="87" />
+    <task id="LOCAL-00087" summary="feat: Spring Security-整合jwt">
+      <created>1688435779507</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1688435779507</updated>
+    </task>
+    <option name="localTasksCounter" value="88" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -781,7 +711,6 @@
       <path value="$PROJECT_DIR$/demo-properties" />
       <path value="$PROJECT_DIR$/demo-logback" />
     </ignored-roots>
-    <MESSAGE value="feat: 整合redis封装redis五种数据类型的工具类" />
     <MESSAGE value="feat: redisson实现分布式锁" />
     <MESSAGE value="feat: validator自定义注解进行校验" />
     <MESSAGE value="feat: 集成jsoup解决xss安全问题" />
@@ -806,7 +735,8 @@
     <MESSAGE value="feat: Spring Security-入门体验" />
     <MESSAGE value="feat: Spring Security-自定义登录认证" />
     <MESSAGE value="feat: Spring Security-动态url权限控制" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Spring Security-动态url权限控制" />
+    <MESSAGE value="feat: Spring Security-整合jwt" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Spring Security-整合jwt" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -830,16 +760,6 @@
           <url>file://$PROJECT_DIR$/demo-upload-fragment/src/main/java/com/yolo/upload/fragment/service/impl/FileServiceImpl.java</url>
           <line>40</line>
           <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/demo-springsecurity/demo-jwt/src/main/java/com/yolo/demo/config/security/url/UrlFilterInvocationSecurityMetadataSource.java</url>
-          <line>46</line>
-          <option name="timeStamp" value="40" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/demo-springsecurity/demo-jwt/src/main/java/com/yolo/demo/config/security/url/UrlFilterInvocationSecurityMetadataSource.java</url>
-          <line>66</line>
-          <option name="timeStamp" value="41" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
