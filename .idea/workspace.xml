@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: Spring Security-注解鉴权">
+    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: Spring Security整合oauth2四种模式">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-springsecurity/demo-oauth2/demo-client-credentials/credentials-user/src/main/java/com/yolo/demo/config/ResourceServerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-springsecurity/demo-oauth2/demo-client-credentials/credentials-user/src/main/java/com/yolo/demo/config/ResourceServerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-springsecurity/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-springsecurity/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -346,14 +344,7 @@
       <workItem from="1688449749496" duration="8089000" />
       <workItem from="1688536606001" duration="27090000" />
       <workItem from="1688697388143" duration="12916000" />
-      <workItem from="1688955829198" duration="7588000" />
-    </task>
-    <task id="LOCAL-00040" summary="feat: springboot使用mp集成多数据源">
-      <created>1684398936585</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1684398936585</updated>
+      <workItem from="1688955829198" duration="8404000" />
     </task>
     <task id="LOCAL-00041" summary="feat: mp设置自动插入数据打印日志">
       <created>1684460414713</created>
@@ -691,7 +682,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688636367748</updated>
     </task>
-    <option name="localTasksCounter" value="89" />
+    <task id="LOCAL-00089" summary="feat: Spring Security整合oauth2四种模式">
+      <created>1688973317813</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1688973317813</updated>
+    </task>
+    <option name="localTasksCounter" value="90" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -713,7 +711,6 @@
       <path value="$PROJECT_DIR$/demo-properties" />
       <path value="$PROJECT_DIR$/demo-logback" />
     </ignored-roots>
-    <MESSAGE value="feat: validator自定义注解进行校验" />
     <MESSAGE value="feat: 集成jsoup解决xss安全问题" />
     <MESSAGE value="feat: filter详解" />
     <MESSAGE value="feat: 整合forest发送请求" />
@@ -738,7 +735,8 @@
     <MESSAGE value="feat: Spring Security-动态url权限控制" />
     <MESSAGE value="feat: Spring Security-整合jwt" />
     <MESSAGE value="feat: Spring Security-注解鉴权" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Spring Security-注解鉴权" />
+    <MESSAGE value="feat: Spring Security整合oauth2四种模式" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Spring Security整合oauth2四种模式" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
