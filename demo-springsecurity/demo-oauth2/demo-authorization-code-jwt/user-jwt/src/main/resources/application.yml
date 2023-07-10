@@ -1,0 +1,6 @@
+server:
+  port: 10030
+
+spring:
+  application:
+    name: user

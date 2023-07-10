@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: Spring Security-整合jwt">
+    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: Spring Security-注解鉴权">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-springsecurity/demo-login-auth/Spring Security-自定义登录认证.md" beforeDir="false" afterPath="$PROJECT_DIR$/demo-springsecurity/demo-login-auth/Spring Security-自定义登录认证.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-springsecurity/demo-url-permission-auth/Spring Security-动态url权限控制.md" beforeDir="false" afterPath="$PROJECT_DIR$/demo-springsecurity/demo-url-permission-auth/Spring Security-动态url权限控制.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-springsecurity/demo-oauth2/demo-client-credentials/credentials-user/src/main/java/com/yolo/demo/config/ResourceServerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-springsecurity/demo-oauth2/demo-client-credentials/credentials-user/src/main/java/com/yolo/demo/config/ResourceServerConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo-springsecurity/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-springsecurity/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +111,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-springsecurity/demo-method-permission-auth",
+    "last_opened_file_path": "/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-springsecurity/demo-oauth2/demo-client-credentials/credentials-user/src/main/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -120,9 +120,9 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "vcs.Git",
+    "settings.editor.selected.configurable": "com.zeroturnaround.javarebel.idea.plugin.settings.JRebelSettingsComponent",
     "settings.editor.splitter.proportion": "0.28004074",
-    "spring.configuration.checksum": "367f22088bace0da226e50dd7424ee95",
+    "spring.configuration.checksum": "27df265d04ac96ef9675e54e66aedde9",
     "ts.external.directory.path": "/Applications/IntelliJ IDEA.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
     "vue.rearranger.settings.migration": "true",
     "zielu.gittoolbox.prj.config.selected.tab.id": "zielu.gittoolbox.config.prj.repositories"
@@ -141,11 +141,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/demo-springsecurity/demo-method-permission-auth" />
-      <recent name="$PROJECT_DIR$/demo-springsecurity/demo-method-permission-auth/src/main/java/com/yolo/demo/config/security/login" />
-      <recent name="$PROJECT_DIR$/demo-springsecurity/demo-method-permission-auth/src/main/java/com/yolo/demo/config/security/filter" />
-      <recent name="$PROJECT_DIR$/demo-springsecurity/demo-method-permission-auth/src/main/resources/mapper" />
-      <recent name="$PROJECT_DIR$/demo-springsecurity/demo-method-permission-auth/src/main/resources" />
+      <recent name="$PROJECT_DIR$/demo-springsecurity/demo-oauth2/demo-client-credentials/credentials-user/src/main/resources" />
+      <recent name="$PROJECT_DIR$/demo-springsecurity/demo-oauth2/demo-client-credentials/credentials-client/src/main/resources" />
+      <recent name="$PROJECT_DIR$/demo-springsecurity/demo-oauth2/demo-client-credentials/credentials-auth/src/main/java/com/yolo/demo/config" />
+      <recent name="$PROJECT_DIR$/demo-springsecurity/demo-oauth2/demo-client-credentials/credentials-auth/src/main/resources" />
+      <recent name="$PROJECT_DIR$/demo-springsecurity/demo-oauth2/demo-password/password-user/src/main/resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/demo-orm-mybatis-plus/sql" />
@@ -159,10 +159,49 @@
       <recent name="com.yolo.demo.util" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.DemoMethodPermissionAuthApplication">
-    <configuration name="DemoCaseApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="demo-case" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.demo.DemoCaseApplication" />
+  <component name="RunManager" selected="Application.Test">
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.yolo.demo.api.Test" />
+      <module name="credentials-client" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yolo.demo.api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CredentialsAuthApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="credentials-auth" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.demo.CredentialsAuthApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yolo.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CredentialsClientApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="credentials-client" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.demo.CredentialsClientApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yolo.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CredentialsUserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="credentials-user" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.demo.CredentialsUserApplication" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.yolo.demo.*" />
@@ -180,19 +219,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DemoJwtApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="demo-jwt" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.demo.DemoJwtApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.yolo.demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="DemoLogAopApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="demo-log-aop" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.logaop.DemoLogAopApplication" />
@@ -200,35 +226,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DemoLoginAuthApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="demo-login-auth" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.demo.DemoLoginAuthApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.yolo.demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DemoMethodPermissionAuthApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="demo-method-permission-auth" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.demo.DemoMethodPermissionAuthApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.yolo.demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DemoUrlPermissionAuthApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="demo-url-permission-auth" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.demo.DemoUrlPermissionAuthApplication" />
+    <configuration name="PasswordAuthApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="password-auth" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.demo.PasswordAuthApplication" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.yolo.demo.*" />
@@ -240,21 +240,21 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.Test" />
       <item itemvalue="Spring Boot.DemoDockerApplication" />
       <item itemvalue="Spring Boot.DemoLogAopApplication" />
-      <item itemvalue="Spring Boot.DemoMethodPermissionAuthApplication" />
-      <item itemvalue="Spring Boot.DemoCaseApplication" />
-      <item itemvalue="Spring Boot.DemoJwtApplication" />
-      <item itemvalue="Spring Boot.DemoLoginAuthApplication" />
-      <item itemvalue="Spring Boot.DemoUrlPermissionAuthApplication" />
+      <item itemvalue="Spring Boot.CredentialsAuthApplication" />
+      <item itemvalue="Spring Boot.CredentialsClientApplication" />
+      <item itemvalue="Spring Boot.CredentialsUserApplication" />
+      <item itemvalue="Spring Boot.PasswordAuthApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.DemoMethodPermissionAuthApplication" />
-        <item itemvalue="Spring Boot.DemoJwtApplication" />
-        <item itemvalue="Spring Boot.DemoUrlPermissionAuthApplication" />
-        <item itemvalue="Spring Boot.DemoCaseApplication" />
-        <item itemvalue="Spring Boot.DemoLoginAuthApplication" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Spring Boot.CredentialsAuthApplication" />
+        <item itemvalue="Spring Boot.CredentialsClientApplication" />
+        <item itemvalue="Spring Boot.CredentialsUserApplication" />
+        <item itemvalue="Spring Boot.PasswordAuthApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -344,14 +344,9 @@
       <workItem from="1688111180590" duration="648000" />
       <workItem from="1688111869893" duration="41094000" />
       <workItem from="1688449749496" duration="8089000" />
-      <workItem from="1688536606001" duration="25305000" />
-    </task>
-    <task id="LOCAL-00039" summary="feat: 目录">
-      <created>1684395009661</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1684395009661</updated>
+      <workItem from="1688536606001" duration="27090000" />
+      <workItem from="1688697388143" duration="12916000" />
+      <workItem from="1688955829198" duration="7588000" />
     </task>
     <task id="LOCAL-00040" summary="feat: springboot使用mp集成多数据源">
       <created>1684398936585</created>
@@ -689,7 +684,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688435779507</updated>
     </task>
-    <option name="localTasksCounter" value="88" />
+    <task id="LOCAL-00088" summary="feat: Spring Security-注解鉴权">
+      <created>1688636367748</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1688636367748</updated>
+    </task>
+    <option name="localTasksCounter" value="89" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -711,7 +713,6 @@
       <path value="$PROJECT_DIR$/demo-properties" />
       <path value="$PROJECT_DIR$/demo-logback" />
     </ignored-roots>
-    <MESSAGE value="feat: redisson实现分布式锁" />
     <MESSAGE value="feat: validator自定义注解进行校验" />
     <MESSAGE value="feat: 集成jsoup解决xss安全问题" />
     <MESSAGE value="feat: filter详解" />
@@ -736,7 +737,8 @@
     <MESSAGE value="feat: Spring Security-自定义登录认证" />
     <MESSAGE value="feat: Spring Security-动态url权限控制" />
     <MESSAGE value="feat: Spring Security-整合jwt" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Spring Security-整合jwt" />
+    <MESSAGE value="feat: Spring Security-注解鉴权" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Spring Security-注解鉴权" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

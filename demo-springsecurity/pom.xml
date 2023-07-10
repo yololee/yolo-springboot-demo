@@ -21,6 +21,7 @@
         <module>demo-url-permission-auth</module>
         <module>demo-jwt</module>
         <module>demo-method-permission-auth</module>
+        <module>demo-oauth2</module>
     </modules>
 
 

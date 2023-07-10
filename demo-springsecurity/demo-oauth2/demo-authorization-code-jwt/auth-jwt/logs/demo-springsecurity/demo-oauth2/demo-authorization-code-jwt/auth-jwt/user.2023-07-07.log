@@ -1,0 +1,15 @@
+2023-07-07 17:20:02.901 [main] INFO  com.yolo.demo.AuthJwtApplicationTests - The following profiles are active: mysql
+2023-07-07 17:20:04.598 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.yolo.demo]' package. Please check your configuration.
+2023-07-07 17:20:05.199 [main] WARN  o.s.s.o.p.token.store.JwtAccessTokenConverter - Unable to create an RSA verifier from verifierKey (ignoreable if using MAC)
+2023-07-07 17:20:06.112 [main] DEBUG druid.sql.Connection - {conn-10001,procId-895} connected
+2023-07-07 17:20:06.130 [main] DEBUG druid.sql.Connection - {conn-10002,procId-896} connected
+2023-07-07 17:20:06.146 [main] DEBUG druid.sql.Connection - {conn-10003,procId-897} connected
+2023-07-07 17:20:06.155 [main] DEBUG druid.sql.Connection - {conn-10004,procId-898} connected
+2023-07-07 17:20:06.166 [main] DEBUG druid.sql.Connection - {conn-10005,procId-899} connected
+2023-07-07 17:20:10.227 [main] WARN  o.s.c.s.o.SpringCloudSecurityAutoConfiguration - All Spring Cloud Security modules and starters are deprecated. They will be moved to individual projects in the next major release.
+2023-07-07 17:20:10.369 [main] INFO  com.yolo.demo.AuthJwtApplicationTests - Started AuthJwtApplicationTests in 8.851 seconds (JVM running for 10.638)
+2023-07-07 17:20:10.769 [SpringContextShutdownHook] DEBUG druid.sql.Connection - {conn-10001} closed
+2023-07-07 17:20:10.774 [SpringContextShutdownHook] DEBUG druid.sql.Connection - {conn-10002} closed
+2023-07-07 17:20:10.775 [SpringContextShutdownHook] DEBUG druid.sql.Connection - {conn-10003} closed
+2023-07-07 17:20:10.776 [SpringContextShutdownHook] DEBUG druid.sql.Connection - {conn-10004} closed
+2023-07-07 17:20:10.777 [SpringContextShutdownHook] DEBUG druid.sql.Connection - {conn-10005} closed
