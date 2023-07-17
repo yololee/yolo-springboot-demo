@@ -63,6 +63,7 @@
         <module>demo-springboot-starter</module>
         <module>demo-multi-thread</module>
         <module>demo-springsecurity</module>
+        <module>demo-cluster-lock</module>
     </modules>
 
 

@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: Spring Security整合oauth2四种模式">
+    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: Spring Security目录">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,9 +57,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="AnnotationType" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="AnnotationType" />
       </list>
     </option>
   </component>
@@ -109,7 +109,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-springsecurity/demo-oauth2/demo-client-credentials/credentials-user/src/main/resources",
+    "last_opened_file_path": "/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-cluster-lock/demo-anno-redis-lock/src/main/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -120,7 +120,7 @@
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "com.zeroturnaround.javarebel.idea.plugin.settings.JRebelSettingsComponent",
     "settings.editor.splitter.proportion": "0.28004074",
-    "spring.configuration.checksum": "27df265d04ac96ef9675e54e66aedde9",
+    "spring.configuration.checksum": "0361158da80d2558574aeadd82a902f2",
     "ts.external.directory.path": "/Applications/IntelliJ IDEA.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
     "vue.rearranger.settings.migration": "true",
     "zielu.gittoolbox.prj.config.selected.tab.id": "zielu.gittoolbox.config.prj.repositories"
@@ -139,25 +139,25 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/demo-cluster-lock/demo-anno-redis-lock/src/main/resources" />
       <recent name="$PROJECT_DIR$/demo-springsecurity/demo-oauth2/demo-client-credentials/credentials-user/src/main/resources" />
       <recent name="$PROJECT_DIR$/demo-springsecurity/demo-oauth2/demo-client-credentials/credentials-client/src/main/resources" />
       <recent name="$PROJECT_DIR$/demo-springsecurity/demo-oauth2/demo-client-credentials/credentials-auth/src/main/java/com/yolo/demo/config" />
       <recent name="$PROJECT_DIR$/demo-springsecurity/demo-oauth2/demo-client-credentials/credentials-auth/src/main/resources" />
-      <recent name="$PROJECT_DIR$/demo-springsecurity/demo-oauth2/demo-password/password-user/src/main/resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/demo-orm-mybatis-plus/sql" />
       <recent name="$PROJECT_DIR$/demo-login-operation-log/src/main/resources/mybatis" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.yolo.demo.task" />
+      <recent name="com.yolo.demo.config" />
+      <recent name="com.yolo.demo.aspect" />
       <recent name="com.yolo.demo.config.security.filter" />
       <recent name="com.yolo.demo.config.security.service" />
-      <recent name="com.yolo.demo.config.security.login" />
-      <recent name="com.yolo.demo.common.util" />
-      <recent name="com.yolo.demo.util" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Test">
+  <component name="RunManager" selected="Spring Boot.DemoAnnoRedisLockApplication">
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.yolo.demo.api.Test" />
       <module name="credentials-client" />
@@ -210,6 +210,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DemoAnnoRedisLockApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="demo-anno-redis-lock" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.demo.DemoAnnoRedisLockApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yolo.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DemoDockerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="demo-docker" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.demo.DemoDockerApplication" />
@@ -224,35 +237,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PasswordAuthApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="password-auth" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.demo.PasswordAuthApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.yolo.demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Application.Test" />
       <item itemvalue="Spring Boot.DemoDockerApplication" />
       <item itemvalue="Spring Boot.DemoLogAopApplication" />
+      <item itemvalue="Spring Boot.DemoAnnoRedisLockApplication" />
       <item itemvalue="Spring Boot.CredentialsAuthApplication" />
       <item itemvalue="Spring Boot.CredentialsClientApplication" />
       <item itemvalue="Spring Boot.CredentialsUserApplication" />
-      <item itemvalue="Spring Boot.PasswordAuthApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.DemoAnnoRedisLockApplication" />
         <item itemvalue="Application.Test" />
         <item itemvalue="Spring Boot.CredentialsAuthApplication" />
         <item itemvalue="Spring Boot.CredentialsClientApplication" />
         <item itemvalue="Spring Boot.CredentialsUserApplication" />
-        <item itemvalue="Spring Boot.PasswordAuthApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -344,14 +344,9 @@
       <workItem from="1688449749496" duration="8089000" />
       <workItem from="1688536606001" duration="27090000" />
       <workItem from="1688697388143" duration="12916000" />
-      <workItem from="1688955829198" duration="8404000" />
-    </task>
-    <task id="LOCAL-00041" summary="feat: mp设置自动插入数据打印日志">
-      <created>1684460414713</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1684460414713</updated>
+      <workItem from="1688955829198" duration="8429000" />
+      <workItem from="1689060794386" duration="8607000" />
+      <workItem from="1689236315242" duration="3491000" />
     </task>
     <task id="LOCAL-00042" summary="feat: redis多数据源配置，单节点，哨兵，集群配置">
       <created>1684482661123</created>
@@ -689,7 +684,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688973317813</updated>
     </task>
-    <option name="localTasksCounter" value="90" />
+    <task id="LOCAL-00090" summary="feat: Spring Security目录">
+      <created>1688973679823</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1688973679823</updated>
+    </task>
+    <option name="localTasksCounter" value="91" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -711,7 +713,6 @@
       <path value="$PROJECT_DIR$/demo-properties" />
       <path value="$PROJECT_DIR$/demo-logback" />
     </ignored-roots>
-    <MESSAGE value="feat: 集成jsoup解决xss安全问题" />
     <MESSAGE value="feat: filter详解" />
     <MESSAGE value="feat: 整合forest发送请求" />
     <MESSAGE value="feat: rabbitmq快速入门" />
@@ -736,7 +737,8 @@
     <MESSAGE value="feat: Spring Security-整合jwt" />
     <MESSAGE value="feat: Spring Security-注解鉴权" />
     <MESSAGE value="feat: Spring Security整合oauth2四种模式" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Spring Security整合oauth2四种模式" />
+    <MESSAGE value="feat: Spring Security目录" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Spring Security目录" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
