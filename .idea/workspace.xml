@@ -4,9 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: Spring Security目录">
+    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: 自定义注解结合redis实现分布式任务锁">
+      <change afterPath="$PROJECT_DIR$/demo-cluster-lock/demo-lock4j/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-cluster-lock/demo-lock4j/src/main/java/com/yolo/demo/DemoLock4jApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-cluster-lock/demo-lock4j/src/main/java/com/yolo/demo/controller/MockController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-cluster-lock/demo-lock4j/src/main/java/com/yolo/demo/domain/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-cluster-lock/demo-lock4j/src/main/java/com/yolo/demo/service/DemoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-cluster-lock/demo-lock4j/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-cluster-lock/demo-lock4j/src/test/java/com/yolo/demo/DemoLock4jApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-cluster-lock/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-cluster-lock/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,8 +65,8 @@
       <list>
         <option value="Enum" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="AnnotationType" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -109,7 +116,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-cluster-lock/demo-anno-redis-lock/src/main/resources",
+    "last_opened_file_path": "/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-cluster-lock/demo-lock4j/src/main/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -139,11 +146,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/demo-cluster-lock/demo-lock4j/src/main/resources" />
+      <recent name="$PROJECT_DIR$/demo-cluster-lock/demo-anno-redis-lock" />
       <recent name="$PROJECT_DIR$/demo-cluster-lock/demo-anno-redis-lock/src/main/resources" />
       <recent name="$PROJECT_DIR$/demo-springsecurity/demo-oauth2/demo-client-credentials/credentials-user/src/main/resources" />
       <recent name="$PROJECT_DIR$/demo-springsecurity/demo-oauth2/demo-client-credentials/credentials-client/src/main/resources" />
-      <recent name="$PROJECT_DIR$/demo-springsecurity/demo-oauth2/demo-client-credentials/credentials-auth/src/main/java/com/yolo/demo/config" />
-      <recent name="$PROJECT_DIR$/demo-springsecurity/demo-oauth2/demo-client-credentials/credentials-auth/src/main/resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/demo-orm-mybatis-plus/sql" />
@@ -157,7 +164,7 @@
       <recent name="com.yolo.demo.config.security.service" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.DemoAnnoRedisLockApplication">
+  <component name="RunManager" selected="Spring Boot.DemoLock4jApplication">
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.yolo.demo.api.Test" />
       <module name="credentials-client" />
@@ -197,19 +204,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CredentialsUserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="credentials-user" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.demo.CredentialsUserApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.yolo.demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="DemoAnnoRedisLockApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="demo-anno-redis-lock" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.demo.DemoAnnoRedisLockApplication" />
@@ -230,6 +224,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DemoLock4jApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="demo-lock4j" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.demo.DemoLock4jApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yolo.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DemoLogAopApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="demo-log-aop" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.logaop.DemoLogAopApplication" />
@@ -242,17 +249,17 @@
       <item itemvalue="Spring Boot.DemoDockerApplication" />
       <item itemvalue="Spring Boot.DemoLogAopApplication" />
       <item itemvalue="Spring Boot.DemoAnnoRedisLockApplication" />
+      <item itemvalue="Spring Boot.DemoLock4jApplication" />
       <item itemvalue="Spring Boot.CredentialsAuthApplication" />
       <item itemvalue="Spring Boot.CredentialsClientApplication" />
-      <item itemvalue="Spring Boot.CredentialsUserApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.DemoLock4jApplication" />
         <item itemvalue="Spring Boot.DemoAnnoRedisLockApplication" />
         <item itemvalue="Application.Test" />
         <item itemvalue="Spring Boot.CredentialsAuthApplication" />
         <item itemvalue="Spring Boot.CredentialsClientApplication" />
-        <item itemvalue="Spring Boot.CredentialsUserApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -346,14 +353,7 @@
       <workItem from="1688697388143" duration="12916000" />
       <workItem from="1688955829198" duration="8429000" />
       <workItem from="1689060794386" duration="8607000" />
-      <workItem from="1689236315242" duration="3491000" />
-    </task>
-    <task id="LOCAL-00042" summary="feat: redis多数据源配置，单节点，哨兵，集群配置">
-      <created>1684482661123</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1684482661123</updated>
+      <workItem from="1689236315242" duration="6821000" />
     </task>
     <task id="LOCAL-00043" summary="feat: springboot整合druid">
       <created>1684487863254</created>
@@ -691,7 +691,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688973679823</updated>
     </task>
-    <option name="localTasksCounter" value="91" />
+    <task id="LOCAL-00091" summary="feat: 自定义注解结合redis实现分布式任务锁">
+      <created>1689577338333</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1689577338334</updated>
+    </task>
+    <option name="localTasksCounter" value="92" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -713,7 +720,6 @@
       <path value="$PROJECT_DIR$/demo-properties" />
       <path value="$PROJECT_DIR$/demo-logback" />
     </ignored-roots>
-    <MESSAGE value="feat: filter详解" />
     <MESSAGE value="feat: 整合forest发送请求" />
     <MESSAGE value="feat: rabbitmq快速入门" />
     <MESSAGE value="feat: rabbitmq七种工作模型" />
@@ -738,7 +744,8 @@
     <MESSAGE value="feat: Spring Security-注解鉴权" />
     <MESSAGE value="feat: Spring Security整合oauth2四种模式" />
     <MESSAGE value="feat: Spring Security目录" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Spring Security目录" />
+    <MESSAGE value="feat: 自定义注解结合redis实现分布式任务锁" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 自定义注解结合redis实现分布式任务锁" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
