@@ -4,16 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: 自定义注解结合redis实现分布式任务锁">
-      <change afterPath="$PROJECT_DIR$/demo-cluster-lock/demo-lock4j/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-cluster-lock/demo-lock4j/src/main/java/com/yolo/demo/DemoLock4jApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-cluster-lock/demo-lock4j/src/main/java/com/yolo/demo/controller/MockController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-cluster-lock/demo-lock4j/src/main/java/com/yolo/demo/domain/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-cluster-lock/demo-lock4j/src/main/java/com/yolo/demo/service/DemoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-cluster-lock/demo-lock4j/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-cluster-lock/demo-lock4j/src/test/java/com/yolo/demo/DemoLock4jApplicationTests.java" afterDir="false" />
+    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: 分布式锁lock4j">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-cluster-lock/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-cluster-lock/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +109,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-cluster-lock/demo-lock4j/src/main/resources",
+    "last_opened_file_path": "/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-cluster-lock/demo-lock4j",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -146,11 +139,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/demo-cluster-lock/demo-lock4j" />
       <recent name="$PROJECT_DIR$/demo-cluster-lock/demo-lock4j/src/main/resources" />
       <recent name="$PROJECT_DIR$/demo-cluster-lock/demo-anno-redis-lock" />
       <recent name="$PROJECT_DIR$/demo-cluster-lock/demo-anno-redis-lock/src/main/resources" />
       <recent name="$PROJECT_DIR$/demo-springsecurity/demo-oauth2/demo-client-credentials/credentials-user/src/main/resources" />
-      <recent name="$PROJECT_DIR$/demo-springsecurity/demo-oauth2/demo-client-credentials/credentials-client/src/main/resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/demo-orm-mybatis-plus/sql" />
@@ -353,21 +346,7 @@
       <workItem from="1688697388143" duration="12916000" />
       <workItem from="1688955829198" duration="8429000" />
       <workItem from="1689060794386" duration="8607000" />
-      <workItem from="1689236315242" duration="6821000" />
-    </task>
-    <task id="LOCAL-00043" summary="feat: springboot整合druid">
-      <created>1684487863254</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1684487863254</updated>
-    </task>
-    <task id="LOCAL-00044" summary="feat: springboot整合es (restapi)">
-      <created>1684723535878</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1684723535878</updated>
+      <workItem from="1689236315242" duration="8103000" />
     </task>
     <task id="LOCAL-00045" summary="feat: springboot整合es">
       <created>1684737233108</created>
@@ -698,7 +677,21 @@
       <option name="project" value="LOCAL" />
       <updated>1689577338334</updated>
     </task>
-    <option name="localTasksCounter" value="92" />
+    <task id="LOCAL-00092" summary="feat: 分布式锁lock4j">
+      <created>1689581520083</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1689581520083</updated>
+    </task>
+    <task id="LOCAL-00093" summary="feat: 分布式锁lock4j">
+      <created>1689581551945</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1689581551945</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -720,7 +713,6 @@
       <path value="$PROJECT_DIR$/demo-properties" />
       <path value="$PROJECT_DIR$/demo-logback" />
     </ignored-roots>
-    <MESSAGE value="feat: 整合forest发送请求" />
     <MESSAGE value="feat: rabbitmq快速入门" />
     <MESSAGE value="feat: rabbitmq七种工作模型" />
     <MESSAGE value="feat: rabbitmq消息确认机制" />
@@ -745,7 +737,8 @@
     <MESSAGE value="feat: Spring Security整合oauth2四种模式" />
     <MESSAGE value="feat: Spring Security目录" />
     <MESSAGE value="feat: 自定义注解结合redis实现分布式任务锁" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 自定义注解结合redis实现分布式任务锁" />
+    <MESSAGE value="feat: 分布式锁lock4j" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 分布式锁lock4j" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
