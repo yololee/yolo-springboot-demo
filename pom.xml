@@ -64,6 +64,7 @@
         <module>demo-multi-thread</module>
         <module>demo-springsecurity</module>
         <module>demo-cluster-lock</module>
+        <module>demo-i18n</module>
     </modules>
 
 

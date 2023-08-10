@@ -1,29 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
-    <artifactId>demo-oauth2</artifactId>
+    <artifactId>demo-i18n</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>demo-oauth2</name>
-    <description>demo-oauth2</description>
+    <name>demo-i18n</name>
+    <description>demo-i18n</description>
 
     <parent>
         <groupId>com.yolo</groupId>
-        <artifactId>demo-springsecurity</artifactId>
+        <artifactId>yolo-springboot-demo</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <packaging>pom</packaging>
-
-    <modules>
-        <module>demo-authorization-code</module>
-        <module>demo-authorization-code-jwt</module>
-        <module>demo-implicit</module>
-        <module>demo-client-credentials</module>
-        <module>demo-password</module>
-    </modules>
-
+    <packaging>jar</packaging>
 
 
     <properties>
@@ -32,8 +22,36 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <spring-boot.version>2.3.12.RELEASE</spring-boot.version>
     </properties>
-    <dependencies>
 
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.26</version>
+        </dependency>
+
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>5.8.18</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.12.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-validation</artifactId>
+        </dependency>
     </dependencies>
     <dependencyManagement>
         <dependencies>
@@ -64,7 +82,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>${spring-boot.version}</version>
                 <configuration>
-                    <mainClass>com.yolo.demo.DemoOauth2Application</mainClass>
+                    <mainClass>com.yolo.demo.DemoI18nApplication</mainClass>
                     <skip>true</skip>
                 </configuration>
                 <executions>

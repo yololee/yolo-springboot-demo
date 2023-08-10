@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: 分布式锁lock4j">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-springsecurity/demo-oauth2/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-springsecurity/demo-oauth2/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +110,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-cluster-lock/demo-lock4j",
+    "last_opened_file_path": "/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-i18n/src/main/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -120,7 +121,7 @@
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "com.zeroturnaround.javarebel.idea.plugin.settings.JRebelSettingsComponent",
     "settings.editor.splitter.proportion": "0.28004074",
-    "spring.configuration.checksum": "0361158da80d2558574aeadd82a902f2",
+    "spring.configuration.checksum": "833628f287650e880e53f0700484e5e7",
     "ts.external.directory.path": "/Applications/IntelliJ IDEA.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
     "vue.rearranger.settings.migration": "true",
     "zielu.gittoolbox.prj.config.selected.tab.id": "zielu.gittoolbox.config.prj.repositories"
@@ -139,54 +140,28 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/demo-i18n/src/main/resources" />
       <recent name="$PROJECT_DIR$/demo-cluster-lock/demo-lock4j" />
       <recent name="$PROJECT_DIR$/demo-cluster-lock/demo-lock4j/src/main/resources" />
       <recent name="$PROJECT_DIR$/demo-cluster-lock/demo-anno-redis-lock" />
       <recent name="$PROJECT_DIR$/demo-cluster-lock/demo-anno-redis-lock/src/main/resources" />
-      <recent name="$PROJECT_DIR$/demo-springsecurity/demo-oauth2/demo-client-credentials/credentials-user/src/main/resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/demo-orm-mybatis-plus/sql" />
       <recent name="$PROJECT_DIR$/demo-login-operation-log/src/main/resources/mybatis" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.yolo.demo.task" />
+      <recent name="com.yolo.demo.common" />
+      <recent name="com.yolo.demo.controller" />
+      <recent name="com.yolo.demo.utils" />
       <recent name="com.yolo.demo.config" />
-      <recent name="com.yolo.demo.aspect" />
-      <recent name="com.yolo.demo.config.security.filter" />
-      <recent name="com.yolo.demo.config.security.service" />
+      <recent name="com.yolo.demo.task" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.DemoLock4jApplication">
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.yolo.demo.api.Test" />
-      <module name="credentials-client" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.yolo.demo.api.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Spring Boot.DemoI18nApplication">
     <configuration name="CredentialsAuthApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="credentials-auth" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.demo.CredentialsAuthApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.yolo.demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CredentialsClientApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="credentials-client" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.demo.CredentialsClientApplication" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.yolo.demo.*" />
@@ -210,9 +185,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DemoCacheRedisApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="demo-cache-redis" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.cache.redis.DemoCacheRedisApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yolo.cache.redis.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DemoDockerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="demo-docker" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.demo.DemoDockerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemoI18nApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="demo-i18n" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.demo.DemoI18nApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yolo.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -238,21 +239,21 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Test" />
       <item itemvalue="Spring Boot.DemoDockerApplication" />
       <item itemvalue="Spring Boot.DemoLogAopApplication" />
+      <item itemvalue="Spring Boot.DemoI18nApplication" />
+      <item itemvalue="Spring Boot.DemoCacheRedisApplication" />
       <item itemvalue="Spring Boot.DemoAnnoRedisLockApplication" />
       <item itemvalue="Spring Boot.DemoLock4jApplication" />
       <item itemvalue="Spring Boot.CredentialsAuthApplication" />
-      <item itemvalue="Spring Boot.CredentialsClientApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.DemoI18nApplication" />
         <item itemvalue="Spring Boot.DemoLock4jApplication" />
+        <item itemvalue="Spring Boot.DemoCacheRedisApplication" />
         <item itemvalue="Spring Boot.DemoAnnoRedisLockApplication" />
-        <item itemvalue="Application.Test" />
         <item itemvalue="Spring Boot.CredentialsAuthApplication" />
-        <item itemvalue="Spring Boot.CredentialsClientApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -347,6 +348,18 @@
       <workItem from="1688955829198" duration="8429000" />
       <workItem from="1689060794386" duration="8607000" />
       <workItem from="1689236315242" duration="8103000" />
+      <workItem from="1690422050723" duration="549000" />
+      <workItem from="1690428837120" duration="605000" />
+      <workItem from="1690525551240" duration="32000" />
+      <workItem from="1691031670799" duration="5101000" />
+      <workItem from="1691050883285" duration="5231000" />
+      <workItem from="1691130217869" duration="1406000" />
+      <workItem from="1691131644787" duration="1790000" />
+      <workItem from="1691135293650" duration="2623000" />
+      <workItem from="1691547460416" duration="33000" />
+      <workItem from="1691561840614" duration="7000" />
+      <workItem from="1691569578544" duration="1234000" />
+      <workItem from="1691630639689" duration="2174000" />
     </task>
     <task id="LOCAL-00045" summary="feat: springboot整合es">
       <created>1684737233108</created>
