@@ -69,6 +69,7 @@ spring boot demo 是一个用来深度学习并实战 spring boot 的项目
 | [demo-spring-security](https://gitee.com/huanglei1111/yolo-springboot-demo/tree/master/demo-springsecurity) | springboot整合security入门体验，自定义认证，动态url控制，整合jwt，访问控制方式，以及整合oauth2的四种模式demo |
 | [demo-anno-redis-lock](https://gitee.com/huanglei1111/yolo-springboot-demo/tree/master/demo-cluster-lock/demo-anno-redis-lock) | 自定义注解结合redis实现分布式定时任务锁                      |
 | [demo-lock4j](https://gitee.com/huanglei1111/yolo-springboot-demo/tree/master/demo-cluster-lock/demo-lock4j) | springboot整合lock4j分布式锁                                 |
+| [demo-i18n](https://gitee.com/huanglei1111/yolo-springboot-demo/tree/master/demo-i18n) | springboot整合国际化                                         |
 
 
 
