@@ -3,24 +3,19 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.yolo</groupId>
-    <artifactId>demo-poi</artifactId>
+    <artifactId>demo-easyexcel-read</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>demo-poi</name>
-    <description>demo-poi</description>
+    <name>demo-easyexcel-read</name>
+    <description>demo-easyexcel-read</description>
 
     <parent>
         <groupId>com.yolo</groupId>
-        <artifactId>yolo-springboot-demo</artifactId>
+        <artifactId>demo-poi</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <packaging>pom</packaging>
 
-
-    <modules>
-        <module>demo-easyexcel-write</module>
-        <module>demo-easyexcel-read</module>
-    </modules>
+    <packaging>jar</packaging>
 
 
     <properties>
@@ -30,9 +25,64 @@
         <spring-boot.version>2.3.12.RELEASE</spring-boot.version>
     </properties>
     <dependencies>
+    <!--web 依赖-->
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
 
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-validation</artifactId>
+    </dependency>
+
+    <dependency>
+        <groupId>org.apache.poi</groupId>
+        <artifactId>poi</artifactId>
+        <version>5.0.0</version>
+    </dependency>
+    <dependency>
+        <groupId>org.apache.poi</groupId>
+        <artifactId>poi-ooxml</artifactId>
+        <version>5.0.0</version>
+    </dependency>
+    <dependency>
+        <groupId>com.alibaba</groupId>
+        <artifactId>easyexcel</artifactId>
+        <version>3.3.1</version>
+        <exclusions>
+            <exclusion>
+                <groupId>org.apache.poi</groupId>
+                <artifactId>poi-ooxml-schemas</artifactId>
+            </exclusion>
+        </exclusions>
+    </dependency>
+
+
+    <dependency>
+        <groupId>cn.hutool</groupId>
+        <artifactId>hutool-all</artifactId>
+        <version>5.8.18</version>
+    </dependency>
+
+    <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-lang3</artifactId>
+        <version>3.12.0</version>
+    </dependency>
+
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-test</artifactId>
+        <scope>test</scope>
+        <exclusions>
+            <exclusion>
+                <groupId>org.junit.vintage</groupId>
+                <artifactId>junit-vintage-engine</artifactId>
+            </exclusion>
+        </exclusions>
+    </dependency>
     </dependencies>
-
 
     <dependencyManagement>
         <dependencies>
@@ -63,7 +113,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>${spring-boot.version}</version>
                 <configuration>
-                    <mainClass>com.yolo.demo.DemoPoiApplication</mainClass>
+                    <mainClass>com.yolo.demo.DemoEasyexcelReadApplication</mainClass>
                     <skip>true</skip>
                 </configuration>
                 <executions>
