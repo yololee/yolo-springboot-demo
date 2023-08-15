@@ -70,6 +70,7 @@ spring boot demo 是一个用来深度学习并实战 spring boot 的项目
 | [demo-anno-redis-lock](https://gitee.com/huanglei1111/yolo-springboot-demo/tree/master/demo-cluster-lock/demo-anno-redis-lock) | 自定义注解结合redis实现分布式定时任务锁                      |
 | [demo-lock4j](https://gitee.com/huanglei1111/yolo-springboot-demo/tree/master/demo-cluster-lock/demo-lock4j) | springboot整合lock4j分布式锁                                 |
 | [demo-i18n](https://gitee.com/huanglei1111/yolo-springboot-demo/tree/master/demo-i18n) | springboot整合国际化                                         |
+| [easyexcel-write](https://gitee.com/huanglei1111/yolo-springboot-demo/tree/master/demo-poi/demo-easyexcel-write)，[easyexcel-read](https://gitee.com/huanglei1111/yolo-springboot-demo/tree/master/demo-poi/demo-easyexcel-read) | springboot整合easyexcel实现简单写，复杂头写，自定义格式转换，合并单元格，简单下拉框，联级下拉框，模版导出，以及自定义默认监听器，默认返回结果，和集成`validation`校验参数 |
 
 
 

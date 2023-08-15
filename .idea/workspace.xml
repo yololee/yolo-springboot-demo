@@ -4,41 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: easyexcel写操作">
-      <change afterPath="$PROJECT_DIR$/demo-poi/demo-easyexcel-read/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-poi/demo-easyexcel-read/src/main/java/com/yolo/demo/DemoEasyexcelReadApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-poi/demo-easyexcel-read/src/main/java/com/yolo/demo/anno/CellMerge.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-poi/demo-easyexcel-read/src/main/java/com/yolo/demo/anno/ExcelDictFormat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-poi/demo-easyexcel-read/src/main/java/com/yolo/demo/anno/ExcelEnumFormat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-poi/demo-easyexcel-read/src/main/java/com/yolo/demo/controller/TestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-poi/demo-easyexcel-read/src/main/java/com/yolo/demo/domain/AddGroup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-poi/demo-easyexcel-read/src/main/java/com/yolo/demo/domain/EditGroup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-poi/demo-easyexcel-read/src/main/java/com/yolo/demo/domain/ExportDemoVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-poi/demo-easyexcel-read/src/main/java/com/yolo/demo/domain/UserStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-poi/demo-easyexcel-read/src/main/java/com/yolo/demo/easyexcel/CellMergeStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-poi/demo-easyexcel-read/src/main/java/com/yolo/demo/easyexcel/DefaultExcelListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-poi/demo-easyexcel-read/src/main/java/com/yolo/demo/easyexcel/DefaultExcelResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-poi/demo-easyexcel-read/src/main/java/com/yolo/demo/easyexcel/DropDownOptions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-poi/demo-easyexcel-read/src/main/java/com/yolo/demo/easyexcel/ExcelDownHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-poi/demo-easyexcel-read/src/main/java/com/yolo/demo/easyexcel/ExcelListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-poi/demo-easyexcel-read/src/main/java/com/yolo/demo/easyexcel/ExcelResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-poi/demo-easyexcel-read/src/main/java/com/yolo/demo/easyexcel/convert/ExcelBigNumberConvert.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-poi/demo-easyexcel-read/src/main/java/com/yolo/demo/easyexcel/convert/ExcelDictConvert.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-poi/demo-easyexcel-read/src/main/java/com/yolo/demo/easyexcel/convert/ExcelEnumConvert.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-poi/demo-easyexcel-read/src/main/java/com/yolo/demo/easyexcel/listener/ExportDemoListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-poi/demo-easyexcel-read/src/main/java/com/yolo/demo/excepiton/ServiceException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-poi/demo-easyexcel-read/src/main/java/com/yolo/demo/utils/BeanCopyUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-poi/demo-easyexcel-read/src/main/java/com/yolo/demo/utils/ExcelUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-poi/demo-easyexcel-read/src/main/java/com/yolo/demo/utils/FileUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-poi/demo-easyexcel-read/src/main/java/com/yolo/demo/utils/JsonUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-poi/demo-easyexcel-read/src/main/java/com/yolo/demo/utils/ReflectUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-poi/demo-easyexcel-read/src/main/java/com/yolo/demo/utils/SpringUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-poi/demo-easyexcel-read/src/main/java/com/yolo/demo/utils/StreamUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-poi/demo-easyexcel-read/src/main/java/com/yolo/demo/utils/StringUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-poi/demo-easyexcel-read/src/main/java/com/yolo/demo/utils/ValidatorUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-poi/demo-easyexcel-read/src/test/java/com/yolo/demo/DemoEasyexcelReadApplicationTests.java" afterDir="false" />
+    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: easyexcel读操作">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-poi/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-poi/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-orm-mybatis-plus/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-orm-mybatis-plus/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-orm-mybatis-plus/sql/mybatisPlus.sql" beforeDir="false" afterPath="$PROJECT_DIR$/demo-orm-mybatis-plus/sql/mybatisPlus.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-orm-mybatis-plus/src/main/java/com/yolo/mybatis/plus/config/MybatisPlusConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-orm-mybatis-plus/src/main/java/com/yolo/mybatis/plus/domain/Company.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-orm-mybatis-plus/src/main/java/com/yolo/mybatis/plus/mapper/CompanyMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-orm-mybatis-plus/src/main/java/com/yolo/mybatis/plus/page/PageDomain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-orm-mybatis-plus/src/main/java/com/yolo/mybatis/plus/page/PageResult.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-orm-mybatis-plus/src/main/java/com/yolo/mybatis/plus/page/PageUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-orm-mybatis-plus/src/main/java/com/yolo/mybatis/plus/service/CompanyService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-orm-mybatis-plus/src/main/java/com/yolo/mybatis/plus/service/impl/CompanyServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-orm-mybatis-plus/src/main/java/com/yolo/mybatis/plus/util/ServletUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-orm-mybatis-plus/src/main/java/com/yolo/mybatis/plus/util/StringUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-orm-mybatis-plus/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-orm-mybatis-plus/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-orm-mybatis-plus/src/main/resources/mapper/CompanyMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-orm-mybatis-plus/src/test/java/com/yolo/mybatis/plus/DemoOrmMybatisPlusApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-orm-mybatis-plus/src/test/java/com/yolo/mybatis/plus/DemoOrmMybatisPlusApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,7 +124,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-poi/demo-easyexcel-read/src/main/java/com/yolo/demo",
+    "last_opened_file_path": "/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-orm-mybatis-plus/src/main/resources/mapper",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -152,7 +135,7 @@
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "com.zeroturnaround.javarebel.idea.plugin.settings.JRebelSettingsComponent",
     "settings.editor.splitter.proportion": "0.28004074",
-    "spring.configuration.checksum": "3a0a6fb95375233a466af292b6d862f2",
+    "spring.configuration.checksum": "651136587a76c78a78ad7a5a212e0113",
     "ts.external.directory.path": "/Applications/IntelliJ IDEA.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
     "vue.rearranger.settings.migration": "true",
     "zielu.gittoolbox.prj.config.selected.tab.id": "zielu.gittoolbox.config.prj.repositories"
@@ -171,22 +154,22 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/demo-orm-mybatis-plus/src/main/resources/mapper" />
+      <recent name="$PROJECT_DIR$/demo-orm-mybatis-plus/src/main/java/com/yolo/mybatis/plus/util" />
       <recent name="$PROJECT_DIR$/demo-poi/demo-easyexcel-read/src/main/java/com/yolo/demo" />
       <recent name="$PROJECT_DIR$/demo-poi/demo-easyexcel-write" />
       <recent name="$PROJECT_DIR$/demo-poi/demo-easyexcel-write/src/main/resources" />
-      <recent name="$PROJECT_DIR$/demo-poi/demo-easyexcel-write/src/main/java/com/yolo/demo/easyexcel/convert" />
-      <recent name="$PROJECT_DIR$/demo-poi/demo-easyexcel-write/src/main/java/com/yolo/demo/anno" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/demo-orm-mybatis-plus/sql" />
       <recent name="$PROJECT_DIR$/demo-login-operation-log/src/main/resources/mybatis" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.yolo.demo.domain" />
-      <recent name="com.yolo.demo.anno" />
-      <recent name="com.yolo.demo.utils" />
-      <recent name="com.yolo.demo.service" />
-      <recent name="com.yolo.demo.excepiton" />
+      <recent name="com.yolo.mybatis.plus.mapper" />
+      <recent name="com.yolo.mybatis.plus.domain" />
+      <recent name="com.yolo.mybatis.plus.util" />
+      <recent name="com.yolo.mybatis.plus.config" />
+      <recent name="com.yolo.mybatis.plus.exception" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.DemoEasyexcelWriteApplication">
@@ -391,14 +374,8 @@
       <workItem from="1691561840614" duration="7000" />
       <workItem from="1691569578544" duration="1234000" />
       <workItem from="1691630639689" duration="3043000" />
-      <workItem from="1691976427701" duration="19217000" />
-    </task>
-    <task id="LOCAL-00047" summary="feat: 整合redis使用aop进行接口限流">
-      <created>1684854842451</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1684854842451</updated>
+      <workItem from="1691976427701" duration="20398000" />
+      <workItem from="1692064646007" duration="2061000" />
     </task>
     <task id="LOCAL-00048" summary="feat: 整合redis使用aop进行接口限流">
       <created>1684854936115</created>
@@ -736,7 +713,14 @@
       <option name="project" value="LOCAL" />
       <updated>1692001667759</updated>
     </task>
-    <option name="localTasksCounter" value="96" />
+    <task id="LOCAL-00096" summary="feat: easyexcel读操作">
+      <created>1692002896351</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1692002896351</updated>
+    </task>
+    <option name="localTasksCounter" value="97" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -758,7 +742,6 @@
       <path value="$PROJECT_DIR$/demo-properties" />
       <path value="$PROJECT_DIR$/demo-logback" />
     </ignored-roots>
-    <MESSAGE value="feat: rabbitmq消息确认机制" />
     <MESSAGE value="feat: rabbitmq重试机制" />
     <MESSAGE value="feat: rabbitmq死信队列" />
     <MESSAGE value="feat: rabbitmq延迟队列" />
@@ -783,7 +766,8 @@
     <MESSAGE value="feat: 分布式锁lock4j" />
     <MESSAGE value="feat: 整合国际化" />
     <MESSAGE value="feat: easyexcel写操作" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: easyexcel写操作" />
+    <MESSAGE value="feat: easyexcel读操作" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: easyexcel读操作" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
