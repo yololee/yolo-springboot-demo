@@ -66,6 +66,8 @@
         <module>demo-cluster-lock</module>
         <module>demo-i18n</module>
         <module>demo-poi</module>
+        <module>demo-hutool</module>
+        <module>demo-multi-datasource-mybatis-aop</module>
     </modules>
 
 
