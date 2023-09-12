@@ -68,6 +68,7 @@
         <module>demo-poi</module>
         <module>demo-hutool</module>
         <module>demo-multi-datasource-mybatis-aop</module>
+        <module>demo-netty-socketio</module>
     </modules>
 
 

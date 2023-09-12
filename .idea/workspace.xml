@@ -4,28 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: 整合shedlock实现分布式定时任务">
-      <change afterPath="$PROJECT_DIR$/demo-multi-datasource-mybatis-aop/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-multi-datasource-mybatis-aop/springboot-自定义注解实现动态多数据源.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-multi-datasource-mybatis-aop/src/main/java/com/yolo/demo/DemoMultiDatasourceMybatisAopApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-multi-datasource-mybatis-aop/src/main/java/com/yolo/demo/anno/DataSource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-multi-datasource-mybatis-aop/src/main/java/com/yolo/demo/aspect/DataSourceAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-multi-datasource-mybatis-aop/src/main/java/com/yolo/demo/common/DataSourceType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-multi-datasource-mybatis-aop/src/main/java/com/yolo/demo/config/DruidConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-multi-datasource-mybatis-aop/src/main/java/com/yolo/demo/config/DruidProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-multi-datasource-mybatis-aop/src/main/java/com/yolo/demo/config/MybatisPlusConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-multi-datasource-mybatis-aop/src/main/java/com/yolo/demo/controller/TestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-multi-datasource-mybatis-aop/src/main/java/com/yolo/demo/datasource/DynamicDataSource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-multi-datasource-mybatis-aop/src/main/java/com/yolo/demo/datasource/DynamicDataSourceContextHolder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-multi-datasource-mybatis-aop/src/main/java/com/yolo/demo/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-multi-datasource-mybatis-aop/src/main/java/com/yolo/demo/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-multi-datasource-mybatis-aop/src/main/java/com/yolo/demo/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-multi-datasource-mybatis-aop/src/main/java/com/yolo/demo/service/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-multi-datasource-mybatis-aop/src/main/java/com/yolo/demo/utils/SpringUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-multi-datasource-mybatis-aop/src/main/java/com/yolo/demo/utils/StringUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-multi-datasource-mybatis-aop/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-multi-datasource-mybatis-aop/src/test/java/com/yolo/demo/DemoMultiDatasourceMybatisAopApplicationTests.java" afterDir="false" />
+    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: 自定义注解结合druid完成动态数据源切换">
+      <change afterPath="$PROJECT_DIR$/demo-netty-socketio/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-netty-socketio/src/main/java/com/yolo/demo/DemoNettySocketioApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-netty-socketio/src/main/java/com/yolo/demo/cache/ClientCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-netty-socketio/src/main/java/com/yolo/demo/config/SocketIOConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-netty-socketio/src/main/java/com/yolo/demo/config/SocketIoProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-netty-socketio/src/main/java/com/yolo/demo/controller/TestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-netty-socketio/src/main/java/com/yolo/demo/handler/ChatMessageEventHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-netty-socketio/src/main/java/com/yolo/demo/handler/SocketIOConnectHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-netty-socketio/src/main/java/com/yolo/demo/runner/SocketIOServerRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-netty-socketio/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-netty-socketio/src/main/resources/static/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-netty-socketio/src/test/java/com/yolo/demo/DemoNettySocketioApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -79,6 +72,7 @@
         <option value="Enum" />
         <option value="AnnotationType" />
         <option value="Interface" />
+        <option value="HTML File" />
         <option value="Class" />
       </list>
     </option>
@@ -118,39 +112,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-multi-datasource-mybatis-aop",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "settings.editor.splitter.proportion": "0.28004074",
-    "spring.configuration.checksum": "e57f71739ecedb0e4ae69b4d1b9945ac",
-    "ts.external.directory.path": "/Applications/IntelliJ IDEA.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true",
-    "zielu.gittoolbox.prj.config.selected.tab.id": "zielu.gittoolbox.config.prj.repositories"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-multi-datasource-mybatis-aop&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;settings.editor.splitter.proportion&quot;: &quot;0.28004074&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;e57f71739ecedb0e4ae69b4d1b9945ac&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Applications/IntelliJ IDEA.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
+    &quot;zielu.gittoolbox.prj.config.selected.tab.id&quot;: &quot;zielu.gittoolbox.config.prj.repositories&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -177,29 +172,19 @@
       <recent name="com.yolo.redis.limit.aop.util" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.DemoMultiDatasourceMybatisAopApplication">
-    <configuration name="AssertDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.yolo.demo.asserts.AssertDemo" />
-      <module name="demo-hutool" />
+  <component name="RunManager" selected="JUnit.DemoNettySocketioApplicationTests.contextLoads">
+    <configuration name="DemoNettySocketioApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo-netty-socketio" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.yolo.demo.asserts.*" />
+          <option name="PATTERN" value="com.yolo.demo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DictDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.yolo.demo.dict.DictDemo" />
-      <module name="demo-hutool" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.yolo.demo.dict.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <option name="PACKAGE_NAME" value="com.yolo.demo" />
+      <option name="MAIN_CLASS_NAME" value="com.yolo.demo.DemoNettySocketioApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -211,9 +196,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DemoMultiDatasourceMybatisAopApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="demo-multi-datasource-mybatis-aop" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.demo.DemoMultiDatasourceMybatisAopApplication" />
+    <configuration name="DemoNettySocketioApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="demo-netty-socketio" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.demo.DemoNettySocketioApplication" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.yolo.demo.*" />
@@ -231,18 +216,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Unnamed" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="demo-shedlock" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.demo.DemoShedlockApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+    <list>
+      <item itemvalue="JUnit.DemoNettySocketioApplicationTests.contextLoads" />
+      <item itemvalue="Spring Boot.DemoDockerApplication" />
+      <item itemvalue="Spring Boot.DemoShedlockApplication" />
+      <item itemvalue="Spring Boot.DemoNettySocketioApplication" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.DemoMultiDatasourceMybatisAopApplication" />
-        <item itemvalue="Application.AssertDemo" />
-        <item itemvalue="Application.DictDemo" />
+        <item itemvalue="JUnit.DemoNettySocketioApplicationTests.contextLoads" />
+        <item itemvalue="Spring Boot.DemoNettySocketioApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -355,14 +338,15 @@
       <workItem from="1692234776930" duration="5947000" />
       <workItem from="1692323723697" duration="2950000" />
       <workItem from="1692339417341" duration="6517000" />
-      <workItem from="1692839971347" duration="1972000" />
-    </task>
-    <task id="LOCAL-00050" summary="feat: 整合ureport2">
-      <created>1684900244361</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1684900244362</updated>
+      <workItem from="1692839971347" duration="2469000" />
+      <workItem from="1692866897284" duration="4987000" />
+      <workItem from="1693185506484" duration="16389000" />
+      <workItem from="1693379228586" duration="3851000" />
+      <workItem from="1693444445835" duration="11417000" />
+      <workItem from="1693799705984" duration="915000" />
+      <workItem from="1693966981708" duration="3710000" />
+      <workItem from="1694049308862" duration="635000" />
+      <workItem from="1694482851642" duration="1603000" />
     </task>
     <task id="LOCAL-00051" summary="feat: 整合validator">
       <created>1684980537823</created>
@@ -700,7 +684,14 @@
       <option name="project" value="LOCAL" />
       <updated>1692257756966</updated>
     </task>
-    <option name="localTasksCounter" value="99" />
+    <task id="LOCAL-00099" summary="feat: 自定义注解结合druid完成动态数据源切换">
+      <created>1692842122396</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1692842122397</updated>
+    </task>
+    <option name="localTasksCounter" value="100" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -722,7 +713,6 @@
       <path value="$PROJECT_DIR$/demo-properties" />
       <path value="$PROJECT_DIR$/demo-logback" />
     </ignored-roots>
-    <MESSAGE value="feat: rabbitmq延迟队列" />
     <MESSAGE value="feat: rabbitmq消息回调" />
     <MESSAGE value="feat: rabbitmq保证消息的一致性" />
     <MESSAGE value="feat: mapstruct自定义注解忽略字段" />
@@ -747,7 +737,8 @@
     <MESSAGE value="feat: easyexcel读操作" />
     <MESSAGE value="feat: mybatis-plus升级到3.5.3.1，并封装一些方法" />
     <MESSAGE value="feat: 整合shedlock实现分布式定时任务" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 整合shedlock实现分布式定时任务" />
+    <MESSAGE value="feat: 自定义注解结合druid完成动态数据源切换" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 自定义注解结合druid完成动态数据源切换" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
