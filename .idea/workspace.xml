@@ -5,21 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: 自定义注解结合druid完成动态数据源切换">
-      <change afterPath="$PROJECT_DIR$/demo-netty-socketio/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-netty-socketio/src/main/java/com/yolo/demo/DemoNettySocketioApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-netty-socketio/src/main/java/com/yolo/demo/cache/ClientCache.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-netty-socketio/src/main/java/com/yolo/demo/config/SocketIOConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-netty-socketio/src/main/java/com/yolo/demo/config/SocketIoProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-netty-socketio/src/main/java/com/yolo/demo/controller/TestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-netty-socketio/src/main/java/com/yolo/demo/handler/ChatMessageEventHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-netty-socketio/src/main/java/com/yolo/demo/handler/SocketIOConnectHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-netty-socketio/src/main/java/com/yolo/demo/runner/SocketIOServerRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-netty-socketio/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-netty-socketio/src/main/resources/static/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-netty-socketio/src/test/java/com/yolo/demo/DemoNettySocketioApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-springboot-starter/demo-anno-encrypt-body/src/main/java/com/yolo/demo/controller/EncryptionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-springboot-starter/demo-anno-encrypt-body/src/main/java/com/yolo/demo/controller/EncryptionController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,16 +81,13 @@
       <MavenGeneralSettings>
         <option name="localRepository" value="$PROJECT_DIR$/../../maven/repository" />
         <option name="mavenHome" value="$PROJECT_DIR$/../../maven/apache-maven-3.8.7" />
-        <option name="useMavenConfig" value="true" />
         <option name="userSettingsFile" value="$PROJECT_DIR$/../../maven/apache-maven-3.8.7/conf/settings.xml" />
       </MavenGeneralSettings>
     </option>
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="workspaceImportEnabled" value="true" />
-      </MavenImportingSettings>
-    </option>
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2P2xyUwvwD703sCDzwichirygy8" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -123,6 +107,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-multi-datasource-mybatis-aop&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -172,19 +157,55 @@
       <recent name="com.yolo.redis.limit.aop.util" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DemoNettySocketioApplicationTests.contextLoads">
-    <configuration name="DemoNettySocketioApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo-netty-socketio" />
+  <component name="RunManager" selected="Application.Test">
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.yolo.demo.api.Test" />
+      <module name="credentials-client" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yolo.demo.api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClientApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="client" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.demo.ClientApplication" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.yolo.demo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.yolo.demo" />
-      <option name="MAIN_CLASS_NAME" value="com.yolo.demo.DemoNettySocketioApplicationTests" />
-      <option name="METHOD_NAME" value="contextLoads" />
-      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CredentialsAuthApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="credentials-auth" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.demo.CredentialsAuthApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yolo.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CredentialsUserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="credentials-user" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.demo.CredentialsUserApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yolo.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -196,9 +217,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DemoNettySocketioApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="demo-netty-socketio" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.demo.DemoNettySocketioApplication" />
+    <configuration name="DemoShedlockApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="demo-shedlock" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.demo.DemoShedlockApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="user" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.demo.UserApplication" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.yolo.demo.*" />
@@ -209,23 +237,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DemoShedlockApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="demo-shedlock" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.demo.DemoShedlockApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="JUnit.DemoNettySocketioApplicationTests.contextLoads" />
+      <item itemvalue="Application.Test" />
       <item itemvalue="Spring Boot.DemoDockerApplication" />
       <item itemvalue="Spring Boot.DemoShedlockApplication" />
-      <item itemvalue="Spring Boot.DemoNettySocketioApplication" />
+      <item itemvalue="Spring Boot.ClientApplication" />
+      <item itemvalue="Spring Boot.CredentialsAuthApplication" />
+      <item itemvalue="Spring Boot.CredentialsUserApplication" />
+      <item itemvalue="Spring Boot.UserApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.DemoNettySocketioApplicationTests.contextLoads" />
-        <item itemvalue="Spring Boot.DemoNettySocketioApplication" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Spring Boot.CredentialsUserApplication" />
+        <item itemvalue="Spring Boot.CredentialsAuthApplication" />
+        <item itemvalue="Spring Boot.ClientApplication" />
+        <item itemvalue="Spring Boot.UserApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -347,6 +374,7 @@
       <workItem from="1693966981708" duration="3710000" />
       <workItem from="1694049308862" duration="635000" />
       <workItem from="1694482851642" duration="1603000" />
+      <workItem from="1700115953899" duration="6994000" />
     </task>
     <task id="LOCAL-00051" summary="feat: 整合validator">
       <created>1684980537823</created>
@@ -762,6 +790,11 @@
           <url>file://$PROJECT_DIR$/demo-upload-fragment/src/main/java/com/yolo/upload/fragment/service/impl/FileServiceImpl.java</url>
           <line>40</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/demo-springboot-starter/demo-anno-encrypt-body/src/main/java/com/yolo/demo/controller/TestController.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
