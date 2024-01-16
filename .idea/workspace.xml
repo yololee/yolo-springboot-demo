@@ -4,9 +4,62 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: 自定义注解结合druid完成动态数据源切换">
+    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat: 请求加密解密">
+      <change afterPath="$PROJECT_DIR$/demo-sa-token-sso/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-sa-token-sso/sso-clinet/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-sa-token-sso/sso-clinet/src/main/java/com/yolo/sso/clinet/SsoClinetApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-sa-token-sso/sso-clinet/src/main/java/com/yolo/sso/clinet/config/CorsFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-sa-token-sso/sso-clinet/src/main/java/com/yolo/sso/clinet/controller/H5Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-sa-token-sso/sso-clinet/src/main/java/com/yolo/sso/clinet/controller/SsoClientController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-sa-token-sso/sso-clinet/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-sa-token-sso/sso-clinet/vue-test/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-sa-token-sso/sso-clinet/vue-test/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-sa-token-sso/sso-clinet/vue-test/babel.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-sa-token-sso/sso-clinet/vue-test/jsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-sa-token-sso/sso-clinet/vue-test/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-sa-token-sso/sso-clinet/vue-test/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-sa-token-sso/sso-clinet/vue-test/src/App.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-sa-token-sso/sso-clinet/vue-test/src/assets/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-sa-token-sso/sso-clinet/vue-test/src/http/http.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-sa-token-sso/sso-clinet/vue-test/src/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-sa-token-sso/sso-clinet/vue-test/src/router/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-sa-token-sso/sso-clinet/vue-test/src/style/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-sa-token-sso/sso-clinet/vue-test/src/views/home/home.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-sa-token-sso/sso-clinet/vue-test/src/views/home/link.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-sa-token-sso/sso-clinet/vue-test/src/views/login/login.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-sa-token-sso/sso-clinet/vue-test/vue.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-sa-token-sso/sso-server/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-sa-token-sso/sso-server/src/main/java/com/yolo/sso/server/SsoServerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-sa-token-sso/sso-server/src/main/java/com/yolo/sso/server/config/CorsFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-sa-token-sso/sso-server/src/main/java/com/yolo/sso/server/config/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-sa-token-sso/sso-server/src/main/java/com/yolo/sso/server/controller/H5Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-sa-token-sso/sso-server/src/main/java/com/yolo/sso/server/controller/SsoServerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-sa-token-sso/sso-server/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-sa-token-sso/sso-server/src/main/resources/static/sa-res/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-sa-token-sso/sso-server/src/main/resources/static/sa-res/layer/layer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-sa-token-sso/sso-server/src/main/resources/static/sa-res/layer/mobile/layer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-sa-token-sso/sso-server/src/main/resources/static/sa-res/layer/mobile/need/layer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-sa-token-sso/sso-server/src/main/resources/static/sa-res/layer/theme/default/icon-ext.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-sa-token-sso/sso-server/src/main/resources/static/sa-res/layer/theme/default/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-sa-token-sso/sso-server/src/main/resources/static/sa-res/layer/theme/default/layer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-sa-token-sso/sso-server/src/main/resources/static/sa-res/layer/theme/default/loading-0.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-sa-token-sso/sso-server/src/main/resources/static/sa-res/layer/theme/default/loading-1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-sa-token-sso/sso-server/src/main/resources/static/sa-res/layer/theme/default/loading-2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-sa-token-sso/sso-server/src/main/resources/static/sa-res/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-sa-token-sso/sso-server/src/main/resources/static/sa-res/login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-sa-token-sso/sso-server/src/main/resources/templates/sa-login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-word/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-word/src/main/java/org/fly/demoword/DemoWordApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-word/src/main/java/org/fly/demoword/TestWordController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-word/src/main/java/org/fly/demoword/WordUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-word/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-word/src/main/resources/templates/test.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-word/src/main/resources/templates/word.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-word/src/main/resources/templates/迈异信息分布式云服务业务协议(云服务模板）.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-word/src/test/java/org/fly/demoword/DemoWordApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-springboot-starter/demo-anno-encrypt-body/src/main/java/com/yolo/demo/controller/EncryptionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-springboot-starter/demo-anno-encrypt-body/src/main/java/com/yolo/demo/controller/EncryptionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-validator/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-validator/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +134,7 @@
       <MavenGeneralSettings>
         <option name="localRepository" value="$PROJECT_DIR$/../../maven/repository" />
         <option name="mavenHome" value="$PROJECT_DIR$/../../maven/apache-maven-3.8.7" />
-        <option name="userSettingsFile" value="$PROJECT_DIR$/../../maven/apache-maven-3.8.7/conf/settings.xml" />
+        <option name="userSettingsFile" value="$PROJECT_DIR$/../../maven/apache-maven-3.8.7/conf/settings_mye.xml" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -96,41 +149,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-multi-datasource-mybatis-aop&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;settings.editor.splitter.proportion&quot;: &quot;0.28004074&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;e57f71739ecedb0e4ae69b4d1b9945ac&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Applications/IntelliJ IDEA.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
-    &quot;zielu.gittoolbox.prj.config.selected.tab.id&quot;: &quot;zielu.gittoolbox.config.prj.repositories&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "Spring Boot.DemoWordApplication.executor": "Debug",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-word/src/main/resources/templates",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "settings.editor.splitter.proportion": "0.28004074",
+    "spring.configuration.checksum": "e57f71739ecedb0e4ae69b4d1b9945ac",
+    "ts.external.directory.path": "/Applications/IntelliJ IDEA.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true",
+    "zielu.gittoolbox.prj.config.selected.tab.id": "zielu.gittoolbox.config.prj.repositories"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -139,11 +195,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/demo-multi-datasource-mybatis-aop" />
-      <recent name="$PROJECT_DIR$/demo-orm-mybatis-plus/src/main/java/com/yolo/mybatis/plus/page" />
-      <recent name="$PROJECT_DIR$/demo-orm-mybatis-plus/src/main/resources/mapper" />
-      <recent name="$PROJECT_DIR$/demo-orm-mybatis-plus/src/main/java/com/yolo/mybatis/plus/util" />
-      <recent name="$PROJECT_DIR$/demo-poi/demo-easyexcel-read/src/main/java/com/yolo/demo" />
+      <recent name="$PROJECT_DIR$/demo-word/src/main/resources/templates" />
+      <recent name="$PROJECT_DIR$/demo-word/src/main/resources" />
+      <recent name="$PROJECT_DIR$/demo-sa-token-sso/sso-clinet" />
+      <recent name="$PROJECT_DIR$/demo-sa-token-sso/sso-clinet/src/main/resources" />
+      <recent name="$PROJECT_DIR$/demo-sa-token-sso/sso-clinet/src/main/java/com/yolo/sso/clinet/config" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/demo-orm-mybatis-plus/sql" />
@@ -157,59 +213,7 @@
       <recent name="com.yolo.redis.limit.aop.util" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Test">
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.yolo.demo.api.Test" />
-      <module name="credentials-client" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.yolo.demo.api.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ClientApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="client" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.demo.ClientApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.yolo.demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CredentialsAuthApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="credentials-auth" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.demo.CredentialsAuthApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.yolo.demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CredentialsUserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="credentials-user" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.demo.CredentialsUserApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.yolo.demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Spring Boot.DemoWordApplication">
     <configuration name="DemoDockerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="demo-docker" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.demo.DemoDockerApplication" />
@@ -224,12 +228,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="user" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.demo.UserApplication" />
+    <configuration name="DemoWordApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="demo-word" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.fly.demoword.DemoWordApplication" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.yolo.demo.*" />
+          <option name="PATTERN" value="org.fly.demoword.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -237,22 +241,65 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SsoClinetApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="sso-clinet" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.sso.clinet.SsoClinetApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yolo.sso.clinet.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/demo-sa-token-sso/sso-clinet/vue-test/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="lint" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/demo-sa-token-sso/sso-clinet/vue-test/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="lint" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="serve" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/demo-sa-token-sso/sso-clinet/vue-test/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="serve" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Application.Test" />
+      <item itemvalue="npm.build" />
+      <item itemvalue="npm.lint" />
+      <item itemvalue="npm.serve" />
       <item itemvalue="Spring Boot.DemoDockerApplication" />
       <item itemvalue="Spring Boot.DemoShedlockApplication" />
-      <item itemvalue="Spring Boot.ClientApplication" />
-      <item itemvalue="Spring Boot.CredentialsAuthApplication" />
-      <item itemvalue="Spring Boot.CredentialsUserApplication" />
-      <item itemvalue="Spring Boot.UserApplication" />
+      <item itemvalue="Spring Boot.DemoWordApplication" />
+      <item itemvalue="Spring Boot.SsoClinetApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Test" />
-        <item itemvalue="Spring Boot.CredentialsUserApplication" />
-        <item itemvalue="Spring Boot.CredentialsAuthApplication" />
-        <item itemvalue="Spring Boot.ClientApplication" />
-        <item itemvalue="Spring Boot.UserApplication" />
+        <item itemvalue="Spring Boot.DemoWordApplication" />
+        <item itemvalue="npm.lint" />
+        <item itemvalue="npm.build" />
+        <item itemvalue="Spring Boot.SsoClinetApplication" />
+        <item itemvalue="npm.serve" />
       </list>
     </recent_temporary>
   </component>
@@ -374,7 +421,18 @@
       <workItem from="1693966981708" duration="3710000" />
       <workItem from="1694049308862" duration="635000" />
       <workItem from="1694482851642" duration="1603000" />
-      <workItem from="1700115953899" duration="6994000" />
+      <workItem from="1700115953899" duration="8701000" />
+      <workItem from="1700442828369" duration="1566000" />
+      <workItem from="1700447714854" duration="361000" />
+      <workItem from="1700464645070" duration="1104000" />
+      <workItem from="1700639334835" duration="1012000" />
+      <workItem from="1700723087152" duration="1413000" />
+      <workItem from="1701050702512" duration="2072000" />
+      <workItem from="1701063530138" duration="4335000" />
+      <workItem from="1701740609925" duration="29000" />
+      <workItem from="1701741309059" duration="796000" />
+      <workItem from="1701825004334" duration="1334000" />
+      <workItem from="1705287313094" duration="9037000" />
     </task>
     <task id="LOCAL-00051" summary="feat: 整合validator">
       <created>1684980537823</created>
@@ -719,7 +777,7 @@
       <option name="project" value="LOCAL" />
       <updated>1692842122397</updated>
     </task>
-    <option name="localTasksCounter" value="100" />
+    <option name="localTasksCounter" value="101" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -741,7 +799,6 @@
       <path value="$PROJECT_DIR$/demo-properties" />
       <path value="$PROJECT_DIR$/demo-logback" />
     </ignored-roots>
-    <MESSAGE value="feat: rabbitmq消息回调" />
     <MESSAGE value="feat: rabbitmq保证消息的一致性" />
     <MESSAGE value="feat: mapstruct自定义注解忽略字段" />
     <MESSAGE value="feat: lombok介绍" />
@@ -766,7 +823,8 @@
     <MESSAGE value="feat: mybatis-plus升级到3.5.3.1，并封装一些方法" />
     <MESSAGE value="feat: 整合shedlock实现分布式定时任务" />
     <MESSAGE value="feat: 自定义注解结合druid完成动态数据源切换" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 自定义注解结合druid完成动态数据源切换" />
+    <MESSAGE value="feat: 请求加密解密" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 请求加密解密" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
