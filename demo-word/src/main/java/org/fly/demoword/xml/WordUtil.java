@@ -1,4 +1,4 @@
-package org.fly.demoword;
+package org.fly.demoword.xml;
 
 import freemarker.template.Configuration;
 import freemarker.template.Template;

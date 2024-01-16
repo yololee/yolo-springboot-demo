@@ -1,4 +1,4 @@
-package org.fly.demoword;
+package org.fly.demoword.xml;
 
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
