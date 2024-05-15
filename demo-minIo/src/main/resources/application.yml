@@ -6,7 +6,7 @@ spring:
 
 # ====================== ↓↓↓↓↓↓ MinIO文件服务器 ↓↓↓↓↓↓ ======================
 minio:
-  url: http://116.211.105.103:9002
+  url: http://127.0.0.1:9002
   accessKey: root
   secretKey: password
   bucketName: test

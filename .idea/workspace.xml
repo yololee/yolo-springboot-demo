@@ -4,21 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat:动态生成word">
-      <change afterPath="$PROJECT_DIR$/demo-word/src/main/java/org/fly/demoword/poitl/AcWordModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-word/src/main/java/org/fly/demoword/poitl/PoiTlController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-word/src/main/java/org/fly/demoword/poitl/WordOrder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-word/src/main/resources/templates/Hello World.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-word/src/main/resources/templates/XXX&amp;迈异信息分布式云服务业务协议(云服务模板2222）.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-word/src/main/resources/templates/XXX&amp;迈异信息分布式云服务业务协议(云服务模板3333）.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-word/src/main/resources/templates/XXX&amp;迈异信息分布式云服务业务协议(云服务模板）.doc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-word/src/main/resources/templates/hello-world.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-word/src/main/resources/templates/hello-world2.docx" afterDir="false" />
+    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat:使用poi-tl动态生成word">
+      <change afterPath="$PROJECT_DIR$/demo-screw/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-screw/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-screw/springboot-整合screw生成数据库文档.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-screw/src/main/java/com/yolo/screw/DemoScrewApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-screw/src/main/java/com/yolo/screw/demos/CreateSqlDoc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-screw/src/main/java/com/yolo/screw/demos/数据库结构文档.doc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-screw/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-screw/src/main/resources/static/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-screw/src/test/java/com/yolo/screw/DemoScrewApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-word/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-word/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-word/src/main/java/org/fly/demoword/TestWordController.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-word/src/main/java/org/fly/demoword/xml/TestWordController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-word/src/main/java/org/fly/demoword/WordUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-word/src/main/java/org/fly/demoword/xml/WordUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-word/src/test/java/org/fly/demoword/DemoWordApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-word/src/test/java/org/fly/demoword/DemoWordApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-minIo/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-minIo/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,6 +109,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "Application.CreateSqlDoc.executor": "Debug",
     "DefaultHtmlFileTemplate": "HTML File",
     "JUnit.DemoWordApplicationTests.contextLoads.executor": "Debug",
     "JUnit.DemoWordApplicationTests.test1.executor": "Debug",
@@ -122,21 +121,22 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "Spring Boot.DemoMinIoApplication.executor": "Debug",
     "Spring Boot.DemoWordApplication.executor": "Debug",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "1.8",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-word/src/main/resources/templates",
+    "last_opened_file_path": "/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-screw",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Problems",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "MavenSettings",
+    "settings.editor.selected.configurable": "http.proxy",
     "settings.editor.splitter.proportion": "0.28004074",
     "spring.configuration.checksum": "e57f71739ecedb0e4ae69b4d1b9945ac",
     "ts.external.directory.path": "/Applications/IntelliJ IDEA.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
@@ -157,13 +157,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/demo-screw" />
       <recent name="$PROJECT_DIR$/demo-word/src/main/resources/templates" />
       <recent name="$PROJECT_DIR$/demo-word/src/main/resources" />
       <recent name="$PROJECT_DIR$/demo-sa-token-sso/sso-clinet" />
       <recent name="$PROJECT_DIR$/demo-sa-token-sso/sso-clinet/src/main/resources" />
-      <recent name="$PROJECT_DIR$/demo-sa-token-sso/sso-clinet/src/main/java/com/yolo/sso/clinet/config" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/demo-screw/src/main/java/com/yolo/screw/demos" />
       <recent name="$PROJECT_DIR$/demo-orm-mybatis-plus/sql" />
       <recent name="$PROJECT_DIR$/demo-login-operation-log/src/main/resources/mybatis" />
     </key>
@@ -175,7 +176,7 @@
       <recent name="com.yolo.redis.limit.aop.util" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DemoWordApplicationTests.test2">
+  <component name="RunManager" selected="JUnit.DemoWordApplicationTests.contextLoads">
     <configuration name="DemoWordApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo-word" />
       <extension name="coverage">
@@ -231,19 +232,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DemoShedlockApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="demo-shedlock" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.demo.DemoShedlockApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DemoWordApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="demo-word" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="org.fly.demoword.DemoWordApplication" />
+    <configuration name="DemoMinIoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="demo-minIo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.minio.DemoMinIoApplication" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.fly.demoword.*" />
+          <option name="PATTERN" value="com.yolo.minio.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -251,32 +245,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="lint" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/demo-sa-token-sso/sso-clinet/vue-test/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="lint" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
+    <configuration name="DemoShedlockApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="demo-shedlock" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.demo.DemoShedlockApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <list>
       <item itemvalue="JUnit.DemoWordApplicationTests.contextLoads" />
       <item itemvalue="JUnit.DemoWordApplicationTests.test1" />
       <item itemvalue="JUnit.DemoWordApplicationTests.test2" />
-      <item itemvalue="npm.lint" />
       <item itemvalue="Spring Boot.DemoDockerApplication" />
       <item itemvalue="Spring Boot.DemoShedlockApplication" />
-      <item itemvalue="Spring Boot.DemoWordApplication" />
+      <item itemvalue="Spring Boot.DemoMinIoApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.DemoMinIoApplication" />
         <item itemvalue="JUnit.DemoWordApplicationTests.test2" />
         <item itemvalue="JUnit.DemoWordApplicationTests.test1" />
         <item itemvalue="JUnit.DemoWordApplicationTests.contextLoads" />
-        <item itemvalue="Spring Boot.DemoWordApplication" />
-        <item itemvalue="npm.lint" />
       </list>
     </recent_temporary>
   </component>
@@ -410,7 +399,12 @@
       <workItem from="1701741309059" duration="796000" />
       <workItem from="1701825004334" duration="1334000" />
       <workItem from="1705287313094" duration="9141000" />
-      <workItem from="1705386908924" duration="6128000" />
+      <workItem from="1705386908924" duration="6329000" />
+      <workItem from="1705888315573" duration="20000" />
+      <workItem from="1711286473727" duration="5874000" />
+      <workItem from="1711940937580" duration="1682000" />
+      <workItem from="1713749546917" duration="980000" />
+      <workItem from="1715739276820" duration="1828000" />
     </task>
     <task id="LOCAL-00051" summary="feat: 整合validator">
       <created>1684980537823</created>
@@ -755,7 +749,7 @@
       <option name="project" value="LOCAL" />
       <updated>1692842122397</updated>
     </task>
-    <option name="localTasksCounter" value="102" />
+    <option name="localTasksCounter" value="104" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -777,8 +771,6 @@
       <path value="$PROJECT_DIR$/demo-properties" />
       <path value="$PROJECT_DIR$/demo-logback" />
     </ignored-roots>
-    <MESSAGE value="feat: mapstruct自定义注解忽略字段" />
-    <MESSAGE value="feat: lombok介绍" />
     <MESSAGE value="feat: rabbitmq目录" />
     <MESSAGE value="feat: 心跳机制+redis实现网站在线人数统计" />
     <MESSAGE value="feat: 自定义注解实现请求，响应参数的加密" />
@@ -802,7 +794,9 @@
     <MESSAGE value="feat: 自定义注解结合druid完成动态数据源切换" />
     <MESSAGE value="feat: 请求加密解密" />
     <MESSAGE value="feat:动态生成word" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat:动态生成word" />
+    <MESSAGE value="feat:提交gitignore" />
+    <MESSAGE value="feat:使用poi-tl动态生成word" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat:使用poi-tl动态生成word" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -831,6 +825,16 @@
           <url>file://$PROJECT_DIR$/demo-springboot-starter/demo-anno-encrypt-body/src/main/java/com/yolo/demo/controller/TestController.java</url>
           <line>22</line>
           <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/demo-minIo/src/main/java/com/yolo/minio/controller/MinIoController.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/demo-minIo/src/main/java/com/yolo/minio/config/MinIoUtil.java</url>
+          <line>118</line>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

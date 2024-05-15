@@ -71,6 +71,7 @@
         <module>demo-netty-socketio</module>
         <module>demo-sa-token-sso</module>
         <module>demo-word</module>
+        <module>demo-screw</module>
     </modules>
 
 
