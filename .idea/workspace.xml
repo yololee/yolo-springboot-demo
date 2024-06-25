@@ -4,18 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat:使用poi-tl动态生成word">
-      <change afterPath="$PROJECT_DIR$/demo-screw/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-screw/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-screw/springboot-整合screw生成数据库文档.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-screw/src/main/java/com/yolo/screw/DemoScrewApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-screw/src/main/java/com/yolo/screw/demos/CreateSqlDoc.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-screw/src/main/java/com/yolo/screw/demos/数据库结构文档.doc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-screw/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-screw/src/main/resources/static/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-screw/src/test/java/com/yolo/screw/DemoScrewApplicationTests.java" afterDir="false" />
+    <list default="true" id="331e5b3b-a473-43dc-a7ad-5876521c5ef4" name="Changes" comment="feat:使用 screw 生成数据库文档">
+      <change afterPath="$PROJECT_DIR$/demo-spring-retry/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-spring-retry/spingboot-使用spring-retry重试框架.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-spring-retry/src/main/java/com/yolo/spring/retry/DemoSpringRetryApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-spring-retry/src/main/java/com/yolo/spring/retry/MyException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-spring-retry/src/main/java/com/yolo/spring/retry/RetryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-spring-retry/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-spring-retry/src/test/java/com/yolo/spring/retry/DemoSpringRetryApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-minIo/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-minIo/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -111,6 +108,18 @@
     "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
     "Application.CreateSqlDoc.executor": "Debug",
     "DefaultHtmlFileTemplate": "HTML File",
+    "JUnit.DemoSpringRetryApplicationTests.testCircuitBreaker.executor": "Debug",
+    "JUnit.DemoSpringRetryApplicationTests.testService1.executor": "Debug",
+    "JUnit.DemoSpringRetryApplicationTests.testService2.executor": "Debug",
+    "JUnit.DemoSpringRetryApplicationTests.testService3.executor": "Debug",
+    "JUnit.DemoSpringRetryApplicationTests.testService3_1.executor": "Debug",
+    "JUnit.DemoSpringRetryApplicationTests.testService3_2.executor": "Debug",
+    "JUnit.DemoSpringRetryApplicationTests.testService4.executor": "Debug",
+    "JUnit.DemoSpringRetryApplicationTests.testService5.executor": "Debug",
+    "JUnit.DemoSpringRetryApplicationTests.testService6.executor": "Debug",
+    "JUnit.DemoSpringRetryApplicationTests.testService7.executor": "Debug",
+    "JUnit.DemoSpringRetryApplicationTests.testService8.executor": "Debug",
+    "JUnit.DemoSpringRetryApplicationTests.testService9.executor": "Debug",
     "JUnit.DemoWordApplicationTests.contextLoads.executor": "Debug",
     "JUnit.DemoWordApplicationTests.test1.executor": "Debug",
     "JUnit.DemoWordApplicationTests.test2.executor": "Debug",
@@ -127,7 +136,7 @@
     "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "1.8",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-screw",
+    "last_opened_file_path": "/Users/huanglei/Desktop/work/giteeCode/yolo-springboot-demo/demo-spring-retry",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -176,50 +185,82 @@
       <recent name="com.yolo.redis.limit.aop.util" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DemoWordApplicationTests.contextLoads">
-    <configuration name="DemoWordApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo-word" />
+  <component name="RunManager" selected="JUnit.DemoSpringRetryApplicationTests.testCircuitBreaker">
+    <configuration name="DemoSpringRetryApplicationTests.testCircuitBreaker" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo-spring-retry" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.fly.demoword.poitl.*" />
+          <option name="PATTERN" value="com.yolo.spring.retry.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.fly.demoword" />
-      <option name="MAIN_CLASS_NAME" value="org.fly.demoword.DemoWordApplicationTests" />
-      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="PACKAGE_NAME" value="com.yolo.spring.retry" />
+      <option name="MAIN_CLASS_NAME" value="com.yolo.spring.retry.DemoSpringRetryApplicationTests" />
+      <option name="METHOD_NAME" value="testCircuitBreaker" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DemoWordApplicationTests.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo-word" />
+    <configuration name="DemoSpringRetryApplicationTests.testService6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo-spring-retry" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.fly.demoword.*" />
+          <option name="PATTERN" value="com.yolo.spring.retry.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.fly.demoword" />
-      <option name="MAIN_CLASS_NAME" value="org.fly.demoword.DemoWordApplicationTests" />
-      <option name="METHOD_NAME" value="test1" />
+      <option name="PACKAGE_NAME" value="com.yolo.spring.retry" />
+      <option name="MAIN_CLASS_NAME" value="com.yolo.spring.retry.DemoSpringRetryApplicationTests" />
+      <option name="METHOD_NAME" value="testService6" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DemoWordApplicationTests.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo-word" />
+    <configuration name="DemoSpringRetryApplicationTests.testService7" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo-spring-retry" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.fly.demoword.*" />
+          <option name="PATTERN" value="com.yolo.spring.retry.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.fly.demoword" />
-      <option name="MAIN_CLASS_NAME" value="org.fly.demoword.DemoWordApplicationTests" />
-      <option name="METHOD_NAME" value="test2" />
+      <option name="PACKAGE_NAME" value="com.yolo.spring.retry" />
+      <option name="MAIN_CLASS_NAME" value="com.yolo.spring.retry.DemoSpringRetryApplicationTests" />
+      <option name="METHOD_NAME" value="testService7" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemoSpringRetryApplicationTests.testService8" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo-spring-retry" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yolo.spring.retry.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.yolo.spring.retry" />
+      <option name="MAIN_CLASS_NAME" value="com.yolo.spring.retry.DemoSpringRetryApplicationTests" />
+      <option name="METHOD_NAME" value="testService8" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemoSpringRetryApplicationTests.testService9" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo-spring-retry" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yolo.spring.retry.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.yolo.spring.retry" />
+      <option name="MAIN_CLASS_NAME" value="com.yolo.spring.retry.DemoSpringRetryApplicationTests" />
+      <option name="METHOD_NAME" value="testService9" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -232,19 +273,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DemoMinIoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="demo-minIo" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yolo.minio.DemoMinIoApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.yolo.minio.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="DemoShedlockApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="demo-shedlock" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.demo.DemoShedlockApplication" />
@@ -253,19 +281,21 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.DemoWordApplicationTests.contextLoads" />
-      <item itemvalue="JUnit.DemoWordApplicationTests.test1" />
-      <item itemvalue="JUnit.DemoWordApplicationTests.test2" />
+      <item itemvalue="JUnit.DemoSpringRetryApplicationTests.testCircuitBreaker" />
+      <item itemvalue="JUnit.DemoSpringRetryApplicationTests.testService6" />
+      <item itemvalue="JUnit.DemoSpringRetryApplicationTests.testService7" />
+      <item itemvalue="JUnit.DemoSpringRetryApplicationTests.testService8" />
+      <item itemvalue="JUnit.DemoSpringRetryApplicationTests.testService9" />
       <item itemvalue="Spring Boot.DemoDockerApplication" />
       <item itemvalue="Spring Boot.DemoShedlockApplication" />
-      <item itemvalue="Spring Boot.DemoMinIoApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.DemoMinIoApplication" />
-        <item itemvalue="JUnit.DemoWordApplicationTests.test2" />
-        <item itemvalue="JUnit.DemoWordApplicationTests.test1" />
-        <item itemvalue="JUnit.DemoWordApplicationTests.contextLoads" />
+        <item itemvalue="JUnit.DemoSpringRetryApplicationTests.testCircuitBreaker" />
+        <item itemvalue="JUnit.DemoSpringRetryApplicationTests.testService9" />
+        <item itemvalue="JUnit.DemoSpringRetryApplicationTests.testService8" />
+        <item itemvalue="JUnit.DemoSpringRetryApplicationTests.testService7" />
+        <item itemvalue="JUnit.DemoSpringRetryApplicationTests.testService6" />
       </list>
     </recent_temporary>
   </component>
@@ -404,7 +434,8 @@
       <workItem from="1711286473727" duration="5874000" />
       <workItem from="1711940937580" duration="1682000" />
       <workItem from="1713749546917" duration="980000" />
-      <workItem from="1715739276820" duration="1828000" />
+      <workItem from="1715739276820" duration="1974000" />
+      <workItem from="1719277874656" duration="5339000" />
     </task>
     <task id="LOCAL-00051" summary="feat: 整合validator">
       <created>1684980537823</created>
@@ -749,7 +780,7 @@
       <option name="project" value="LOCAL" />
       <updated>1692842122397</updated>
     </task>
-    <option name="localTasksCounter" value="104" />
+    <option name="localTasksCounter" value="105" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -771,7 +802,6 @@
       <path value="$PROJECT_DIR$/demo-properties" />
       <path value="$PROJECT_DIR$/demo-logback" />
     </ignored-roots>
-    <MESSAGE value="feat: rabbitmq目录" />
     <MESSAGE value="feat: 心跳机制+redis实现网站在线人数统计" />
     <MESSAGE value="feat: 自定义注解实现请求，响应参数的加密" />
     <MESSAGE value="feat: Runnable和Callable的使用，CompletableFuture的使用" />
@@ -796,7 +826,8 @@
     <MESSAGE value="feat:动态生成word" />
     <MESSAGE value="feat:提交gitignore" />
     <MESSAGE value="feat:使用poi-tl动态生成word" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat:使用poi-tl动态生成word" />
+    <MESSAGE value="feat:使用 screw 生成数据库文档" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat:使用 screw 生成数据库文档" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
